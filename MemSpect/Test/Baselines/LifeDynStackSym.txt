@@ -1,0 +1,48 @@
+==>Test start 8/19/2015 5:34:28 PM LifeDynStackSym
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[05:34:29.554 P] MemSpect API connecting Wednesday, August 19, 2015 5:34:29 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 5024 
+==>[05:34:29.554 P] Target CmdLine(Addr=01122c60)=C:\MemSpect\test\cslife.exe
+==>[05:34:29.554 P] TotVM=000000007ffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[05:34:29.554 P] PID=392 'cslife.exe' FileVer='1.0.0.0' ProdVer='1.0.0.0'
+==>[05:34:29.554 P] MemSpect DLL Version = 150604  
+==>[05:34:29.554 P] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\MemSpect.ini
+==>[05:34:29.554 P] CleanUpRCWs = 1
+==>[05:34:29.554 P]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 150604
+==>Freezing target. SeqNo = 16009
+==>[05:34:30.616 P] Freeze Target SeqNo= 16,450
+==>Ini file = C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\MemSpect.ini
+==>Address=0x032e5218, SeqNo=7,627, Size=52, BlkType=ClrObject Thread=13940M System.Windows.Forms.CreateParams
+Life.form1 stack using DynStackSym
+d:\memspect\ MemSpect
+cslife.exe!Life.Form1..ctor
+cslife.exe!Life.Form1.Main
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+System.Windows.Forms.dll!System.Windows.Forms.ContainerControl..ctor
+System.Windows.Forms.dll!System.Windows.Forms.ContainerControl.get_CreateParams
+System.Windows.Forms.dll!System.Windows.Forms.Control..ctor
+System.Windows.Forms.dll!System.Windows.Forms.Control.get_CreateParams
+System.Windows.Forms.dll!System.Windows.Forms.Form..ctor
+System.Windows.Forms.dll!System.Windows.Forms.Form.get_CreateParams
+System.Windows.Forms.dll!System.Windows.Forms.ScrollableControl..ctor
+System.Windows.Forms.dll!System.Windows.Forms.ScrollableControl.get_CreateParams
+==>
+==>Test end LifeDynStackSym 8/19/2015 5:34:31 PM #Secs = 3.48
+==># of asserts = 35
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\LifeDynStackSym.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\LifeDynStackSym.txt"

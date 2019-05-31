@@ -1,0 +1,79 @@
+﻿<Window x:Class="LauncherUi"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MemSpect Launcher" Height="288" Width="1036">
+    <Grid DataContext="{Binding}" >
+        <Label Content="Program:" Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" Name="Label1" VerticalAlignment="Top" 
+               ToolTip="EXE or Dump (DumpedFiles.mhd) or XML (immersive, like 'C:\Users\calvinh\Documents\Visual Studio 11\Projects\jsSplitApp1\jsSplitApp1\bin\Debug\AppX\AppxManifest.xml')"
+               />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="71,12,0,0" Name="cboFile" VerticalAlignment="Top" Width="747" IsEditable="True" IsReadOnly="True"
+                  IsEnabled="{Binding ElementName=rbtnLaunch, Path=IsChecked}" ToolTip="EXE to run| Minidump file | Offline Snapshot file (dumpedfiles.mhd)"
+                  />
+        <Label Content="Args:" Height="28" HorizontalAlignment="Left" Margin="22,46,0,0" Name="Label2" VerticalAlignment="Top"
+               ToolTip="Command line arguments"
+               />
+        <ComboBox Height="23" HorizontalAlignment="Left" IsEditable="True" IsEnabled="{Binding ElementName=rbtnLaunch, Path=IsChecked}" 
+                  Margin="71,51,0,0" Name="cboArgs" VerticalAlignment="Top" Width="747"  ToolTip="If it's an EXE, command line args for it" />
+        <RadioButton Content="_Launch a Process, Open OfflineSnapshot or MiniDump" 
+                     Height="16" 
+                     ToolTip="Choose a 32 bit process to start under MemSpect, or an OfflineView ('DumpedFiles.mhd') or a Minidmp file"
+                     HorizontalAlignment="Left" Margin="14,80,0,0" Name="rbtnLaunch" VerticalAlignment="Top" IsChecked="True"
+                     />
+        <RadioButton Content="In_ject into an existing 32 bit process (invasive)" Height="16" HorizontalAlignment="Left" Margin="14,102,0,0" Name="rbtnInject" 
+                     ToolTip="Click Start to choose a 32 bit process into which you want to inject MemSpect (Invasive) &#x0a;
+for immersive, MemSpect files must be placed in c:\Windows\System32\MemSpect\ or for 64 bit, c:\windows\SysWow64\MemSpect\&#x0a;
+Warning: Injecting after the CLR has started disables many managed profiling APIs." VerticalAlignment="Top" />
+        <RadioButton Content="_Attach to an existing process that was launched by MemSpect or has MemSpect injected already" Height="16" HorizontalAlignment="Left" Margin="14,124,0,0" Name="rbtnAttach" VerticalAlignment="Top"
+                     ToolTip="Click Start to choose a process that has MemSpectDll.Dll injected already (was launched with MemSpect)"/>
+        <RadioButton Content="Attach (non-invasive) to e_xisting process not launched by MemSpect and examine  VM" Height="16" HorizontalAlignment="Left" Margin="14,146,0,0" Name="rbtnExist" VerticalAlignment="Top"
+                     ToolTip="Click Start to examine the VM of a 32 bit process non-invasively. Not as much info as fully online because MemSpect is not intercepting any calls"/>
+        <RadioButton Content="Create a _Minidump of an existing process and examine VM" Height="16" HorizontalAlignment="Left" Margin="14,168,0,0" Name="rbtnDump" VerticalAlignment="Top"
+                     ToolTip="Click Start to choose a process for which to makes a Minidump with full heap info. Open it in VS and hit F5 to debug"/>
+
+        <CheckBox Content="_Clr Objects" Height="16" HorizontalAlignment="Left" Margin="360,80,0,0" Name="chkTrackClrObjects" VerticalAlignment="Top" 
+                  DataContext="{Binding}" IsEnabled="{Binding ElementName=rbtnLaunch, Path=IsChecked}" 
+                  ToolTip="Turn on CLR tracking when CLR starts (slower). (Can be turned on later. Mixed mode callstacks are unaffected). Ignored for offline snapshots" Width="108" />
+        <CheckBox Content="Disable PerfWatson" ToolTip="Disable PerfWatson if necessary via registry. This setting is not undone automatically" Height="16" 
+                  HorizontalAlignment="Left" Margin="360,102,0,0" Name="chkDisablePerfWatson" VerticalAlignment="Top" />
+        <Button Content="_Start" Height="23" HorizontalAlignment="Left" Margin="98,191,0,0" Name="btnStart" VerticalAlignment="Top" Width="75" IsDefault="True" 
+                ToolTip="If Launching a process under MemSpect, then Ctrl-Enter (or Ctrl-Click) will show a messagebox on start of each process (so you can attach a debugger)" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="200,191,0,0" Name="btnCancel" VerticalAlignment="Top" Width="75" IsCancel="True" />
+        <Button Content="_Help" Height="23" HorizontalAlignment="Left" Margin="301,191,0,0" Name="btnHelp" VerticalAlignment="Top" Width="75" />
+        <Button Content="Browse_..." Height="23" HorizontalAlignment="Left" Margin="823,12,0,0" Name="btnBrowse" VerticalAlignment="Top" Width="64" 
+                IsEnabled="{Binding ElementName=rbtnLaunch, Path=IsChecked}"
+                ToolTip="Choose an Offline Snapshot (Navigate to the DumpedFiles.mhd), an EXE file to launch, or a Minidump (*.dmp)"  />
+        <Label Content="vers" Height="34" HorizontalAlignment="Left" Margin="17,226,0,0" Name="lblVersion" 
+               VerticalAlignment="Top" Width="604" 
+               IsEnabled="True" />
+        <Button Content="Settin_gs" Height="23" HorizontalAlignment="Left" Margin="419,190,0,0" x:Name="btnSettings" 
+                VerticalAlignment="Top" Width="75" ToolTip="Edit MemSpect.Ini file which contains settings" />
+        <Label Content="Immersive Package Controller" HorizontalAlignment="Left" Margin="624,73,0,0" VerticalAlignment="Top"
+               ToolTip="User doesn't have to use any of these to launch MemSpect for an immersive. These are just handy to have"
+               />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left"                 
+                Height="156" Margin="500,93,0,0" VerticalAlignment="Top" Width="503">
+            <Grid HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="501">
+                <Button x:Name="btnImmersiveLaunch" Content="Launch" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="120"
+                        ToolTip="Will launch an Immersive. Just like launching from the Windows 8 Start Screen.&#xa;
+If debugging is enabled(this is persisted by the OS), will also inject MemSpectDll.Dll into process.&#xa;
+(You can then choose Attach to an existing process that was launched by MemSpect')&#xa;
+The Start button for Immersive is equivalent to these 3: EnableDebug/Launch/Attach to an Existing proc that was launched by MemSpect"
+                        />
+                <Button x:Name="btnImmersiveTerm" Content="Terminate" HorizontalAlignment="Left" Margin="0,36,0,0" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="btnEnableDebug" Content="EnableDebug" 
+                        HorizontalAlignment="Left" Margin="129,37,0,0" VerticalAlignment="Top" Width="120" 
+                        ToolTip="Deploy MemSpect files to the package folder (Must have write rights) and call IPackageSettings::EnableDebugging (this setting persists til DisableDebugging is called"/>
+                <Button x:Name="btnDisableDebug" Content="DisableDebug" HorizontalAlignment="Left" Margin="128,10,0,0" VerticalAlignment="Top" Width="120"
+                        ToolTip="Turn off the persisted EnableDebugging Setting"
+                        />
+                <Button x:Name="btnResume" Content="Resume" 
+                	HorizontalAlignment="Left" Margin="254,10,0,0" VerticalAlignment="Top" Width="120" />
+                <Button x:Name="btnSuspend" Content="Suspend" 
+                	HorizontalAlignment="Left" Margin="254,37,0,0" VerticalAlignment="Top" Width="120" />
+                <TextBox x:Name="tbxImmersiveInfo" HorizontalAlignment="Left" Margin="4,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="481" RenderTransformOrigin="0.504,-1.316" IsReadOnly="True" Height="62" FontSize="8"/>
+                <TextBlock x:Name="txtLaunchStatus" HorizontalAlignment="Left" Margin="6,128,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="495" FontSize="10" Height="26"/>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+==>Test start 10/16/2012 5:00:07 PM ArenaConcurDict
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>MemSpect vers = 121008
+==>Got TargetFrozen Event152964 28
+Concurrent dictionary
+# items = 1
+Item #1
+Address=0x032ec668, SeqNo=136,514, Size=36, BlkType=ClrObject Thread=12496M
+
+   4 System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.m_buckets   System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>+System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.Node<System.String,System.String>[](Count=31)(CMOD_REQD) 0x032ec7e8
+   8 System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.m_locks   System.Object[](Count=16)(Array) 0x032ec68c
+  12 System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.m_countPerLock   I4[](Count=16)(CMOD_REQD) 0x032ec79c
+  16 System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.m_comparer   System.Collections.Generic.GenericEqualityComparer`1<System.String>(System.Collections.Generic.IEqualityComparer`1<arg # 0 a>) 0x03253118
+  20 System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.m_serializationArray   Array 0x00000000
+  24 System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.m_serializationConcurrencyLevel   I4 0x00000000
+  28 System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.m_serializationCapacity   I4 0x00000000
+
+032ec668 : 5e6b9ac4 032ec7e8 032ec68c 032ec79c 03253118 00000000 00000000 00000000   c4 9a 6b 5e e8 c7 2e 03 8c c6 2e 03 9c c7 2e 03 18 31 25 03 00 00 00 00 00 00 00 00 00 00 00 00     k^  .   .   . 1%             
+032ec688 : 00000000                                                                  00 00 00 00                                                                                           
+
+
+
+->RefFromMe System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>
+==> 0   ->RefFromMe System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>
+==>  1   ->m_buckets = System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>+System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.String>.Node<System.String,System.String>[](Count=31) 0x00000000 (140)
+==>  1   ->m_comparer = System.Collections.Generic.GenericEqualityComparer`1<System.String> 0x00000000 (12)
+==>  1   ->m_countPerLock = I4[](Count=16) 0x00000000 (76)
+==>  1   ->m_locks = System.Object[](Count=16) 0x00000000 (80)
+==>Test end ArenaConcurDict 10/16/2012 5:00:12 PM #Secs = 4.74
+==># of asserts = 27
+==>Compare cmd = c:\bin\bc2.exe D:\MemSpect\Test\Baselines\ArenaConcurDict.txt "D:\MemSpect\VSAssertSrv\TestResults\calvinh_CALVINH9 2012-10-16 17_00_06\ArenaConcurDict.txt"

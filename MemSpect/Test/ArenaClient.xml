@@ -1,0 +1,143 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ArenaClient
+</name>
+</assembly>
+<members>
+<member name="T:ArenaClient.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:ArenaClient.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:ArenaClient.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:ArenaClient.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:ArenaClient.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:ArenaClient.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:ArenaClient.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ArenaClient.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ArenaClient.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ArenaClient.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:ArenaClient.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:ArenaClient.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:ArenaClient.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:ArenaClient.MainWindow.Arena.Free(System.IntPtr)">
+ <summary>
+ free a single prior arena alloc (JS does this to add it to a freelist)
+ </summary>
+</member>
+<member name="M:ArenaClient.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:ArenaClient.SharedStuff.ArenaCreated(System.IntPtr,System.String,System.IntPtr)">
+ <summary>
+ Arena (NoRelease) Allocator tracking
+ 
+ </summary>
+ <param name="hHeap">A HeapHandle from CreateHeap (can be null)</param>
+ <param name="dwUserData">anything you want for viewing in MemSpect</param>
+ <param name="ArenaName">Any meaningful name to use for this Arena. 0 defaults to "Arena"</param>
+ <returns>a handle for the other MemSpect heap functions</returns>
+ <remarks></remarks>
+</member>
+<member name="M:ArenaClient.SharedStuff.ArenaAllocation(System.IntPtr,System.IntPtr,System.Int32,System.IntPtr)">
+ <summary>
+ After an ArenaAllocation, call ArenaAlloc to track memory
+ </summary>
+ <param name="hArena">The value returned from ArenaCreate</param>
+ <param name="addrAlloc">The address of the allocation</param>
+ <param name="dwSize">The size of the allocation</param>
+ <returns>true on success</returns>
+ <remarks></remarks>
+</member>
+<member name="M:ArenaClient.SharedStuff.ArenaFree(System.IntPtr,System.IntPtr)">
+ <summary>
+ When freeing a single allocation(JScript does this)
+ </summary>
+ <param name="hArena"></param>
+ <param name="addrAlloc">must be from prior call to ArenaAllocation</param>
+ <returns>true on success</returns>
+ <remarks></remarks>
+</member>
+<member name="M:ArenaClient.SharedStuff.ArenaRelease(System.IntPtr,System.IntPtr)">
+ <summary>
+ When Release to a particular Mark
+ </summary>
+ <param name="hArena"></param>
+ <param name="mark">null indicates free all</param>
+ <returns>true on success</returns>
+ <remarks></remarks>
+</member>
+<member name="M:ArenaClient.SharedStuff.ArenaDestroy(System.IntPtr)">
+ <summary>
+ 
+ </summary>
+ <param name="hArena">The value returned from ArenaCreate</param>
+ <returns>true on success</returns>
+ <remarks></remarks>
+</member>
+<member name="M:ArenaClient.SharedStuff.CustomCodeMarker(System.String,System.Int32,System.Int32,System.Int32,System.IntPtr,System.Int32)">
+ <summary>
+ Call this with some markerId, which will be tracked by MemSpect
+ If markerId matches the CodeMarkersAtWhichToFreeze in ini file, will cause a freeze
+ </summary>
+ <param name="markerId">just a DWORD, like perfVSCloseSolution  =7066</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,73 @@
+﻿<Window x:Class="DumpToXmlWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Dump Selected Node into XML File" SizeToContent="Height" Width="600" Closed="OnWindowClosed">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="Height" Value="22" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="3" />
+        </Style>
+        <Style TargetType="ProgressBar">
+            <Setter Property="Margin" Value="3" />
+        </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="Margin" Value="3" />
+        </Style>
+        <!-- For keeping the selected items highlighted even when the focus is not on list box-->
+        <Style TargetType="ListBoxItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border Name="Border" Padding="2" SnapsToDevicePixels="true">
+                            <ContentPresenter />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter TargetName="Border" Property="Background"
+                                            Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Label Content="File" />
+            <ComboBox x:Name="_filePathCombo" Grid.Column="1" IsEditable="True" />
+            <Button x:Name="_filePathButton" Content="..." Width="40" Grid.Column="2" Click="OnChooseFileClick" />
+            <Label Content="Depth" Grid.Row="1" />
+            <TextBox x:Name="_depthText" Grid.Column="1" Text="Maximum" Grid.Row="1" Width="65" HorizontalAlignment="Left" ToolTip="Choose 0 or Maximum for maximum depth."/>
+        </Grid>
+        <Label Content="Block Types to Dump" />
+        <ListBox x:Name="_blockTypesListBox" Height="100" Width="200" HorizontalAlignment="Left" SelectionMode="Multiple" />
+        <Label Content="Progress" />
+        <ProgressBar x:Name="_progressBar" Height="25" Maximum="100" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="_startButton" Content="Start" Width="90" Click="OnStartClick" />
+            <Button Content="Cancel" Width="90" Click="OnCancelClick" />
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,1225 @@
+==>Test start 1/9/2017 10:14:33 AM LifeObjRefs
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[10:14:37.674 A] MemSpect API connecting Monday, January 9, 2017 10:14:37 AM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 8508 
+==>[10:14:37.687 A] Creating NamedPipeClientStream 'MemSpectPipe1980'
+==>[10:14:37.687 A] Creating NamedPipeServerStreamToChild +'MemSpectPipe1980two'
+==>[10:14:37.688 A] Connecting to FromChild Event 'MemSpectFromChild1980'
+==>[10:14:37.689 A] Connecting to FromTarget Event 'MemSpectFromTarget1980'
+==>[10:14:37.689 A] Connecting to ToTarget pipe 'MemSpectPipe1980'
+==>[10:14:37.716 A] Target CmdLine(Addr=00f22b20)=C:\MemSpect\test\cslife.exe
+==>[10:14:37.717 A] TotVM=000000007ffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[10:14:37.730 A] PID=1980 'cslife.exe' FileVer='1.0.0.0' ProdVer='1.0.0.0'
+==>[10:14:37.733 A] MemSpect DLL Version = 161109  
+==>[10:14:37.735 A] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-01-09 10_14_33\Out\MemSpect.ini
+==>[10:14:37.749 A] Connecting to ToChild pipe 'MemSpectPipe1980two'
+==>[10:14:37.750 A] CleanUpRCWs = 1
+==>[10:14:37.753 A]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 161109
+==>Freezing target. SeqNo = 16049
+==>[10:14:38.802 A] Freeze Target SeqNo= 16,504
+==>Ini file = C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-01-09 10_14_33\Out\MemSpect.ini
+==>[10:14:39.059 A] SymLoadSmry: Warning: 0 PDB files, 1 non-pdb files loaded
+==>[10:14:39.060 A] SymLoadSmry:  SymNone 1
+==>[10:14:39.060 A] SymLoadSmry: check SymbolPath in MemSpect.ini or SET _NT_SYMBOL_PATH
+==>[10:14:39.060 A] SymOptions: SYMOPT_UNDNAME, SYMOPT_LOAD_LINES
+==>[10:14:39.060 A] SymPath = C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-01-05 14_34_02\Out\;SRV*c:\symcache*\\ddrps\symbols*http://symweb
+==>All 2861
+==>Files 23
+==>VirtualAllocs 54
+==>HeapCreates 4
+==>GdiObjs 0
+==>GCStackInfo 2
+==>ClrLoads 17
+==>ClrJit 13
+==>ClrGCHnd 81
+==>ClrExcpt 0
+==>ClrClasses 395
+==># System.String instances = 920 # coll = 282
+# Life.Form1 instances = 1 # coll = 0
+# System.Collections.Hashtable instances = 41 # coll = 3
+==>ClrObjects 2262
+==>CodeMarker 1
+==>ThreadInfo 9
+==>LoadResourceInfo 0
+UnusedMembers: System.Configuration.FactoryRecord # allocs = 115
+Unused item cnt = 12
+{ Offset = 4, Name = _configKey, Type = String, CountUnused = 0, PctUnused = 0 }
+{ Offset = 8, Name = _group, Type = String, CountUnused = 0, PctUnused = 0 }
+{ Offset = 12, Name = _name, Type = String, CountUnused = 0, PctUnused = 0 }
+{ Offset = 16, Name = _factoryTypeName, Type = String, CountUnused = 0, PctUnused = 0 }
+{ Offset = 20, Name = _filename, Type = String, CountUnused = 1, PctUnused = 1 }
+{ Offset = 24, Name = _factory, Type = Object, CountUnused = 112, PctUnused = 97 }
+{ Offset = 28, Name = _errors, Type = System.Collections.Generic.List`1<System.Configuration.ConfigurationException>, CountUnused = 114, PctUnused = 99 }
+{ Offset = 32, Name = _allowDefinition, Type = ValueType, CountUnused = 19, PctUnused = 17 }
+{ Offset = 36, Name = _allowExeDefinition, Type = ValueType, CountUnused = 17, PctUnused = 15 }
+{ Offset = 40, Name = _lineNumber, Type = I4, CountUnused = 0, PctUnused = 0 }
+{ Offset = 44, Name = _flags, Type = ValueType, CountUnused = 0, PctUnused = 0 }
+{ Offset = 48, Name = _overrideModeDefault, Type = ValueType, CountUnused = 14, PctUnused = 12 }
+==>[10:14:42.128 A] Getting CLR Obj Dump
+==>[10:14:42.375 A] Done gettng CLR Obj Dump
+ObjRefs for System.Windows.Forms.TextBox
+TVItem tip Before = null
+TVItem tip After = System.Windows.Controls.StackPanel
+->RefFromMe System.Windows.Forms.TextBox 0x00000000 (168)
+==>Address=0x02fc5a48, SeqNo=13,826, Size=168, BlkType=ClrObject Thread=12440M System.Windows.Forms.TextBox  Heap = __MemSpect ClassId = 0x6d07a6f0 System.Windows.Forms.TextBox GCGen=1 GCMoved=0 GCSurvived=2
+==>     System.Object (no members)
+==>   4 System.MarshalByRefObject.__identity   Object 0x00000000
+==>   8 System.ComponentModel.Component.site   System.ComponentModel.ISite 0x00000000
+==>  12 System.ComponentModel.Component.events   System.ComponentModel.EventHandlerList 0x02fc5cc4
+==>  16 System.Windows.Forms.Control.window   System.Windows.Forms.Control.ControlNativeWindow(ControlNativeWindow) 0x02fc5b00
+==>  20 System.Windows.Forms.Control.parent   Life.Form1(System.Windows.Forms.Control) 0x02fa21d0
+==>  24 System.Windows.Forms.Control.reflectParent   Life.Form1(System.Windows.Forms.Control) 0x02fa21d0
+==>  28 System.Windows.Forms.Control.createParams   System.Windows.Forms.CreateParams 0x02fc5bcc
+==>  32 System.Windows.Forms.Control.text   String 0x00000000
+==>  36 System.Windows.Forms.Control.propertyStore   System.Windows.Forms.PropertyStore 0x02fc5af0
+==>  40 System.Windows.Forms.Control.trackMouseEvent   TRACKMOUSEEVENT 0x00000000
+==>  44 System.Windows.Forms.Control.cachedLayoutEventArgs   System.Windows.Forms.LayoutEventArgs 0x00000000
+==>  48 System.Windows.Forms.Control.threadCallbackList   System.Collections.Queue 0x00000000
+==>  52 System.Windows.Forms.Control.x   I4 0x00000000
+==>  56 System.Windows.Forms.Control.y   I4 0x00000000
+==>  60 System.Windows.Forms.Control.width   I4 0x00000064
+==>  64 System.Windows.Forms.Control.height   I4 0x00000014
+==>  68 System.Windows.Forms.Control.clientWidth   I4 0x00000060
+==>  72 System.Windows.Forms.Control.clientHeight   I4 0x00000010
+==>  76 System.Windows.Forms.Control.state   I4 0x0022000f
+==>  80 System.Windows.Forms.Control.state2   I4 0x00000808
+==>  84 System.Windows.Forms.Control.controlStyle   ValueType 0x00002240
+==>  88 System.Windows.Forms.Control.tabIndex   I4 0x00000002
+==>  92 System.Windows.Forms.Control.uiCuesState   I4 0x00000000
+==>  96 System.Windows.Forms.Control.updateCount   I2 0x0000
+==>  98 System.Windows.Forms.Control.layoutSuspendCount   U1 0x00
+==>  99 System.Windows.Forms.Control.requiredScaling   U1 0x1f
+==> 100 System.Windows.Forms.TextBoxBase.borderStyle   ValueType 0x00000002
+==> 104 System.Windows.Forms.TextBoxBase.maxLength   I4 0x00007fff
+==> 108 System.Windows.Forms.TextBoxBase.requestedHeight   I4 0x00000064
+==> 112 System.Windows.Forms.TextBoxBase.selectionStart   I4 0x00000000
+==> 116 System.Windows.Forms.TextBoxBase.selectionLength   I4 0x00000000
+==> 120 System.Windows.Forms.TextBoxBase.integralHeightAdjust   Boolean 0x00
+==> 121 System.Windows.Forms.TextBoxBase.doubleClickFired   Boolean 0x00
+==> 124 System.Windows.Forms.TextBoxBase.textBoxFlags   ValueType 0x00000243
+==> 128 System.Windows.Forms.TextBox.autoCompleteCustomSource   System.Windows.Forms.AutoCompleteStringCollection 0x00000000
+==> 132 System.Windows.Forms.TextBox.stringSource   System.Windows.Forms.StringSource 0x00000000
+==> 136 System.Windows.Forms.TextBox.characterCasing   ValueType 0x00000000
+==> 140 System.Windows.Forms.TextBox.scrollBars   ValueType 0x00000000
+==> 144 System.Windows.Forms.TextBox.textAlign   ValueType 0x00000000
+==> 148 System.Windows.Forms.TextBox.autoCompleteMode   ValueType 0x00000000
+==> 152 System.Windows.Forms.TextBox.autoCompleteSource   ValueType 0x00000080
+==> 156 System.Windows.Forms.TextBox.passwordChar   Char 0x00
+==> 158 System.Windows.Forms.TextBox.acceptsReturn   Boolean 0x00
+==> 159 System.Windows.Forms.TextBox.useSystemPasswordChar   Boolean 0x00
+==> 160 System.Windows.Forms.TextBox.selectionSet   Boolean 0x00
+==> 161 System.Windows.Forms.TextBox.fromHandleCreate   Boolean 0x00
+==>Call Stack:
+==>c:\memspect\vsassert\stackman.cpp(1026) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+==>f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+==>f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+==>f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+==>f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+==>cslife.exe!Life.Form1..ctor
+==>cslife.exe!Life.Form1.Main
+==>f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+==>f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+==>f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+==>f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+==>f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+==>f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+==>f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+==>f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+==>f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+==>d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+==>d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+==>d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+==>d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+==>
+==>02fc5a44 : 00000000 6d07a6f0 00000000 00000000 02fc5cc4 02fc5b00 02fa21d0 02fa21d0   00 00 00 00 f0 a6 07 6d 00 00 00 00 00 00 00 00 c4 5c fc 02 00 5b fc 02 d0 21 fa 02 d0 21 fa 02          m         \   [   !   !  
+==>02fc5a64 : 02fc5bcc 00000000 02fc5af0 00000000 00000000 00000000 00000000 00000000   cc 5b fc 02 00 00 00 00 f0 5a fc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    [       Z                      
+==>02fc5a84 : 00000064 00000014 00000060 00000010 0022000f 00000808 00002240 00000002   64 00 00 00 14 00 00 00 60 00 00 00 10 00 00 00 0f 00 22 00 08 08 00 00 40 22 00 00 02 00 00 00   d      `        "     @"      
+==>02fc5aa4 : 00000000 1f000000 00000002 00007fff 00000064 00000000 00000000 00000000   00 00 00 00 00 00 00 1f 02 00 00 00 ff 7f 00 00 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                  d               
+==>02fc5ac4 : 00000243 00000000 00000000 00000000 00000000 00000000 00000000 00000080   43 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 00 00   C                               
+==>02fc5ae4 : 00000000 00000000                                                         00 00 00 00 00 00 00 00                                                                                   
+==>
+DoTestAddressTip Success
+0   ->RefFromMe System.Windows.Forms.TextBox 0x00000000 (168)
+==>  1   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>   2   ->caption = System.String 0x00000000 (18)  Hi
+==>   2   ->className = System.String 0x00000000 (22)  EDIT
+ 1   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+ 1   ->parent = Life.Form1 0x00000000 (368)
+==>   2   ->activeControl = System.Windows.Forms.Button 0x00000000 (168)
+==>    3   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>    3   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>     4   ->caption = System.String 0x00000000 (28)  button1
+==>     4   ->className = System.String 0x00000000 (26)  BUTTON
+   3   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+    4   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+     5   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>      5   ->key = System.Object 0x00000000 (12)
+==>    3   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>     4   ->key = System.String 0x00000000 (14)
+==>    3   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>     4   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>      5   ->System.String 0x00000000 (28)  button1
+==>      5   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>    3   ->text = System.String 0x00000000 (28)  button1
+   3   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+    4   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+    4   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>   2   ->cachedLayoutEventArgs = System.Windows.Forms.LayoutEventArgs 0x00000000 (16)
+==>    3   ->affectedComponent = System.Windows.Forms.Button 0x00000000 (168)
+==>     4   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>     4   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>      5   ->caption = System.String 0x00000000 (28)  button1
+==>      5   ->className = System.String 0x00000000 (26)  BUTTON
+    4   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+     5   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+      6   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>       6   ->key = System.Object 0x00000000 (12)
+==>     4   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>      5   ->key = System.String 0x00000000 (14)
+==>     4   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>      5   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>       6   ->System.String 0x00000000 (28)  button1
+==>       6   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>     4   ->text = System.String 0x00000000 (28)  button1
+    4   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+     5   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+     5   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>    3   ->affectedProperty = System.String 0x00000000 (26)  Parent
+==>   2   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+  2   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+   3   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>     4   ->handler = System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000) 0x00000000 (32)
+==>      5   ->_target = System.Windows.Forms.ApplicationContext 0x00000000 (20)
+==>       6   ->ThreadExit = System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000) 0x00000000 (32)
+==>        7   ->_target = System.Windows.Forms.Application.ThreadContext 0x00000000 (132)
+==>         8   ->componentManager = System.Windows.Forms.Application.ComponentManager 0x00000000 (28)
+==>          9   ->oleComponents = System.Collections.Hashtable 0x00000000 (52)
+==>           10  ->buckets = System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>           10  ->values = System.Collections.Hashtable.ValueCollection 0x00000000 (12)
+==>         8   ->marshalingControl = System.Windows.Forms.Application.MarshalingControl 0x00000000 (104)
+==>          9   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+         9   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+==>          9   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>           10  ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=1) 0x00000000 (32)
+         9   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+          10  ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+          10  ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>     4   ->key = System.Object 0x00000000 (12)
+    4   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>      5   ->handler = System.Windows.Forms.PaintEventHandler 0x00000000 (32)
+==>      5   ->key = System.Object 0x00000000 (12)
+     5   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>       6   ->handler = System.Windows.Forms.MouseEventHandler 0x00000000 (32)
+==>       6   ->key = System.Object 0x00000000 (12)
+      6   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+       7   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>        7   ->key = System.Object 0x00000000 (12)
+       7   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+        8   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>         8   ->key = System.Object 0x00000000 (12)
+        8   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>          9   ->handler = System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>           10  ->_invocationList = System.Object[](Count=2) 0x00000000 (24)
+==>          9   ->key = System.Object 0x00000000 (12)
+==>   2   ->horizontalScroll = System.Windows.Forms.HScrollProperties 0x00000000 (40)
+  2   ->m_brushArray = System.Drawing.SolidBrush[](Count=8) 0x00000000 (48)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+  2   ->m_brushBlack = System.Drawing.SolidBrush 0x00000000 (36)
+  2   ->m_brushWhite = System.Drawing.SolidBrush 0x00000000 (36)
+==>   2   ->m_button = System.Windows.Forms.Button 0x00000000 (168)
+==>    3   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>    3   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>     4   ->caption = System.String 0x00000000 (26)  &Reset
+==>     4   ->className = System.String 0x00000000 (26)  BUTTON
+   3   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+    4   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+     5   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>      5   ->key = System.Object 0x00000000 (12)
+==>    3   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>     4   ->key = System.String 0x00000000 (14)
+==>    3   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>     4   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>      5   ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>      5   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>    3   ->text = System.String 0x00000000 (26)  &Reset
+   3   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+    4   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+    4   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>   2   ->m_cells = I4,I4[](Count=40000) 0x00000000 (160028)
+==>   2   ->m_diff = I4,I4[](Count=40000) 0x00000000 (160028)
+  2   ->m_queue = System.Collections.Queue 0x00000000 (36)
+==>    3   ->_array = System.Object[](Count=32) 0x00000000 (144)
+==>   2   ->m_Thread = System.Threading.Thread 0x00000000 (52)
+==>    3   ->m_Context = System.Runtime.Remoting.Contexts.Context 0x00000000 (60)
+==>     4   ->_appDomain = System.AppDomain 0x00000000 (112)
+==>      5   ->_domainUnload = System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>       6   ->_invocationList = System.Object[](Count=4) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>      5   ->_FusionStore = System.AppDomainSetup 0x00000000 (68)
+==>       6   ->_Entries = System.String 0x00000000 (88) [](Count=18)
+==>        7   ->System.String 0x00000000 (48)  D:\MemSpect\test\
+==>        7   ->System.String 0x00000000 (82)  D:\MemSpect\test\cslife.exe.config
+==>        7   ->System.String 0x00000000 (34)  cslife.exe
+==>       6   ->_TargetFrameworkName = System.String 0x00000000 (96)  .NETFramework,Version=v4.0,Profile=Client
+==>      5   ->_LocalStore = System.Collections.Generic.Dictionary`2<System.String,System.Object[]>(Count=0) 0x00000000 (48)
+==>       6   ->_syncRoot = System.Object 0x00000000 (12)
+==>       6   ->comparer = System.Collections.Generic.GenericEqualityComparer`1<System.String> 0x00000000 (12)
+==>      5   ->_processExit = System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>       6   ->_invocationList = System.Object[](Count=8) 0x00000000 (48)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>      5   ->_RemotingData = System.Runtime.Remoting.DomainSpecificRemotingData 0x00000000 (40)
+==>       6   ->_ActivationListener = System.Runtime.Remoting.Activation.ActivationListener 0x00000000 (12)
+==>       6   ->_appDomainProperties = System.Runtime.Remoting.Contexts.IContextProperty[](Count=1) 0x00000000 (20)
+==>        7   ->System.Runtime.Remoting.Lifetime.LeaseLifeTimeServiceProperty 0x00000000 (12)
+==>       6   ->_ChannelServicesData = System.Runtime.Remoting.Channels.ChannelServicesData 0x00000000 (28)
+==>       6   ->_ConfigLock = System.Object 0x00000000 (12)
+==>       6   ->_IDTableLock = System.Threading.ReaderWriterLock 0x00000000 (44)
+==>       6   ->_LocalActivator = System.Runtime.Remoting.Activation.LocalActivator 0x00000000 (12)
+==>        7   ->AttributeName = System.String 0x00000000 (68)  RemoteActivationService.rem
+==>     4   ->_ctxProps = System.Runtime.Remoting.Contexts.IContextProperty[](Count=8) 0x00000000 (48)
+==>      5   ->System.Runtime.Remoting.Lifetime.LeaseLifeTimeServiceProperty 0x00000000 (12)
+==>   2   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>    3   ->intEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=1) 0x00000000 (32)
+==>    3   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>     4   ->System.String 0x00000000 (24)  Form1
+==>     4   ->System.Windows.Forms.Button 0x00000000 (168)
+==>      5   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>      5   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>       6   ->caption = System.String 0x00000000 (28)  button1
+==>       6   ->className = System.String 0x00000000 (26)  BUTTON
+     5   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+      6   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+       7   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>        7   ->key = System.Object 0x00000000 (12)
+==>      5   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>       6   ->key = System.String 0x00000000 (14)
+==>      5   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>       6   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>        7   ->System.String 0x00000000 (28)  button1
+==>        7   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>      5   ->text = System.String 0x00000000 (28)  button1
+     5   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+      6   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+      6   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>     4   ->System.Windows.Forms.Form.ControlCollection 0x00000000 (24)
+==>      5   ->_innerList = System.Collections.ArrayList(Count=3) 0x00000000 (24)
+==>       6   ->_items = System.Object[](Count=4) 0x00000000 (32)
+==>        7   ->System.Windows.Forms.Button 0x00000000 (168)
+==>         8   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>         8   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>          9   ->caption = System.String 0x00000000 (28)  button1
+==>          9   ->className = System.String 0x00000000 (26)  BUTTON
+        8   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+         9   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+          10  ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>           10  ->key = System.Object 0x00000000 (12)
+==>         8   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>          9   ->key = System.String 0x00000000 (14)
+==>         8   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>          9   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>           10  ->System.String 0x00000000 (28)  button1
+==>           10  ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>         8   ->text = System.String 0x00000000 (28)  button1
+        8   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+         9   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+         9   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>        7   ->System.Windows.Forms.Button 0x00000000 (168)
+==>         8   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>         8   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>          9   ->caption = System.String 0x00000000 (26)  &Reset
+==>          9   ->className = System.String 0x00000000 (26)  BUTTON
+        8   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+         9   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+          10  ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>           10  ->key = System.Object 0x00000000 (12)
+==>         8   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>          9   ->key = System.String 0x00000000 (14)
+==>         8   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>          9   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>           10  ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>           10  ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>         8   ->text = System.String 0x00000000 (26)  &Reset
+        8   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+         9   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+         9   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>     4   ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>     4   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>   2   ->smallIcon = System.Drawing.Icon 0x00000000 (40)
+==>    3   ->iconData = U1[](Count=10134) 0x00000000 (10146)
+  2   ->threadCallbackList = System.Collections.Queue 0x00000000 (36)
+==>    3   ->_array = System.Object[](Count=32) 0x00000000 (144)
+==>   2   ->userWindowText = System.String 0x00000000 (32)  0 : 11024
+==>   2   ->verticalScroll = System.Windows.Forms.VScrollProperties 0x00000000 (40)
+  2   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+   3   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+   3   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>  1   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>   2   ->intEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=1) 0x00000000 (32)
+==>   2   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=3) 0x00000000 (72)
+==>    3   ->System.IntPtr 0x00000000 (12)
+==>    3   ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>    3   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+ 1   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+  2   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+  2   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+0   <-RefToMe System.Windows.Forms.TextBox 0x00000000 (168)
+ 1   <-Life.Form1.m_box 0x00000000 (368)
+==>   2   <-Microsoft.Win32.UserPreferenceChangedEventHandler._target 0x00000000 (32)
+==>    3   <-Microsoft.Win32.SystemEvents.SystemEventInvokeInfo._delegate 0x00000000 (16)
+==>     4   <-Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4) 0x00000000 (32)
+==>      5   <-System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2)._items 0x00000000 (24)
+==>       6   <-System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>+ValueType[](Count=3) 0x00000000 (60)
+==>        7   <-System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>(Count=3).entries 0x00000000 (48)
+==>         8   <-System.Object[](Count=4080) 0x00000000 (16336)
+  2   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>      5   <-System.Windows.Forms.Button.events 0x00000000 (168)
+==>       6   <-System.Object[](Count=4) 0x00000000 (32)
+==>        7   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>         8   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>          9   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>           10  <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>       6   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+      6   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+       7   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>       6   <-System.Windows.Forms.LayoutEventArgs.affectedComponent 0x00000000 (16)
+==>       6   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>        7   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>    3   <-System.Object[](Count=2) 0x00000000 (24)
+==>     4   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+        8   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>      5   <-System.Windows.Forms.Button.events 0x00000000 (168)
+==>       6   <-System.Object[](Count=4) 0x00000000 (32)
+==>        7   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>         8   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>          9   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>           10  <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>       6   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+      6   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+       7   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>    3   <-System.Object[](Count=2) 0x00000000 (24)
+==>     4   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+==>   2   <-System.Object[](Count=4) 0x00000000 (32)
+==>    3   <-System.Collections.ArrayList(Count=1)._items 0x00000000 (24)
+==>     4   <-System.Windows.Forms.FormCollection.list 0x00000000 (12)
+==>      5   <-System.Object[](Count=2040) 0x00000000 (8176)
+==>   2   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>    3   <-System.Threading.ThreadHelper._start 0x00000000 (20)
+==>     4   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>   2   <-System.Windows.Forms.Application.ThreadContext.currentForm 0x00000000 (132)
+==>    3   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>     4   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>      5   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>       6   <-System.Collections.Hashtable.ValueCollection._hashtable 0x00000000 (12)
+==>       6   <-System.Windows.Forms.Application.ComponentManager.oleComponents 0x00000000 (28)
+==>    3   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>     4   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>      5   <-System.Object[](Count=2040) 0x00000000 (8176)
+==>    3   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>     4   <-System.Windows.Forms.ApplicationContext.ThreadExit 0x00000000 (20)
+==>      5   <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>    3   <-System.Object[](Count=51) 0x00000000 (220)
+==>    3   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>   2   <-System.Windows.Forms.ApplicationContext.mainForm 0x00000000 (20)
+==>    3   <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>    3   <-System.Windows.Forms.Application.ThreadContext.applicationContext 0x00000000 (132)
+==>     4   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>      5   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>       6   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>        7   <-System.Collections.Hashtable.ValueCollection._hashtable 0x00000000 (12)
+==>        7   <-System.Windows.Forms.Application.ComponentManager.oleComponents 0x00000000 (28)
+==>     4   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>      5   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>       6   <-System.Object[](Count=2040) 0x00000000 (8176)
+==>     4   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>     4   <-System.Object[](Count=51) 0x00000000 (220)
+==>     4   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>   2   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+   3   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>    3   <-System.Object[](Count=4) 0x00000000 (32)
+==>     4   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>      5   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>       6   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>        7   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>    3   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+   3   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+    4   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>    3   <-System.Windows.Forms.LayoutEventArgs.affectedComponent 0x00000000 (16)
+==>    3   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>     4   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>   2   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+   3   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>    3   <-System.Object[](Count=4) 0x00000000 (32)
+==>     4   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>      5   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>       6   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>        7   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>    3   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+   3   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+    4   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+  2   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+   3   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>   2   <-System.Windows.Forms.Control.ThreadMethodEntry.caller 0x00000000 (52)
+==>   2   <-System.Windows.Forms.Form.ControlCollection.owner 0x00000000 (24)
+==>    3   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>     4   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>   2   <-System.Windows.Forms.HScrollProperties.parent 0x00000000 (40)
+==>   2   <-System.Windows.Forms.MethodInvoker._target 0x00000000 (32)
+==>    3   <-System.Windows.Forms.Control.ThreadMethodEntry.method 0x00000000 (52)
+==>   2   <-System.Windows.Forms.MouseEventHandler._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>   2   <-System.Windows.Forms.PaintEventHandler._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>   2   <-System.Windows.Forms.VScrollProperties.parent 0x00000000 (40)
+ 1   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>  1   <-System.Object[](Count=4) 0x00000000 (32)
+==>   2   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>    3   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>     4   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>      5   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+      6   <-Life.Form1.propertyStore 0x00000000 (368)
+==>        7   <-Microsoft.Win32.UserPreferenceChangedEventHandler._target 0x00000000 (32)
+==>         8   <-Microsoft.Win32.SystemEvents.SystemEventInvokeInfo._delegate 0x00000000 (16)
+==>          9   <-Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4) 0x00000000 (32)
+==>           10  <-System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2)._items 0x00000000 (24)
+       7   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>           10  <-System.Windows.Forms.Button.events 0x00000000 (168)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>         8   <-System.Object[](Count=2) 0x00000000 (24)
+==>          9   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>           10  <-System.Windows.Forms.Button.events 0x00000000 (168)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>         8   <-System.Object[](Count=2) 0x00000000 (24)
+==>          9   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+==>        7   <-System.Object[](Count=4) 0x00000000 (32)
+==>         8   <-System.Collections.ArrayList(Count=1)._items 0x00000000 (24)
+==>          9   <-System.Windows.Forms.FormCollection.list 0x00000000 (12)
+==>           10  <-System.Object[](Count=2040) 0x00000000 (8176)
+==>        7   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>         8   <-System.Threading.ThreadHelper._start 0x00000000 (20)
+==>          9   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>        7   <-System.Windows.Forms.Application.ThreadContext.currentForm 0x00000000 (132)
+==>         8   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>          9   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>           10  <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>         8   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>          9   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>           10  <-System.Object[](Count=2040) 0x00000000 (8176)
+==>         8   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>          9   <-System.Windows.Forms.ApplicationContext.ThreadExit 0x00000000 (20)
+==>           10  <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+==>         8   <-System.Object[](Count=51) 0x00000000 (220)
+==>         8   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>        7   <-System.Windows.Forms.ApplicationContext.mainForm 0x00000000 (20)
+==>         8   <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>         8   <-System.Windows.Forms.Application.ThreadContext.applicationContext 0x00000000 (132)
+==>          9   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>           10  <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>          9   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>           10  <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>          9   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>          9   <-System.Object[](Count=51) 0x00000000 (220)
+==>          9   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>        7   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+        8   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>         8   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+        8   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+         9   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>         8   <-System.Windows.Forms.LayoutEventArgs.affectedComponent 0x00000000 (16)
+==>        7   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+        8   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>         8   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+        8   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+         9   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+       7   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+        8   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>        7   <-System.Windows.Forms.Control.ThreadMethodEntry.caller 0x00000000 (52)
+==>        7   <-System.Windows.Forms.HScrollProperties.parent 0x00000000 (40)
+==>        7   <-System.Windows.Forms.MethodInvoker._target 0x00000000 (32)
+==>         8   <-System.Windows.Forms.Control.ThreadMethodEntry.method 0x00000000 (52)
+==>        7   <-System.Windows.Forms.MouseEventHandler._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+==>        7   <-System.Windows.Forms.PaintEventHandler._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>        7   <-System.Windows.Forms.VScrollProperties.parent 0x00000000 (40)
+ 1   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+  2   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+0   -> Paths from GCRoots to System.Windows.Forms.TextBox 0x00000000 (168)
+==>  1   ->PathFromGCRoot (PathLen = 2) 
+  2   ->parent = Life.Form1  RootKind = Stack RootFlags = "" RootId 0x00000000 0x00000000 (368)
+  2   ->m_box = System.Windows.Forms.TextBox 0x00000000 (168)
+TVItem tip Before = null
+TVItem tip After = System.Windows.Controls.StackPanel
+->RefFromMe System.Windows.Forms.TextBox 0x00000000 (168)
+==>Address=0x02fc5a48, SeqNo=13,826, Size=168, BlkType=ClrObject Thread=12440M System.Windows.Forms.TextBox  Heap = __MemSpect ClassId = 0x6d07a6f0 System.Windows.Forms.TextBox GCGen=1 GCMoved=0 GCSurvived=2
+==>     System.Object (no members)
+==>   4 System.MarshalByRefObject.__identity   Object 0x00000000
+==>   8 System.ComponentModel.Component.site   System.ComponentModel.ISite 0x00000000
+==>  12 System.ComponentModel.Component.events   System.ComponentModel.EventHandlerList 0x02fc5cc4
+==>  16 System.Windows.Forms.Control.window   System.Windows.Forms.Control.ControlNativeWindow(ControlNativeWindow) 0x02fc5b00
+==>  20 System.Windows.Forms.Control.parent   Life.Form1(System.Windows.Forms.Control) 0x02fa21d0
+==>  24 System.Windows.Forms.Control.reflectParent   Life.Form1(System.Windows.Forms.Control) 0x02fa21d0
+==>  28 System.Windows.Forms.Control.createParams   System.Windows.Forms.CreateParams 0x02fc5bcc
+==>  32 System.Windows.Forms.Control.text   String 0x00000000
+==>  36 System.Windows.Forms.Control.propertyStore   System.Windows.Forms.PropertyStore 0x02fc5af0
+==>  40 System.Windows.Forms.Control.trackMouseEvent   TRACKMOUSEEVENT 0x00000000
+==>  44 System.Windows.Forms.Control.cachedLayoutEventArgs   System.Windows.Forms.LayoutEventArgs 0x00000000
+==>  48 System.Windows.Forms.Control.threadCallbackList   System.Collections.Queue 0x00000000
+==>  52 System.Windows.Forms.Control.x   I4 0x00000000
+==>  56 System.Windows.Forms.Control.y   I4 0x00000000
+==>  60 System.Windows.Forms.Control.width   I4 0x00000064
+==>  64 System.Windows.Forms.Control.height   I4 0x00000014
+==>  68 System.Windows.Forms.Control.clientWidth   I4 0x00000060
+==>  72 System.Windows.Forms.Control.clientHeight   I4 0x00000010
+==>  76 System.Windows.Forms.Control.state   I4 0x0022000f
+==>  80 System.Windows.Forms.Control.state2   I4 0x00000808
+==>  84 System.Windows.Forms.Control.controlStyle   ValueType 0x00002240
+==>  88 System.Windows.Forms.Control.tabIndex   I4 0x00000002
+==>  92 System.Windows.Forms.Control.uiCuesState   I4 0x00000000
+==>  96 System.Windows.Forms.Control.updateCount   I2 0x0000
+==>  98 System.Windows.Forms.Control.layoutSuspendCount   U1 0x00
+==>  99 System.Windows.Forms.Control.requiredScaling   U1 0x1f
+==> 100 System.Windows.Forms.TextBoxBase.borderStyle   ValueType 0x00000002
+==> 104 System.Windows.Forms.TextBoxBase.maxLength   I4 0x00007fff
+==> 108 System.Windows.Forms.TextBoxBase.requestedHeight   I4 0x00000064
+==> 112 System.Windows.Forms.TextBoxBase.selectionStart   I4 0x00000000
+==> 116 System.Windows.Forms.TextBoxBase.selectionLength   I4 0x00000000
+==> 120 System.Windows.Forms.TextBoxBase.integralHeightAdjust   Boolean 0x00
+==> 121 System.Windows.Forms.TextBoxBase.doubleClickFired   Boolean 0x00
+==> 124 System.Windows.Forms.TextBoxBase.textBoxFlags   ValueType 0x00000243
+==> 128 System.Windows.Forms.TextBox.autoCompleteCustomSource   System.Windows.Forms.AutoCompleteStringCollection 0x00000000
+==> 132 System.Windows.Forms.TextBox.stringSource   System.Windows.Forms.StringSource 0x00000000
+==> 136 System.Windows.Forms.TextBox.characterCasing   ValueType 0x00000000
+==> 140 System.Windows.Forms.TextBox.scrollBars   ValueType 0x00000000
+==> 144 System.Windows.Forms.TextBox.textAlign   ValueType 0x00000000
+==> 148 System.Windows.Forms.TextBox.autoCompleteMode   ValueType 0x00000000
+==> 152 System.Windows.Forms.TextBox.autoCompleteSource   ValueType 0x00000080
+==> 156 System.Windows.Forms.TextBox.passwordChar   Char 0x00
+==> 158 System.Windows.Forms.TextBox.acceptsReturn   Boolean 0x00
+==> 159 System.Windows.Forms.TextBox.useSystemPasswordChar   Boolean 0x00
+==> 160 System.Windows.Forms.TextBox.selectionSet   Boolean 0x00
+==> 161 System.Windows.Forms.TextBox.fromHandleCreate   Boolean 0x00
+==>Call Stack:
+==>c:\memspect\vsassert\stackman.cpp(1026) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+==>f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+==>f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+==>f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+==>f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+==>cslife.exe!Life.Form1..ctor
+==>cslife.exe!Life.Form1.Main
+==>f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+==>f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+==>f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+==>f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+==>f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+==>f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+==>f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+==>f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+==>f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+==>d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+==>d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+==>d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+==>d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+==>
+==>02fc5a44 : 00000000 6d07a6f0 00000000 00000000 02fc5cc4 02fc5b00 02fa21d0 02fa21d0   00 00 00 00 f0 a6 07 6d 00 00 00 00 00 00 00 00 c4 5c fc 02 00 5b fc 02 d0 21 fa 02 d0 21 fa 02          m         \   [   !   !  
+==>02fc5a64 : 02fc5bcc 00000000 02fc5af0 00000000 00000000 00000000 00000000 00000000   cc 5b fc 02 00 00 00 00 f0 5a fc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    [       Z                      
+==>02fc5a84 : 00000064 00000014 00000060 00000010 0022000f 00000808 00002240 00000002   64 00 00 00 14 00 00 00 60 00 00 00 10 00 00 00 0f 00 22 00 08 08 00 00 40 22 00 00 02 00 00 00   d      `        "     @"      
+==>02fc5aa4 : 00000000 1f000000 00000002 00007fff 00000064 00000000 00000000 00000000   00 00 00 00 00 00 00 1f 02 00 00 00 ff 7f 00 00 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                  d               
+==>02fc5ac4 : 00000243 00000000 00000000 00000000 00000000 00000000 00000000 00000080   43 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 00 00   C                               
+==>02fc5ae4 : 00000000 00000000                                                         00 00 00 00 00 00 00 00                                                                                   
+==>
+DoTestAddressTip Success
+0   ->RefFromMe System.Windows.Forms.TextBox 0x00000000 (168)
+==>  1   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>   2   ->caption = System.String 0x00000000 (18)  Hi
+==>   2   ->className = System.String 0x00000000 (22)  EDIT
+ 1   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+ 1   ->parent = Life.Form1 0x00000000 (368)
+==>   2   ->activeControl = System.Windows.Forms.Button 0x00000000 (168)
+==>    3   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>    3   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>     4   ->caption = System.String 0x00000000 (28)  button1
+==>     4   ->className = System.String 0x00000000 (26)  BUTTON
+   3   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+    4   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+     5   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>      5   ->key = System.Object 0x00000000 (12)
+==>    3   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>     4   ->key = System.String 0x00000000 (14)
+==>    3   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>     4   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>      5   ->System.String 0x00000000 (28)  button1
+==>      5   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>    3   ->text = System.String 0x00000000 (28)  button1
+   3   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+    4   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+    4   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>   2   ->cachedLayoutEventArgs = System.Windows.Forms.LayoutEventArgs 0x00000000 (16)
+==>    3   ->affectedComponent = System.Windows.Forms.Button 0x00000000 (168)
+==>     4   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>     4   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>      5   ->caption = System.String 0x00000000 (28)  button1
+==>      5   ->className = System.String 0x00000000 (26)  BUTTON
+    4   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+     5   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+      6   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>       6   ->key = System.Object 0x00000000 (12)
+==>     4   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>      5   ->key = System.String 0x00000000 (14)
+==>     4   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>      5   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>       6   ->System.String 0x00000000 (28)  button1
+==>       6   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>     4   ->text = System.String 0x00000000 (28)  button1
+    4   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+     5   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+     5   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>    3   ->affectedProperty = System.String 0x00000000 (26)  Parent
+==>   2   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+  2   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+   3   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>     4   ->handler = System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000) 0x00000000 (32)
+==>      5   ->_target = System.Windows.Forms.ApplicationContext 0x00000000 (20)
+==>       6   ->ThreadExit = System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000) 0x00000000 (32)
+==>        7   ->_target = System.Windows.Forms.Application.ThreadContext 0x00000000 (132)
+==>         8   ->componentManager = System.Windows.Forms.Application.ComponentManager 0x00000000 (28)
+==>          9   ->oleComponents = System.Collections.Hashtable 0x00000000 (52)
+==>           10  ->buckets = System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>           10  ->values = System.Collections.Hashtable.ValueCollection 0x00000000 (12)
+==>         8   ->marshalingControl = System.Windows.Forms.Application.MarshalingControl 0x00000000 (104)
+==>          9   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+         9   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+==>          9   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>           10  ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=1) 0x00000000 (32)
+         9   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+          10  ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+          10  ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>     4   ->key = System.Object 0x00000000 (12)
+    4   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>      5   ->handler = System.Windows.Forms.PaintEventHandler 0x00000000 (32)
+==>      5   ->key = System.Object 0x00000000 (12)
+     5   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>       6   ->handler = System.Windows.Forms.MouseEventHandler 0x00000000 (32)
+==>       6   ->key = System.Object 0x00000000 (12)
+      6   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+       7   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>        7   ->key = System.Object 0x00000000 (12)
+       7   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+        8   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>         8   ->key = System.Object 0x00000000 (12)
+        8   ->next = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+==>          9   ->handler = System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>           10  ->_invocationList = System.Object[](Count=2) 0x00000000 (24)
+==>          9   ->key = System.Object 0x00000000 (12)
+==>   2   ->horizontalScroll = System.Windows.Forms.HScrollProperties 0x00000000 (40)
+  2   ->m_brushArray = System.Drawing.SolidBrush[](Count=8) 0x00000000 (48)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+   3   ->System.Drawing.SolidBrush 0x00000000 (36)
+  2   ->m_brushBlack = System.Drawing.SolidBrush 0x00000000 (36)
+  2   ->m_brushWhite = System.Drawing.SolidBrush 0x00000000 (36)
+==>   2   ->m_button = System.Windows.Forms.Button 0x00000000 (168)
+==>    3   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>    3   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>     4   ->caption = System.String 0x00000000 (26)  &Reset
+==>     4   ->className = System.String 0x00000000 (26)  BUTTON
+   3   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+    4   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+     5   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>      5   ->key = System.Object 0x00000000 (12)
+==>    3   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>     4   ->key = System.String 0x00000000 (14)
+==>    3   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>     4   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>      5   ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>      5   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>    3   ->text = System.String 0x00000000 (26)  &Reset
+   3   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+    4   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+    4   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>   2   ->m_cells = I4,I4[](Count=40000) 0x00000000 (160028)
+==>   2   ->m_diff = I4,I4[](Count=40000) 0x00000000 (160028)
+  2   ->m_queue = System.Collections.Queue 0x00000000 (36)
+==>    3   ->_array = System.Object[](Count=32) 0x00000000 (144)
+==>   2   ->m_Thread = System.Threading.Thread 0x00000000 (52)
+==>    3   ->m_Context = System.Runtime.Remoting.Contexts.Context 0x00000000 (60)
+==>     4   ->_appDomain = System.AppDomain 0x00000000 (112)
+==>      5   ->_domainUnload = System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>       6   ->_invocationList = System.Object[](Count=4) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>      5   ->_FusionStore = System.AppDomainSetup 0x00000000 (68)
+==>       6   ->_Entries = System.String 0x00000000 (88) [](Count=18)
+==>        7   ->System.String 0x00000000 (48)  D:\MemSpect\test\
+==>        7   ->System.String 0x00000000 (82)  D:\MemSpect\test\cslife.exe.config
+==>        7   ->System.String 0x00000000 (34)  cslife.exe
+==>       6   ->_TargetFrameworkName = System.String 0x00000000 (96)  .NETFramework,Version=v4.0,Profile=Client
+==>      5   ->_LocalStore = System.Collections.Generic.Dictionary`2<System.String,System.Object[]>(Count=0) 0x00000000 (48)
+==>       6   ->_syncRoot = System.Object 0x00000000 (12)
+==>       6   ->comparer = System.Collections.Generic.GenericEqualityComparer`1<System.String> 0x00000000 (12)
+==>      5   ->_processExit = System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>       6   ->_invocationList = System.Object[](Count=8) 0x00000000 (48)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>        7   ->System.EventHandler(Target=<self> 0x00000000) 0x00000000 (32)
+==>      5   ->_RemotingData = System.Runtime.Remoting.DomainSpecificRemotingData 0x00000000 (40)
+==>       6   ->_ActivationListener = System.Runtime.Remoting.Activation.ActivationListener 0x00000000 (12)
+==>       6   ->_appDomainProperties = System.Runtime.Remoting.Contexts.IContextProperty[](Count=1) 0x00000000 (20)
+==>        7   ->System.Runtime.Remoting.Lifetime.LeaseLifeTimeServiceProperty 0x00000000 (12)
+==>       6   ->_ChannelServicesData = System.Runtime.Remoting.Channels.ChannelServicesData 0x00000000 (28)
+==>       6   ->_ConfigLock = System.Object 0x00000000 (12)
+==>       6   ->_IDTableLock = System.Threading.ReaderWriterLock 0x00000000 (44)
+==>       6   ->_LocalActivator = System.Runtime.Remoting.Activation.LocalActivator 0x00000000 (12)
+==>        7   ->AttributeName = System.String 0x00000000 (68)  RemoteActivationService.rem
+==>     4   ->_ctxProps = System.Runtime.Remoting.Contexts.IContextProperty[](Count=8) 0x00000000 (48)
+==>      5   ->System.Runtime.Remoting.Lifetime.LeaseLifeTimeServiceProperty 0x00000000 (12)
+==>   2   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>    3   ->intEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=1) 0x00000000 (32)
+==>    3   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>     4   ->System.String 0x00000000 (24)  Form1
+==>     4   ->System.Windows.Forms.Button 0x00000000 (168)
+==>      5   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>      5   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>       6   ->caption = System.String 0x00000000 (28)  button1
+==>       6   ->className = System.String 0x00000000 (26)  BUTTON
+     5   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+      6   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+       7   ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>        7   ->key = System.Object 0x00000000 (12)
+==>      5   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>       6   ->key = System.String 0x00000000 (14)
+==>      5   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>       6   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>        7   ->System.String 0x00000000 (28)  button1
+==>        7   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>      5   ->text = System.String 0x00000000 (28)  button1
+     5   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+      6   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+      6   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>     4   ->System.Windows.Forms.Form.ControlCollection 0x00000000 (24)
+==>      5   ->_innerList = System.Collections.ArrayList(Count=3) 0x00000000 (24)
+==>       6   ->_items = System.Object[](Count=4) 0x00000000 (32)
+==>        7   ->System.Windows.Forms.Button 0x00000000 (168)
+==>         8   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>         8   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>          9   ->caption = System.String 0x00000000 (28)  button1
+==>          9   ->className = System.String 0x00000000 (26)  BUTTON
+        8   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+         9   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+          10  ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>           10  ->key = System.Object 0x00000000 (12)
+==>         8   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>          9   ->key = System.String 0x00000000 (14)
+==>         8   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>          9   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>           10  ->System.String 0x00000000 (28)  button1
+==>           10  ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>         8   ->text = System.String 0x00000000 (28)  button1
+        8   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+         9   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+         9   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>        7   ->System.Windows.Forms.Button 0x00000000 (168)
+==>         8   ->_adapter = System.Windows.Forms.ButtonInternal.ButtonStandardAdapter 0x00000000 (12)
+==>         8   ->createParams = System.Windows.Forms.CreateParams 0x00000000 (52)
+==>          9   ->caption = System.String 0x00000000 (26)  &Reset
+==>          9   ->className = System.String 0x00000000 (26)  BUTTON
+        8   ->events = System.ComponentModel.EventHandlerList 0x00000000 (16)
+         9   ->head = System.ComponentModel.EventHandlerList.ListEntry 0x00000000 (20)
+          10  ->handler = System.EventHandler(Target=Life.Form1 0x00000000) 0x00000000 (32)
+==>           10  ->key = System.Object 0x00000000 (12)
+==>         8   ->imageIndex = System.Windows.Forms.ImageList.Indexer 0x00000000 (24)
+==>          9   ->key = System.String 0x00000000 (14)
+==>         8   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>          9   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=2) 0x00000000 (52)
+==>           10  ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>           10  ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>         8   ->text = System.String 0x00000000 (26)  &Reset
+        8   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+         9   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+         9   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>     4   ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>     4   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+==>   2   ->smallIcon = System.Drawing.Icon 0x00000000 (40)
+==>    3   ->iconData = U1[](Count=10134) 0x00000000 (10146)
+  2   ->threadCallbackList = System.Collections.Queue 0x00000000 (36)
+==>    3   ->_array = System.Object[](Count=32) 0x00000000 (144)
+==>   2   ->userWindowText = System.String 0x00000000 (32)  0 : 11024
+==>   2   ->verticalScroll = System.Windows.Forms.VScrollProperties 0x00000000 (40)
+  2   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+   3   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+   3   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+==>  1   ->propertyStore = System.Windows.Forms.PropertyStore 0x00000000 (16)
+==>   2   ->intEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=1) 0x00000000 (32)
+==>   2   ->objEntries = System.Windows.Forms.PropertyStore+ValueType[](Count=3) 0x00000000 (72)
+==>    3   ->System.IntPtr 0x00000000 (12)
+==>    3   ->System.Windows.Forms.PropertyStore.ColorWrapper 0x00000000 (24)
+==>    3   ->System.Windows.Forms.PropertyStore.SizeWrapper 0x00000000 (16)
+ 1   ->window = System.Windows.Forms.Control.ControlNativeWindow 0x00000000 (56)
+  2   ->weakThisPtr = System.WeakReference(Target=System.Windows.Forms.Control.ControlNativeWindow 0x00000000) 0x00000000 (12)
+  2   ->windowProc = System.Windows.Forms.NativeMethods.WndProc 0x00000000 (32)
+0   <-RefToMe System.Windows.Forms.TextBox 0x00000000 (168)
+ 1   <-Life.Form1.m_box 0x00000000 (368)
+==>   2   <-Microsoft.Win32.UserPreferenceChangedEventHandler._target 0x00000000 (32)
+==>    3   <-Microsoft.Win32.SystemEvents.SystemEventInvokeInfo._delegate 0x00000000 (16)
+==>     4   <-Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4) 0x00000000 (32)
+==>      5   <-System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2)._items 0x00000000 (24)
+==>       6   <-System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>+ValueType[](Count=3) 0x00000000 (60)
+==>        7   <-System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>(Count=3).entries 0x00000000 (48)
+==>         8   <-System.Object[](Count=4080) 0x00000000 (16336)
+  2   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>      5   <-System.Windows.Forms.Button.events 0x00000000 (168)
+==>       6   <-System.Object[](Count=4) 0x00000000 (32)
+==>        7   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>         8   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>          9   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>           10  <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>       6   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+      6   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+       7   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>       6   <-System.Windows.Forms.LayoutEventArgs.affectedComponent 0x00000000 (16)
+==>       6   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>        7   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>    3   <-System.Object[](Count=2) 0x00000000 (24)
+==>     4   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+        8   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>      5   <-System.Windows.Forms.Button.events 0x00000000 (168)
+==>       6   <-System.Object[](Count=4) 0x00000000 (32)
+==>        7   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>         8   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>          9   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>           10  <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>       6   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+      6   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+       7   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+  2   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>    3   <-System.Object[](Count=2) 0x00000000 (24)
+==>     4   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+==>   2   <-System.Object[](Count=4) 0x00000000 (32)
+==>    3   <-System.Collections.ArrayList(Count=1)._items 0x00000000 (24)
+==>     4   <-System.Windows.Forms.FormCollection.list 0x00000000 (12)
+==>      5   <-System.Object[](Count=2040) 0x00000000 (8176)
+==>   2   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>    3   <-System.Threading.ThreadHelper._start 0x00000000 (20)
+==>     4   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>   2   <-System.Windows.Forms.Application.ThreadContext.currentForm 0x00000000 (132)
+==>    3   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>     4   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>      5   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>       6   <-System.Collections.Hashtable.ValueCollection._hashtable 0x00000000 (12)
+==>       6   <-System.Windows.Forms.Application.ComponentManager.oleComponents 0x00000000 (28)
+==>    3   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>     4   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>      5   <-System.Object[](Count=2040) 0x00000000 (8176)
+==>    3   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>     4   <-System.Windows.Forms.ApplicationContext.ThreadExit 0x00000000 (20)
+==>      5   <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+      6   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+       7   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>    3   <-System.Object[](Count=51) 0x00000000 (220)
+==>    3   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>   2   <-System.Windows.Forms.ApplicationContext.mainForm 0x00000000 (20)
+==>    3   <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>    3   <-System.Windows.Forms.Application.ThreadContext.applicationContext 0x00000000 (132)
+==>     4   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>      5   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>       6   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>        7   <-System.Collections.Hashtable.ValueCollection._hashtable 0x00000000 (12)
+==>        7   <-System.Windows.Forms.Application.ComponentManager.oleComponents 0x00000000 (28)
+==>     4   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>      5   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>       6   <-System.Object[](Count=2040) 0x00000000 (8176)
+==>     4   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>     4   <-System.Object[](Count=51) 0x00000000 (220)
+==>     4   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>   2   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+   3   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>    3   <-System.Object[](Count=4) 0x00000000 (32)
+==>     4   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>      5   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>       6   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>        7   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>    3   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+   3   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+    4   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>    3   <-System.Windows.Forms.LayoutEventArgs.affectedComponent 0x00000000 (16)
+==>    3   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>     4   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>   2   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+   3   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>    3   <-System.Object[](Count=4) 0x00000000 (32)
+==>     4   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>      5   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>       6   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>        7   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>    3   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+   3   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+    4   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+  2   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+   3   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>   2   <-System.Windows.Forms.Control.ThreadMethodEntry.caller 0x00000000 (52)
+==>   2   <-System.Windows.Forms.Form.ControlCollection.owner 0x00000000 (24)
+==>    3   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>     4   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+==>   2   <-System.Windows.Forms.HScrollProperties.parent 0x00000000 (40)
+==>   2   <-System.Windows.Forms.MethodInvoker._target 0x00000000 (32)
+==>    3   <-System.Windows.Forms.Control.ThreadMethodEntry.method 0x00000000 (52)
+==>   2   <-System.Windows.Forms.MouseEventHandler._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+      6   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>   2   <-System.Windows.Forms.PaintEventHandler._target 0x00000000 (32)
+   3   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+    4   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+     5   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>   2   <-System.Windows.Forms.VScrollProperties.parent 0x00000000 (40)
+ 1   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>  1   <-System.Object[](Count=4) 0x00000000 (32)
+==>   2   <-System.Collections.ArrayList(Count=3)._items 0x00000000 (24)
+==>    3   <-System.Windows.Forms.Form.ControlCollection._innerList 0x00000000 (24)
+==>     4   <-System.Windows.Forms.PropertyStore+ValueType[](Count=5) 0x00000000 (112)
+==>      5   <-System.Windows.Forms.PropertyStore.objEntries 0x00000000 (16)
+      6   <-Life.Form1.propertyStore 0x00000000 (368)
+==>        7   <-Microsoft.Win32.UserPreferenceChangedEventHandler._target 0x00000000 (32)
+==>         8   <-Microsoft.Win32.SystemEvents.SystemEventInvokeInfo._delegate 0x00000000 (16)
+==>          9   <-Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4) 0x00000000 (32)
+==>           10  <-System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2)._items 0x00000000 (24)
+       7   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>           10  <-System.Windows.Forms.Button.events 0x00000000 (168)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>         8   <-System.Object[](Count=2) 0x00000000 (24)
+==>          9   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>           10  <-System.Windows.Forms.Button.events 0x00000000 (168)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+       7   <-System.EventHandler(Target=Life.Form1 0x00000000)._target 0x00000000 (32)
+==>         8   <-System.Object[](Count=2) 0x00000000 (24)
+==>          9   <-System.EventHandler(Target=<self> 0x00000000)._invocationList 0x00000000 (32)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+==>        7   <-System.Object[](Count=4) 0x00000000 (32)
+==>         8   <-System.Collections.ArrayList(Count=1)._items 0x00000000 (24)
+==>          9   <-System.Windows.Forms.FormCollection.list 0x00000000 (12)
+==>           10  <-System.Object[](Count=2040) 0x00000000 (8176)
+==>        7   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>         8   <-System.Threading.ThreadHelper._start 0x00000000 (20)
+==>          9   <-System.Threading.ThreadStart._target 0x00000000 (32)
+==>        7   <-System.Windows.Forms.Application.ThreadContext.currentForm 0x00000000 (132)
+==>         8   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>          9   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>           10  <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>         8   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>          9   <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>           10  <-System.Object[](Count=2040) 0x00000000 (8176)
+==>         8   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>          9   <-System.Windows.Forms.ApplicationContext.ThreadExit 0x00000000 (20)
+==>           10  <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+==>         8   <-System.Object[](Count=51) 0x00000000 (220)
+==>         8   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>        7   <-System.Windows.Forms.ApplicationContext.mainForm 0x00000000 (20)
+==>         8   <-System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)._target 0x00000000 (32)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>         8   <-System.Windows.Forms.Application.ThreadContext.applicationContext 0x00000000 (132)
+==>          9   <-ComponentManager.ComponentHashtableEntry.component 0x00000000 (16)
+==>           10  <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>          9   <-System.Collections.Hashtable+ValueType[](Count=3) 0x00000000 (48)
+==>           10  <-System.Collections.Hashtable.buckets 0x00000000 (52)
+==>          9   <-System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000)._target 0x00000000 (32)
+==>          9   <-System.Object[](Count=51) 0x00000000 (220)
+==>          9   <-System.Windows.Forms.Application.ComponentManager.activeComponent 0x00000000 (28)
+==>        7   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+        8   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>         8   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+        8   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+         9   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>         8   <-System.Windows.Forms.LayoutEventArgs.affectedComponent 0x00000000 (16)
+==>        7   <-System.Windows.Forms.Button.parent 0x00000000 (168)
+        8   <-System.ComponentModel.EventHandlerList.parent 0x00000000 (16)
+==>         8   <-System.Windows.Forms.ButtonInternal.ButtonStandardAdapter.control 0x00000000 (12)
+        8   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+         9   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+       7   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+        8   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+==>        7   <-System.Windows.Forms.Control.ThreadMethodEntry.caller 0x00000000 (52)
+==>        7   <-System.Windows.Forms.HScrollProperties.parent 0x00000000 (40)
+==>        7   <-System.Windows.Forms.MethodInvoker._target 0x00000000 (32)
+==>         8   <-System.Windows.Forms.Control.ThreadMethodEntry.method 0x00000000 (52)
+==>        7   <-System.Windows.Forms.MouseEventHandler._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+==>        7   <-System.Windows.Forms.PaintEventHandler._target 0x00000000 (32)
+        8   <-System.ComponentModel.EventHandlerList.ListEntry.handler 0x00000000 (20)
+         9   <-System.ComponentModel.EventHandlerList.ListEntry.next 0x00000000 (20)
+          10  <-System.ComponentModel.EventHandlerList.head 0x00000000 (16)
+==>        7   <-System.Windows.Forms.VScrollProperties.parent 0x00000000 (40)
+ 1   <-System.Windows.Forms.Control.ControlNativeWindow.control 0x00000000 (56)
+  2   <-System.Windows.Forms.NativeMethods.WndProc._target 0x00000000 (32)
+0   -> Paths from GCRoots to System.Windows.Forms.TextBox 0x00000000 (168) (# Paths = 1)
+==>  1   ->PathFromGCRoot (PathLen = 2) 
+  2   ->parent = Life.Form1  RootKind = Stack RootFlags = "" RootId 0x00000000 0x00000000 (368)
+  2   ->m_box = System.Windows.Forms.TextBox 0x00000000 (168)
+GCRoots for Life.Form1
+GCRoot Other Life.Form1
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+cslife.exe!Life.Form1.Main
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+GetCLRObjectRefs
+==>GetCLRObjectRefs reflist count=2262
+==>GetCLRObjectRefs gcrootlist count=130
+Now test FreeStackMem
+==>'__Process Heap' # freed stackframes = 68009 (272036 bytes)
+==>Test end LifeObjRefs 1/9/2017 10:14:44 AM #Secs = 10.38
+==># of asserts = 490
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\LifeObjRefs.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-01-09 10_14_33\LifeObjRefs.txt"

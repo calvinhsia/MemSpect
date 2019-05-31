@@ -1,0 +1,67 @@
+==>Test start 4/26/2017 3:34:54 PM LifeVMFiles
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+554f0000 C:\MemSpect\MemSpectDll.dll
+00590000 C:\MemSpect\Test\csLife.exe
+71640000 C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\c90ef9a73ea0044641d31b19023aad61\mscorlib.ni.dll
+70af0000 C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\814dd462b742d7c16c620e79397b2463\System.Configuration.ni.dll
+6a270000 C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Drawing\7449ed83cff59f33ab4875d4b771fe70\System.Drawing.ni.dll
+69620000 C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Windows.Forms\eb4efa6de50dc27d313696e2a4a46814\System.Windows.Forms.ni.dll
+70380000 C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\43edd630a9f8cd6ac38c527b106ec94f\System.Xml.ni.dll
+70c20000 C:\Windows\assembly\NativeImages_v4.0.30319_32\System\1c5fe4cb68f67046baec4c3a854f722f\System.ni.dll
+074b0000 C:\Windows\Fonts\micross.ttf
+07d60000 C:\Windows\Fonts\StaticCache.dat
+02360000 C:\Windows\Globalization\Sorting\SortDefault.nls
+727c0000 C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+715c0000 C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll
+72e60000 C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll
+029f0000 C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorrc.dll
+05d70000 C:\Windows\ServiceProfiles\LocalService\AppData\Local\~FontCache-FontFace.dat
+07560000 C:\Windows\ServiceProfiles\LocalService\AppData\Local\~FontCache-S-1-5-21-2127521184-1604012920-1887927527-21388.dat
+04da0000 C:\Windows\ServiceProfiles\LocalService\AppData\Local\~FontCache-System.dat
+75a80000 C:\Windows\System32\advapi32.dll
+75110000 C:\Windows\System32\bcryptPrimitives.dll
+75870000 C:\Windows\System32\combase.dll
+75170000 C:\Windows\System32\CRYPTBASE.dll
+604f0000 C:\Windows\System32\dbghelp.dll
+742b0000 C:\Windows\System32\dwmapi.dll
+6a600000 C:\Windows\System32\DWrite.dll
+75560000 C:\Windows\System32\gdi32.dll
+75a50000 C:\Windows\System32\imm32.dll
+72fd0000 C:\Windows\System32\kernel.appcore.dll
+75300000 C:\Windows\System32\kernel32.dll
+756b0000 C:\Windows\System32\KERNELBASE.dll
+00770000 C:\Windows\System32\locale.nls
+72ee0000 C:\Windows\System32\mscoree.dll
+75440000 C:\Windows\System32\msctf.dll
+6b400000 C:\Windows\System32\msvcp120.dll
+6b980000 C:\Windows\System32\msvcr120.dll
+726e0000 C:\Windows\System32\MSVCR120_CLR0400.dll
+75790000 C:\Windows\System32\msvcrt.dll
+77990000 C:\Windows\System32\ntdll.dll
+73a30000 C:\Windows\System32\ntmarta.dll
+77450000 C:\Windows\System32\ole32.dll
+77740000 C:\Windows\System32\oleaut32.dll
+76e80000 C:\Windows\System32\rpcrt4.dll
+76f40000 C:\Windows\System32\sechost.dll
+75210000 C:\Windows\System32\shlwapi.dll
+75670000 C:\Windows\System32\sspicli.dll
+76f90000 C:\Windows\System32\user32.dll
+73e50000 C:\Windows\System32\uxtheme.dll
+731a0000 C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9600.17810_none_7c5b6194aa0716f1\comctl32.dll
+73a80000 C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.9600.18592_none_dae0ba965bc4a8dc\GdiPlus.dll
+Now from MemSpectWin
+00830000 
+00880000 
+00890000 
+00bf0000 \Sessions\2\Windows\Theme616747151
+04c40000 \Windows\Theme194556000
+07d60000 C:\Windows\Fonts\staticcache.dat
+05d70000 C:\Windows\ServiceProfiles\LocalService\AppData\Local\~FontCache-FontFace.dat
+07560000 C:\Windows\ServiceProfiles\LocalService\AppData\Local\~FontCache-S-1-5-21-2127521184-1604012920-1887927527-21388.dat
+04da0000 C:\Windows\ServiceProfiles\LocalService\AppData\Local\~FontCache-System.dat
+00890000 Cor_SxSPublic_IPCBlock
+00880000 Global\Cor_Private_IPCBlock_v4_7356
+00830000 MemSpectFileMapping7356
+==>Test end LifeVMFiles 4/26/2017 3:34:55 PM #Secs = 0.88
+==># of asserts = 64
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\LifeVMFiles.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-04-26 15_19_57\LifeVMFiles.txt"

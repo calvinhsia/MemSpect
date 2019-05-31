@@ -1,0 +1,203 @@
+==>Test start 3/10/2014 1:28:47 PM LeakMultiple
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[01:28:47.929 P] MemSpect API connecting Monday, March 10, 2014 1:28:47 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 5924 
+==>[01:28:47.929 P] Loading HeapReport.mhd
+==>[01:28:47.929 P] Loading MemSpect01010000.mhd
+==>[01:28:53.680 P] Loading __Process Heap00610000.mhd
+==>[01:28:54.188 P] Loading _clr.dll!`dynamic initializer for 'DllPreInitGlobalObject'' _ 15 bytes03730000.mhd
+==>[01:28:54.195 P] Loading _clr.dll!DebuggerHeapInit _ 33 bytes02cd0000.mhd
+==>[01:28:54.195 P] Loading _clr.dll!DebuggerHeapInit _ 33 bytes03930000.mhd
+==>[01:28:54.196 P] Loading _d3d9.dll!MemInit _ 24 bytes03330000.mhd
+==>[01:28:54.196 P] Loading _gdiplus.dll!InternalGdiplusStartup _ 38 bytes15200000.mhd
+==>[01:28:54.197 P] Loading _mscoree.dll!_heap_init _ 27 bytes02990000.mhd
+==>[01:28:54.223 P] Loading _mscoree.dll!CreateProcessExecutableHeap _ 17 bytes01370000.mhd
+==>[01:28:54.224 P] Loading _mscoreei.dll!DllMainProcessAttach _ 384 bytes02e40000.mhd
+==>[01:28:54.224 P] Loading _msxml6.dll!MpHeapCreate _ 228 bytes0d690000.mhd
+==>[01:28:54.225 P] Loading _msxml6.dll!MpHeapCreate _ 228 bytes0d470000.mhd
+==>[01:28:54.225 P] Loading _msxml6.dll!MpHeapCreate _ 228 bytes09090000.mhd
+==>[01:28:54.225 P] Loading _msxml6.dll!MpHeapCreate _ 228 bytes08d20000.mhd
+==>[01:28:54.226 P] Loading _msxml6.dll!MpHeapCreate _ 228 bytes02da0000.mhd
+==>[01:28:54.227 P] Loading _msxml6.dll!MpHeapCreate _ 228 bytes091a0000.mhd
+==>[01:28:54.227 P] Loading _msxml6.dll!MpHeapCreate _ 228 bytes02d50000.mhd
+==>[01:28:54.228 P] Loading _USP10.dll!UspInitMemory _ 66 bytes02ae0000.mhd
+==>[01:28:54.229 P] Loading _UxTheme.dll!ThemeHeapStaticInitialize _ 30 bytes02930000.mhd
+==>[01:28:54.229 P] Loading ~MSVCR100.dll!_calloc_impl _ 73 bytes00220000.mhd
+==>[01:28:54.231 P] Loading ~msvcrt.dll!malloc _ 141 bytes008b0000.mhd
+==>[01:28:54.236 P] Loading ~ntdll.dll!RtlpAllocateListLookup _ 53 bytes1ce10000.mhd
+==>[01:28:54.237 P] Loading ~ntdll.dll!RtlpAllocateListLookup _ 53 bytes1c810000.mhd
+==>[01:28:54.239 P] Loading ~ntdll.dll!RtlpAllocateListLookup _ 53 bytes0e6a0000.mhd
+==>[01:28:54.242 P] Loading ClrClassInfo.mhd
+==>[01:28:54.311 P] Loading Filter.mhd
+==>[01:28:54.311 P] Loading WorkingSetInfo.mhd
+==>[01:28:54.666 P] Loading StackFrameDictionary.mhd
+==>[01:28:54.725 P] Loading CLRObjRefs.mhd
+==>[01:28:54.726 P] # stacks loaded = 484,848
+==>[01:28:54.726 P] Snap Loaded (ClrObjref Load pending) in  00:00:06.79
+==>[01:28:54.727 P] Starting CLRObjRefData load in background
+==>[01:28:54.727 P] waiting for ClrObjRefData Loaded
+==>[01:29:16.431 P] --Done Background loading CLRObjRefData
+==>[01:29:16.431 P] --done waiting for ClrObjRefData
+Looking for leaks d:\memspect\snaps\vscsld7 4,169,690 - 9,317,256
+now test range feature
+Range feature Start=4169690 End=9317256  Delta= 735367
+Range feature Iter=0 Start = 4169690 End=4905057 
+Range feature Iter=1 Start = 4905057 End=5640424 
+Range feature Iter=2 Start = 5640424 End=6375791 
+Range feature Iter=3 Start = 6375791 End=7111158 
+Range feature Iter=4 Start = 7111158 End=7846525 
+Range feature Iter=5 Start = 7846525 End=8581892 
+Range feature Iter=6 Start = 8581892 End=9317259 
+==>[01:29:16.534 P] Reading minidump mem data to dict
+==>[01:29:16.538 P] MemDictCreated
+==>[01:29:16.555 P] RecurDownMultiples #Times=57 MaxQCnt=4 __MemSpect
+==>[01:29:16.555 P] Found 3 leaks per iteration
+==>[01:29:16.565 P] RecurDownMultiples #Times=13 MaxQCnt=1 __Process Heap
+==>[01:29:16.565 P] Found 7 leaks per iteration
+ itm # 1 Address=0x15d06b10, SeqNo=4,661,850, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 2 Address=0x1901ea60, SeqNo=4,675,475, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 3 Address=0x15d07518, SeqNo=4,717,267, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 4 Address=0x0473f08c, SeqNo=4,765,534, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 5 Address=0x0473f09c, SeqNo=4,765,544, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 6 Address=0x0473f0ac, SeqNo=4,765,556, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 7 Address=0x19020248, SeqNo=4,780,027, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 8 Address=0x1901e598, SeqNo=5,183,925, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 9 Address=0x19020ba8, SeqNo=5,193,936, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 10 Address=0x19020ad0, SeqNo=5,545,940, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 11 Address=0x04743e34, SeqNo=5,592,590, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 12 Address=0x04743e44, SeqNo=5,592,601, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 13 Address=0x04743e54, SeqNo=5,592,613, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 14 Address=0x1901feb8, SeqNo=5,610,063, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 15 Address=0x1901f210, SeqNo=5,626,139, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 16 Address=0x1901e520, SeqNo=5,641,111, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 17 Address=0x18fbc168, SeqNo=5,873,938, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 18 Address=0x19020218, SeqNo=6,446,289, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 19 Address=0x19020470, SeqNo=6,459,425, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 20 Address=0x1901fe70, SeqNo=6,481,712, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 21 Address=0x04744514, SeqNo=6,490,126, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 22 Address=0x04744524, SeqNo=6,490,138, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 23 Address=0x04744534, SeqNo=6,490,151, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 24 Address=0x19553870, SeqNo=6,494,504, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 25 Address=0x190206e0, SeqNo=6,508,099, Size=12, BlkType=None Thread=4956 p8U?ikH\` __Process Heap 
+ itm # 26 Address=0x1901eaa8, SeqNo=6,522,325, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 27 Address=0x1901e880, SeqNo=6,540,707, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 28 Address=0x1901fbe8, SeqNo=6,562,060, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 29 Address=0x1901f108, SeqNo=6,587,945, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 30 Address=0x1901f330, SeqNo=6,603,564, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 31 Address=0x1901f4f8, SeqNo=6,619,927, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 32 Address=0x1901e4a8, SeqNo=6,630,658, Size=12, BlkType=None Thread=4956 87U?ikH\` __Process Heap 
+ itm # 33 Address=0x19553738, SeqNo=6,820,166, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 34 Address=0x1901eb98, SeqNo=7,041,750, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 35 Address=0x190203e0, SeqNo=7,073,736, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 36 Address=0x1901fe58, SeqNo=7,102,546, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 37 Address=0x02bd84c0, SeqNo=7,113,176, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 38 Address=0x0474466c, SeqNo=7,122,310, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 39 Address=0x047446cc, SeqNo=7,122,324, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 40 Address=0x047446dc, SeqNo=7,122,338, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 41 Address=0x190217f0, SeqNo=7,149,008, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 42 Address=0x1901f0a8, SeqNo=7,166,343, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 43 Address=0x190207d0, SeqNo=7,189,108, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 44 Address=0x1901e508, SeqNo=7,214,147, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 45 Address=0x1901f768, SeqNo=7,229,533, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 46 Address=0x19022090, SeqNo=7,245,275, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 47 Address=0x19020c38, SeqNo=7,260,175, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 48 Address=0x1901f138, SeqNo=7,422,299, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 49 Address=0x190220f0, SeqNo=7,571,052, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 50 Address=0x1901fea0, SeqNo=7,581,478, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 51 Address=0x1901ef10, SeqNo=7,707,331, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 52 Address=0x0474477c, SeqNo=7,714,008, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 53 Address=0x0474478c, SeqNo=7,714,022, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 54 Address=0x047447ec, SeqNo=7,714,038, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 55 Address=0x19022000, SeqNo=7,767,969, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 56 Address=0x1901e718, SeqNo=7,791,878, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 57 Address=0x190205f0, SeqNo=7,820,260, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 58 Address=0x1901eec8, SeqNo=8,251,011, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 59 Address=0x1901eef8, SeqNo=8,366,205, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 60 Address=0x0474982c, SeqNo=8,429,254, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 61 Address=0x0474983c, SeqNo=8,429,269, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 62 Address=0x0474984c, SeqNo=8,429,285, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 63 Address=0x1901fca8, SeqNo=8,495,977, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 64 Address=0x19020368, SeqNo=8,527,011, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 65 Address=0x19020848, SeqNo=8,953,514, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 66 Address=0x1901f9c0, SeqNo=9,056,245, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 67 Address=0x1901ed00, SeqNo=9,079,444, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 68 Address=0x04799e94, SeqNo=9,089,892, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 69 Address=0x04799ea4, SeqNo=9,089,908, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 70 Address=0x04799eb4, SeqNo=9,089,925, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+now test non-range feature
+==>[01:29:16.621 P] RecurDownMultiples #Times=57 MaxQCnt=4 __MemSpect
+==>[01:29:16.621 P] Found 3 leaks per iteration
+==>[01:29:16.626 P] RecurDownMultiples #Times=13 MaxQCnt=1 __Process Heap
+==>[01:29:16.626 P] Found 7 leaks per iteration
+ itm # 1 Address=0x15d06b10, SeqNo=4,661,850, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 2 Address=0x1901ea60, SeqNo=4,675,475, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 3 Address=0x15d07518, SeqNo=4,717,267, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 4 Address=0x0473f08c, SeqNo=4,765,534, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 5 Address=0x0473f09c, SeqNo=4,765,544, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 6 Address=0x0473f0ac, SeqNo=4,765,556, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 7 Address=0x19020248, SeqNo=4,780,027, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 8 Address=0x1901e598, SeqNo=5,183,925, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 9 Address=0x19020ba8, SeqNo=5,193,936, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 10 Address=0x19020ad0, SeqNo=5,545,940, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 11 Address=0x04743e34, SeqNo=5,592,590, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 12 Address=0x04743e44, SeqNo=5,592,601, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 13 Address=0x04743e54, SeqNo=5,592,613, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 14 Address=0x1901feb8, SeqNo=5,610,063, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 15 Address=0x1901f210, SeqNo=5,626,139, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 16 Address=0x1901e520, SeqNo=5,641,111, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 17 Address=0x18fbc168, SeqNo=5,873,938, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 18 Address=0x19020218, SeqNo=6,446,289, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 19 Address=0x19020470, SeqNo=6,459,425, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 20 Address=0x1901fe70, SeqNo=6,481,712, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 21 Address=0x04744514, SeqNo=6,490,126, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 22 Address=0x04744524, SeqNo=6,490,138, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 23 Address=0x04744534, SeqNo=6,490,151, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 24 Address=0x19553870, SeqNo=6,494,504, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 25 Address=0x190206e0, SeqNo=6,508,099, Size=12, BlkType=None Thread=4956 p8U?ikH\` __Process Heap 
+ itm # 26 Address=0x1901eaa8, SeqNo=6,522,325, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 27 Address=0x1901e880, SeqNo=6,540,707, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 28 Address=0x1901fbe8, SeqNo=6,562,060, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 29 Address=0x1901f108, SeqNo=6,587,945, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 30 Address=0x1901f330, SeqNo=6,603,564, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 31 Address=0x1901f4f8, SeqNo=6,619,927, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 32 Address=0x1901e4a8, SeqNo=6,630,658, Size=12, BlkType=None Thread=4956 87U?ikH\` __Process Heap 
+ itm # 33 Address=0x19553738, SeqNo=6,820,166, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 34 Address=0x1901eb98, SeqNo=7,041,750, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 35 Address=0x190203e0, SeqNo=7,073,736, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 36 Address=0x1901fe58, SeqNo=7,102,546, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 37 Address=0x02bd84c0, SeqNo=7,113,176, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 38 Address=0x0474466c, SeqNo=7,122,310, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 39 Address=0x047446cc, SeqNo=7,122,324, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 40 Address=0x047446dc, SeqNo=7,122,338, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 41 Address=0x190217f0, SeqNo=7,149,008, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 42 Address=0x1901f0a8, SeqNo=7,166,343, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 43 Address=0x190207d0, SeqNo=7,189,108, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 44 Address=0x1901e508, SeqNo=7,214,147, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 45 Address=0x1901f768, SeqNo=7,229,533, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 46 Address=0x19022090, SeqNo=7,245,275, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 47 Address=0x19020c38, SeqNo=7,260,175, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 48 Address=0x1901f138, SeqNo=7,422,299, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 49 Address=0x190220f0, SeqNo=7,571,052, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 50 Address=0x1901fea0, SeqNo=7,581,478, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 51 Address=0x1901ef10, SeqNo=7,707,331, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 52 Address=0x0474477c, SeqNo=7,714,008, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 53 Address=0x0474478c, SeqNo=7,714,022, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 54 Address=0x047447ec, SeqNo=7,714,038, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 55 Address=0x19022000, SeqNo=7,767,969, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 56 Address=0x1901e718, SeqNo=7,791,878, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 57 Address=0x190205f0, SeqNo=7,820,260, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 58 Address=0x1901eec8, SeqNo=8,251,011, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 59 Address=0x1901eef8, SeqNo=8,366,205, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 60 Address=0x0474982c, SeqNo=8,429,254, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 61 Address=0x0474983c, SeqNo=8,429,269, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 62 Address=0x0474984c, SeqNo=8,429,285, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 63 Address=0x1901fca8, SeqNo=8,495,977, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 64 Address=0x19020368, SeqNo=8,527,011, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 65 Address=0x19020848, SeqNo=8,953,514, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 66 Address=0x1901f9c0, SeqNo=9,056,245, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 67 Address=0x1901ed00, SeqNo=9,079,444, Size=12, BlkType=None Thread=4956 __Process Heap 
+ itm # 68 Address=0x04799e94, SeqNo=9,089,892, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 69 Address=0x04799ea4, SeqNo=9,089,908, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+ itm # 70 Address=0x04799eb4, SeqNo=9,089,925, Size=16, BlkType=ClrObject Thread=4828 System.WeakReference __MemSpect System.WeakReference(Target=Microsoft.VisualStudio.PlatformUI.MainWindow 0x039781e0)
+==>Test end LeakMultiple 3/10/2014 1:29:17 PM #Secs = 29.53
+==># of asserts = 153
+==>Compare cmd = c:\bin\bc2.exe c:\memspect\Test\Baselines\LeakMultiple.txt "c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2014-03-10 13_27_57\LeakMultiple.txt"

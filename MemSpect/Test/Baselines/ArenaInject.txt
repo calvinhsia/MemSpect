@@ -1,0 +1,6 @@
+==>Test start 10/2/2013 4:21:12 PM ArenaInject
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Arena test CreateRemoteThread injection
+==>MemSpect process found MemSpect MemSpect ArenaClient.exe(14068) ArenaInject9000
+==>Test end ArenaInject 10/2/2013 4:21:28 PM #Secs = 16.31
+==># of asserts = 10

@@ -1,0 +1,14 @@
+﻿<Window x:Class="ProgBarWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ProgBarWindow" Height="86" Width="494">
+    <Grid>
+        <ProgressBar x:Name="_ProgBar" HorizontalAlignment="Left" Height="15" Margin="10,0,0,0" VerticalAlignment="Top" Width="401"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.915,0.769" Width="359" >
+                     <TextBlock x:Name="_txtBlk"
+                            TextWrapping="Wrap" Text="TextBlock" Width="469" Height="36" />
+              </TextBlock>
+        <Button x:Name="_btnCancel" Content="_Cancel" Margin="417,0,0,0" VerticalAlignment="Top" IsCancel="True" RenderTransformOrigin="0.926,0.45"/>
+
+    </Grid>
+</Window>

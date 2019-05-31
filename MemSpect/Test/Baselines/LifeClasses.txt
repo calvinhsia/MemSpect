@@ -1,0 +1,819 @@
+==>Test start 4/26/2017 3:34:46 PM LifeClasses
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Start LifeClasses online part
+==>[03:34:49.855 P] MemSpect API connecting Wednesday, April 26, 2017 3:34:49 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 6880 
+==>[03:34:49.855 P] Creating NamedPipeClientStream 'MemSpectPipe6912'
+==>[03:34:49.855 P] Creating NamedPipeServerStreamToChild +'MemSpectPipe6912two'
+==>[03:34:49.855 P] Connecting to FromChild Event 'MemSpectFromChild6912'
+==>[03:34:49.855 P] Connecting to FromTarget Event 'MemSpectFromTarget6912'
+==>[03:34:49.855 P] Connecting to ToTarget pipe 'MemSpectPipe6912'
+==>[03:34:49.855 P] Target CmdLine(Addr=00c62a60)=C:\MemSpect\test\cslife.exe
+==>[03:34:49.855 P] TotVM=000000007ffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[03:34:49.870 P] PID=6912 'cslife.exe' FileVer='1.0.0.0' ProdVer='1.0.0.0'
+==>[03:34:49.870 P] MemSpect DLL Version = 161109  
+==>[03:34:49.870 P] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-04-26 15_19_57\Out\MemSpect.ini
+==>[03:34:49.870 P] Connecting to ToChild pipe 'MemSpectPipe6912two'
+==>[03:34:49.870 P] CleanUpRCWs = 1
+==>[03:34:49.870 P]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 161109
+==>Freezing target. SeqNo = 16127
+==>[03:34:50.917 P] Freeze Target SeqNo= 16,581
+==>Ini file = C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-04-26 15_19_57\Out\MemSpect.ini
+# of items Online = 28
+==>[03:34:52.261 P] Getting CLR Obj Dump
+==>[03:34:52.417 P] Done gettng CLR Obj Dump
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>(Count=10) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.buckets   I4[](Count=17)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.entries   System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>+ValueType[](Count=17)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.comparer   System.Collections.Generic.ObjectEqualityComparer`1<System.Type>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.ObjectEqualityComparer`1<System.Type> GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+     System.Collections.Generic.EqualityComparer`1<System.Type> (no members)
+     System.Collections.Generic.ObjectEqualityComparer`1<System.Type> (no members)
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>+ValueType[](Count=17) GCGen=1 GCMoved=X GCSurvived=X
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>(Count=3) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.buckets   I4[](Count=3)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.entries   System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>+ValueType[](Count=3)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.comparer   System.Collections.Generic.ObjectEqualityComparer`1<System.Object>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.ObjectEqualityComparer`1<System.Object> GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+     System.Collections.Generic.EqualityComparer`1<System.Object> (no members)
+     System.Collections.Generic.ObjectEqualityComparer`1<System.Object> (no members)
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>(Count=0) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.buckets   Array 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.entries   Array 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.comparer   System.Collections.Generic.GenericEqualityComparer`1<System.String>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>._syncRoot   System.Object(Object System.Object) 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.String,System.Object[]>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.GenericEqualityComparer`1<System.String> GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+     System.Collections.Generic.EqualityComparer`1<System.String> (no members)
+     System.Collections.Generic.GenericEqualityComparer`1<System.String> (no members)
+ ClassId = 0x00000000 System.Collections.Generic.List`1<System.WeakReference>(Count=1) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.List`1<System.WeakReference>._items   System.WeakReference[](Count=2)(Array) 0x00000000
+   8 System.Collections.Generic.List`1<System.WeakReference>._syncRoot   Object 0x00000000
+  12 System.Collections.Generic.List`1<System.WeakReference>._size   I4 0x00000000
+  16 System.Collections.Generic.List`1<System.WeakReference>._version   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>(Count=1) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.buckets   I4[](Count=3)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.entries   System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>+ValueType[](Count=3)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.comparer   System.Collections.Generic.GenericEqualityComparer`1<System.String>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>._syncRoot   System.Object(Object System.Object) 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>+ValueType[](Count=3) GCGen=1 GCMoved=X GCSurvived=X
+ ClassId = 0x00000000 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._items   Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4)(Array) 0x00000000
+   8 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._syncRoot   Object 0x00000000
+  12 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._size   I4 0x00000000
+  16 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._version   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>+ValueType[](Count=3) GCGen=1 GCMoved=X GCSurvived=X
+ ClassId = 0x00000000 System.Collections.Generic.List`1<System.WeakReference>(Count=2) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.List`1<System.WeakReference>._items   System.WeakReference[](Count=4)(Array) 0x00000000
+   8 System.Collections.Generic.List`1<System.WeakReference>._syncRoot   Object 0x00000000
+  12 System.Collections.Generic.List`1<System.WeakReference>._size   I4 0x00000000
+  16 System.Collections.Generic.List`1<System.WeakReference>._version   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>(Count=0) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.buckets   Array 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.entries   Array 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.comparer   System.Collections.Generic.GenericEqualityComparer`1<System.Int16>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.GenericEqualityComparer`1<System.Int16> GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+     System.Collections.Generic.EqualityComparer`1<System.Int16> (no members)
+     System.Collections.Generic.GenericEqualityComparer`1<System.Int16> (no members)
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>(Count=0) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.buckets   Array 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.entries   Array 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.comparer   System.Collections.Generic.ObjectEqualityComparer`1<System.IntPtr>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.ObjectEqualityComparer`1<System.IntPtr> GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+     System.Collections.Generic.EqualityComparer`1<System.IntPtr> (no members)
+     System.Collections.Generic.ObjectEqualityComparer`1<System.IntPtr> (no members)
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>(Count=11) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.buckets   I4[](Count=11)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.entries   System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>+ValueType[](Count=11)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.comparer   System.Collections.Generic.ObjectEqualityComparer`1<System.RuntimeType>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>+ValueType[](Count=11) GCGen=1 GCMoved=X GCSurvived=X
+ ClassId = 0x00000000 System.Collections.Generic.ObjectEqualityComparer`1<System.RuntimeType> GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+     System.Collections.Generic.EqualityComparer`1<System.RuntimeType> (no members)
+     System.Collections.Generic.ObjectEqualityComparer`1<System.RuntimeType> (no members)
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>(Count=16) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.buckets   I4[](Count=29)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.entries   System.Collections.Generic.Dictionary`2<System.String,System.UriParser>+ValueType[](Count=29)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.comparer   System.Collections.Generic.GenericEqualityComparer`1<System.String>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>+ValueType[](Count=29) GCGen=1 GCMoved=X GCSurvived=X
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>(Count=0) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.buckets   I4[](Count=29)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.entries   System.Collections.Generic.Dictionary`2<System.String,System.UriParser>+ValueType[](Count=29)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.comparer   System.Collections.Generic.GenericEqualityComparer`1<System.String>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.UriParser>+ValueType[](Count=29) GCGen=1 GCMoved=X GCSurvived=X
+     System.Collections.Generic.Dictionary`2<System.String,System.UriParser>+ValueType[] (no members)
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.Int32>(Count=8) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.buckets   I4[](Count=11)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.entries   System.Collections.Generic.Dictionary`2<System.String,System.Int32>+ValueType[](Count=11)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.comparer   System.Collections.Generic.GenericEqualityComparer`1<System.String>(System.Collections.Generic.IEqualityComparer`1<arg # 0 9>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.String,System.Int32>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.count   I4 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.version   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.freeList   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.String,System.Int32>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.Int32>+ValueType[](Count=11) GCGen=1 GCMoved=X GCSurvived=X
+ ClassId = 0x00000000 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._items   Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4)(Array) 0x00000000
+   8 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._syncRoot   Object 0x00000000
+  12 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._size   I4 0x00000000
+  16 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._version   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2) GCGen=1 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._items   Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4)(Array) 0x00000000
+   8 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._syncRoot   Object 0x00000000
+  12 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._size   I4 0x00000000
+  16 System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>._version   I4 0x00000000
+# of ClrClass items Online = 1
+Life.Form1  Heap = __MemSpect
+# instances = 1 # collected = 0
+Life.Form1
+     System.Object (no members)
+   4 System.MarshalByRefObject.__identity   Object
+   8 System.ComponentModel.Component.site   System.ComponentModel.ISite
+  12 System.ComponentModel.Component.events   System.ComponentModel.EventHandlerList
+  16 System.Windows.Forms.Control.window   ControlNativeWindow
+  20 System.Windows.Forms.Control.parent   System.Windows.Forms.Control
+  24 System.Windows.Forms.Control.reflectParent   System.Windows.Forms.Control
+  28 System.Windows.Forms.Control.createParams   System.Windows.Forms.CreateParams
+  32 System.Windows.Forms.Control.text   String
+  36 System.Windows.Forms.Control.propertyStore   System.Windows.Forms.PropertyStore
+  40 System.Windows.Forms.Control.trackMouseEvent   TRACKMOUSEEVENT
+  44 System.Windows.Forms.Control.cachedLayoutEventArgs   System.Windows.Forms.LayoutEventArgs
+  48 System.Windows.Forms.Control.threadCallbackList   System.Collections.Queue
+  52 System.Windows.Forms.Control.x   I4
+  56 System.Windows.Forms.Control.y   I4
+  60 System.Windows.Forms.Control.width   I4
+  64 System.Windows.Forms.Control.height   I4
+  68 System.Windows.Forms.Control.clientWidth   I4
+  72 System.Windows.Forms.Control.clientHeight   I4
+  76 System.Windows.Forms.Control.state   I4
+  80 System.Windows.Forms.Control.state2   I4
+  84 System.Windows.Forms.Control.controlStyle   ValueType
+  88 System.Windows.Forms.Control.tabIndex   I4
+  92 System.Windows.Forms.Control.uiCuesState   I4
+  96 System.Windows.Forms.Control.updateCount   I2
+  98 System.Windows.Forms.Control.layoutSuspendCount   U1
+  99 System.Windows.Forms.Control.requiredScaling   U1
+ 100 System.Windows.Forms.ScrollableControl.dockPadding   DockPaddingEdges
+ 104 System.Windows.Forms.ScrollableControl.verticalScroll   System.Windows.Forms.VScrollProperties
+ 108 System.Windows.Forms.ScrollableControl.horizontalScroll   System.Windows.Forms.HScrollProperties
+ 112 System.Windows.Forms.ScrollableControl.scrollState   I4
+ 116 System.Windows.Forms.ScrollableControl.resetRTLHScrollValue   Boolean
+ 120 System.Windows.Forms.ScrollableControl.userAutoScrollMinSize   ValueType
+ 128 System.Windows.Forms.ScrollableControl.displayRect   ValueType
+ 144 System.Windows.Forms.ScrollableControl.scrollMargin   ValueType
+ 152 System.Windows.Forms.ScrollableControl.requestedScrollMargin   ValueType
+ 160 System.Windows.Forms.ScrollableControl.scrollPosition   ValueType
+ 168 System.Windows.Forms.ContainerControl.activeControl   System.Windows.Forms.Control
+ 172 System.Windows.Forms.ContainerControl.focusedControl   System.Windows.Forms.Control
+ 176 System.Windows.Forms.ContainerControl.unvalidatedControl   System.Windows.Forms.Control
+ 180 System.Windows.Forms.ContainerControl.autoValidateChanged   System.EventHandler
+ 184 System.Windows.Forms.ContainerControl.autoValidate   ValueType
+ 188 System.Windows.Forms.ContainerControl.autoScaleMode   ValueType
+ 192 System.Windows.Forms.ContainerControl.autoScaleDimensions   ValueType
+ 200 System.Windows.Forms.ContainerControl.currentAutoScaleDimensions   ValueType
+ 208 System.Windows.Forms.ContainerControl.state   ValueType
+ 212 System.Windows.Forms.Form.icon   System.Drawing.Icon
+ 216 System.Windows.Forms.Form.smallIcon   System.Drawing.Icon
+ 220 System.Windows.Forms.Form.ctlClient   System.Windows.Forms.MdiClient
+ 224 System.Windows.Forms.Form.ownerWindow   System.Windows.Forms.NativeWindow
+ 228 System.Windows.Forms.Form.userWindowText   String
+ 232 System.Windows.Forms.Form.securityZone   String
+ 236 System.Windows.Forms.Form.securitySite   String
+ 240 System.Windows.Forms.Form.sizeGripRenderer   System.Windows.Forms.VisualStyles.VisualStyleRenderer
+ 244 System.Windows.Forms.Form.restoredWindowBoundsSpecified   ValueType
+ 248 System.Windows.Forms.Form.dialogResult   ValueType
+ 252 System.Windows.Forms.Form.closeReason   ValueType
+ 256 System.Windows.Forms.Form.rightToLeftLayout   Boolean
+ 260 System.Windows.Forms.Form.formState   ValueType
+ 264 System.Windows.Forms.Form.formStateEx   ValueType
+ 268 System.Windows.Forms.Form.autoScaleBaseSize   ValueType
+ 276 System.Windows.Forms.Form.minAutoSize   ValueType
+ 284 System.Windows.Forms.Form.restoredWindowBounds   ValueType
+ 300 System.Windows.Forms.Form.restoreBounds   ValueType
+ 316 Life.Form1.components   System.ComponentModel.Container
+ 320 Life.Form1.m_box   System.Windows.Forms.TextBox
+ 324 Life.Form1.m_button   System.Windows.Forms.Button
+ 328 Life.Form1.m_Thread   System.Threading.Thread
+ 332 Life.Form1.m_brushBlack   System.Drawing.SolidBrush
+ 336 Life.Form1.m_brushWhite   System.Drawing.SolidBrush
+ 340 Life.Form1.m_brushArray   Array
+ 344 Life.Form1.m_queue   System.Collections.Queue
+ 348 Life.Form1.m_cells   Array
+ 352 Life.Form1.button1   System.Windows.Forms.Button
+ 356 Life.Form1.m_diff   Array
+ 360 Life.Form1.m_nReset   Boolean
+ 361 Life.Form1.m_fDrawAll   Boolean
+==>[03:34:53.433 P] Clearing CLR Obj Dump
+==>[03:34:53.464 P] MemSpect API connecting Wednesday, April 26, 2017 3:34:53 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 6880 
+==>[03:34:53.480 P] Opening zip package C:\MemSpect\Snaps\csLife
+==>[03:34:53.480 P] Loading __MemSpect00c00000.mhd
+==>[03:34:53.526 P] Loading __Process Heap009b0000.mhd
+==>[03:34:53.542 P] Loading _clr.dll!DebuggerHeapInit+39bytes028e0000.mhd
+==>[03:34:53.542 P] Loading _clr.dll!DebuggerHeapInit+39bytes00bd0000.mhd
+==>[03:34:53.542 P] Loading _comctl32.dll!_heap_init+27bytes05190000.mhd
+==>[03:34:53.542 P] Loading _mscoreei.dll!GetProcessExecutableHeap+24bytes04f50000.mhd
+==>[03:34:53.542 P] Loading ~MSCOREE.DLL!_calloc_impl+194bytes00c20000.mhd
+==>[03:34:53.542 P] Loading ~msvcrt.dll!malloc+144bytes00dc0000.mhd
+==>[03:34:53.558 P] Loading ~ntdll.dll!RtlCreateHeap+1569bytes04e70000.mhd
+==>[03:34:53.558 P] Loading ~ntdll.dll!RtlCreateHeap+1569bytes00be0000.mhd
+==>[03:34:53.558 P] Loading ClrClassInfo.mhd
+==>[03:34:53.558 P] Loading Filter.mhd
+==>[03:34:53.558 P] Loading WorkingSetInfo.mhd
+==>[03:34:53.627 P] Loading CLRObjRefs.mhd
+==>[03:34:53.627 P] Loading StackFrameDictionary.mhd
+==>[03:34:53.651 P] Loading C:\MemSpect\Snaps\CSLife2\HeapReport.mhd
+==>[03:34:53.651 P] # stacks loaded = 3,450,285
+==>[03:34:53.651 P] Snap Loaded (ClrObjref Load pending) in  00:00:00.19
+==>[03:34:53.651 P] Starting CLRObjRefData load in background
+==>[03:34:53.651 P] waiting for ClrObjRefData Loaded
+==>[03:34:53.714 P] Closing Zip Package
+==>[03:34:53.714 P] --Done Background loading CLRObjRefData
+==>[03:34:53.714 P] --done waiting for ClrObjRefData
+==>[03:34:53.730 P] Reading minidump mem data to dict
+==>[03:34:53.730 P] MemDictCreated
+# of items offline = 52
+ ClassId = 0x00000000 Life.Form1 GCGen=2 GCMoved=X GCSurvived=X0  RootKind = Stack RootFlags = "" RootId 0x00000000
+     System.Object (no members)
+   4 System.MarshalByRefObject.__identity   Object 0x00000000
+   8 System.ComponentModel.Component.site   System.ComponentModel.ISite 0x00000000
+  12 System.ComponentModel.Component.events   System.ComponentModel.EventHandlerList 0x00000000
+  16 System.Windows.Forms.Control.window   System.Windows.Forms.Control.ControlNativeWindow(ControlNativeWindow) 0x00000000
+  20 System.Windows.Forms.Control.parent   System.Windows.Forms.Control 0x00000000
+  24 System.Windows.Forms.Control.reflectParent   System.Windows.Forms.Control 0x00000000
+  28 System.Windows.Forms.Control.createParams   System.Windows.Forms.CreateParams 0x00000000
+  32 System.Windows.Forms.Control.text   String 0x00000000
+  36 System.Windows.Forms.Control.propertyStore   System.Windows.Forms.PropertyStore 0x00000000
+  40 System.Windows.Forms.Control.trackMouseEvent   TRACKMOUSEEVENT 0x00000000
+  44 System.Windows.Forms.Control.cachedLayoutEventArgs   System.Windows.Forms.LayoutEventArgs 0x00000000
+  48 System.Windows.Forms.Control.threadCallbackList   System.Collections.Queue 0x00000000
+  52 System.Windows.Forms.Control.x   I4 0x00000000
+  56 System.Windows.Forms.Control.y   I4 0x00000000
+  60 System.Windows.Forms.Control.width   I4 0x00000000
+  64 System.Windows.Forms.Control.height   I4 0x00000000
+  68 System.Windows.Forms.Control.clientWidth   I4 0x00000000
+  72 System.Windows.Forms.Control.clientHeight   I4 0x00000000
+  76 System.Windows.Forms.Control.state   I4 0x00000000
+  80 System.Windows.Forms.Control.state2   I4 0x00000000
+  84 System.Windows.Forms.Control.controlStyle   ValueType 0x00000000
+  88 System.Windows.Forms.Control.tabIndex   I4 0x00000000
+  92 System.Windows.Forms.Control.uiCuesState   I4 0x00000000
+  96 System.Windows.Forms.Control.updateCount   I2 0x0000
+  98 System.Windows.Forms.Control.layoutSuspendCount   U1 0x00
+  99 System.Windows.Forms.Control.requiredScaling   U1 0x1f
+ 100 System.Windows.Forms.ScrollableControl.dockPadding   DockPaddingEdges 0x00000000
+ 104 System.Windows.Forms.ScrollableControl.verticalScroll   System.Windows.Forms.VScrollProperties 0x00000000
+ 108 System.Windows.Forms.ScrollableControl.horizontalScroll   System.Windows.Forms.HScrollProperties 0x00000000
+ 112 System.Windows.Forms.ScrollableControl.scrollState   I4 0x00000000
+ 116 System.Windows.Forms.ScrollableControl.resetRTLHScrollValue   Boolean 0x00000000
+ 120 System.Windows.Forms.ScrollableControl.userAutoScrollMinSize   ValueType  0x00000000 0x00000000
+ 128 System.Windows.Forms.ScrollableControl.displayRect   ValueType  0x00000000 0x00000000 0x00000000 0x00000000
+ 144 System.Windows.Forms.ScrollableControl.scrollMargin   ValueType  0x00000000 0x00000000
+ 152 System.Windows.Forms.ScrollableControl.requestedScrollMargin   ValueType  0x00000000 0x00000000
+ 160 System.Windows.Forms.ScrollableControl.scrollPosition   ValueType  0x00000000 0x00000000
+ 168 System.Windows.Forms.ContainerControl.activeControl   System.Windows.Forms.Button(System.Windows.Forms.Control) 0x00000000
+ 172 System.Windows.Forms.ContainerControl.focusedControl   System.Windows.Forms.Button(System.Windows.Forms.Control) 0x00000000
+ 176 System.Windows.Forms.ContainerControl.unvalidatedControl   System.Windows.Forms.Control 0x00000000
+ 180 System.Windows.Forms.ContainerControl.autoValidateChanged   System.EventHandler 0x00000000
+ 184 System.Windows.Forms.ContainerControl.autoValidate   ValueType 0x00000000
+ 188 System.Windows.Forms.ContainerControl.autoScaleMode   ValueType 0x00000000
+ 192 System.Windows.Forms.ContainerControl.autoScaleDimensions   ValueType  0x00000000 0x00000000
+ 200 System.Windows.Forms.ContainerControl.currentAutoScaleDimensions   ValueType  0x00000000 0x00000000
+ 208 System.Windows.Forms.ContainerControl.state   ValueType 0x00000000
+ 212 System.Windows.Forms.Form.icon   System.Drawing.Icon 0x00000000
+ 216 System.Windows.Forms.Form.smallIcon   System.Drawing.Icon 0x00000000
+ 220 System.Windows.Forms.Form.ctlClient   System.Windows.Forms.MdiClient 0x00000000
+ 224 System.Windows.Forms.Form.ownerWindow   System.Windows.Forms.NativeWindow 0x00000000
+ 228 System.Windows.Forms.Form.userWindowText   System.String 00 : 000 0x00000000
+ 232 System.Windows.Forms.Form.securityZone   String 0x00000000
+ 236 System.Windows.Forms.Form.securitySite   String 0x00000000
+ 240 System.Windows.Forms.Form.sizeGripRenderer   System.Windows.Forms.VisualStyles.VisualStyleRenderer 0x00000000
+ 244 System.Windows.Forms.Form.restoredWindowBoundsSpecified   ValueType 0x00000000
+ 248 System.Windows.Forms.Form.dialogResult   ValueType 0x00000000
+ 252 System.Windows.Forms.Form.closeReason   ValueType 0x00000000
+ 256 System.Windows.Forms.Form.rightToLeftLayout   Boolean 0x00000000
+ 260 System.Windows.Forms.Form.formState   ValueType 0x00000000
+ 264 System.Windows.Forms.Form.formStateEx   ValueType 0x00000000
+ 268 System.Windows.Forms.Form.autoScaleBaseSize   ValueType  0x00000000 0x00000000
+ 276 System.Windows.Forms.Form.minAutoSize   ValueType  0x00000000 0x00000000
+ 284 System.Windows.Forms.Form.restoredWindowBounds   ValueType  0x00000000 0x00000000 0x00000000 0x00000000
+ 300 System.Windows.Forms.Form.restoreBounds   ValueType  0x00000000 0x00000000 0x00000000 0x00000000
+ 316 Life.Form1.components   System.ComponentModel.Container 0x00000000
+ 320 Life.Form1.m_box   System.Windows.Forms.TextBox 0x00000000
+ 324 Life.Form1.m_button   System.Windows.Forms.Button 0x00000000
+ 328 Life.Form1.m_Thread   System.Threading.Thread 0x00000000
+ 332 Life.Form1.m_brushBlack   System.Drawing.SolidBrush 0x00000000
+ 336 Life.Form1.m_brushWhite   System.Drawing.SolidBrush 0x00000000
+ 340 Life.Form1.m_brushArray   System.Drawing.SolidBrush[](Count=8)(Array) 0x00000000
+ 344 Life.Form1.m_queue   System.Collections.Queue 0x00000000
+ 348 Life.Form1.m_cells   I4,I4[](Count=40000)(Array) 0x00000000
+ 352 Life.Form1.button1   System.Windows.Forms.Button 0x00000000
+ 356 Life.Form1.m_diff   I4,I4[](Count=40000)(Array) 0x00000000
+ 360 Life.Form1.m_nReset   Boolean 0x00
+ 361 Life.Form1.m_fDrawAll   Boolean 0x00
+ ClassId = 0x00000000 Microsoft.Win32.UserPreferenceChangingEventHandler GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Microsoft.Win32.UserPreferenceChangingEventHandler(Object Microsoft.Win32.UserPreferenceChangingEventHandler) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     Microsoft.Win32.UserPreferenceChangingEventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ GCGen=2 GCMoved=X GCSurvived=X0
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.head   ListEntry 0x00000000
+   8 System.ComponentModel.EventHandlerList.parent   System.Windows.Forms.Application.MarshalingControl(System.ComponentModel.Component) 0x00000000
+ ClassId = 0x00000000 System.Configuration.Internal.InternalConfigEventHandler GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.Configuration.ClientConfigurationSystem(Object System.Configuration.ClientConfigurationSystem) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.Configuration.Internal.InternalConfigEventHandler (no members)
+ GCGen=2 GCMoved=X GCSurvived=X0
+ GCGen=2 GCMoved=X GCSurvived=X0
+ ClassId = 0x00000000 System.Windows.Forms.Button GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.MarshalByRefObject.__identity   Object 0x00000000
+   8 System.ComponentModel.Component.site   System.ComponentModel.ISite 0x00000000
+  12 System.ComponentModel.Component.events   System.ComponentModel.EventHandlerList 0x00000000
+  16 System.Windows.Forms.Control.window   System.Windows.Forms.Control.ControlNativeWindow(ControlNativeWindow) 0x00000000
+  20 System.Windows.Forms.Control.parent   Life.Form1(System.Windows.Forms.Control) 0x00000000
+  24 System.Windows.Forms.Control.reflectParent   Life.Form1(System.Windows.Forms.Control) 0x00000000
+  28 System.Windows.Forms.Control.createParams   System.Windows.Forms.CreateParams 0x00000000
+  32 System.Windows.Forms.Control.text   System.String button1 0x00000000
+  36 System.Windows.Forms.Control.propertyStore   System.Windows.Forms.PropertyStore 0x00000000
+  40 System.Windows.Forms.Control.trackMouseEvent   TRACKMOUSEEVENT 0x00000000
+  44 System.Windows.Forms.Control.cachedLayoutEventArgs   System.Windows.Forms.LayoutEventArgs 0x00000000
+  48 System.Windows.Forms.Control.threadCallbackList   System.Collections.Queue 0x00000000
+  52 System.Windows.Forms.Control.x   I4 0x00000000
+  56 System.Windows.Forms.Control.y   I4 0x00000000
+  60 System.Windows.Forms.Control.width   I4 0x00000000
+  64 System.Windows.Forms.Control.height   I4 0x00000000
+  68 System.Windows.Forms.Control.clientWidth   I4 0x00000000
+  72 System.Windows.Forms.Control.clientHeight   I4 0x00000000
+  76 System.Windows.Forms.Control.state   I4 0x00000000
+  80 System.Windows.Forms.Control.state2   I4 0x00000000
+  84 System.Windows.Forms.Control.controlStyle   ValueType 0x00000000
+  88 System.Windows.Forms.Control.tabIndex   I4 0x00000000
+  92 System.Windows.Forms.Control.uiCuesState   I4 0x00000000
+  96 System.Windows.Forms.Control.updateCount   I2 0x0000
+  98 System.Windows.Forms.Control.layoutSuspendCount   U1 0x00
+  99 System.Windows.Forms.Control.requiredScaling   U1 0x1f
+ 100 System.Windows.Forms.ButtonBase.imageIndex   System.Windows.Forms.ImageList.Indexer(Indexer) 0x00000000
+ 104 System.Windows.Forms.ButtonBase.flatAppearance   System.Windows.Forms.FlatButtonAppearance 0x00000000
+ 108 System.Windows.Forms.ButtonBase.imageList   System.Windows.Forms.ImageList 0x00000000
+ 112 System.Windows.Forms.ButtonBase.image   System.Drawing.Image 0x00000000
+ 116 System.Windows.Forms.ButtonBase.textToolTip   System.Windows.Forms.ToolTip 0x00000000
+ 120 System.Windows.Forms.ButtonBase._adapter   System.Windows.Forms.ButtonInternal.ButtonStandardAdapter(System.Windows.Forms.ButtonInternal.ButtonBaseAdapter) 0x00000000
+ 124 System.Windows.Forms.ButtonBase.flatStyle   ValueType 0x00000000
+ 128 System.Windows.Forms.ButtonBase.imageAlign   ValueType 0x00000000
+ 132 System.Windows.Forms.ButtonBase.textAlign   ValueType 0x00000000
+ 136 System.Windows.Forms.ButtonBase.textImageRelation   ValueType 0x00000000
+ 140 System.Windows.Forms.ButtonBase.state   I4 0x00000000
+ 144 System.Windows.Forms.ButtonBase._cachedAdapterType   ValueType 0x00000000
+ 148 System.Windows.Forms.ButtonBase.enableVisualStyleBackground   Boolean 0x01
+ 149 System.Windows.Forms.ButtonBase.isEnableVisualStyleBackgroundSet   Boolean 0x00
+ 152 System.Windows.Forms.Button.dialogResult   ValueType 0x00000000
+ 156 System.Windows.Forms.Button.systemSize   ValueType  0x00000000 0x00000000
+ GCGen=2 GCMoved=X GCSurvived=X0
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.head   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.parent   System.Windows.Forms.Button(System.ComponentModel.Component) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=Life.Form1 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   ListEntry 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.EventHandler(Target=Life.Form1 0x00000000)(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.head   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.parent   Life.Form1(System.ComponentModel.Component) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=Life.Form1 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   ListEntry 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.EventHandler(Target=<self> 0x00000000)(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=Life.Form1 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.EventHandler(Target=Life.Form1 0x00000000)(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.head   ListEntry 0x00000000
+   8 System.ComponentModel.EventHandlerList.parent   System.Windows.Forms.TextBox(System.ComponentModel.Component) 0x00000000
+ ClassId = 0x00000000 System.Windows.Forms.Button GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.MarshalByRefObject.__identity   Object 0x00000000
+   8 System.ComponentModel.Component.site   System.ComponentModel.ISite 0x00000000
+  12 System.ComponentModel.Component.events   System.ComponentModel.EventHandlerList 0x00000000
+  16 System.Windows.Forms.Control.window   System.Windows.Forms.Control.ControlNativeWindow(ControlNativeWindow) 0x00000000
+  20 System.Windows.Forms.Control.parent   Life.Form1(System.Windows.Forms.Control) 0x00000000
+  24 System.Windows.Forms.Control.reflectParent   Life.Form1(System.Windows.Forms.Control) 0x00000000
+  28 System.Windows.Forms.Control.createParams   System.Windows.Forms.CreateParams 0x00000000
+  32 System.Windows.Forms.Control.text   System.String &Reset 0x00000000
+  36 System.Windows.Forms.Control.propertyStore   System.Windows.Forms.PropertyStore 0x00000000
+  40 System.Windows.Forms.Control.trackMouseEvent   TRACKMOUSEEVENT 0x00000000
+  44 System.Windows.Forms.Control.cachedLayoutEventArgs   System.Windows.Forms.LayoutEventArgs 0x00000000
+  48 System.Windows.Forms.Control.threadCallbackList   System.Collections.Queue 0x00000000
+  52 System.Windows.Forms.Control.x   I4 0x00000000
+  56 System.Windows.Forms.Control.y   I4 0x00000000
+  60 System.Windows.Forms.Control.width   I4 0x00000000
+  64 System.Windows.Forms.Control.height   I4 0x00000000
+  68 System.Windows.Forms.Control.clientWidth   I4 0x00000000
+  72 System.Windows.Forms.Control.clientHeight   I4 0x00000000
+  76 System.Windows.Forms.Control.state   I4 0x00000000
+  80 System.Windows.Forms.Control.state2   I4 0x00000000
+  84 System.Windows.Forms.Control.controlStyle   ValueType 0x00000000
+  88 System.Windows.Forms.Control.tabIndex   I4 0x00000000
+  92 System.Windows.Forms.Control.uiCuesState   I4 0x00000000
+  96 System.Windows.Forms.Control.updateCount   I2 0x0000
+  98 System.Windows.Forms.Control.layoutSuspendCount   U1 0x00
+  99 System.Windows.Forms.Control.requiredScaling   U1 0x1f
+ 100 System.Windows.Forms.ButtonBase.imageIndex   System.Windows.Forms.ImageList.Indexer(Indexer) 0x00000000
+ 104 System.Windows.Forms.ButtonBase.flatAppearance   System.Windows.Forms.FlatButtonAppearance 0x00000000
+ 108 System.Windows.Forms.ButtonBase.imageList   System.Windows.Forms.ImageList 0x00000000
+ 112 System.Windows.Forms.ButtonBase.image   System.Drawing.Image 0x00000000
+ 116 System.Windows.Forms.ButtonBase.textToolTip   System.Windows.Forms.ToolTip 0x00000000
+ 120 System.Windows.Forms.ButtonBase._adapter   System.Windows.Forms.ButtonInternal.ButtonStandardAdapter(System.Windows.Forms.ButtonInternal.ButtonBaseAdapter) 0x00000000
+ 124 System.Windows.Forms.ButtonBase.flatStyle   ValueType 0x00000000
+ 128 System.Windows.Forms.ButtonBase.imageAlign   ValueType 0x00000000
+ 132 System.Windows.Forms.ButtonBase.textAlign   ValueType 0x00000000
+ 136 System.Windows.Forms.ButtonBase.textImageRelation   ValueType 0x00000000
+ 140 System.Windows.Forms.ButtonBase.state   I4 0x00000000
+ 144 System.Windows.Forms.ButtonBase._cachedAdapterType   ValueType 0x00000000
+ 148 System.Windows.Forms.ButtonBase.enableVisualStyleBackground   Boolean 0x00
+ 149 System.Windows.Forms.ButtonBase.isEnableVisualStyleBackgroundSet   Boolean 0x01
+ 152 System.Windows.Forms.Button.dialogResult   ValueType 0x00000000
+ 156 System.Windows.Forms.Button.systemSize   ValueType  0x00000000 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.head   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.parent   System.Windows.Forms.Button(System.ComponentModel.Component) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=Life.Form1 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   ListEntry 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.EventHandler(Target=Life.Form1 0x00000000)(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=Life.Form1 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.EventHandler(Target=Life.Form1 0x00000000)(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=Life.Form1 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   System.Object[](Count=2)(Object ) 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.Windows.Forms.MouseEventHandler GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.Windows.Forms.MouseEventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.Windows.Forms.MouseEventHandler(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.Windows.Forms.PaintEventHandler GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.Windows.Forms.PaintEventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.Windows.Forms.PaintEventHandler(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.Windows.Forms.ApplicationContext(Object System.Windows.Forms.ApplicationContext) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.ComponentModel.EventHandlerList.ListEntry GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.ComponentModel.EventHandlerList.ListEntry.next   System.ComponentModel.EventHandlerList.ListEntry(ListEntry) 0x00000000
+   8 System.ComponentModel.EventHandlerList.ListEntry.key   System.Object(Object System.Object) 0x00000000
+  12 System.ComponentModel.EventHandlerList.ListEntry.handler   System.EventHandler(Target=System.Windows.Forms.ApplicationContext 0x00000000)(System.Delegate) 0x00000000
+ ClassId = 0x00000000 System.EventHandler(Target=System.Windows.Forms.Application.ThreadContext 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.Windows.Forms.Application.ThreadContext(Object System.Windows.Forms.Application.ThreadContext) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 Microsoft.Win32.UserPreferenceChangedEventHandler GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Life.Form1(Object Life.Form1) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     Microsoft.Win32.UserPreferenceChangedEventHandler (no members)
+ GCGen=2 GCMoved=X GCSurvived=X0
+ ClassId = 0x00000000 Microsoft.Win32.UserPreferenceChangingEventHandler GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Microsoft.Win32.UserPreferenceChangingEventHandler(Object Microsoft.Win32.UserPreferenceChangingEventHandler) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     Microsoft.Win32.UserPreferenceChangingEventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   System.Object[](Count=8)(Object ) 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   System.Object[](Count=4)(Object ) 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.Windows.Forms.ButtonInternal.ButtonStandardAdapter GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Windows.Forms.ButtonInternal.ButtonBaseAdapter.control   System.Windows.Forms.Button(System.Windows.Forms.ButtonBase) 0x00000000
+     System.Windows.Forms.ButtonInternal.ButtonStandardAdapter (no members)
+ ClassId = 0x00000000 Microsoft.Win32.UserPreferenceChangedEventHandler GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   Microsoft.Win32.UserPreferenceChangedEventHandler(Object Microsoft.Win32.UserPreferenceChangedEventHandler) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     Microsoft.Win32.UserPreferenceChangedEventHandler (no members)
+ ClassId = 0x00000000 System.EventHandler(Target=<self> 0x00000000) GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Delegate._target   System.EventHandler(Target=<self> 0x00000000)(Object System.EventHandler(Target=<self> 0x00000000)) 0x00000000
+   8 System.Delegate._methodBase   Object 0x00000000
+  12 System.Delegate._methodPtr   INT 0x00000000
+  16 System.Delegate._methodPtrAux   INT 0x00000000
+  20 System.MulticastDelegate._invocationList   Object 0x00000000
+  24 System.MulticastDelegate._invocationCount   INT 0x00000000
+     System.EventHandler (no members)
+ ClassId = 0x00000000 System.Windows.Forms.ButtonInternal.ButtonStandardAdapter GCGen=2 GCMoved=X GCSurvived=X0
+     System.Object (no members)
+   4 System.Windows.Forms.ButtonInternal.ButtonBaseAdapter.control   System.Windows.Forms.Button(System.Windows.Forms.ButtonBase) 0x00000000
+     System.Windows.Forms.ButtonInternal.ButtonStandardAdapter (no members)
+==>Test end LifeClasses 4/26/2017 3:34:54 PM #Secs = 7.98
+==># of asserts = 771
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\LifeClasses.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-04-26 15_19_57\LifeClasses.txt"

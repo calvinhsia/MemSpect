@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{4A99C9AB-AD18-4926-95F7-8B7DF488853F}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>MemSpect</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <MyType>Custom</MyType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug</OutputPath>
+    <DocumentationFile>MemSpect.xml</DocumentationFile>
+    <NoWarn>42314</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DefineConstants>OUTOFPROC</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DocumentationFile>MemSpect.xml</DocumentationFile>
+    <NoWarn>42314</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DefineConstants>OUTOFPROC</DefineConstants>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>wsrm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\MemSpectBase\MemSpectKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TraceEvent">
+      <HintPath>..\MemSpectBase\TraceEvent.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="About.xaml.vb">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Browse.vb" />
+    <Compile Include="CommonUI.vb" />
+    <Compile Include="DumpToXmlWindow.xaml.vb">
+      <DependentUpon>DumpToXmlWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Filter.vb" />
+    <Compile Include="FindLeaks.xaml.vb">
+      <DependentUpon>FindLeaks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Images.vb" />
+    <Compile Include="LauncherUi.xaml.vb">
+      <DependentUpon>LauncherUi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LeakSummaryControl.xaml.vb">
+      <DependentUpon>LeakSummaryControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryLayout.vb" />
+    <Compile Include="MemSpectWin.vb" />
+    <Compile Include="ObjRef.vb" />
+    <Compile Include="PerfViewExport.vb" />
+    <Compile Include="ProgBarWindow.xaml.vb">
+      <DependentUpon>ProgBarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="ModFold.vb" />
+    <Compile Include="ImageUi.vb" />
+    <Compile Include="SnapDifferUI.vb" />
+    <Compile Include="StackAgg.vb" />
+    <Compile Include="SymbolFileUI.vb" />
+    <Compile Include="UIBase.vb" />
+    <Compile Include="VirtualMem.vb" />
+    <Compile Include="WhenDist.vb" />
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DumpToXmlWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindLeaks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LauncherUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LeakSummaryControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.vb">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ProgBarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Activities" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <AppDesigner Include="My Project\" />
+    <None Include="MemSpect.ini" />
+    <None Include="VSAssertSrv1.vsmdi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wsrm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FastSerialization\FastSerialization.csproj">
+      <Project>{CF7AB714-6FD6-4330-B96B-AF14345299A0}</Project>
+      <Name>FastSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MemSpectBase\MemSpectBase.vbproj">
+      <Project>{E70640B8-F084-4C89-A5F7-9B9551C6FF42}</Project>
+      <Name>MemSpectBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CodeMarkerGuidLookup.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="heap.c" />
+    <Resource Include="ReadMe.txt" />
+    <Content Include="resource.c" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /yf $(TargetDir)$(TargetName).pdb $(SolutionDir)..
+xcopy /yf $(SolutionDir)MemSpect.ini $(SolutionDir)..
+xcopy /yf $(TargetDir)MemSpect.exe.config $(SolutionDir)..
+
+xcopy /yf $(TargetDir)$(TargetFileName) $(SolutionDir)..
+xcopy /yf $(TargetDir)FastSerialization.* $(SolutionDir)..
+xcopy /yf $(TargetDir)MemSpectBase.* $(SolutionDir)..
+xcopy /yf $(TargetDir)MapFileDict.* $(SolutionDir)..
+
+xcopy /yf $(TargetDir)\withdll.exe $(SolutionDir)..
+
+xcopy /yf $(TargetDir)\MemSpectDll.pdb $(SolutionDir)..
+xcopy /yf $(TargetDir)\MemSpectDll.dll $(SolutionDir)..
+
+If exist "$(DevEnvDir)..\..\vc\vcvarsall.bat" call "$(DevEnvDir)..\..\vc\vcvarsall.bat" x86
+If exist "$(DevEnvDir)\VisualCpp\Auxiliary\Build\vcvarsall.bat" call "$(DevEnvDir)\VisualCpp\Auxiliary\Build\vcvarsall.bat" x86
+If exist "$(DevEnvDir)..\..\vc\Auxiliary\build\vcvarsall.bat" call "$(DevEnvDir)..\..\vc\Auxiliary\Build\vcvarsall.bat" x86
+
+EditBin.exe $(SolutionDir)..\$(TargetName).exe /LARGEADDRESSAWARE /nologo</PostBuildEvent>
+  </PropertyGroup>
+</Project>

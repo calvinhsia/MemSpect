@@ -1,0 +1,37 @@
+==>Test start 10/2/2013 4:30:54 PM LifeCmdLineSnap
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>MemSpect UI starting '"C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 10920 '
+==>Target CmdLine(Addr=00641b68)=c:\memspect\test\cslife.exe
+==>TotVM=000000007ffe0000 Admin = True
+==>PID=62976 'cslife.exe' Ver=1.0.0.0
+==>MemSpect DLL Version = 130826  
+==>CleanUpRCWs = 1
+==>MemSpect vers = 130826
+==>Freezing target. SeqNo = 13059
+==>Freeze Target SeqNo= 13494
+==>Ini file = c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpect.ini
+==>Life started PID = 62976
+==>Temp folder for snap = c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\LifeCmdLineSnap
+Snapshot created 
+==>ClrClassInfo.mhd
+==>CLRObjRefs.mhd
+==>DumpedFiles.mhd
+==>Filter.mhd
+==>HeapReport.mhd
+==>MemSpect.ini
+==>minidump.dmp
+==>Notes.txt
+==>StackFrameDictionary.mhd
+==>WorkingSetInfo.mhd
+==>_clr.dll!DebuggerHeapInit + 39 bytes02500000.mhd
+==>_clr.dll!DebuggerHeapInit + 39 bytes02680000.mhd
+==>_comctl32.dll!_heap_init + 27 bytes059e0000.mhd
+==>_mscoreei.dll!DllMainProcessAttach + 386 bytes025a0000.mhd
+==>__MemSpect023c0000.mhd
+==>__Process Heap00640000.mhd
+==>~MSCOREE.DLL!_calloc_impl + 196 bytes00890000.mhd
+==>~msvcrt.dll!malloc + 144 bytes00820000.mhd
+==>~ntdll.dll!RtlCreateHeap + 2448 bytes04ed0000.mhd
+==>~ntdll.dll!RtlCreateHeap + 2448 bytes05a70000.mhd
+==>Test end LifeCmdLineSnap 10/2/2013 4:31:32 PM #Secs = 37.82
+==># of asserts = 8

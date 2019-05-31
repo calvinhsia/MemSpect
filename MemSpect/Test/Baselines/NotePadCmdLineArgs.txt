@@ -1,0 +1,7 @@
+==>Test start 10/2/2013 4:35:06 PM NotePadCmdLineArgs
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+bingo got temp filename
+got memspect process that matched our instance of notepad
+Memspect proc closed properly after npad closed
+==>Test end NotePadCmdLineArgs 10/2/2013 4:35:13 PM #Secs = 6.13
+==># of asserts = 6

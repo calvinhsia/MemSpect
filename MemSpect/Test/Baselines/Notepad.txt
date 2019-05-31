@@ -1,0 +1,271 @@
+==>Test start 3/1/2017 4:39:13 PM NotePad
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>Starting Notepad
+==>MemSpect vers = 161109D
+==>DoSpotCheckHeaps
+==>Freezing target. SeqNo = 1076
+==>
+==>BMem HeapWalkMap
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+d:\9147.public.fre\internal\shell\inc\shellcoreevents.h(6421) : dwmapi.dll!McGenEventRegister + 31 bytes
+d:\9147\windows\dwm\dwmapi\dllmain.cpp(40) : dwmapi.dll!DllMain + 58 bytes
+d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(630) : dwmapi.dll!__DllMainCRTStartup + 263 bytes
+d:\9147\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 47 bytes
+d:\blue\minkernel\ntdll\i386\ldrthunk.asm(90) : ntdll.dll!LdrxCallInitRoutine + 22 bytes
+d:\blue\minkernel\ntdll\ldr.c(214) : ntdll.dll!LdrpCallInitRoutine + 67 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(1243) : ntdll.dll!LdrpInitializeNode + 285 bytes
+d:\blue\minkernel\ntdll\ldrddag.c(1754) : ntdll.dll!LdrpInitializeGraph + 89 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(2294) : ntdll.dll!LdrpPrepareModuleForExecution + 289 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(518) : ntdll.dll!LdrpGetDelayloadExportDll + 209 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(833) : ntdll.dll!LdrpHandleProtectedDelayload + 48 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(1094) : ntdll.dll!LdrResolveDelayLoadedAPI + 147 bytes
+d:\9147\minkernel\dload\helper\current\dloadhelper.c(71) : uxtheme.dll!__delayLoadHelper2 + 34 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2071) : uxtheme.dll!CThemeWnd::_AttachInstance + 115 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2005) : uxtheme.dll!CThemeWnd::Attach + 506 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1054) : uxtheme.dll!_ThemeDefWindowProc + 1941 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1114) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(692) : USER32.dll!DefWindowProcW + 371 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 135 bytes
+d:\blue\windows\core\ntuser\client\i386\callproc.asm(116) : USER32.dll!_InternalCallWinProc + 43 bytes
+d:\blue\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 398 bytes
+d:\blue\windows\core\ntuser\client\client.c(3314) : USER32.dll!DispatchClientMessage + 220 bytes
+d:\blue\windows\core\ntuser\inc\ntcb.h(2183) : USER32.dll!__fnINOUTNCCALCSIZE + 79 bytes
+d:\blue\minkernel\ntos\rtl\i386\userdisp.asm(516) : ntdll.dll!KiUserCallbackDispatcher + 54 bytes
+d:\blue\windows\core\ntuser\client\ntstubs.c(1795) : USER32.dll!CreateWindowInternal + 380 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(66) : USER32.dll!CreateWindowExW + 55 bytes
+d:\blue\shell\osshell\accesory\notepad\npinit.c(828) : notepad.exe!NPInit + 305 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1543) : notepad.exe!WinMain + 82 bytes
+d:\blue\minkernel\crts\crtw32\dllstuff\crtexe.c(685) : notepad.exe!__mainCRTStartup + 322 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+d:\9147.public.fre\internal\shell\inc\shellcoreevents.h(6421) : dwmapi.dll!McGenEventRegister + 31 bytes
+d:\9147\windows\dwm\dwmapi\dllmain.cpp(49) : dwmapi.dll!DllMain + 100 bytes
+d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(630) : dwmapi.dll!__DllMainCRTStartup + 263 bytes
+d:\9147\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 47 bytes
+d:\blue\minkernel\ntdll\i386\ldrthunk.asm(90) : ntdll.dll!LdrxCallInitRoutine + 22 bytes
+d:\blue\minkernel\ntdll\ldr.c(214) : ntdll.dll!LdrpCallInitRoutine + 67 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(1243) : ntdll.dll!LdrpInitializeNode + 285 bytes
+d:\blue\minkernel\ntdll\ldrddag.c(1754) : ntdll.dll!LdrpInitializeGraph + 89 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(2294) : ntdll.dll!LdrpPrepareModuleForExecution + 289 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(518) : ntdll.dll!LdrpGetDelayloadExportDll + 209 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(833) : ntdll.dll!LdrpHandleProtectedDelayload + 48 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(1094) : ntdll.dll!LdrResolveDelayLoadedAPI + 147 bytes
+d:\9147\minkernel\dload\helper\current\dloadhelper.c(71) : uxtheme.dll!__delayLoadHelper2 + 34 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2071) : uxtheme.dll!CThemeWnd::_AttachInstance + 115 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2005) : uxtheme.dll!CThemeWnd::Attach + 506 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1054) : uxtheme.dll!_ThemeDefWindowProc + 1941 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1114) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(692) : USER32.dll!DefWindowProcW + 371 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 135 bytes
+d:\blue\windows\core\ntuser\client\i386\callproc.asm(116) : USER32.dll!_InternalCallWinProc + 43 bytes
+d:\blue\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 398 bytes
+d:\blue\windows\core\ntuser\client\client.c(3314) : USER32.dll!DispatchClientMessage + 220 bytes
+d:\blue\windows\core\ntuser\inc\ntcb.h(2183) : USER32.dll!__fnINOUTNCCALCSIZE + 79 bytes
+d:\blue\minkernel\ntos\rtl\i386\userdisp.asm(516) : ntdll.dll!KiUserCallbackDispatcher + 54 bytes
+d:\blue\windows\core\ntuser\client\ntstubs.c(1795) : USER32.dll!CreateWindowInternal + 380 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(66) : USER32.dll!CreateWindowExW + 55 bytes
+d:\blue\shell\osshell\accesory\notepad\npinit.c(828) : notepad.exe!NPInit + 305 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1543) : notepad.exe!WinMain + 82 bytes
+d:\blue\minkernel\crts\crtw32\dllstuff\crtexe.c(685) : notepad.exe!__mainCRTStartup + 322 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+==>
+==>BMem __MemSpect Indirect
+==>BMem __MemSpect VirtualAllocs
+==>BMem __MemSpect HeapCreates
+==>BMem __MemSpect GdiObjs
+==>BMem __MemSpect TrackGCStacks
+==>BMem __MemSpect ClrLoads
+==>BMem __MemSpect ClrJit
+==>BMem __MemSpect ClrGCHnd
+==>BMem __MemSpect ClrExcpt
+==>BMem __MemSpect ClrClasses
+==>BMem __MemSpect ClrObjects
+==>BMem __MemSpect CodeMarker
+==>BMem __MemSpect ThreadInfo
+==>BMem __MemSpect LoadResource
+==>BMem __Process Heap
+==>
+==>Duplicates in all heaps
+Dupe #=1 ndx=1 Sz=8 Hp=__Process Heap
+Dupe #=1 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=5 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=6 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=7 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=8 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=9 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=10 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=11 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=12 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=13 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=14 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=15 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=16 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=17 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=18 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=19 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=20 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=21 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=22 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=23 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=24 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=25 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=26 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=27 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=28 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=29 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=30 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=31 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=32 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=33 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=34 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=35 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=36 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=37 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=38 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=39 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=40 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=41 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=42 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=43 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=44 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=45 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=46 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=47 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=48 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=49 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=50 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=51 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=52 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=53 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=54 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=55 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=56 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=57 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=58 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=59 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=60 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=61 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=62 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=63 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=64 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=65 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=66 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=67 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=68 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=5 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=6 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=7 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=8 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=9 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=10 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=11 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=12 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=13 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=14 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=15 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=16 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=17 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=18 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=19 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=20 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=21 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=22 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=23 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=24 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=25 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=26 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=27 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=28 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=29 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=30 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=31 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=32 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=3 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=3 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=4 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=5 Sz=32 Hp=__Process Heap
+Dupe #=4 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=5 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=6 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=7 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=8 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=9 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=10 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=11 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=5 ndx=1 Sz=36 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=5 ndx=2 Sz=36 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=6 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=6 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=7 ndx=1 Sz=20 Hp=__Process Heap
+Dupe #=7 ndx=2 Sz=20 Hp=__Process Heap
+Dupe #=8 ndx=1 Sz=16 Hp=~msvcrt.dll!malloc+144bytes
+Dupe #=8 ndx=2 Sz=16 Hp=~msvcrt.dll!malloc+144bytes
+Dupe #=9 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=9 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=9 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=9 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=10 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=10 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=11 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=11 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=12 ndx=1 Sz=12 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=12 ndx=2 Sz=12 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=13 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=13 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=14 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=14 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=15 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=15 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=16 ndx=1 Sz=4 Hp=__Process Heap
+Dupe #=16 ndx=2 Sz=4 Hp=__Process Heap
+Dupe #=16 ndx=3 Sz=4 Hp=~msvcrt.dll!malloc+144bytes
+Dupe #=16 ndx=4 Sz=4 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=17 ndx=1 Sz=4 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=17 ndx=2 Sz=4 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+==>Duplicates in __Process Heap
+Dupe #=1 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=3 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=4 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=5 Sz=32 Hp=__Process Heap
+Dupe #=2 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=2 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=1 Sz=20 Hp=__Process Heap
+Dupe #=3 ndx=2 Sz=20 Hp=__Process Heap
+Dupe #=4 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=4 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=5 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=5 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=6 ndx=1 Sz=4 Hp=__Process Heap
+Dupe #=6 ndx=2 Sz=4 Hp=__Process Heap
+==>Test end NotePad 3/1/2017 4:39:30 PM #Secs = 16.97
+==># of asserts = 250
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\Notepad.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-01 16_20_09\Notepad.txt"

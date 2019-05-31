@@ -1,0 +1,4 @@
+==>Test start 2/13/2014 5:22:34 PM MiniDumpCreateMD
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>Test end MiniDumpCreateMD 2/13/2014 5:22:34 PM #Secs = 0.08
+==># of asserts = 2

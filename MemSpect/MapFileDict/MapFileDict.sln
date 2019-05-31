@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20519.0 VSPRO_PLATFORM
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapFileDict", "MapFileDict\MapFileDict.csproj", "{67524564-A664-4F30-8708-EA8644D5F775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapFileDictTest", "MapFileDictTest\MapFileDictTest.csproj", "{BB032DF2-EBD8-44C3-B178-810522985298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapFileUI", "MapFileUI\MapFileUI.csproj", "{5A56A140-3D9B-454D-8BA8-A8722B7820A8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://vstfdevdiv:8080/devdiv2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MapFileDict\\MapFileDict.csproj
+		SccProjectName1 = MapFileDict
+		SccLocalPath1 = MapFileDict
+		SccProjectUniqueName2 = MapFileDictTest\\MapFileDictTest.csproj
+		SccProjectName2 = MapFileDictTest
+		SccLocalPath2 = MapFileDictTest
+		SccProjectUniqueName3 = MapFileUI\\MapFileUI.csproj
+		SccProjectName3 = MapFileUI
+		SccLocalPath3 = MapFileUI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67524564-A664-4F30-8708-EA8644D5F775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67524564-A664-4F30-8708-EA8644D5F775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67524564-A664-4F30-8708-EA8644D5F775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67524564-A664-4F30-8708-EA8644D5F775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB032DF2-EBD8-44C3-B178-810522985298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB032DF2-EBD8-44C3-B178-810522985298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB032DF2-EBD8-44C3-B178-810522985298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB032DF2-EBD8-44C3-B178-810522985298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A56A140-3D9B-454D-8BA8-A8722B7820A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A56A140-3D9B-454D-8BA8-A8722B7820A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A56A140-3D9B-454D-8BA8-A8722B7820A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A56A140-3D9B-454D-8BA8-A8722B7820A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

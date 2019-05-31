@@ -1,0 +1,201 @@
+==>Test start 8/19/2015 5:34:31 PM LifeSnap
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[05:34:33.038 P] MemSpect API connecting Wednesday, August 19, 2015 5:34:33 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 5024 
+==>[05:34:33.038 P] Target CmdLine(Addr=00582c60)=C:\MemSpect\test\cslife.exe
+==>[05:34:33.038 P] TotVM=000000007ffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[05:34:33.038 P] PID=4228 'cslife.exe' FileVer='1.0.0.0' ProdVer='1.0.0.0'
+==>[05:34:33.038 P] MemSpect DLL Version = 150604  
+==>[05:34:33.038 P] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\MemSpect.ini
+==>[05:34:33.038 P] CleanUpRCWs = 1
+==>[05:34:33.054 P]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 150604
+==>Freezing target. SeqNo = 16022
+==>[05:34:34.116 P] Freeze Target SeqNo= 16,463
+==>Ini file = C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\MemSpect.ini
+setting LeakMultipleRawText 
+==>[05:34:34.741 P] LeakMultiple count set=2
+Taking offline snap 1
+==>[05:34:35.023 P] Start creating MegaSnapshot C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1 this could take ->10 mins
+==>[05:34:35.023 P]  MaxSeqNo= 16,463
+==>[05:34:35.023 P]  -Writing minidump C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1\minidump.dmp Tid=4164
+==>[05:34:39.116 P]  --done writing Minidump C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1\minidump.dmp Tid=4164
+==>[05:34:39.538 P]  -Processing heaps.... Tid=4164
+==>[05:34:39.585 P]  -Writing __MemSpect02240000.mhd
+==>[05:34:39.960 P]  -Writing __Process Heap00580000.mhd
+==>[05:34:40.023 P]  -Writing _clr.dll!DebuggerHeapInit+39bytes02500000.mhd
+==>[05:34:40.038 P]  -Writing _clr.dll!DebuggerHeapInit+39bytes02440000.mhd
+==>[05:34:40.054 P]  -Writing _comctl32.dll!_heap_init+27bytes04cc0000.mhd
+==>[05:34:40.054 P]  -Writing _mscoreei.dll!GetProcessExecutableHeap+24bytes04bd0000.mhd
+==>[05:34:40.069 P]  -Writing ~MSCOREE.DLL!_calloc_impl+194bytes00880000.mhd
+==>[05:34:40.085 P]  -Writing ~msvcrt.dll!malloc+144bytes00550000.mhd
+==>[05:34:40.101 P]  -Writing ~ntdll.dll!RtlCreateHeap+1569bytes048d0000.mhd
+==>[05:34:40.132 P]  -Writing ~ntdll.dll!RtlCreateHeap+1569bytes048a0000.mhd
+==>[05:34:40.148 P]  -Collecting CLR Class Info 
+==>[05:34:40.741 P]  -Writing ClrClassInfo.mhd
+==>[05:34:40.757 P]  -Writing Filter.mhd
+==>[05:34:40.788 P]  -Writing WorkingSetInfo.mhd
+==>[05:34:41.164 P] Getting CLR Obj Dump
+==>[05:34:41.288 P] Done gettng CLR Obj Dump
+==>[05:34:41.304 P]  -Writing CLRObjRefs.mhd
+==>[05:34:41.460 P]  -Resolving 4793 Symbols
+==>[05:34:45.445 P]  -2500 syms to resolve (759a4b33=d:\9147\windows\core\ntuser\client\imectl.c(980) : USER32.dll!ImeSetContextHandler + 804 bytes)
+==>[05:34:46.913 P]  -0 syms to resolve (f437a33d=mscorlib.dll!System.Reflection.PropertyInfo.GetValue)
+==>[05:34:46.929 P]  -Writing StackFrameDictionary.mhd
+==>[05:34:46.960 P]  -Calculating Heap Report
+==>[05:34:47.007 P]  -Writing HeapReport.mhd
+==>[05:34:47.132 P] Clearing CLR Obj Dump
+==>[05:34:50.976 P] Done creating MegaSnapshot in 00:00:15.95 C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1
+==>Done offline snap. folder =C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1
+==>[05:34:50.976 P] UnFreeze Target Seqno= 16,468
+==>Loading offline snap C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1
+==>[05:34:51.445 P] MemSpect API connecting Wednesday, August 19, 2015 5:34:51 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 5024 
+==>[05:34:51.445 P] Opening zip package C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1
+==>[05:34:51.445 P] Loading __MemSpect02240000.mhd
+==>[05:34:51.507 P] Loading __Process Heap00580000.mhd
+==>[05:34:51.523 P] Loading _clr.dll!DebuggerHeapInit+39bytes02500000.mhd
+==>[05:34:51.523 P] Loading _clr.dll!DebuggerHeapInit+39bytes02440000.mhd
+==>[05:34:51.523 P] Loading _comctl32.dll!_heap_init+27bytes04cc0000.mhd
+==>[05:34:51.523 P] Loading _mscoreei.dll!GetProcessExecutableHeap+24bytes04bd0000.mhd
+==>[05:34:51.523 P] Loading ~MSCOREE.DLL!_calloc_impl+194bytes00880000.mhd
+==>[05:34:51.523 P] Loading ~msvcrt.dll!malloc+144bytes00550000.mhd
+==>[05:34:51.523 P] Loading ~ntdll.dll!RtlCreateHeap+1569bytes048d0000.mhd
+==>[05:34:51.523 P] Loading ~ntdll.dll!RtlCreateHeap+1569bytes048a0000.mhd
+==>[05:34:51.539 P] Loading ClrClassInfo.mhd
+==>[05:34:51.539 P] Loading Filter.mhd
+==>[05:34:51.539 P] Loading WorkingSetInfo.mhd
+==>[05:34:51.632 P] Loading CLRObjRefs.mhd
+==>[05:34:51.632 P] Loading StackFrameDictionary.mhd
+==>[05:34:51.664 P] Loading C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapLife1\HeapReport.mhd
+==>[05:34:51.679 P] LeakMultiple count set=2
+==>[05:34:51.679 P] # stacks loaded = 6,287
+==>[05:34:51.679 P] Snap Loaded (ClrObjref Load pending) in  00:00:00.23
+==>[05:34:51.679 P] waiting for ClrObjRefData Loaded
+==>[05:34:51.679 P] Starting CLRObjRefData load in background
+==>[05:34:51.726 P] Closing Zip Package
+==>[05:34:51.726 P] --Done Background loading CLRObjRefData
+==>[05:34:51.726 P] --done waiting for ClrObjRefData
+Offline snap loaded
+LeakMultipleRawText =1,2
+3,4
+==># of System.String = 920
+System.String Form1
+==>[05:34:51.759 P] Reading minidump mem data to dict
+==>[05:34:51.759 P] MemDictCreated
+Form1 stack:
+d:\memspect\ MemSpect
+cslife.exe!Life.Form1..ctor
+cslife.exe!Life.Form1.Main
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+f:\dd\ndp\clr\src\jit\compiler.cpp(3056) : clrjit.dll!Compiler::compCompile + 560 bytes
+f:\dd\ndp\clr\src\jit\compiler.cpp(3579) : clrjit.dll!Compiler::compCompileHelper + 762 bytes
+f:\dd\ndp\clr\src\jit\compiler.cpp(4027) : clrjit.dll!jitNativeCode + 483 bytes
+f:\dd\ndp\clr\src\jit\ee_il_dll.cpp(163) : clrjit.dll!CILJit::compileMethod + 37 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(10884) : clrjit.dll!Compiler::fgMorphCall + 903 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(10979) : clrjit.dll!Compiler::fgMorphConst + 208 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(14955) : clrjit.dll!Compiler::fgMorphTree + 123 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(14983) : clrjit.dll!Compiler::fgMorphTree + 211 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(16845) : clrjit.dll!Compiler::fgMorphStmts + 123 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(17094) : clrjit.dll!Compiler::fgMorphBlocks + 120 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(17691) : clrjit.dll!Compiler::fgMorph + 213 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(8257) : clrjit.dll!Compiler::fgMorphArgs + 499 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\ceeload.cpp(5098) : clr.dll!Module::ResolveStringRef + 263 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1703) : clr.dll!SlowAllocateString + 143 bytes
+f:\dd\ndp\clr\src\vm\i386\asmhelpers.asm(2172) : clr.dll!ThePreStub + 22 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2923) : clr.dll!UnframedAllocateString + 6 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2975) : clr.dll!ConstructStringLiteral + 57 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11171) : clr.dll!CEEJitInfo::constructStringLiteral + 117 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11670) : clr.dll!invokeCompileMethodHelper + 115 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11718) : clr.dll!invokeCompileMethod + 49 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11773) : clr.dll!CallCompileMethodWithSEHWrapper + 42 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(12492) : clr.dll!UnsafeJitFunction + 980 bytes
+f:\dd\ndp\clr\src\vm\loaderallocator.cpp(1484) : clr.dll!LoaderAllocator::GetStringObjRefPtrFromUnicodeString + 48 bytes
+f:\dd\ndp\clr\src\vm\prestub.cpp(1131) : clr.dll!MethodDesc::DoPrestub + 1432 bytes
+f:\dd\ndp\clr\src\vm\prestub.cpp(447) : clr.dll!MethodDesc::MakeJitWorker + 878 bytes
+f:\dd\ndp\clr\src\vm\prestub.cpp(752) : clr.dll!PreStubWorker + 240 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\stringliteralmap.cpp(183) : clr.dll!StringLiteralMap::GetStringLiteral + 147 bytes
+f:\dd\ndp\clr\src\vm\stringliteralmap.cpp(521) : clr.dll!GlobalStringLiteralMap::AddStringLiteral + 70 bytes
+==>
+Now individual stack frames
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1703) : clr.dll!SlowAllocateString + 143 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2923) : clr.dll!UnframedAllocateString + 6 bytes
+f:\dd\ndp\clr\src\vm\stringliteralmap.cpp(521) : clr.dll!GlobalStringLiteralMap::AddStringLiteral + 70 bytes
+f:\dd\ndp\clr\src\vm\stringliteralmap.cpp(183) : clr.dll!StringLiteralMap::GetStringLiteral + 147 bytes
+f:\dd\ndp\clr\src\vm\loaderallocator.cpp(1484) : clr.dll!LoaderAllocator::GetStringObjRefPtrFromUnicodeString + 48 bytes
+f:\dd\ndp\clr\src\vm\ceeload.cpp(5098) : clr.dll!Module::ResolveStringRef + 263 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2975) : clr.dll!ConstructStringLiteral + 57 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11171) : clr.dll!CEEJitInfo::constructStringLiteral + 117 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(10979) : clrjit.dll!Compiler::fgMorphConst + 208 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(14955) : clrjit.dll!Compiler::fgMorphTree + 123 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(8257) : clrjit.dll!Compiler::fgMorphArgs + 499 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(10884) : clrjit.dll!Compiler::fgMorphCall + 903 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(14983) : clrjit.dll!Compiler::fgMorphTree + 211 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(16845) : clrjit.dll!Compiler::fgMorphStmts + 123 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(17094) : clrjit.dll!Compiler::fgMorphBlocks + 120 bytes
+f:\dd\ndp\clr\src\jit\flowgraph.cpp(17691) : clrjit.dll!Compiler::fgMorph + 213 bytes
+f:\dd\ndp\clr\src\jit\compiler.cpp(3579) : clrjit.dll!Compiler::compCompileHelper + 762 bytes
+f:\dd\ndp\clr\src\jit\compiler.cpp(3056) : clrjit.dll!Compiler::compCompile + 560 bytes
+f:\dd\ndp\clr\src\jit\compiler.cpp(4027) : clrjit.dll!jitNativeCode + 483 bytes
+f:\dd\ndp\clr\src\jit\ee_il_dll.cpp(163) : clrjit.dll!CILJit::compileMethod + 37 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11670) : clr.dll!invokeCompileMethodHelper + 115 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11718) : clr.dll!invokeCompileMethod + 49 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(11773) : clr.dll!CallCompileMethodWithSEHWrapper + 42 bytes
+f:\dd\ndp\clr\src\vm\jitinterface.cpp(12492) : clr.dll!UnsafeJitFunction + 980 bytes
+f:\dd\ndp\clr\src\vm\prestub.cpp(447) : clr.dll!MethodDesc::MakeJitWorker + 878 bytes
+f:\dd\ndp\clr\src\vm\prestub.cpp(1131) : clr.dll!MethodDesc::DoPrestub + 1432 bytes
+f:\dd\ndp\clr\src\vm\prestub.cpp(752) : clr.dll!PreStubWorker + 240 bytes
+f:\dd\ndp\clr\src\vm\i386\asmhelpers.asm(2172) : clr.dll!ThePreStub + 22 bytes
+cslife.exe!Life.Form1..ctor
+cslife.exe!Life.Form1.Main
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+System.String &Reset
+System.String button1
+FileLoadNotifications
+==>Address=0xfffffff0, SeqNo=10,825, Size=1,576,960, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\SYSTEM32\DWrite.dll 6d060000
+==>Address=0xfffffff1, SeqNo=10,699, Size=106,496, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\system32\dwmapi.dll 70970000
+==>Address=0xfffffff2, SeqNo=8,987, Size=7,794,688, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\43edd630a9f8cd6ac38c527b106ec94f\System.Xml.ni.dll 72590000
+==>Address=0xfffffff3, SeqNo=8,249, Size=974,848, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\814dd462b742d7c16c620e79397b2463\System.Configuration.ni.dll 72d00000
+==>Address=0xfffffff4, SeqNo=7,623, Size=561,152, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9600.17810_none_7c5b6194aa0716f1\comctl32.dll 717e0000
+==>Address=0xfffffff5, SeqNo=7,373, Size=1,507,328, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.9600.17415_none_dad8722c5bcc2d8f\gdiplus.dll 70150000
+==>Address=0xfffffff6, SeqNo=6,901, Size=512,000, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll 73850000
+==>Address=0xfffffff7, SeqNo=6,246, Size=12,910,592, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Windows.Forms\592a40dd076e6e46b4a8bc95bb64b2e8\System.Windows.Forms.ni.dll 6c180000
+==>Address=0xfffffff8, SeqNo=5,511, Size=1,646,592, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Drawing\8efdc7a3726640f79d9333da88accaf8\System.Drawing.ni.dll 6cdd0000
+==>Address=0xfffffff9, SeqNo=5,439, Size=10,039,296, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\assembly\NativeImages_v4.0.30319_32\System\1c5fe4cb68f67046baec4c3a854f722f\System.ni.dll 72eb0000
+==>Address=0xfffffffa, SeqNo=4,164, Size=970,752, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\system32\uxtheme.dll 70520000
+==>Address=0xfffffffb, SeqNo=4,143, Size=36,864, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\SYSTEM32\kernel.appcore.dll 738d0000
+==>Address=0xfffffffc, SeqNo=3,928, Size=17,387,520, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\c90ef9a73ea0044641d31b19023aad61\mscorlib.ni.dll 738e0000
+==>Address=0xfffffffd, SeqNo=352, Size=6,926,336, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll 74a60000
+==>Address=0xfffffffe, SeqNo=351, Size=880,640, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\SYSTEM32\MSVCR120_CLR0400.dll 74980000
+==>Address=0xffffffff, SeqNo=70, Size=516,096, BlkType=IndirectInfo Thread=13260M IType=FileLoad File = C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll 75100000
+==>[05:34:51.773 P] Clearing CLR Obj Dump
+==>Test end LifeSnap 8/19/2015 5:34:51 PM #Secs = 20.06
+==># of asserts = 111
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\LifeSnap.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\LifeSnap.txt"

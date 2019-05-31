@@ -1,0 +1,8 @@
+==>Test start 10/2/2013 4:32:28 PM LifeSelf
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Launching MemSpect to analyze mem use of another instance of MemSpect looking at snaps\CSLife 
+ Starting MemSpect hasexited= nothing
+==>MemSpect Process found title = MemSpect csLife
+==>MemSpect Process found title = MemSpect MemSpect.exe(62668) 
+==>Test end LifeSelf 10/2/2013 4:32:47 PM #Secs = 18.22
+==># of asserts = 8

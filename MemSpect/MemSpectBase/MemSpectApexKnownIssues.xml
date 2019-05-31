@@ -1,0 +1,1482 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<KnownIssues>
+  <!--
+  Use intellisense to add to this file: after hitting "<KnownIssues", hit Tab to fill in the rest of the fields with defaults
+  If it doesn't work, make sure the Xsd is associated (Menu->XML->Schemas)
+  -->
+  <Issues>
+    <KnownIssue IssueName="TestIssue" BugId="" FailTestWhenFound="true" Created="2013-03-07">
+      <IssueDescription>string</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+    <![CDATA[
+if (hctr.AllocationStruct.SeqNo == 2)
+{
+    return true;
+}
+return false;
+]]>    
+      </PredicateString>
+      <SampleCallStack>string</SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="MyAddinManaged" BugId="" FailTestWhenFound="false" Created="2013-03-07">
+      <IssueDescription>Intentional leak from MyAddin (Managed string)</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap && hctr.TBlk.BlockType == Common.BlockTypes.ClrObject)
+{
+    var leakedstr = hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: true);
+    if (leakedstr.StartsWith("MyAddIn Leaking"))
+    {
+        return true;
+    }
+}
+return false;
+]]>
+        
+      </PredicateString>
+      <SampleCallStack> <![CDATA[
+      ]]></SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="MyAddinNative" BugId="" FailTestWhenFound="false" Created="2013-03-07">
+      <IssueDescription>Intentional leak from MyAddin(Native)</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (!hctr.IsMemSpectHeap || hctr.TBlk.BlockType != Common.BlockTypes.ClrObject)
+{
+    if (stk.Contains("MyAddin1.dll!MyAddin1.Connect.DoLeak"))
+    {
+        return true;
+    }
+}
+return false;
+]]>
+
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+Call Stack:
+d:\memspect\vsassert\trackmem.cpp(3667) : MemSpectDll.dll!Mine_RtlAllocHeap + 421 bytes
+d:\win8_gdr\com\combase\class\memapi.cxx(459) : combase.dll!CoTaskMemAlloc + 37 bytes
+mscorlib.dll!System.Runtime.InteropServices.Marshal.StringToCoTaskMemUni
+MyAddin1.dll!MyAddin1.Connect.DoLeak
+MyAddin1.dll!MyAddin1.Connect.<OnConnection>b__1
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.WindowEvents.InternalFireActivated
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.WindowEvents.FireActivated
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.Activate
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowManagerService.viewManager_ActiveViewChanged
+Microsoft.VisualStudio.Shell.12.0.dll!Microsoft.VisualStudio.PlatformUI.ExtensionMethods.RaiseEvent
+Microsoft.VisualStudio.Shell.ViewManager.dll!Microsoft.VisualStudio.PlatformUI.Shell.ViewManager.SetActiveView
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.ShowInternal
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.<Show>b__26
+Microsoft.VisualStudio.Shell.12.0.dll!Microsoft.VisualStudio.ErrorHandler.CallWithCOMConvention
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.Show
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.Window.set_Visible
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.WindowBase.<>c__DisplayClass3f.<set_Visible>b__3e
+Microsoft.VisualStudio.Shell.12.0.dll!Microsoft.VisualStudio.Shell.ThreadHelper.Invoke
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.WindowBase.set_Visible
+Microsoft.VisualStudio.TemplateWizard.dll!Microsoft.VisualStudio.TemplateWizard.Wizard.OpenNotedItems
+Microsoft.VisualStudio.TemplateWizard.dll!Microsoft.VisualStudio.TemplateWizard.Wizard.Execute
+f:\dd\ndp\clr\src\vm\comtoclrcall.cpp(829) : clr.dll!COMToCLRWorker + 998 bytes
+!0x0345A076 SymErr = 0x7e
+f:\dd\env\msenv\core\idewiz.cpp(437) : msenv.dll!WizLoadAndRunFileEx + 1127 bytes
+f:\dd\env\msenv\core\idewiz.cpp(180) : msenv.dll!WizLoadAndRunFile + 1228 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1047) : msenv.dll!<lambda_f858f68d519dd088a8ee8d453ea970ee>::operator() + 2817 bytes
+f:\dd\env\inc\vserr.h(74) : msenv.dll!VsSupportErrorInfoSafeInvoke<<lambda_f858f68d519dd088a8ee8d453ea970ee> > + 43 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1234) : msenv.dll!CVSolution::AddFromTemplateEx + 88 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1240) : msenv.dll!CVSolution::AddFromTemplate + 34 bytes
+!0x12B05DB4 SymErr = 0x7e
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.<>c__DisplayClass9.<AddDteProjectFromTemplate>b__8
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+mscorlib.dll!System.Delegate.DynamicInvoke
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.UIThreadInvokerHelper.<InvokeOn>b__1
+Microsoft.Test.Apex.VisualStudio.Hosting.dll!Microsoft.Test.Apex.VisualStudio.Services.Remote.VsUIThreadInvokerService.DispatcherInvocationWrapper
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeImpl
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext
+mscorlib.dll!System.Threading.ExecutionContext.RunInternal
+mscorlib.dll!System.Threading.ExecutionContext.Run
+mscorlib.dll!System.Threading.ExecutionContext.Run
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.Invoke
+WindowsBase.dll!System.Windows.Threading.Dispatcher.ProcessQueue
+WindowsBase.dll!System.Windows.Threading.Dispatcher.WndProcHook
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.LegacyInvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\win8_gdr\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 256 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(2686) : USER32.dll!DispatchMessageWorker + 1007 bytes
+d:\win8_gdr\windows\core\ntuser\client\cltxt.h(1000) : USER32.dll!DispatchMessageW + 16 bytes
+f:\dd\env\msenv\core\main.cpp(1390) : msenv.dll!MainMessageLoop::ProcessMessage + 195 bytes
+f:\dd\env\msenv\core\msocm.cpp(453) : msenv.dll!CMsoCMHandler::EnvironmentMsgLoop + 240 bytes
+f:\dd\env\msenv\core\msocm.cpp(358) : msenv.dll!CMsoCMHandler::FPushMessageLoop + 306 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2243) : msenv.dll!SCM::FPushMessageLoop + 174 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2999) : msenv.dll!SCM_MsoCompMgr::FPushMessageLoop + 42 bytes
+f:\dd\env\msenv\core\msocm.cpp(715) : msenv.dll!CMsoComponent::PushMsgLoop + 46 bytes
+f:\dd\env\msenv\core\main.cpp(1020) : msenv.dll!VStudioMainLogged + 1264 bytes
+f:\dd\env\msenv\core\main.cpp(1101) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1084) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(658) : devenv.exe!CDevEnvAppId::Run + 2433 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(62) : devenv.exe!WinMain + 189 bytes
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c(581) : devenv.exe!__tmainCRTStartup + 293 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+      
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="ApexStringGenerator" BugId="" FailTestWhenFound="false" Created="2013-03-08">
+      <IssueDescription>ApexStringGenerator</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+<![CDATA[
+if (hctr.IsMemSpectHeap &&
+    hctr.TBlk.BlockType == Common.BlockTypes.ClrObject &&
+    hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: false) == "System.String"
+    )
+{
+    if (stk.Contains("Microsoft.Test.Apex.Services.StringGeneration.StringGenerator.GenerateDelegatedString"))
+    {
+        return true;
+    }
+}
+return false;
+]]>        
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+Children of "-> Paths from GCRoots to System.String QN1LpWIwPk (# Paths = 1)"
+-> Paths from GCRoots to System.String QN1LpWIwPk (# Paths = 1)
+ ->PathFromGCRoot (PathLen = 6) 
+  ->Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension  RootKind = Handle RootFlags = " WeakRef" RootId 0x0320b1ec 0x115dafa0 (116)
+  -><SolutionService>k__BackingField = Microsoft.Test.Apex.VisualStudio.Solution.SolutionService 0x111fb5f8 (120)
+  ->stringGenerator = Microsoft.Test.Apex.Services.StringGeneration.VsSafeFileNameStringGenerator 0x1120241c (52)
+  -><PreviouslyGeneratedStrings>k__BackingField = System.Collections.Generic.List`1<System.String>(Count=115) 0x11202720 (24)
+  ->_items = System.String 0x115b6ca8 (528) [](Count=128)
+  ->System.String 0x04d0ed6c (34)  QN1LpWIwPk
+        
+        
+{ Address = 04d0ed6c, SeqNo = 6608633, Size = 34, Thread = 8868, Gen = 2, Moved = 7, Srviv = 119, Classid = 7326afb0, ClassName = System.String QN1LpWIwPk, NumItems = 0, _HeapAllocationContainer = Address=0x04d0ed6c, SeqNo=6,608,633, Size=34, BlkType=ClrObject Thread=8868 }  Heap = __MemSpect
+ClassId = 0x7326afb0 System.String QN1LpWIwPk
+GCGen = 2 GCMoved=7 GCSurvived =119 
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5538) : MemSpectDll.dll!CProcessGC::TrackObject + 545 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1673) : clr.dll!SlowAllocateString + 143 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(3180) : clr.dll!FramedAllocateString + 105 bytes
+mscorlib.dll!System.Text.StringBuilder.ToString
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.StringGeneration.StringGenerator.GenerateDelegatedString
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.StringGeneration.StringGenerator.Generate
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateEmptySolution
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateDefaultProject
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(647) : clr.dll!CallDescrWithObjectArray + 1317 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(170) : clr.dll!CStackBuilderSink::PrivateProcessMessage + 491 bytes
+mscorlib.dll!System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback
+mscorlib.dll!System.Runtime.Remoting.Channels.ChannelServices.DispatchMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.DispatchChannelSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+
+04d0ed6c : 7326afb0 0000000a 004e0051 004c0031 00570070 00770049 006b0050 00000000   b0 af 26 73 0a 00 00 00 51 00 4e 00 31 00 4c 00 70 00 57 00 49 00 77 00 50 00 6b 00 00 00 00 00     &s    Q N 1 L p W I w P k     
+04d0ed8c : 00000000                                                                  00 00 00 00                                                                                           
+
+      ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="ConditionalWeakTable" BugId="" FailTestWhenFound="false" Created="2013-03-08">
+      <IssueDescription>ConditionalWeakTable</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (stk.Contains("ConditionalWeakTable"))
+{
+    return true;
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>string</SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="System.WeakReference(Target= 0x00000000)" BugId="" FailTestWhenFound="false" Created="2013-03-08">
+      <IssueDescription>string</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap)
+{
+    if (hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: true) == "System.WeakReference(Target= 0x00000000)")
+    {
+        return true;
+    }
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>string</SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="KeyboardNavigation.WeakReferenceList" BugId="string" FailTestWhenFound="false" Created="2013-03-08">
+      <IssueDescription>KeyboardNavigation.WeakReferenceList</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap)
+{
+    if (hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: true) == "System.WeakReference(Target= 0x00000000)")
+    {
+        return true;
+    }
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>string</SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="EditorOptions.AddDerivedOptions" BugId="" FailTestWhenFound="false" Created="2013-03-08">
+      <IssueDescription>EditorOptions.AddDerivedOptions</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap)
+{
+    if (stk.Contains("EditorOptions.AddDerivedOptions"))
+    {
+        return true;
+    }
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>string</SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="CSolution::ReleaseUpgradeLoggingService" BugId="473803" FailTestWhenFound="false" Created="2013-03-08">
+      <IssueDescription>CSolution::ReleaseUpgradeLoggingService: (inlined out)</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (!hctr.IsMemSpectHeap) // native heap
+{
+    if (stk.Contains("CSolution::ReleaseUpgradeLoggingService"))
+    {
+        return true;
+    }
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 214acef0, SeqNo = 7834574, Size = 128, Thread = 5080, StringContent = The operation could not be completed. Unspecified error , _HeapAllocationContainer = Address=0x214acef0, SeqNo=7,834,574, Size=128, BlkType=None Thread=5080 } Heap = __Process Heap HeapHandle= 00460000
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(3626) : MemSpectDll.dll!Mine_RtlAllocHeap + 438 bytes
+d:\w7rtm\com\ole32\com\class\memapi.cxx(641) : ole32.dll!CRetailMalloc_Alloc + 22 bytes
+d:\win7sp1_gdr\com\oleaut32\typelib\oautil.cpp(833) : OLEAUT32.dll!APP_DATA::AllocCachedMem + 96 bytes
+d:\win7sp1_gdr\com\oleaut32\dispatch\bstr.cpp(107) : OLEAUT32.dll!SysAllocStringLen + 61 bytes
+d:\win7sp1_gdr\com\oleaut32\dispatch\bstr.cpp(71) : OLEAUT32.dll!SysAllocString + 44 bytes
+d:\w7rtm\com\ole32\com\class\cerror.cxx(591) : ole32.dll!CErrorObject::GetDescription + 42 bytes
+f:\dd\env\msenv\core\vsslnpst.cpp(11518) : msenv.dll!CSolution::ReleaseUpgradeLoggingService + 325 bytes
+f:\dd\env\msenv\core\vsslnpst.cpp(14697) : msenv.dll!CSolution::Open + 16309 bytes
+f:\dd\env\msenv\core\vsslnpst.cpp(13002) : msenv.dll!CSolution::Open + 143 bytes
+f:\dd\env\msenv\core\idesolut.cpp(757) : msenv.dll!<lambda_7b07e0acc9be4c6bd3940416731d584d>::operator() + 355 bytes
+f:\dd\env\inc\vserr.h(74) : msenv.dll!VsSupportErrorInfoSafeInvoke<<lambda_7b07e0acc9be4c6bd3940416731d584d> > + 43 bytes
+f:\dd\env\msenv\core\idesolut.cpp(763) : msenv.dll!CVSolution::Open + 22 bytes
+d:\w7rtm\minio\rpc\ndr20\i386\invoke.asm(86) : RPCRT4.dll!Invoke + 42 bytes
+d:\w7rtm\minio\rpc\ndr20\srvcall.cxx(1404) : RPCRT4.dll!NdrStubCall2 + 746 bytes
+d:\w7rtm\com\rpc\ndrole\stub.cxx(1507) : ole32.dll!CStdStubBuffer_Invoke + 60 bytes
+d:\win7sp1_gdr\com\oleaut32\dispatch\rpcwrap.cpp(589) : OLEAUT32.dll!CUnivStubWrapper::Invoke + 203 bytes
+d:\w7rtm\com\ole32\com\dcomrem\channelb.cxx(1187) : ole32.dll!SyncStubInvoke + 60 bytes
+d:\w7rtm\com\ole32\com\dcomrem\channelb.cxx(1396) : ole32.dll!StubInvoke + 185 bytes
+d:\w7rtm\com\ole32\com\dcomrem\ctxchnl.cxx(1262) : ole32.dll!CCtxComChnl::ContextInvoke + 250 bytes
+d:\w7rtm\com\ole32\com\dcomrem\callctrl.cxx(2105) : ole32.dll!MTAInvoke + 26 bytes
+d:\w7rtm\com\ole32\com\dcomrem\callctrl.cxx(1924) : ole32.dll!STAInvoke + 70 bytes
+d:\w7rtm\com\ole32\com\dcomrem\channelb.cxx(1086) : ole32.dll!AppInvoke + 171 bytes
+d:\w7rtm\com\ole32\com\dcomrem\channelb.cxx(1724) : ole32.dll!ComInvokeWithLockAndIPID + 882 bytes
+d:\w7rtm\com\ole32\com\dcomrem\channelb.cxx(1469) : ole32.dll!ComInvoke + 197 bytes
+d:\w7rtm\com\ole32\com\dcomrem\chancont.cxx(298) : ole32.dll!ThreadDispatch + 35 bytes
+d:\w7rtm\com\ole32\com\dcomrem\chancont.cxx(654) : ole32.dll!ThreadWndProc + 353 bytes
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(2591) : USER32.dll!DispatchMessageWorker + 956 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(999) : USER32.dll!DispatchMessageW + 15 bytes
+f:\dd\env\msenv\core\main.cpp(1394) : msenv.dll!MainMessageLoop::ProcessMessage + 195 bytes
+f:\dd\env\msenv\core\msocm.cpp(454) : msenv.dll!CMsoCMHandler::EnvironmentMsgLoop + 240 bytes
+f:\dd\env\msenv\core\msocm.cpp(359) : msenv.dll!CMsoCMHandler::FPushMessageLoop + 306 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2243) : msenv.dll!SCM::FPushMessageLoop + 174 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2999) : msenv.dll!SCM_MsoCompMgr::FPushMessageLoop + 42 bytes
+f:\dd\env\msenv\core\msocm.cpp(716) : msenv.dll!CMsoComponent::PushMsgLoop + 46 bytes
+f:\dd\env\msenv\core\main.cpp(1024) : msenv.dll!VStudioMainLogged + 1264 bytes
+f:\dd\env\msenv\core\main.cpp(1105) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1080) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(656) : devenv.exe!CDevEnvAppId::Run + 2409 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(62) : devenv.exe!WinMain + 189 bytes
+f:\dd\vctools\crt_bld\self_x86\crt\src\crtexe.c(528) : devenv.exe!__tmainCRTStartup + 289 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+214acef0 : 00000070 00680054 00200065 0070006f 00720065 00740061 006f0069 0020006e 70 00 00 00 54 00 68 00 65 00 20 00 6f 00 70 00 65 00 72 00 61 00 74 00 69 00 6f 00 6e 00 20 00 p T h e o p e r a t i o n 
+214acf10 : 006f0063 006c0075 00200064 006f006e 00200074 00650062 00630020 006d006f 63 00 6f 00 75 00 6c 00 64 00 20 00 6e 00 6f 00 74 00 20 00 62 00 65 00 20 00 63 00 6f 00 6d 00 c o u l d n o t b e c o m 
+214acf30 : 006c0070 00740065 00640065 0020002e 006e0055 00700073 00630065 00660069 70 00 6c 00
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="leak dispatcher::ClientTransportFactory::OpenConnectionFromThreadPool opening webservice, never closing" BugId="484565"
+                FailTestWhenFound="false" Created="2013-03-08">
+      <IssueDescription>leak dispatcher::ClientTransportFactory::OpenConnectionFromThreadPool opening webservice, never closing</IssueDescription>
+      <Scenario>Debug AttachToProcess</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString> 
+        <![CDATA[
+if (!hctr.IsMemSpectHeap) // native heap
+{
+    if (stk.Contains("ClientTransportFactory::OpenConnectionFromThreadPool"))
+    {
+        return true;
+    }
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 28bdf180, SeqNo = 3797009, Size = 120, Thread = 6456, StringContent = 糨瞛, _HeapAllocationContainer = Address=0x28bdf180, SeqNo=3,797,009, Size=120, BlkType=None Thread=6456 }  Heap = __Process Heap HeapHandle= 00510000
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(3666) : MemSpectDll.dll!Mine_RtlAllocHeap + 438 bytes
+d:\win7sp1_gdr\minkernel\threadpool\ntdll\io.c(375) : ntdll.dll!TpAllocIoCompletion + 203 bytes
+d:\winmain\minkernel\threadpool\kernel32\threadpool.c(349) : kernel32.dll!CreateThreadpoolIo + 248 bytes
+d:\w7rtm\com\ws\src\common\threadpool.cpp(900) : webservices.dll!ThreadPool::CreateCompletionContext + 148 bytes
+d:\w7rtm\com\ws\src\channels\overlappedasynccompletion.cpp(58) : webservices.dll!OverlappedAsyncCompletion::BindToCompletionPort + 67 bytes
+d:\w7rtm\com\ws\src\channels\tcpsocket.cpp(56) : webservices.dll!TcpSocket::Create + 189 bytes
+d:\w7rtm\com\ws\src\channels\tcpchannelopener.cpp(413) : webservices.dll!TcpChannelOpener::OnEnterConnect + 167 bytes
+d:\w7rtm\com\ws\src\channels\statemachine.h(163) : webservices.dll!StateMachine<HttpRequestChannel>::Execute + 32 bytes
+d:\w7rtm\com\ws\src\channels\statemachine.h(219) : webservices.dll!StateMachine<TcpChannelOpener>::Execute + 76 bytes
+d:\w7rtm\com\ws\src\channels\tcpchannelopener.cpp(380) : webservices.dll!TcpChannelOpener::Open + 1308 bytes
+d:\w7rtm\com\ws\src\channels\tcpsessionchannel.cpp(905) : webservices.dll!TcpSessionChannel::OnEnterOpenChannel + 43 bytes
+d:\w7rtm\com\ws\src\channels\statemachine.h(163) : webservices.dll!StateMachine<HttpRequestChannel>::Execute + 32 bytes
+d:\w7rtm\com\ws\src\channels\statemachine.h(218) : webservices.dll!StateMachine<UdpServerDuplexChannel>::Execute + 111 bytes
+d:\w7rtm\com\ws\src\channels\tcpsessionchannel.cpp(821) : webservices.dll!TcpSessionChannel::Open + 287 bytes
+d:\w7rtm\com\ws\src\channels\channel.cpp(165) : webservices.dll!Ws::OpenChannel + 82 bytes
+f:\dd\debugger\concord\dispatcher\idedll\clienttransportfactory.cpp(897) : VSDebugEng.dll!dispatcher::ClientTransportFactory::OpenStandardChannel + 589 bytes
+f:\dd\debugger\concord\dispatcher\idedll\clienttransportfactory.cpp(743) : VSDebugEng.dll!dispatcher::ClientTransportFactory::OpenChannel + 174 bytes
+f:\dd\debugger\concord\dispatcher\idedll\clienttransportfactory.cpp(593) : VSDebugEng.dll!dispatcher::ClientTransportFactory::OpenConnectionFromThreadPool + 81 bytes
+f:\dd\debugger\concord\dispatcher\idedll\clienttransportfactory.cpp(312) : VSDebugEng.dll!dispatcher::COpenConnectionThreadPoolItem::Execute + 105 bytes
+f:\dd\debugger\concord\dispatcher\idedll\clienttransportfactory.cpp(269) : VSDebugEng.dll!dispatcher::COpenConnectionThreadPoolItem::_Callback + 14 bytes
+d:\win7sp1_gdr\minkernel\threadpool\compat\worker.c(284) : ntdll.dll!RtlpTpWorkCallback + 285 bytes
+d:\win7sp1_gdr\minkernel\threadpool\ntdll\worker.c(1082) : ntdll.dll!TppWorkerThread + 1394 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="GetFCNCookies" BugId="641733" FailTestWhenFound="false" Created="2013-03-14">
+      <IssueDescription>FileChange Notification. Resolved Won't Fix</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>210 bytes per entry plus dict growth</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (stk.Contains("Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.TextDocData.GetFCNCookies"))
+{
+    return true;
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+
+Leaks entries in this dictionary:
+  private static Dictionary<string, List<uint>> _fileChangeNotificationMap = new Dictionary<string, List<uint>>();
+so also leaks : System.Collections.Generic.List`1<System.UInt32>(Count=0)
+and: U4[](Count=4)
+code moved to:
+\\cpvsbuild\drops\dev11\RTMRel\raw\current\sources\env\Editor\Pkg\Impl\VsDocDataAdapter.cs
+
+{ Address = 05316668, SeqNo = 6823258, Size = 158, Thread = 10620M, Gen = 2, Moved = 10, Srviv = 119, Classid = 7326afb0, ClassName = System.String C:\SCHOOL\APEXSOLUTIONS\TESTCASE1250\PRJ_HQ96\PROPERTIES\ASSEMBLYINFO.CS, NumItems = 0, _HeapAllocationContainer = Address=0x05316668, SeqNo=6,823,258, Size=158, BlkType=ClrObject Thread=10620M }  Heap = __MemSpect
+ClassId = 0x7326afb0 System.String C:\SCHOOL\APEXSOLUTIONS\TESTCASE1250\PRJ_HQ96\PROPERTIES\ASSEMBLYINFO.CS
+GCGen = 2 GCMoved=10 GCSurvived =119 
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5538) : MemSpectDll.dll!CProcessGC::TrackObject + 545 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1673) : clr.dll!SlowAllocateString + 143 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(3167) : clr.dll!UnframedAllocateString + 6 bytes
+mscorlib.dll!System.Globalization.TextInfo.ToUpper
+mscorlib.dll!System.String.ToUpper
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.TextDocData.GetFCNCookies
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.TextDocData.SetFileChangeNotification
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.TextDocData.SetData_Moniker
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.TextDocData.NotifyOfTextBufferLoad
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.TextDocData.Load
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.TextDocData.LoadDocData
+!0x0336A076 SymErr = 0x7e
+f:\dd\env\msenv\core\editmgr.cpp(1034) : msenv.dll!CEditorManager::LoadDocument + 179 bytes
+f:\dd\env\msenv\core\editmgr.cpp(216) : msenv.dll!CLockHolder::LoadAndLockDocument + 153 bytes
+f:\dd\env\msenv\core\editmgr.cpp(110) : msenv.dll!CLockHolder::RegisterEditor + 114 bytes
+f:\dd\env\msenv\core\editmgr.cpp(1008) : msenv.dll!CEditorManager::RegisterInvisibleEditor + 356 bytes
+f:\dd\csharp\rad\format\formatenginehelper.cpp(126) : cslangsvc.dll!CFormatEngineHelper::FormatFileOnDisk + 105 bytes
+f:\dd\csharp\rad\project\projectsite.cpp(1784) : cslangsvc.dll!CProjectSite::NotifyItemAdded + 175 bytes
+f:\dd\vsproject\cool\coolpkg\cooleditorfactory.cpp(486) : csproj.dll!CSharpEditorFactory::NotifyItemAdded + 39 bytes
+f:\dd\vsproject\langproj\langtrackbatch.cpp(151) : csproj.dll!CLangBatchItemHelper::EndBatch + 732 bytes
+f:\dd\vsproject\vsproject\createprojectassembler.cpp(205) : csproj.dll!<lambda_e80624d5c5d7d966081f69301d36ed63>::operator() + 106 bytes
+f:\dd\vsproject\vsproject\createprojectassembler.cpp(183) : csproj.dll!CCreateProjectAssembler::CreateProjectPost + 180 bytes
+f:\dd\vsproject\vsproject\createprojectassembler.cpp(222) : csproj.dll!CCreateProjectSync::CreateProject + 162 bytes
+f:\dd\vsproject\cool\coolpkg\coolcreateprojectassembler.cpp(194) : csproj.dll!CCoolInitializeForOwnerSync::InitializeForOwnerWorker + 163 bytes
+f:\dd\vsproject\vsproject\projectfactoryassembler.cpp(342) : csproj.dll!CInitializeForOwnerSync::CreateProjectInternal + 180 bytes
+f:\dd\vsproject\cool\coolpkg\coolprjfactory.cpp(243) : csproj.dll!CCSharpProjectFactory::CreateProject + 162 bytes
+f:\dd\env\msenv\core\vsprjtyp.cpp(2089) : msenv.dll!CVsProjectType::HrOpenProject + 299 bytes
+f:\dd\env\msenv\core\vsprjtyp.cpp(478) : msenv.dll!CVsProjectTypeMgr::HrOpenProject + 648 bytes
+f:\dd\env\msenv\core\vsslnpst.cpp(3594) : msenv.dll!CSolution::CreateProject + 7103 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1167) : msenv.dll!<lambda_f858f68d519dd088a8ee8d453ea970ee>::operator() + 2505 bytes
+f:\dd\env\inc\vserr.h(74) : msenv.dll!VsSupportErrorInfoSafeInvoke<<lambda_f858f68d519dd088a8ee8d453ea970ee> > + 43 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1234) : msenv.dll!CVSolution::AddFromTemplateEx + 88 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1240) : msenv.dll!CVSolution::AddFromTemplate + 34 bytes
+!0x139F25B4 SymErr = 0x7e
+Microsoft.VisualStudio.TemplateWizard.dll!Microsoft.VisualStudio.TemplateWizard.Wizard.Execute
+f:\dd\ndp\clr\src\vm\comtoclrcall.cpp(829) : clr.dll!COMToCLRWorker + 998 bytes
+!0x0336A076 SymErr = 0x7e
+f:\dd\env\msenv\core\idewiz.cpp(437) : msenv.dll!WizLoadAndRunFileEx + 1127 bytes
+f:\dd\env\msenv\core\idewiz.cpp(180) : msenv.dll!WizLoadAndRunFile + 1228 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1047) : msenv.dll!<lambda_f858f68d519dd088a8ee8d453ea970ee>::operator() + 2842 bytes
+f:\dd\env\inc\vserr.h(74) : msenv.dll!VsSupportErrorInfoSafeInvoke<<lambda_f858f68d519dd088a8ee8d453ea970ee> > + 43 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1234) : msenv.dll!CVSolution::AddFromTemplateEx + 88 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1240) : msenv.dll!CVSolution::AddFromTemplate + 34 bytes
+!0x139F25B4 SymErr = 0x7e
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.<>c__DisplayClass9.<AddDteProjectFromTemplate>b__8
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+mscorlib.dll!System.Delegate.DynamicInvoke
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.UIThreadInvokerHelper.<InvokeOn>b__1
+Microsoft.Test.Apex.VisualStudio.Hosting.dll!Microsoft.Test.Apex.VisualStudio.Services.Remote.VsUIThreadInvokerService.DispatcherInvocationWrapper
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeImpl
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext
+mscorlib.dll!System.Threading.ExecutionContext.RunInternal
+mscorlib.dll!System.Threading.ExecutionContext.Run
+mscorlib.dll!System.Threading.ExecutionContext.Run
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.Invoke
+WindowsBase.dll!System.Windows.Threading.Dispatcher.ProcessQueue
+WindowsBase.dll!System.Windows.Threading.Dispatcher.WndProcHook
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.LegacyInvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\win8_gdr\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 256 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(2686) : USER32.dll!DispatchMessageWorker + 1007 bytes
+d:\win8_gdr\windows\core\ntuser\client\cltxt.h(1000) : USER32.dll!DispatchMessageW + 16 bytes
+f:\dd\env\msenv\core\main.cpp(1397) : msenv.dll!MainMessageLoop::ProcessMessage + 195 bytes
+f:\dd\env\msenv\core\msocm.cpp(453) : msenv.dll!CMsoCMHandler::EnvironmentMsgLoop + 240 bytes
+f:\dd\env\msenv\core\msocm.cpp(358) : msenv.dll!CMsoCMHandler::FPushMessageLoop + 306 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2243) : msenv.dll!SCM::FPushMessageLoop + 174 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2999) : msenv.dll!SCM_MsoCompMgr::FPushMessageLoop + 42 bytes
+f:\dd\env\msenv\core\msocm.cpp(715) : msenv.dll!CMsoComponent::PushMsgLoop + 46 bytes
+f:\dd\env\msenv\core\main.cpp(1027) : msenv.dll!VStudioMainLogged + 1264 bytes
+f:\dd\env\msenv\core\main.cpp(1108) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1065) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(658) : devenv.exe!CDevEnvAppId::Run + 2433 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(62) : devenv.exe!WinMain + 189 bytes
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c(581) : devenv.exe!__tmainCRTStartup + 293 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+
+05316668 : 7326afb0 00000048 003a0043 0053005c 00480043 004f004f 005c004c 00500041   b0 af 26 73 48 00 00 00 43 00 3a 00 5c 00 53 00 43 00 48 00 4f 00 4f 00 4c 00 5c 00 41 00 50 00     &sH   C : \ S C H O O L \ A P 
+05316688 : 00580045 004f0053 0055004c 00490054 004e004f 005c0053 00450054 00540053   45 00 58 00 53 00 4f 00 4c 00 55 00 54 00 49 00 4f 00 4e 00 53 00 5c 00 54 00 45 00 53 00 54 00   E X S O L U T I O N S \ T E S T 
+053166a8 : 00410043 00450053 00320031 00300035 0050005c 004a0052 0048005f 00390051   43 00 41 00 53 00 45 00 31 00 32 00 35 00 30 00 5c 00 50 00 52 00 4a 00 5f 00 48 00 51 00 39 00   C A S E 1 2 5 0 \ P R J _ H Q 9 
+053166c8 : 005c0036 00520050 0050004f 00520045 00490054 00530045 0041005c 00530053   36 00 5c 00 50 00 52 00 4f 00 50 00 45 00 52 00 54 00 49 00 45 00 53 00 5c 00 41 00 53 00 53 00   6 \ P R O P E R T I E S \ A S S 
+053166e8 : 004d0045 004c0042 00490059 0046004e 002e004f 00530043 00000000 00000000   45 00 4d 00 42 00 4c 00 59 00 49 00 4e 00 46 00 4f 00 2e 00 43 00 53 00 00 00 00 00 00 00 00 00   E M B L Y I N F O . C S         
+    
+    ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="cslangsvc.dll!CFileNameCacheTable" BugId="string" FailTestWhenFound="false" Created="2013-03-14">
+      <IssueDescription>cslangsvc.dll!CFileNameCacheTable</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 07170a48, SeqNo = 6823350, Size = 176, Thread = 10620M, StringContent = C:\school\ApexSolutions\TestCase1250\Prj_hQ96\Properties\AssemblyInfo.cs, _HeapAllocationContainer = Address=0x07170a48, SeqNo=6,823,350, Size=176, BlkType=None Thread=10620M }  Heap = __Process Heap HeapHandle= 01460000
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(3654) : MemSpectDll.dll!Mine_RtlAllocHeap + 448 bytes
+f:\dd\internalapis\atlmfc\inc\atlmem.h(146) : cslangsvc.dll!ATL::CWin32Heap::Allocate + 17 bytes
+f:\dd\internalapis\atlmfc\inc\atlstr.h(81) : cslangsvc.dll!ATL::CAtlStringMgr::Allocate + 61 bytes
+f:\dd\internalapis\atlmfc\inc\atlsimpstr.h(814) : cslangsvc.dll!ATL::CSimpleStringT<unsigned short,0>::Fork + 44 bytes
+f:\dd\internalapis\atlmfc\inc\atlsimpstr.h(854) : cslangsvc.dll!ATL::CSimpleStringT<unsigned short,0>::PrepareWrite2 + 28 bytes
+f:\dd\internalapis\atlmfc\inc\atlsimpstr.h(656) : cslangsvc.dll!ATL::CSimpleStringT<unsigned short,0>::SetString + 75 bytes
+f:\dd\internalapis\atlmfc\inc\atlsimpstr.h(630) : cslangsvc.dll!ATL::CSimpleStringT<unsigned short,0>::SetString + 44 bytes
+f:\dd\internalapis\atlmfc\inc\cstringt.h(996) : cslangsvc.dll!ATL::CStringT<unsigned short,ATL::StrTraitATL<unsigned short,ATL::ChTraitsCRT<unsigned short> > >::CStringT<unsigned short,ATL::StrTraitATL<unsigned short,ATL::ChTraitsCRT<unsigned short> > > + 85 bytes
+f:\dd\csharp\rad\files\filenameutils.cpp(116) : cslangsvc.dll!CFileNameCacheTable::NameToFileNameString + 309 bytes
+f:\dd\csharp\rad\files\filenameutils.cpp(129) : cslangsvc.dll!CFileNameCacheTable::StringToFileNameString + 110 bytes
+f:\dd\csharp\rad\files\filenameutils.cpp(172) : cslangsvc.dll!CFileName::CFileName + 54 bytes
+f:\dd\csharp\rad\service\langservice.cpp(3296) : cslangsvc.dll!CLangService::OnAfterAttributeChangeEx + 195 bytes
+f:\dd\env\msenv\core\vsrdtbl.cpp(2707) : msenv.dll!<lambda_77c0720e10314dce50f6e84c1b52b71d>::operator() + 126 bytes
+f:\dd\env\inc\cookietable.h(618) : msenv.dll!CCookieTable<ATL::CComPtr<IVsRunningDocTableEvents>,DefaultCookieTraits<unsigned long,1,4294967295,0,1>,DefaultValueTraits<ATL::CComPtr<IVsRunningDocTableEvents> > >::for_each<<lambda_77c0720e10314dce50f6e84c1b52b71d> > + 158 bytes
+f:\dd\env\msenv\core\vsrdtbl.cpp(2710) : msenv.dll!CRunningDocTable::Impl::NotifyOnAfterAttributeChange + 131 bytes
+f:\dd\env\msenv\core\vsrdtbl.cpp(578) : msenv.dll!CRunningDocTable::Impl::RegisterAndLockDocument + 1125 bytes
+f:\dd\env\msenv\core\vsrdtbl.cpp(435) : msenv.dll!CRunningDocTable::RegisterAndLockDocument + 60 bytes
+f:\dd\env\msenv\core\editmgr.cpp(224) : msenv.dll!CLockHolder::LoadAndLockDocument + 236 bytes
+f:\dd\env\msenv\core\editmgr.cpp(110) : msenv.dll!CLockHolder::RegisterEditor + 114 bytes
+f:\dd\env\msenv\core\editmgr.cpp(1008) : msenv.dll!CEditorManager::RegisterInvisibleEditor + 356 bytes
+f:\dd\csharp\rad\format\formatenginehelper.cpp(126) : cslangsvc.dll!CFormatEngineHelper::FormatFileOnDisk + 105 bytes
+f:\dd\csharp\rad\project\projectsite.cpp(1784) : cslangsvc.dll!CProjectSite::NotifyItemAdded + 175 bytes
+f:\dd\vsproject\cool\coolpkg\cooleditorfactory.cpp(486) : csproj.dll!CSharpEditorFactory::NotifyItemAdded + 39 bytes
+f:\dd\vsproject\langproj\langtrackbatch.cpp(151) : csproj.dll!CLangBatchItemHelper::EndBatch + 732 bytes
+f:\dd\vsproject\vsproject\createprojectassembler.cpp(205) : csproj.dll!<lambda_e80624d5c5d7d966081f69301d36ed63>::operator() + 106 bytes
+f:\dd\vsproject\vsproject\createprojectassembler.cpp(183) : csproj.dll!CCreateProjectAssembler::CreateProjectPost + 180 bytes
+f:\dd\vsproject\vsproject\createprojectassembler.cpp(222) : csproj.dll!CCreateProjectSync::CreateProject + 162 bytes
+f:\dd\vsproject\cool\coolpkg\coolcreateprojectassembler.cpp(194) : csproj.dll!CCoolInitializeForOwnerSync::InitializeForOwnerWorker + 163 bytes
+f:\dd\vsproject\vsproject\projectfactoryassembler.cpp(342) : csproj.dll!CInitializeForOwnerSync::CreateProjectInternal + 180 bytes
+f:\dd\vsproject\cool\coolpkg\coolprjfactory.cpp(243) : csproj.dll!CCSharpProjectFactory::CreateProject + 162 bytes
+f:\dd\env\msenv\core\vsprjtyp.cpp(2089) : msenv.dll!CVsProjectType::HrOpenProject + 299 bytes
+f:\dd\env\msenv\core\vsprjtyp.cpp(478) : msenv.dll!CVsProjectTypeMgr::HrOpenProject + 648 bytes
+f:\dd\env\msenv\core\vsslnpst.cpp(3594) : msenv.dll!CSolution::CreateProject + 7103 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1167) : msenv.dll!<lambda_f858f68d519dd088a8ee8d453ea970ee>::operator() + 2505 bytes
+f:\dd\env\inc\vserr.h(74) : msenv.dll!VsSupportErrorInfoSafeInvoke<<lambda_f858f68d519dd088a8ee8d453ea970ee> > + 43 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1234) : msenv.dll!CVSolution::AddFromTemplateEx + 88 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1240) : msenv.dll!CVSolution::AddFromTemplate + 34 bytes
+!0x139F25B4 SymErr = 0x7e
+Microsoft.VisualStudio.TemplateWizard.dll!Microsoft.VisualStudio.TemplateWizard.Wizard.Execute
+f:\dd\ndp\clr\src\vm\comtoclrcall.cpp(829) : clr.dll!COMToCLRWorker + 998 bytes
+!0x0336A076 SymErr = 0x7e
+f:\dd\env\msenv\core\idewiz.cpp(437) : msenv.dll!WizLoadAndRunFileEx + 1127 bytes
+f:\dd\env\msenv\core\idewiz.cpp(180) : msenv.dll!WizLoadAndRunFile + 1228 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1047) : msenv.dll!<lambda_f858f68d519dd088a8ee8d453ea970ee>::operator() + 2842 bytes
+f:\dd\env\inc\vserr.h(74) : msenv.dll!VsSupportErrorInfoSafeInvoke<<lambda_f858f68d519dd088a8ee8d453ea970ee> > + 43 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1234) : msenv.dll!CVSolution::AddFromTemplateEx + 88 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1240) : msenv.dll!CVSolution::AddFromTemplate + 34 bytes
+!0x139F25B4 SymErr = 0x7e
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.<>c__DisplayClass9.<AddDteProjectFromTemplate>b__8
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+mscorlib.dll!System.Delegate.DynamicInvoke
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.UIThreadInvokerHelper.<InvokeOn>b__1
+Microsoft.Test.Apex.VisualStudio.Hosting.dll!Microsoft.Test.Apex.VisualStudio.Services.Remote.VsUIThreadInvokerService.DispatcherInvocationWrapper
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeImpl
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext
+mscorlib.dll!System.Threading.ExecutionContext.RunInternal
+mscorlib.dll!System.Threading.ExecutionContext.Run
+mscorlib.dll!System.Threading.ExecutionContext.Run
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.Invoke
+WindowsBase.dll!System.Windows.Threading.Dispatcher.ProcessQueue
+WindowsBase.dll!System.Windows.Threading.Dispatcher.WndProcHook
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.LegacyInvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\win8_gdr\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 256 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(2686) : USER32.dll!DispatchMessageWorker + 1007 bytes
+d:\win8_gdr\windows\core\ntuser\client\cltxt.h(1000) : USER32.dll!DispatchMessageW + 16 bytes
+f:\dd\env\msenv\core\main.cpp(1397) : msenv.dll!MainMessageLoop::ProcessMessage + 195 bytes
+f:\dd\env\msenv\core\msocm.cpp(453) : msenv.dll!CMsoCMHandler::EnvironmentMsgLoop + 240 bytes
+f:\dd\env\msenv\core\msocm.cpp(358) : msenv.dll!CMsoCMHandler::FPushMessageLoop + 306 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2243) : msenv.dll!SCM::FPushMessageLoop + 174 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2999) : msenv.dll!SCM_MsoCompMgr::FPushMessageLoop + 42 bytes
+f:\dd\env\msenv\core\msocm.cpp(715) : msenv.dll!CMsoComponent::PushMsgLoop + 46 bytes
+f:\dd\env\msenv\core\main.cpp(1027) : msenv.dll!VStudioMainLogged + 1264 bytes
+f:\dd\env\msenv\core\main.cpp(1108) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1065) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(658) : devenv.exe!CDevEnvAppId::Run + 2433 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(62) : devenv.exe!WinMain + 189 bytes
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c(581) : devenv.exe!__tmainCRTStartup + 293 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+
+07170a48 : 65ca83b8 00000048 0000004f 00000001 003a0043 0073005c 00680063 006f006f   b8 83 ca 65 48 00 00 00 4f 00 00 00 01 00 00 00 43 00 3a 00 5c 00 73 00 63 00 68 00 6f 00 6f 00      eH   O       C : \ s c h o o 
+07170a68 : 005c006c 00700041 00780065 006f0053 0075006c 00690074 006e006f 005c0073   6c 00 5c 00 41 00 70 00 65 00 78 00 53 00 6f 00 6c 00 75 00 74 00 69 00 6f 00 6e 00 73 00 5c 00   l \ A p e x S o l u t i o n s \ 
+07170a88 : 00650054 00740073 00610043 00650073 00320031 00300035 0050005c 006a0072   54 00 65 00 73 00 74 00 43 00 61 00 73 00 65 00 31 00 32 00 35 00 30 00 5c 00 50 00 72 00 6a 00   T e s t C a s e 1 2 5 0 \ P r j 
+07170aa8 : 0068005f 00390051 005c0036 00720050 0070006f 00720065 00690074 00730065   5f 00 68 00 51 00 39 00 36 00 5c 00 50 00 72 00 6f 00 70 00 65 00 72 00 74 00 69 00 65 00 73 00   _ h Q 9 6 \ P r o p e r t i e s 
+07170ac8 : 0041005c 00730073 006d0065 006c0062 00490079 0066006e 002e006f 00730063   5c 00 41 00 73 00 73 00 65 00 6d 00 62 00 6c 00 79 00 49 00 6e 00 66 00 6f 00 2e 00 63 00 73 00   \ A s s e m b l y I n f o . c s 
+07170ae8 : afaf0000 afafafaf afafafaf afafafaf                                       00 00 af af af af af af af af af af af af af af                                                                   
+        
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="LoadOutliningFromSolutionUserOptions" BugId="string" FailTestWhenFound="true" Created="2013-03-14">
+      <IssueDescription></IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 0d5116e8, SeqNo = 6955397, Size = 128, Thread = 10620M, StringContent = C:\school\ApexSolutions\TestCase1250\Prj_hQ96\Program.cs, _HeapAllocationContainer = Address=0x0d5116e8, SeqNo=6,955,397, Size=128, BlkType=None Thread=10620M }  Heap = __Process Heap HeapHandle= 01460000
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(3654) : MemSpectDll.dll!Mine_RtlAllocHeap + 448 bytes
+d:\win8_gdr\com\combase\class\memapi.cxx(641) : combase.dll!CRetailMalloc_Alloc + 22 bytes
+d:\w8rtm\mincore\com\oleaut32\typelib\oautil.cpp(828) : OLEAUT32.dll!APP_DATA::AllocCachedMem + 69 bytes
+f:\dd\env\msenv\textmgr\mgr.cpp(6108) : msenv.dll!CTextManager::GetKey + 251 bytes
+Microsoft.VisualStudio.Editor.Implementation.ni.dll!0x6A9FFFE6 SymErr = 0x1e7
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.SimpleTextViewWindow.get_OutliningUserSolutionOptsKey
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.SimpleTextViewWindow.LoadOutliningFromSolutionUserOptions
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.SimpleTextViewWindow.PersistOutliningState
+!0x0336A076 SymErr = 0x7e
+f:\dd\csharp\rad\text\opensource.cpp(3219) : cslangsvc.dll!COpenSource::PersistOutliningState + 52 bytes
+f:\dd\csharp\rad\text\opensource.cpp(3202) : cslangsvc.dll!COpenSource::TryPersistOutliningState + 82 bytes
+f:\dd\csharp\rad\codewindowmanager.cpp(398) : cslangsvc.dll!CCodeWindowManager::OnNewView + 135 bytes
+f:\dd\csharp\rad\codewindowmanager.cpp(286) : cslangsvc.dll!CCodeWindowManager::AddAdornments + 55 bytes
+f:\dd\csharp\rad\coreinteraction\interfaces\vscodewindowmanager.cpp(46) : cslangsvc.dll!CVsCodeWindowManager::AddAdornments + 46 bytes
+!0x139FE6F2 SymErr = 0x7e
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.CompoundTextViewWindow.TextDocData_OnNewLanguageService
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.CompoundTextViewWindow.OnPrimaryView_FullyInitialized
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.CompoundTextViewWindow.PrimaryView_TextViewHostUpdated
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.SimpleTextViewWindow.Init_InitializeWpfTextView
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.SimpleTextViewWindow.Init_OnActivation
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.SimpleTextViewWindow.SetInfo
+Microsoft.VisualStudio.Editor.Implementation.dll!Microsoft.VisualStudio.Editor.Implementation.CompoundTextViewWindow.SetInfo
+Microsoft.VisualStudio.Shell.UI.Internal.dll!Microsoft.VisualStudio.PlatformUI.StatusBarService.OnElementValueChanged
+f:\dd\ndp\clr\src\vm\comtoclrcall.cpp(829) : clr.dll!COMToCLRWorker + 998 bytes
+!0x0336A076 SymErr = 0x7e
+f:\dd\env\inc\cookietable.h(598) : msenv.dll!CCookieTable<ATL::CAdapt<ATL::CComPtr<IVsSelectionEvents> >,DefaultCookieTraits<unsigned long,1,4294967295,0,1>,DefaultValueTraits<ATL::CAdapt<ATL::CComPtr<IVsSelectionEvents> > > >::for_each<FireOnElementValueChanged> + 92 bytes
+f:\dd\env\msenv\core\vsmonsel.cpp(1433) : msenv.dll!CVsMonSel::NotifySelElemChangeInternal + 120 bytes
+f:\dd\env\msenv\core\vsmonsel.cpp(1140) : msenv.dll!CVsMonSel::NotifyChangedElemsHelper + 54 bytes
+f:\dd\env\msenv\core\vsmonsel.cpp(1216) : msenv.dll!CVsMonSel::RegisterSelCtx + 505 bytes
+f:\dd\env\msenv\core\vsselctx.cpp(435) : msenv.dll!CVsSelCtx::Register + 55 bytes
+Microsoft.VisualStudio.Platform.WindowManagement.ni.dll!0x6C0620BF SymErr = 0x1e7
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.ConnectSelectionContext
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.Activate
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowManagerService.viewManager_ActiveViewChanged
+Microsoft.VisualStudio.Shell.12.0.dll!Microsoft.VisualStudio.PlatformUI.ExtensionMethods.RaiseEvent
+Microsoft.VisualStudio.Shell.ViewManager.dll!Microsoft.VisualStudio.PlatformUI.Shell.ViewManager.SetActiveView
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.ShowInternal
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.<Show>b__26
+Microsoft.VisualStudio.Shell.12.0.dll!Microsoft.VisualStudio.ErrorHandler.CallWithCOMConvention
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.WindowFrame.Show
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.Window.set_Visible
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.WindowBase.<>c__DisplayClass3f.<set_Visible>b__3e
+Microsoft.VisualStudio.Shell.12.0.dll!Microsoft.VisualStudio.Shell.ThreadHelper.Invoke
+Microsoft.VisualStudio.Platform.WindowManagement.dll!Microsoft.VisualStudio.Platform.WindowManagement.DTE.WindowBase.set_Visible
+Microsoft.VisualStudio.TemplateWizard.dll!Microsoft.VisualStudio.TemplateWizard.Wizard.OpenNotedItems
+Microsoft.VisualStudio.TemplateWizard.dll!Microsoft.VisualStudio.TemplateWizard.Wizard.Execute
+f:\dd\ndp\clr\src\vm\comtoclrcall.cpp(829) : clr.dll!COMToCLRWorker + 998 bytes
+!0x0336A076 SymErr = 0x7e
+f:\dd\env\msenv\core\idewiz.cpp(437) : msenv.dll!WizLoadAndRunFileEx + 1127 bytes
+f:\dd\env\msenv\core\idewiz.cpp(180) : msenv.dll!WizLoadAndRunFile + 1228 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1047) : msenv.dll!<lambda_f858f68d519dd088a8ee8d453ea970ee>::operator() + 2842 bytes
+f:\dd\env\inc\vserr.h(74) : msenv.dll!VsSupportErrorInfoSafeInvoke<<lambda_f858f68d519dd088a8ee8d453ea970ee> > + 43 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1234) : msenv.dll!CVSolution::AddFromTemplateEx + 88 bytes
+f:\dd\env\msenv\core\idesolut.cpp(1240) : msenv.dll!CVSolution::AddFromTemplate + 34 bytes
+!0x139F25B4 SymErr = 0x7e
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.<>c__DisplayClass9.<AddDteProjectFromTemplate>b__8
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+mscorlib.dll!System.Delegate.DynamicInvoke
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.UIThreadInvokerHelper.<InvokeOn>b__1
+Microsoft.Test.Apex.VisualStudio.Hosting.dll!Microsoft.Test.Apex.VisualStudio.Services.Remote.VsUIThreadInvokerService.DispatcherInvocationWrapper
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(976) : clr.dll!CallDescrWorkerReflectionWrapper + 85 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(1582) : clr.dll!RuntimeMethodHandle::InvokeMethod + 2135 bytes
+mscorlib.dll!System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+mscorlib.dll!System.Delegate.DynamicInvokeImpl
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeImpl
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext
+mscorlib.dll!System.Threading.ExecutionContext.RunInternal
+mscorlib.dll!System.Threading.ExecutionContext.Run
+mscorlib.dll!System.Threading.ExecutionContext.Run
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.Invoke
+WindowsBase.dll!System.Windows.Threading.Dispatcher.ProcessQueue
+WindowsBase.dll!System.Windows.Threading.Dispatcher.WndProcHook
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.LegacyInvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\win8_gdr\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 256 bytes
+d:\win8_gdr\windows\core\ntuser\client\clmsg.c(2686) : USER32.dll!DispatchMessageWorker + 1007 bytes
+d:\win8_gdr\windows\core\ntuser\client\cltxt.h(1000) : USER32.dll!DispatchMessageW + 16 bytes
+f:\dd\env\msenv\core\main.cpp(1397) : msenv.dll!MainMessageLoop::ProcessMessage + 195 bytes
+f:\dd\env\msenv\core\msocm.cpp(453) : msenv.dll!CMsoCMHandler::EnvironmentMsgLoop + 240 bytes
+f:\dd\env\msenv\core\msocm.cpp(358) : msenv.dll!CMsoCMHandler::FPushMessageLoop + 306 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2243) : msenv.dll!SCM::FPushMessageLoop + 174 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2999) : msenv.dll!SCM_MsoCompMgr::FPushMessageLoop + 42 bytes
+f:\dd\env\msenv\core\msocm.cpp(715) : msenv.dll!CMsoComponent::PushMsgLoop + 46 bytes
+f:\dd\env\msenv\core\main.cpp(1027) : msenv.dll!VStudioMainLogged + 1264 bytes
+f:\dd\env\msenv\core\main.cpp(1108) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1065) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(658) : devenv.exe!CDevEnvAppId::Run + 2433 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(62) : devenv.exe!WinMain + 189 bytes
+
+
+0d5116e8 : 00000070 003a0043 0073005c 00680063 006f006f 005c006c 00700041 00780065   70 00 00 00 43 00 3a 00 5c 00 73 00 63 00 68 00 6f 00 6f 00 6c 00 5c 00 41 00 70 00 65 00 78 00   p   C : \ s c h o o l \ A p e x 
+0d511708 : 006f0053 0075006c 00690074 006e006f 005c0073 00650054 00740073 00610043   53 00 6f 00 6c 00 75 00 74 00 69 00 6f 00 6e 00 73 00 5c 00 54 00 65 00 73 00 74 00 43 00 61 00   S o l u t i o n s \ T e s t C a 
+0d511728 : 00650073 00320031 00300035 0050005c 006a0072 0068005f 00390051 005c0036   73 00 65 00 31 00 32 00 35 00 30 00 5c 00 50 00 72 00 6a 00 5f 00 68 00 51 00 39 00 36 00 5c 00   s e 1 2 5 0 \ P r j _ h Q 9 6 \ 
+0d511748 : 00720050 0067006f 00610072 002e006d 00730063 afaf0000 afafafaf afafafaf   50 00 72 00 6f 00 67 00 72 00 61 00 6d 00 2e 00 63 00 73 00 00 00 af af af af af af af af af af   P r o g r a m . c s             
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="ApexGetHierarchyByUniqueName" BugId="" FailTestWhenFound="false" Created="2013-03-17">
+      <IssueDescription>ApexGetHierarchyByUniqueName</IssueDescription>
+      <Scenario></Scenario>
+      <EstimatedSize></EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap &&
+    hctr.TBlk.BlockType == Common.BlockTypes.ClrObject &&
+    hctr.GetSize == 16 &&
+    hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: false) == "System.__ComObject"
+    )
+{
+    if (stk.Contains("Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.GetHierarchyByUniqueName"))
+    {
+        return true;
+    }
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 121d77b8, SeqNo = 6665444, Size = 16, Thread = 7424, Gen = 2, Moved = 4, Srviv = 12, Classid = 73e761f4, ClassName = System.__ComObject, NumItems = 0, _HeapAllocationContainer = Address=0x121d77b8, SeqNo=6,665,444, Size=16, BlkType=ClrObject Thread=7424 }  Heap = __MemSpect
+ClassId = 0x73e761f4 System.__ComObject
+GCGen = 2 GCMoved=4 GCSurvived =12 
+   4 System.MarshalByRefObject.__identity   Object 0x00000000
+   8 System.__ComObject.m_ObjectToDataMap   System.Collections.Hashtable 0x00000000
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5592) : MemSpectDll.dll!CProcessGC::TrackObject + 513 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1819) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\cominterfacemarshaler.cpp(532) : clr.dll!COMInterfaceMarshaler::CreateObjectRef + 111 bytes
+f:\dd\ndp\clr\src\vm\cominterfacemarshaler.cpp(1227) : clr.dll!COMInterfaceMarshaler::FindOrCreateObjectRefInternal + 626 bytes
+f:\dd\ndp\clr\src\vm\interopconverter.cpp(745) : clr.dll!GetObjectRefFromComIP + 1035 bytes
+f:\dd\ndp\clr\src\vm\interoputil.cpp(6686) : clr.dll!UnmarshalObjectFromInterface + 60 bytes
+f:\dd\ndp\clr\src\vm\stubhelpers.cpp(789) : clr.dll!StubHelpers::InterfaceMarshaler__ConvertToManaged + 235 bytes
+!0x160D6B85 SymErr = 0x7e
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.GetHierarchyByUniqueName
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.GetProjectExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateDefaultProject
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(647) : clr.dll!CallDescrWithObjectArray + 1317 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(170) : clr.dll!CStackBuilderSink::PrivateProcessMessage + 491 bytes
+mscorlib.dll!System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback
+mscorlib.dll!System.Runtime.Remoting.Channels.ChannelServices.DispatchMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.DispatchChannelSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension" BugId="" FailTestWhenFound="false" Created="2013-03-17">
+      <IssueDescription>Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap &&
+    hctr.TBlk.BlockType == Common.BlockTypes.ClrObject &&
+    hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: false) == "Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension"
+    )
+{
+    return true;
+}
+return false;
+]]>
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 11cdbfb4, SeqNo = 6546863, Size = 116, Thread = 4736, Gen = 2, Moved = 8, Srviv = 49, Classid = 0f63c490, ClassName = Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension, NumItems = 0, _HeapAllocationContainer = Address=0x11cdbfb4, SeqNo=6,546,863, Size=116, BlkType=ClrObject Thread=4736 }  Heap = __MemSpect
+ClassId = 0x0f63c490 Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension
+GCGen = 2 GCMoved=8 GCSurvived =49 
+   4 System.MarshalByRefObject.__identity   System.Runtime.Remoting.ServerIdentity(Object System.Runtime.Remoting.ServerIdentity) 0x11ce124c
+   8 Microsoft.Test.Apex.Hosts.MarshallableApexObject.ownedProducts   System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>(Count=1)(System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>) 0x11cdc028
+  12 Microsoft.Test.Apex.Hosts.MarshallableApexObject.owner   Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject> 0x11ce1144
+  16 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<Factory>k__BackingField   Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectFactoryService(Microsoft.Test.Apex.Services.FactoryService`2<Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectDescriptor, Microsoft.Test.Apex.Hosts.MarshallableApexObject>) 0x04dd1f0c
+  20 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<UIThreadInvoker>k__BackingField   Microsoft.Test.Apex.VisualStudio.Services.Remote.VsUIThreadInvokerService(Microsoft.Test.Apex.Hosts.Services.IRemoteUIThreadInvokerService) 0x046effc8
+  24 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<TestLoggerFactory>k__BackingField   Microsoft.Test.Apex.Hosts.Services.Internal.RemoteTestLoggerFactoryService(Microsoft.Test.Apex.Services.ITestLoggerFactoryService) 0x04dd289c
+  28 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<RemotingConfiguration>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Hosts.Services.Internal.HostRemotingConfiguationService> 0x11ce0f0c
+  32 Microsoft.Test.Apex.Hosts.MarshallableApexObject.disconnectedFromRemoting   Boolean 0x00
+  33 Microsoft.Test.Apex.Hosts.MarshallableApexObject.connectedToRemoting   Boolean 0x01
+  34 Microsoft.Test.Apex.Hosts.MarshallableApexObject.isKeptAlive   Boolean 0x0000
+  36 Microsoft.Test.Apex.Hosts.RemoteTestExtension.verifierType   System.RuntimeType(System.Type) 0x11bf5468
+  40 Microsoft.Test.Apex.Hosts.RemoteTestExtension.<Verify>k__BackingField   Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier(Microsoft.Test.Apex.Hosts.RemoteTestExtensionVerifier) 0x11ce0f20
+  44 Microsoft.Test.Apex.Hosts.RemoteReferenceTypeTestExtension`2<System.Object,Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.objectUnderTest   Microsoft.Test.Apex.ObjectUnderTest`1<System.Object>(Microsoft.Test.Apex.ObjectUnderTest`1<arg # 0 5>) 0x11ce1130
+  48 Microsoft.Test.Apex.VisualStudio.VisualStudioInProcessTestExtension`2<System.Object,Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<ObjectProvider>k__BackingField   Microsoft.Test.Apex.VisualStudio.VisualStudioObjectProviders(Microsoft.Test.Apex.VisualStudio.IVisualStudioObjectProviders) 0x04dd1b14
+  52 Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<SolutionLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Solution.SolutionService> 0x11ce0d98
+  56 Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<CommandingLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Shell.CommandingService> 0x11ce0df8
+  60 Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<StringGeneratorProvider>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Services.StringGeneration.IStringGeneratorProvider> 0x11ce0e58
+  64 Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<ScopeLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Services.IExecutionScopeService> 0x11ce0e98
+  68 Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<MonitorSelectionLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Shell.MonitorSelectionService> 0x11ce0ef8
+  72 Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.itemId   U4 0xfffffffe
+  76 Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.skipStaleHierarchyCheck   Boolean 0x00000001
+  80 Microsoft.Test.Apex.VisualStudio.Solution.ProjectItemsContainerTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<CommandingLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Shell.CommandingService> 0x11ce0bd8
+  84 Microsoft.Test.Apex.VisualStudio.Solution.ProjectItemsContainerTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<ProjectTemplateServiceLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectTemplateService> 0x11ce0c38
+  88 Microsoft.Test.Apex.VisualStudio.Solution.ProjectItemsContainerTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<ShellLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Shell.VisualStudioShellObjectModel> 0x11ce0c98
+  92 Microsoft.Test.Apex.VisualStudio.Solution.ProjectItemsContainerTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<WindowManagementLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Shell.WindowManagementService> 0x11ce0cf8
+  96 Microsoft.Test.Apex.VisualStudio.Solution.ProjectItemsContainerTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<ExecutionScopeLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Services.IExecutionScopeService> 0x11ce0d38
+ 100 Microsoft.Test.Apex.VisualStudio.Solution.ProjectItemsContainerTestExtension`1<Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier>.<SolutionService>k__BackingField   Microsoft.Test.Apex.VisualStudio.Solution.SolutionService 0x04deb9bc
+ 104 Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.<SynchronizationServiceLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Services.ISynchronizationService> 0x11ce0b38
+ 108 Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.<ResourceManagerLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Services.VisualStudioResourceManagerService> 0x11ce0b78
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5592) : MemSpectDll.dll!CProcessGC::TrackObject + 513 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1819) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\methodtable.cpp(2895) : clr.dll!MethodTable::Allocate + 95 bytes
+f:\dd\ndp\clr\src\classlibnative\remoting\remotingnative.cpp(211) : clr.dll!RemotingNative::AllocateUninitializedObject + 381 bytes
+mscorlib.dll!System.Runtime.Remoting.Activation.ActivationServices.CreateInstance
+mscorlib.dll!System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK
+f:\dd\ndp\clr\src\vm\remoting.cpp(3511) : clr.dll!CallTargetWorker2 + 158 bytes
+f:\dd\ndp\clr\src\vm\remoting.cpp(670) : clr.dll!CRemotingServices::CreateProxyOrObject + 58 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(633) : clr.dll!RuntimeTypeHandle::CreateInstance + 794 bytes
+mscorlib.dll!System.RuntimeType.CreateInstanceSlow
+mscorlib.dll!System.RuntimeType.CreateInstanceDefaultCtor
+mscorlib.dll!System.Activator.CreateInstance
+mscorlib.dll!System.Activator.CreateInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.Activate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectFactoryService.DefaultInProcessTestObjectFactoryProductProvider.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.Create
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstanceFor
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1.CreateVsHierarchyItemTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.GetProjectExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateDefaultProject
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(647) : clr.dll!CallDescrWithObjectArray + 1317 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(170) : clr.dll!CStackBuilderSink::PrivateProcessMessage + 491 bytes
+mscorlib.dll!System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback
+mscorlib.dll!System.Runtime.Remoting.Channels.ChannelServices.DispatchMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.DispatchChannelSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="stringSystem.Collections.Generic.List`1%lt;Microsoft.Test.Apex.ApexWeakReference" BugId="" FailTestWhenFound="false" Created="2013-03-18">
+      <IssueDescription>System.Collections.Generic.List`1&lt;Microsoft.Test.Apex.ApexWeakReference</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap &&
+    hctr.TBlk.BlockType == Common.BlockTypes.ClrObject &&
+    hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: false).StartsWith("System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference")
+    )
+{
+    return true;
+}
+return false;
+]]>
+
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 12005cf8, SeqNo = 6405338, Size = 24, Thread = 3848, Gen = 2, Moved = 4, Srviv = 50, Classid = 08c92b44, ClassName = System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>(Count=1), NumItems = 1, _HeapAllocationContainer = Address=0x12005cf8, SeqNo=6,405,338, Size=24, BlkType=ClrObject Thread=3848 }  Heap = __MemSpect
+ClassId = 0x08c92b44 System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>(Count=1)
+GCGen = 2 GCMoved=4 GCSurvived =50 
+   4 System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>._items   Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>[](Count=1)(Array) 0x120067a0
+   8 System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>._syncRoot   Object 0x00000000
+  12 System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>._size   I4 0x00000001
+  16 System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>._version   I4 0x00000001
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5592) : MemSpectDll.dll!CProcessGC::TrackObject + 513 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1819) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(3088) : clr.dll!JIT_New + 107 bytes
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject..ctor
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.RemoteTestExtension..ctor
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.RemoteTestExtension`1..ctor
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.RemoteReferenceTypeTestExtension`2..ctor
+Microsoft.Test.Apex.VisualStudio.Hosting.dll!Microsoft.Test.Apex.VisualStudio.VisualStudioInProcessTestExtension`2..ctor
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1..ctor
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectItemsContainerTestExtension`1..ctor
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension..ctor
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(116) : clr.dll!TryCallMethod + 75 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(656) : clr.dll!RuntimeTypeHandle::CreateInstance + 891 bytes
+mscorlib.dll!System.RuntimeType.CreateInstanceSlow
+mscorlib.dll!System.RuntimeType.CreateInstanceDefaultCtor
+mscorlib.dll!System.Activator.CreateInstance
+mscorlib.dll!System.Activator.CreateInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.Activate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectFactoryService.DefaultInProcessTestObjectFactoryProductProvider.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.Create
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstanceFor
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1.CreateVsHierarchyItemTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.GetProjectExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateDefaultProject
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(647) : clr.dll!CallDescrWithObjectArray + 1317 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(170) : clr.dll!CStackBuilderSink::PrivateProcessMessage + 491 bytes
+mscorlib.dll!System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback
+mscorlib.dll!System.Runtime.Remoting.Channels.ChannelServices.DispatchMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.DispatchChannelSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="Apex Composition" BugId="" FailTestWhenFound="false" Created="2013-03-18">
+      <IssueDescription>Apex Composition Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.SatisfyImports</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap &&
+    hctr.TBlk.BlockType == Common.BlockTypes.ClrObject 
+// &&   (hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: false).StartsWith("System.ComponentModel.Composition.Hosting.CatalogExportProvider.CatalogExport") ||
+//    hctr.GetClassNameFromHeapCtr(fExpandSystemStringOrArray: false).StartsWith("System.ComponentModel.Composition.ExportServices<Microsoft.Test.Apex.Services.ISynchronizationService>.<>c__DisplayClassa`1<Microsoft.Test.Apex.Services.ISynchronizationService>")
+//    )
+    && stk.Contains("Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.SatisfyImports")
+    )
+{
+    return true;
+}
+return false;
+]]>
+
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 132e28f0, SeqNo = 6708497, Size = 32, Thread = 4220, Gen = 2, Moved = 5, Srviv = 110, Classid = 6a3ec3d4, ClassName = System.ComponentModel.Composition.Hosting.CatalogExportProvider.CatalogExport, NumItems = 0, _HeapAllocationContainer = Address=0x132e28f0, SeqNo=6,708,497, Size=32, BlkType=ClrObject Thread=4220 }  Heap = __MemSpect
+ClassId = 0x6a3ec3d4 System.ComponentModel.Composition.Hosting.CatalogExportProvider.CatalogExport
+GCGen = 2 GCMoved=5 GCSurvived =110 
+   4 System.ComponentModel.Composition.Primitives.Export._definition   System.ComponentModel.Composition.Primitives.ExportDefinition 0x00000000
+   8 System.ComponentModel.Composition.Primitives.Export._exportedValueGetter   System.Func`1<Object> 0x00000000
+  12 System.ComponentModel.Composition.Primitives.Export._exportedValue   System.Object(CMOD_REQD) 0x04f76db0
+  16 System.ComponentModel.Composition.Hosting.CatalogExportProvider.CatalogExport._catalogExportProvider   System.ComponentModel.Composition.Hosting.CatalogExportProvider 0x04e6fc98
+  20 System.ComponentModel.Composition.Hosting.CatalogExportProvider.CatalogExport._partDefinition   System.ComponentModel.Composition.ReflectionModel.ReflectionComposablePartDefinition(System.ComponentModel.Composition.Primitives.ComposablePartDefinition) 0x0577f888
+  24 System.ComponentModel.Composition.Hosting.CatalogExportProvider.CatalogExport._definition   System.ComponentModel.Composition.ReflectionModel.ReflectionMemberExportDefinition(System.ComponentModel.Composition.Primitives.ExportDefinition) 0x05782f6c
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5592) : MemSpectDll.dll!CProcessGC::TrackObject + 513 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1819) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(3088) : clr.dll!JIT_New + 107 bytes
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.CatalogExportProvider.CatalogExport.CreateExport
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.CatalogExportProvider.InternalGetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.CatalogExportProvider.InnerCatalogExportProvider.GetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExports
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.CatalogExportProvider.GetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.AggregateExportProvider.GetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExports
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.CompositionContainer.GetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.AggregateExportProvider.GetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExports
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.CompositionContainer.GetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExportsCore
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ExportProvider.GetExports
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ImportEngine.TryGetExports
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ImportEngine.TrySatisfyImportSubset
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ImportEngine.TrySatisfyImportsStateMachine
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ImportEngine.TrySatisfyImports
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.ImportEngine.SatisfyImportsOnce
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.Hosting.CompositionContainer.SatisfyImportsOnce
+System.ComponentModel.Composition.dll!System.ComponentModel.Composition.AttributedModelServices.SatisfyImportsOnce
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.SatisfyImports
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.Create
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstanceFor
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1.CreateVsHierarchyItemTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.GetProjectExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateDefaultProject
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(647) : clr.dll!CallDescrWithObjectArray + 1317 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(170) : clr.dll!CStackBuilderSink::PrivateProcessMessage + 491 bytes
+mscorlib.dll!System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback
+mscorlib.dll!System.Runtime.Remoting.Channels.ChannelServices.DispatchMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.DispatchChannelSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+
+132e28f0 : 6a3ec3d4 00000000 00000000 04f76db0 04e6fc98 0577f888 05782f6c 00000000   d4 c3 3e 6a 00 00 00 00 00 00 00 00 b0 6d f7 04 98 fc e6 04 88 f8 77 05 6c 2f 78 05 00 00 00 00     >j         m        w l/x     
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="Apex Activator" BugId="string" FailTestWhenFound="false" Created="2013-03-18">
+      <IssueDescription>Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.Activate</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if ((hctr.IsMemSpectHeap &&
+    hctr.TBlk.BlockType == Common.BlockTypes.ClrObject &&
+        (stk.Contains("Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.Activate") ||
+        stk.Contains("Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.TakeProductOwnership")
+        ))
+        || // could be process heap too
+    stk.Contains("Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectFactoryService.OnAfterSatisfyImports")
+    )
+{
+    return true;
+}
+return false;
+]]>
+
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 120805ac, SeqNo = 6650106, Size = 68, Thread = 7956, Gen = 2, Moved = 10, Srviv = 110, Classid = 08cdbf18, ClassName = Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier, NumItems = 0, _HeapAllocationContainer = Address=0x120805ac, SeqNo=6,650,106, Size=68, BlkType=ClrObject Thread=7956 }  Heap = __MemSpect
+ClassId = 0x08cdbf18 Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier
+GCGen = 2 GCMoved=10 GCSurvived =110 
+   4 System.MarshalByRefObject.__identity   Object 0x00000000
+   8 Microsoft.Test.Apex.Hosts.MarshallableApexObject.ownedProducts   System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>(Count=0)(System.Collections.Generic.List`1<Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject>>) 0x120805f0
+  12 Microsoft.Test.Apex.Hosts.MarshallableApexObject.owner   Microsoft.Test.Apex.ApexWeakReference`1<Microsoft.Test.Apex.Hosts.MarshallableApexObject> 0x12080790
+  16 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<Factory>k__BackingField   Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectFactoryService(Microsoft.Test.Apex.Services.FactoryService`2<Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectDescriptor, Microsoft.Test.Apex.Hosts.MarshallableApexObject>) 0x050b68e0
+  20 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<UIThreadInvoker>k__BackingField   Microsoft.Test.Apex.VisualStudio.Services.Remote.VsUIThreadInvokerService(Microsoft.Test.Apex.Hosts.Services.IRemoteUIThreadInvokerService) 0x04786588
+  24 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<TestLoggerFactory>k__BackingField   Microsoft.Test.Apex.Hosts.Services.Internal.RemoteTestLoggerFactoryService(Microsoft.Test.Apex.Services.ITestLoggerFactoryService) 0x050b7234
+  28 Microsoft.Test.Apex.Hosts.MarshallableApexObject.<RemotingConfiguration>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Hosts.Services.Internal.HostRemotingConfiguationService> 0x1208077c
+  32 Microsoft.Test.Apex.Hosts.MarshallableApexObject.disconnectedFromRemoting   Boolean 0x00
+  33 Microsoft.Test.Apex.Hosts.MarshallableApexObject.connectedToRemoting   Boolean 0x00
+  34 Microsoft.Test.Apex.Hosts.MarshallableApexObject.isKeptAlive   Boolean 0x0000
+  36 Microsoft.Test.Apex.Hosts.MarshallableProxyVerifier.<Synchronization>k__BackingField   Microsoft.Test.Apex.Services.HostSynchronizationService(Microsoft.Test.Apex.Services.ISynchronizationService) 0x050b903c
+  40 Microsoft.Test.Apex.Hosts.RemoteTestExtensionVerifier.<TestExtension>k__BackingField   Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension(Microsoft.Test.Apex.Hosts.RemoteTestExtension) 0x1207f57c
+  44 Microsoft.Test.Apex.VisualStudio.VisualStudioInProcessTestExtensionVerifier.<ObjectProvider>k__BackingField   Microsoft.Test.Apex.VisualStudio.VisualStudioObjectProviders(Microsoft.Test.Apex.VisualStudio.IVisualStudioObjectProviders) 0x050b64e8
+  48 Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier.<WindowManager>k__BackingField   Microsoft.Test.Apex.VisualStudio.Shell.WindowManagementService 0x050cea08
+  52 Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier.<SolutionService>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.VisualStudio.Solution.SolutionService> 0x12080654
+  56 Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier.<SynchronizationServiceLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Services.ISynchronizationService> 0x120806b4
+  60 Microsoft.Test.Apex.VisualStudio.Solution.ProjectVerifier.<ExecutionScopeLazy>k__BackingField   System.Lazy`1<Microsoft.Test.Apex.Services.IExecutionScopeService> 0x120806f4
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5592) : MemSpectDll.dll!CProcessGC::TrackObject + 513 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1819) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\methodtable.cpp(2895) : clr.dll!MethodTable::Allocate + 95 bytes
+f:\dd\ndp\clr\src\classlibnative\remoting\remotingnative.cpp(211) : clr.dll!RemotingNative::AllocateUninitializedObject + 381 bytes
+mscorlib.dll!System.Runtime.Remoting.Activation.ActivationServices.CreateInstance
+mscorlib.dll!System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK
+f:\dd\ndp\clr\src\vm\remoting.cpp(3511) : clr.dll!CallTargetWorker2 + 158 bytes
+f:\dd\ndp\clr\src\vm\remoting.cpp(670) : clr.dll!CRemotingServices::CreateProxyOrObject + 58 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(633) : clr.dll!RuntimeTypeHandle::CreateInstance + 794 bytes
+mscorlib.dll!System.RuntimeType.CreateInstanceSlow
+mscorlib.dll!System.RuntimeType.CreateInstanceDefaultCtor
+mscorlib.dll!System.Activator.CreateInstance
+mscorlib.dll!System.Activator.CreateInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryProductActivatorService.Activate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectFactoryService.DefaultInProcessTestObjectFactoryProductProvider.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.Create
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.RemoteTestExtension.Initialize
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.RemoteReferenceTypeTestExtension`2.Initialize
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.Initialize
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.InternalInitialize
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.Services.MarshallableApexObjectFactoryService.OnAfterSatisfyImports
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.TryCreate
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Services.FactoryService`2.Create
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstance
+Microsoft.Test.Apex.Framework.dll!Microsoft.Test.Apex.Hosts.MarshallableApexObject.CreateRemotableInstanceFor
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.VsHierarchyItemTestExtension`1.CreateVsHierarchyItemTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.GetProjectExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateDefaultProject
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(647) : clr.dll!CallDescrWithObjectArray + 1317 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(170) : clr.dll!CStackBuilderSink::PrivateProcessMessage + 491 bytes
+mscorlib.dll!System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback
+mscorlib.dll!System.Runtime.Remoting.Channels.ChannelServices.DispatchMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.DispatchChannelSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="BinaryServerFormatterSink.SerializeResponse" BugId="" FailTestWhenFound="false" Created="2013-03-19">
+      <IssueDescription>System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.SerializeResponse</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (hctr.IsMemSpectHeap &&
+    hctr.TBlk.BlockType == Common.BlockTypes.ClrObject 
+    && stk.Contains("System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.SerializeResponse")
+    )
+{
+    return true;
+}
+return false;
+]]>
+
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 041ec5a4, SeqNo = 6984801, Size = 36, Thread = 5076, Gen = 2, Moved = 5, Srviv = 110, Classid = 73e6c564, ClassName = System.Runtime.Remoting.ObjRef, NumItems = 0, _HeapAllocationContainer = Address=0x041ec5a4, SeqNo=6,984,801, Size=36, BlkType=ClrObject Thread=5076 }  Heap = __MemSpect
+ClassId = 0x73e6c564 System.Runtime.Remoting.ObjRef
+GCGen = 2 GCMoved=5 GCSurvived =110 
+   4 System.Runtime.Remoting.ObjRef.uri   System.String /3358cd6b_175e_48ee_b78b_3c37a9581488/kgjpfornlz6atvth3lo+_6t3_13.rem 0x041ec408
+   8 System.Runtime.Remoting.ObjRef.typeInfo   System.Runtime.Remoting.TypeInfo(System.Runtime.Remoting.IRemotingTypeInfo) 0x1202de20
+  12 System.Runtime.Remoting.ObjRef.envoyInfo   System.Runtime.Remoting.IEnvoyInfo 0x00000000
+  16 System.Runtime.Remoting.ObjRef.channelInfo   System.Runtime.Remoting.ChannelInfo(System.Runtime.Remoting.IChannelInfo) 0x041ec5c8
+  20 System.Runtime.Remoting.ObjRef.objrefFlags   I4 0x00000000
+  24 System.Runtime.Remoting.ObjRef.domainID   I4 0x00000000
+  28 System.Runtime.Remoting.ObjRef.srvIdentity   ValueType 0x00000000
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(5592) : MemSpectDll.dll!CProcessGC::TrackObject + 513 bytes
+c:\memspect\vsassert\stackman.cpp(700) : MemSpectDll.dll!MyProfiler::ObjectAllocated + 86 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5494) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(638) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1819) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(3088) : clr.dll!JIT_New + 107 bytes
+mscorlib.dll!System.MarshalByRefObject.CreateObjRef
+mscorlib.dll!System.Runtime.Remoting.RemotingServices.MarshalInternal
+mscorlib.dll!System.Runtime.Remoting.RemotingServices.GetObjectData
+mscorlib.dll!System.Runtime.Remoting.Messaging.RemotingSurrogate.GetObjectData
+mscorlib.dll!System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.InitSerialize
+mscorlib.dll!System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.Serialize
+mscorlib.dll!System.Runtime.Serialization.Formatters.Binary.ObjectWriter.Serialize
+mscorlib.dll!System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.SerializeResponse
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+
+041ec5a4 : 73e6c564 041ec408 1202de20 00000000 041ec5c8 00000000 00000000 00000000   64 c5 e6 73 08 c4 1e 04 20 de 02 12 00 00 00 00 c8 c5 1e 04 00 00 00 00 00 00 00 00 00 00 00 00   d  s                            
+041ec5c4 : 0f0694b9                                                                  b9 94 06 0f                                                                                           
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+    <KnownIssue IssueName="Apex Solution.SolutionService.GetHierarchyByUniqueName" BugId="string" FailTestWhenFound="false" Created="2013-03-20">
+      <IssueDescription>Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.GetHierarchyByUniqueName</IssueDescription>
+      <Scenario>string</Scenario>
+      <EstimatedSize>string</EstimatedSize>
+      <PredicateString>
+        <![CDATA[
+if (!hctr.IsMemSpectHeap &&
+    stk.Contains("Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.GetHierarchyByUniqueName")
+    )
+{
+    return true;
+}
+return false;
+]]>
+
+      </PredicateString>
+      <SampleCallStack>
+        <![CDATA[
+{ Address = 155b5fb0, SeqNo = 10879637, Size = 88, Thread = 8512, StringContent = , _HeapAllocationContainer = Address=0x155b5fb0, SeqNo=10,879,637, Size=88, BlkType=None Thread=8512 }  Heap = __Process Heap HeapHandle= 00490000
+Call Stack:
+c:\memspect\vsassert\trackmem.cpp(3708) : MemSpectDll.dll!Mine_RtlAllocHeap + 448 bytes
+d:\win8_gdr\com\combase\dcomrem\marshal.cxx(2423) : combase.dll!CStdMarshal::ConnectCliIPIDEntry + 296 bytes
+d:\win8_gdr\com\combase\dcomrem\marshal.cxx(2322) : combase.dll!CStdMarshal::MakeCliIPIDEntry + 426 bytes
+d:\win8_gdr\com\combase\dcomrem\marshal.cxx(1855) : combase.dll!CStdMarshal::UnmarshalIPID + 150 bytes
+d:\win8_gdr\com\combase\dcomrem\marshal.cxx(1739) : combase.dll!CStdMarshal::UnmarshalObjRef + 284 bytes
+d:\win8_gdr\com\combase\dcomrem\coapi.cxx(1733) : combase.dll!_CoUnmarshalInterface + 1295 bytes
+d:\win8_gdr\com\combase\ndr\ndrole\oleaux.cxx(1294) : combase.dll!NdrExtInterfacePointerUnmarshall + 445 bytes
+d:\w8rtm\minio\rpc\ndr20\unmrshl.cxx(1191) : RPCRT4.dll!NdrpPointerUnmarshall + 225 bytes
+d:\w8rtm\minio\rpc\ndr20\unmrshl.cxx(471) : RPCRT4.dll!NdrPointerUnmarshall + 47 bytes
+d:\w8rtm\minio\rpc\ndr20\unmrshl.cxx(1191) : RPCRT4.dll!NdrpPointerUnmarshall + 715 bytes
+d:\w8rtm\minio\rpc\ndr20\unmrshl.cxx(471) : RPCRT4.dll!NdrPointerUnmarshall + 47 bytes
+d:\w8rtm\minio\rpc\ndr20\mulsyntx.cxx(703) : RPCRT4.dll!NdrpClientUnMarshal + 375 bytes
+d:\w8rtm\minio\rpc\ndr20\cltcall.cxx(1073) : RPCRT4.dll!NdrClientCall2 + 541 bytes
+d:\win8_gdr\com\combase\ndr\ndrole\i386\stblsclt.cxx(474) : combase.dll!ObjectStublessClient + 107 bytes
+d:\win8_gdr\com\combase\ndr\ndrole\i386\stubless.asm(154) : combase.dll!ObjectStubless + 15 bytes
+!0x100D49A3 SymErr = 0x7e
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.GetHierarchyByUniqueName
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectTestExtension.CreateTestExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.GetProjectExtension
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.ProjectContainer`1.AddDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionProjectContainer.CreateDefaultProject
+Microsoft.Test.Apex.VisualStudio.dll!Microsoft.Test.Apex.VisualStudio.Solution.SolutionService.CreateDefaultProject
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(647) : clr.dll!CallDescrWithObjectArray + 1317 bytes
+f:\dd\ndp\clr\src\vm\stackbuildersink.cpp(170) : clr.dll!CStackBuilderSink::PrivateProcessMessage + 491 bytes
+mscorlib.dll!System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback
+mscorlib.dll!System.Runtime.Remoting.Channels.ChannelServices.DispatchMessage
+mscorlib.dll!System.Runtime.Remoting.Channels.DispatchChannelSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.BinaryServerFormatterSink.ProcessMessage
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcServerTransportSink.ServiceRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.RequestQueue.ProcessNextRequest
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.SocketHandler.BeginReadMessageCallback
+System.Runtime.Remoting.dll!System.Runtime.Remoting.Channels.Ipc.IpcPort.AsyncFSCallback
+mscorlib.dll!System.Threading._IOCompletionCallback.PerformIOCompletionCallback
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(244) : clr.dll!DispatchCallSimple + 114 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(715) : clr.dll!BindIoCompletionCallBack_Worker + 230 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18669) : clr.dll!ManagedThreadBase_DispatchInner + 103 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18723) : clr.dll!ManagedThreadBase_DispatchMiddle + 130 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(18946) : clr.dll!ManagedThreadBase_DispatchOuter + 91 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(19010) : clr.dll!ManagedThreadBase_FullTransitionWithAD + 47 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(778) : clr.dll!BindIoCompletionCallbackStubEx + 208 bytes
+f:\dd\ndp\clr\src\vm\comthreadpool.cpp(799) : clr.dll!BindIoCompletionCallbackStub + 18 bytes
+f:\dd\ndp\clr\src\vm\win32threadpool.cpp(4094) : clr.dll!ThreadpoolMgr::CompletionPortThreadStart + 1708 bytes
+f:\dd\ndp\clr\src\vm\threads.cpp(3465) : clr.dll!Thread::intermediateThreadProc + 77 bytes
+d:\w8rtm\base\win32\client\thread.c(65) : KERNEL32.DLL!BaseThreadInitThunk + 14 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(1024) : ntdll.dll!__RtlUserThreadStart + 114 bytes
+d:\win8_gdr\minkernel\ntdll\rtlstrt.c(939) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+        ]]>
+      </SampleCallStack>
+    </KnownIssue>
+  </Issues>
+</KnownIssues>

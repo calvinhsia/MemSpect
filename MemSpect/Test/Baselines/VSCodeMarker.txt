@@ -1,0 +1,51 @@
+==>Test start 1/22/2015 12:38:11 PM VSCodeMarker
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[12:38:17.356 P] MemSpect API connecting Thursday, January 22, 2015 12:38:17 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 4224 
+==>[12:38:17.359 P] Target CmdLine(Addr=00982056)="C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
+==>[12:38:17.360 P] TotVM=00000000fffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[12:38:17.365 P] PID=2932 'devenv.exe' FileVer='12.0.21005.1 built by: REL' ProdVer='12.0.21005.1'
+==>[12:38:17.366 P] MemSpect DLL Version = 141030  
+==>[12:38:17.367 P] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-01-22 12_37_55\Out\MemSpect.ini
+==>[12:38:17.369 P] CleanUpRCWs = 1
+==>[12:38:17.370 P]  CodeMarkerAction perfVSLocalRegistryCreateInstanceBegin(9261)=CodeMarkerAction_TakeMemStatSnapShot
+==>[12:38:17.370 P]  CodeMarkerAction perfVSLocalRegistryVsLoaderCoCreateInstance(9262)=CodeMarkerAction_TakeMemStatSnapShot
+==>[12:38:17.370 P]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 141030
+==>[12:38:22.547 P] PerfIdle 257,053
+==>[12:38:22.547 P] CodeMarker:502 perfIdle SeqNo=257,053
+==>Freezing target. SeqNo = 277260
+==>[12:38:23.762 P] Freeze Target SeqNo= 278,131
+CodeMarkerActions
+perfVSLocalRegistryCreateInstanceBegin(9261)=CodeMarkerAction_TakeMemStatSnapShot
+perfVSLocalRegistryVsLoaderCoCreateInstance(9262)=CodeMarkerAction_TakeMemStatSnapShot
+perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>3,423 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 3,422/799,663 Free 1,989/537,431) Clrobjs=(Alloc 0/0 Free 0/0)
+==>20,887 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 20,886/3,245,394 Free 15,646/2,555,581) Clrobjs=(Alloc 0/0 Free 0/0)
+==>33,217 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 33,216/4,798,435 Free 25,062/3,849,045) Clrobjs=(Alloc 0/0 Free 0/0)
+==>33,367 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 33,366/4,811,494 Free 25,202/3,861,082) Clrobjs=(Alloc 0/0 Free 0/0)
+==>37,766 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 37,765/5,993,932 Free 28,978/4,434,041) Clrobjs=(Alloc 0/0 Free 0/0)
+==>37,788 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 37,787/5,998,894 Free 28,995/4,438,827) Clrobjs=(Alloc 0/0 Free 0/0)
+==>78,956 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 78,955/15,165,826 Free 58,074/9,230,134) Clrobjs=(Alloc 0/0 Free 0/0)
+==>79,059 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 79,058/15,174,297 Free 58,166/9,237,567) Clrobjs=(Alloc 0/0 Free 0/0)
+==>79,344 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 79,343/15,209,749 Free 58,405/9,273,703) Clrobjs=(Alloc 0/0 Free 0/0)
+==>79,470 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 79,469/15,236,797 Free 58,443/9,290,378) Clrobjs=(Alloc 0/0 Free 0/0)
+==>119,186 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 119,185/24,620,888 Free 94,058/18,114,612) Clrobjs=(Alloc 0/0 Free 0/0)
+==>119,319 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 119,318/24,641,019 Free 94,211/18,138,003) Clrobjs=(Alloc 0/0 Free 0/0)
+==>123,931 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 123,930/25,292,033 Free 98,627/18,778,264) Clrobjs=(Alloc 0/0 Free 0/0)
+==>124,022 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 124,021/25,299,652 Free 98,710/18,786,953) Clrobjs=(Alloc 0/0 Free 0/0)
+==>184,646 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 184,645/37,101,257 Free 145,994/28,983,441) Clrobjs=(Alloc 0/0 Free 0/0)
+==>184,786 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 184,785/37,119,487 Free 146,016/28,988,851) Clrobjs=(Alloc 0/0 Free 0/0)
+==>188,855 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 188,854/37,746,383 Free 148,018/29,410,819) Clrobjs=(Alloc 0/0 Free 0/0)
+==>189,001 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 189,000/37,760,606 Free 148,172/29,423,804) Clrobjs=(Alloc 0/0 Free 0/0)
+==>191,358 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 191,357/38,053,919 Free 150,120/29,679,819) Clrobjs=(Alloc 0/0 Free 0/0)
+==>191,465 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 191,464/38,062,074 Free 150,223/29,687,700) Clrobjs=(Alloc 0/0 Free 0/0)
+==>270,102 9261 perfVSLocalRegistryCreateInstanceBegin Heap=(Alloc 270,101/110,790,950 Free 210,473/81,742,989) Clrobjs=(Alloc 0/0 Free 0/0)
+==>270,211 9262 perfVSLocalRegistryVsLoaderCoCreateInstance Heap=(Alloc 270,210/110,804,433 Free 210,569/81,755,836) Clrobjs=(Alloc 0/0 Free 0/0)
+Clearing marker wait events
+Sending 3 markers: 1,2,3
+perfBeginSession(1)=CodeMarkerAction_Freeze, CodeMarkerAction_ShowInStatusMessage
+perfSeatBeltEndSession(2)=CodeMarkerAction_Freeze, CodeMarkerAction_ShowInStatusMessage
+perfCPUFrequency(3)=CodeMarkerAction_Freeze, CodeMarkerAction_ShowInStatusMessage
+==>Test end VSCodeMarker 1/22/2015 12:38:27 PM #Secs = 15.30
+==># of asserts = 15
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\VSCodeMarker.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-01-22 12_37_55\VSCodeMarker.txt"

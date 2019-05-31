@@ -1,0 +1,31 @@
+==>Test start 5/20/2015 9:37:34 AM NPadGDI
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+GDI
+==>Starting Notepad
+==>MemSpect vers = 150508
+==>Freezing target. SeqNo = 1728
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = FONT, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = FONT }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = FONT, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = FONT }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BITMAP, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BITMAP }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BITMAP, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BITMAP }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BITMAP, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BITMAP }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BITMAP, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BITMAP }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BRUSH, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BRUSH }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BRUSH, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BRUSH }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = 0, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = 0 }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = FONT, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = FONT }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = FONT, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = FONT }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BITMAP, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BITMAP }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = BITMAP, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = BITMAP }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = FONT, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = FONT }
+{ Address = 0x00000000, SeqNo=000,000, Thread=0000M, GdiObjType = FONT, _HeapAllocationContainer = Address=0x00000000, SeqNo=000,000, Size=0, BlkType=GdiObjs Thread=0000M GDIObjType = FONT }
+==>Test end NPadGDI 5/20/2015 9:37:39 AM #Secs = 4.38
+==># of asserts = 29
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\NPadGDI.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-05-20 09_37_34\NPadGDI.txt"

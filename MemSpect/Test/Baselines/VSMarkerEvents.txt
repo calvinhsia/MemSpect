@@ -1,0 +1,32 @@
+==>Test start 1/5/2017 11:21:13 AM VSMarkerEvents
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[11:21:15.741 A] MemSpect API connecting Thursday, January 5, 2017 11:21:15 AM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 8508 
+==>[11:21:15.750 A] Creating NamedPipeClientStream 'MemSpectPipe5012'
+==>[11:21:15.751 A] Creating NamedPipeServerStreamToChild +'MemSpectPipe5012two'
+==>[11:21:15.752 A] Connecting to FromChild Event 'MemSpectFromChild5012'
+==>[11:21:15.752 A] Connecting to FromTarget Event 'MemSpectFromTarget5012'
+==>[11:21:15.752 A] Connecting to ToTarget pipe 'MemSpectPipe5012'
+==>[11:21:15.769 A] Target CmdLine(Addr=00732abe)="C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
+==>[11:21:15.770 A] TotVM=00000000fffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[11:21:15.790 A] PID=5012 'devenv.exe' FileVer='12.0.21005.1 built by: REL' ProdVer='12.0.21005.1'
+==>[11:21:15.793 A] MemSpect DLL Version = 161109  
+==>[11:21:15.795 A] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-01-05 11_21_13\Out\MemSpect.ini
+==>[11:21:15.796 A] Connecting to ToChild pipe 'MemSpectPipe5012two'
+==>[11:21:15.797 A] CleanUpRCWs = 1
+==>[11:21:15.803 A]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+WaitForCodeMarkers Iter 1
+==>[11:21:16.614 A] Freeze Target SeqNo= 73,714
+Got perf perfVSLoadUIBegin 
+==>[11:21:16.617 A] UnFreeze Target Seqno= 73,714
+WaitForCodeMarkers Iter 2
+==>[11:21:20.184 A] Freeze Target SeqNo= 179,819
+Got perf perfVSLoadUIEnd 
+==>[11:21:20.184 A] UnFreeze Target Seqno= 179,819
+WaitForCodeMarkers Iter 3
+==>[11:21:23.303 A] Freeze Target SeqNo= 226,963
+==>[11:21:23.303 A] PerfIdle 226,691
+Got perf PerfIdleCodeMarker 
+==>[11:21:23.303 A] UnFreeze Target Seqno= 226,963
+==>Test end VSMarkerEvents 1/5/2017 11:21:26 AM #Secs = 12.17
+==># of asserts = 13
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\VSMarkerEvents.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-01-05 11_21_13\VSMarkerEvents.txt"

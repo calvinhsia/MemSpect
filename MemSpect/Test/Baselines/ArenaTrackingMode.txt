@@ -1,0 +1,21 @@
+==>Test start 3/1/2017 11:02:27 AM ArenaTrackingMode
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Testing Tracking Mode
+==>MemSpect vers = 161109D
+==>Got TargetFrozen Event124586 5
+Target frozen in StartArenaClient
+1st freeze
+==># of allocs = 3886
+==># of allocs With stack = 0
+==>Setting track mode normal124586
+==>Unfreeze target124586
+==>Got TargetUnFrozen Event124595
+==>sleep a bit124601
+==>Got TargetFrozen Event124767 5
+==>freeze target124767 17
+2nd Freeze
+==># of allocs = 3898
+==># of allocs With stack = 47
+==>Test end ArenaTrackingMode 3/1/2017 11:02:35 AM #Secs = 8.45
+==># of asserts = 15
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\ArenaTrackingMode.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-01 11_02_12\ArenaTrackingMode.txt"

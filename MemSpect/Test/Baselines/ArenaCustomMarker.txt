@@ -1,0 +1,73 @@
+==>Test start 3/1/2017 11:02:35 AM ArenaCustomMarker
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Testing CustomMarker
+==>MemSpect vers = 161109D
+Target frozen in StartArenaClient
+==>Got TargetFrozen Event177615 15
+ArenaClientStarted
+Got Marker MemSpectConnected
+Got Marker Iteration1/OpenSolution/TypingPinvokeMarker22
+Got Marker perfBeginSession
+Unfreeze target Iter=1
+==>Got TargetFrozen Event178606 15
+slept a bit
+freeze target
+After Got Marker MemSpectConnected1 Depth=0 SeqNo=000,000 
+After Got Marker                                  Iteration1/OpenSolution/TypingPinvokeMarker222 Depth=33 SeqNo=000,000 
+After Got Marker perfBeginSession1 Depth=0 SeqNo=000,000 
+After Got Marker                                  Iteration1/OpenSolution/TypingPinvokeMarker223 Depth=33 SeqNo=000,000 
+After Got Marker perfBeginSession2 Depth=0 SeqNo=000,000 
+After Got Marker                                  Test1234Start1 Depth=33 SeqNo=000,000 
+After Got Marker                                  OpenSolution/Initialize Control Form.Delete File. Add WinformStart1 Depth=33 SeqNo=000,000 
+After Got Marker                                  OpenSolution/Initialize Control Form.Delete File. Add WinformEnd1 Depth=33 SeqNo=000,000 
+After Got Marker                                  Show toolbox. Rebuild. Close All DocumentsStart1 Depth=33 SeqNo=000,000 
+After Got Marker                                  Show toolbox. Rebuild. Close All DocumentsEnd1 Depth=33 SeqNo=000,000 
+Unfreeze target Iter=2
+slept a bit
+freeze target
+==>Freezing target. SeqNo = 179334
+==>Got TargetFrozen Event179771 17
+After Got Marker MemSpectConnected1 Depth=0 SeqNo=000,000 
+After Got Marker                                  Iteration1/OpenSolution/TypingPinvokeMarker222 Depth=33 SeqNo=000,000 
+After Got Marker perfBeginSession1 Depth=0 SeqNo=000,000 
+After Got Marker                                  Iteration1/OpenSolution/TypingPinvokeMarker223 Depth=33 SeqNo=000,000 
+After Got Marker perfBeginSession2 Depth=0 SeqNo=000,000 
+After Got Marker                                  Test1234Start1 Depth=33 SeqNo=000,000 
+After Got Marker                                  OpenSolution/Initialize Control Form.Delete File. Add WinformStart1 Depth=33 SeqNo=000,000 
+After Got Marker                                  OpenSolution/Initialize Control Form.Delete File. Add WinformEnd1 Depth=33 SeqNo=000,000 
+After Got Marker                                  Show toolbox. Rebuild. Close All DocumentsStart1 Depth=33 SeqNo=000,000 
+After Got Marker                                  Show toolbox. Rebuild. Close All DocumentsEnd1 Depth=33 SeqNo=000,000 
+After Got Marker                                  Test1234Start2 Depth=33 SeqNo=000,000 
+After Got Marker                                  OpenSolution/Initialize Control Form.Delete File. Add WinformStart2 Depth=33 SeqNo=000,000 
+After Got Marker                                  OpenSolution/Initialize Control Form.Delete File. Add WinformEnd2 Depth=33 SeqNo=000,000 
+After Got Marker                                  Show toolbox. Rebuild. Close All DocumentsStart2 Depth=33 SeqNo=000,000 
+After Got Marker                                  Show toolbox. Rebuild. Close All DocumentsEnd2 Depth=33 SeqNo=000,000 
+Done all iters Marker count = 15
+CodeMarker snap
+==>{ Address = 00000001, SeqNo = 25198, Thread = 888, Marker = MemSpectConnected1 Depth=0 SeqNo=25,198 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 1, Depth = 0, MarkerId = 100001, MarkerRawName = MemSpectConnected, _HeapAllocationContainer = Address=0x00000001, SeqNo=25,198, Size=0, BlkType=CodeMarker Thread=888 CM: 100001 MemSpectConnected }
+==>{ Address = 00000002, SeqNo = 158756, Thread = 8756M, Marker =                                  Iteration1/OpenSolution/TypingPinvokeMarker222 Depth=33 SeqNo=158,756 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 2, Depth = 33, MarkerId = 100001, MarkerRawName = Iteration1/OpenSolution/TypingPinvokeMarker22, _HeapAllocationContainer = Address=0x00000002, SeqNo=158,756, Size=0, BlkType=CodeMarker Thread=8756M CM: 100001 Iteration1/OpenSolution/TypingPinvokeMarker22 }
+==>{ Address = 00000003, SeqNo = 159202, Thread = 8756M, Marker = perfBeginSession1 Depth=0 SeqNo=159,202 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 1, Depth = 0, MarkerId = 1, MarkerRawName = perfBeginSession, _HeapAllocationContainer = Address=0x00000003, SeqNo=159,202, Size=0, BlkType=CodeMarker Thread=8756M CM: 1 perfBeginSession }
+==>{ Address = 00000004, SeqNo = 178065, Thread = 8756M, Marker =                                  Iteration1/OpenSolution/TypingPinvokeMarker223 Depth=33 SeqNo=178,065 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 3, Depth = 33, MarkerId = 100001, MarkerRawName = Iteration1/OpenSolution/TypingPinvokeMarker22, _HeapAllocationContainer = Address=0x00000004, SeqNo=178,065, Size=0, BlkType=CodeMarker Thread=8756M CM: 100001 Iteration1/OpenSolution/TypingPinvokeMarker22 }
+==>{ Address = 00000005, SeqNo = 178592, Thread = 8756M, Marker = perfBeginSession2 Depth=0 SeqNo=178,592 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 2, Depth = 0, MarkerId = 1, MarkerRawName = perfBeginSession, _HeapAllocationContainer = Address=0x00000005, SeqNo=178,592, Size=0, BlkType=CodeMarker Thread=8756M CM: 1 perfBeginSession }
+==>{ Address = 00000006, SeqNo = 178607, Thread = 888, Marker =                                  Test1234Start1 Depth=33 SeqNo=178,607 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 1, Depth = 33, MarkerId = 100000, MarkerRawName = Test1234Start, _HeapAllocationContainer = Address=0x00000006, SeqNo=178,607, Size=0, BlkType=CodeMarker Thread=888 CM: 100000 Test1234Start }
+==>{ Address = 00000007, SeqNo = 178608, Thread = 888, Marker =                                  OpenSolution/Initialize Control Form.Delete File. Add WinformStart1 Depth=33 SeqNo=178,608 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 1, Depth = 33, MarkerId = 100002, MarkerRawName = OpenSolution/Initialize Control Form.Delete File. Add WinformStart, _HeapAllocationContainer = Address=0x00000007, SeqNo=178,608, Size=0, BlkType=CodeMarker Thread=888 CM: 100002 OpenSolution/Initialize Control Form.Delete File. Add WinformStart }
+==>{ Address = 00000008, SeqNo = 178609, Thread = 888, Marker =                                  OpenSolution/Initialize Control Form.Delete File. Add WinformEnd1 Depth=33 SeqNo=178,609 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 1, Depth = 33, MarkerId = 100003, MarkerRawName = OpenSolution/Initialize Control Form.Delete File. Add WinformEnd, _HeapAllocationContainer = Address=0x00000008, SeqNo=178,609, Size=0, BlkType=CodeMarker Thread=888 CM: 100003 OpenSolution/Initialize Control Form.Delete File. Add WinformEnd }
+==>{ Address = 00000009, SeqNo = 178610, Thread = 888, Marker =                                  Show toolbox. Rebuild. Close All DocumentsStart1 Depth=33 SeqNo=178,610 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 1, Depth = 33, MarkerId = 100004, MarkerRawName = Show toolbox. Rebuild. Close All DocumentsStart, _HeapAllocationContainer = Address=0x00000009, SeqNo=178,610, Size=0, BlkType=CodeMarker Thread=888 CM: 100004 Show toolbox. Rebuild. Close All DocumentsStart }
+==>{ Address = 0000000a, SeqNo = 178611, Thread = 888, Marker =                                  Show toolbox. Rebuild. Close All DocumentsEnd1 Depth=33 SeqNo=178,611 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 1, Depth = 33, MarkerId = 100005, MarkerRawName = Show toolbox. Rebuild. Close All DocumentsEnd, _HeapAllocationContainer = Address=0x0000000a, SeqNo=178,611, Size=0, BlkType=CodeMarker Thread=888 CM: 100005 Show toolbox. Rebuild. Close All DocumentsEnd }
+==>{ Address = 0000000b, SeqNo = 179330, Thread = 888, Marker =                                  Test1234Start2 Depth=33 SeqNo=179,330 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 2, Depth = 33, MarkerId = 100000, MarkerRawName = Test1234Start, _HeapAllocationContainer = Address=0x0000000b, SeqNo=179,330, Size=0, BlkType=CodeMarker Thread=888 CM: 100000 Test1234Start }
+==>{ Address = 0000000c, SeqNo = 179331, Thread = 888, Marker =                                  OpenSolution/Initialize Control Form.Delete File. Add WinformStart2 Depth=33 SeqNo=179,331 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 2, Depth = 33, MarkerId = 100002, MarkerRawName = OpenSolution/Initialize Control Form.Delete File. Add WinformStart, _HeapAllocationContainer = Address=0x0000000c, SeqNo=179,331, Size=0, BlkType=CodeMarker Thread=888 CM: 100002 OpenSolution/Initialize Control Form.Delete File. Add WinformStart }
+==>{ Address = 0000000d, SeqNo = 179332, Thread = 888, Marker =                                  OpenSolution/Initialize Control Form.Delete File. Add WinformEnd2 Depth=33 SeqNo=179,332 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 2, Depth = 33, MarkerId = 100003, MarkerRawName = OpenSolution/Initialize Control Form.Delete File. Add WinformEnd, _HeapAllocationContainer = Address=0x0000000d, SeqNo=179,332, Size=0, BlkType=CodeMarker Thread=888 CM: 100003 OpenSolution/Initialize Control Form.Delete File. Add WinformEnd }
+==>{ Address = 0000000e, SeqNo = 179333, Thread = 888, Marker =                                  Show toolbox. Rebuild. Close All DocumentsStart2 Depth=33 SeqNo=179,333 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 2, Depth = 33, MarkerId = 100004, MarkerRawName = Show toolbox. Rebuild. Close All DocumentsStart, _HeapAllocationContainer = Address=0x0000000e, SeqNo=179,333, Size=0, BlkType=CodeMarker Thread=888 CM: 100004 Show toolbox. Rebuild. Close All DocumentsStart }
+==>{ Address = 0000000f, SeqNo = 179334, Thread = 888, Marker =                                  Show toolbox. Rebuild. Close All DocumentsEnd2 Depth=33 SeqNo=179,334 , UserDataAddr = 00000000, MarkerUserDataLen = 0, CodeMarkerUserData = , MarkerInstance = 2, Depth = 33, MarkerId = 100005, MarkerRawName = Show toolbox. Rebuild. Close All DocumentsEnd, _HeapAllocationContainer = Address=0x0000000f, SeqNo=179,334, Size=0, BlkType=CodeMarker Thread=888 CM: 100005 Show toolbox. Rebuild. Close All DocumentsEnd }
+GetMemStats
+==>Seqno=178608,CMarker=100002  Hp=(Alloc 178,607/18,350,693 Free 153,085/16,655,124), ClrObj= (Alloc 32,771/1,455,379 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Seqno=178609,CMarker=100003  Hp=(Alloc 178,608/18,350,733 Free 153,085/16,655,124), ClrObj= (Alloc 32,771/1,455,379 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Seqno=178610,CMarker=100004  Hp=(Alloc 178,609/18,350,773 Free 153,085/16,655,124), ClrObj= (Alloc 32,771/1,455,379 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Seqno=178611,CMarker=100005  Hp=(Alloc 178,610/18,350,813 Free 153,085/16,655,124), ClrObj= (Alloc 32,771/1,455,379 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Seqno=179331,CMarker=100002  Hp=(Alloc 179,330/18,862,826 Free 153,259/17,138,738), ClrObj= (Alloc 33,261/1,474,477 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Seqno=179332,CMarker=100003  Hp=(Alloc 179,331/18,862,866 Free 153,259/17,138,738), ClrObj= (Alloc 33,261/1,474,477 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Seqno=179333,CMarker=100004  Hp=(Alloc 179,332/18,862,906 Free 153,259/17,138,738), ClrObj= (Alloc 33,261/1,474,477 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Seqno=179334,CMarker=100005  Hp=(Alloc 179,333/18,862,946 Free 153,259/17,138,738), ClrObj= (Alloc 33,261/1,474,477 Free 14,278/573,353) ClrCls=(Alloc 477/0 Free 0/0) ClrOther=(Alloc 29/0 Free 0/0) VirtAlloc= (Alloc 0/0 Free 0/0)
+==>Test end ArenaCustomMarker 3/1/2017 11:02:51 AM #Secs = 15.39
+==># of asserts = 44
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\ArenaCustomMarker.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-01 11_02_12\ArenaCustomMarker.txt"

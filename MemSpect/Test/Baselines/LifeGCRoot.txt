@@ -1,0 +1,111 @@
+==>Test start 4/26/2017 3:35:53 PM LifeGCRoot
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Loaded Snaps\csLife
+GCRoot System.Object Address=0x02ae121c, SeqNo=4,038, Size=12, BlkType=ClrObject Thread=2116M System.Object  RootKind = Other RootFlags = "Pinning" RootId 0x008a13f8
+GCRoot System.Object[] Address=0x02b00b24, SeqNo=16,177, Size=20, BlkType=ClrObject Thread=7476 System.Object[]  RootKind = Other RootFlags = "" RootId 0x008a1194
+GCRoot System.Threading.ThreadHelper Address=0x02afd580, SeqNo=14,438, Size=20, BlkType=ClrObject Thread=2116M System.Threading.ThreadHelper  RootKind = Stack RootFlags = "" RootId 0x716e2434
+GCRoot System.Windows.Forms.ApplicationContext Address=0x02afa520, SeqNo=13,915, Size=20, BlkType=ClrObject Thread=2116M System.Windows.Forms.ApplicationContext  RootKind = Stack RootFlags = "" RootId 0x696c4590
+GCRoot System.Windows.Forms.Application.ComponentManager Address=0x02afd328, SeqNo=14,216, Size=28, BlkType=ClrObject Thread=2116M System.Windows.Forms.Application.ComponentManager  RootKind = Stack RootFlags = "" RootId 0x696c6648
+GCRoot System.RuntimeType Address=0x02b00cdc, SeqNo=16,754, Size=28, BlkType=ClrObject Thread=8092 System.RuntimeType  RootKind = Other RootFlags = "RefCounted" RootId 0x008a14d8
+GCRoot System.RuntimeType Address=0x02b00cc0, SeqNo=16,660, Size=28, BlkType=ClrObject Thread=8092 System.RuntimeType  RootKind = Other RootFlags = "RefCounted" RootId 0x008a14dc
+GCRoot System.SharedStatics Address=0x02ae1238, SeqNo=4,061, Size=28, BlkType=ClrObject Thread=2116M System.SharedStatics  RootKind = Other RootFlags = "" RootId 0x008a11d8
+GCRoot System.Reflection.RuntimeAssembly Address=0x02ae9400, SeqNo=9,316, Size=28, BlkType=ClrObject Thread=2116M System.Reflection.RuntimeAssembly  RootKind = Other RootFlags = "WeakRef, RefCounted" RootId 0x008a14e0
+GCRoot System.Reflection.RuntimeAssembly Address=0x02ae1edc, SeqNo=4,606, Size=28, BlkType=ClrObject Thread=2116M System.Reflection.RuntimeAssembly  RootKind = Other RootFlags = "WeakRef, RefCounted" RootId 0x008a14f4
+GCRoot System.Reflection.RuntimeAssembly Address=0x02af9058, SeqNo=10,551, Size=28, BlkType=ClrObject Thread=2116M System.Reflection.RuntimeAssembly  RootKind = Other RootFlags = "WeakRef, RefCounted" RootId 0x008a14e4
+GCRoot System.Reflection.RuntimeAssembly Address=0x02ae71c8, SeqNo=8,058, Size=28, BlkType=ClrObject Thread=2116M System.Reflection.RuntimeAssembly  RootKind = Other RootFlags = "RefCounted" RootId 0x008a14f8
+GCRoot System.Reflection.RuntimeAssembly Address=0x02af8f68, SeqNo=10,543, Size=28, BlkType=ClrObject Thread=2116M System.Reflection.RuntimeAssembly  RootKind = Other RootFlags = "WeakRef, RefCounted" RootId 0x008a14f0
+GCRoot System.Reflection.RuntimeAssembly Address=0x02b00c88, SeqNo=16,539, Size=28, BlkType=ClrObject Thread=8092 System.Reflection.RuntimeAssembly  RootKind = Other RootFlags = "WeakRef, RefCounted" RootId 0x008a14ec
+GCRoot System.Reflection.RuntimeAssembly Address=0x02afdf54, SeqNo=15,633, Size=28, BlkType=ClrObject Thread=7476 System.Reflection.RuntimeAssembly  RootKind = Other RootFlags = "WeakRef, RefCounted" RootId 0x008a14e8
+GCRoot Microsoft.Win32.NativeMethods.WndProc Address=0x02ae3e18, SeqNo=7,272, Size=32, BlkType=ClrObject Thread=2116M Microsoft.Win32.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10f0
+GCRoot System.Drawing.Graphics Address=0x02b01858, SeqNo=39,159, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b053f4, SeqNo=39,528, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Stack RootFlags = "" RootId 0x6a2783dc
+GCRoot System.Drawing.Graphics Address=0x02b02e58, SeqNo=39,454, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b028d8, SeqNo=39,381, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b01b18, SeqNo=39,196, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b02b98, SeqNo=39,418, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b02618, SeqNo=39,344, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b05134, SeqNo=39,491, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b012d8, SeqNo=39,085, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b02098, SeqNo=39,270, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b01598, SeqNo=39,122, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b01018, SeqNo=39,048, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b05c34, SeqNo=39,639, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Stack RootFlags = "" RootId 0x6a278c74
+GCRoot System.Drawing.Graphics Address=0x02b01dd8, SeqNo=39,233, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot System.Drawing.Graphics Address=0x02b02358, SeqNo=39,307, Size=32, BlkType=ClrObject Thread=7476 System.Drawing.Graphics  RootKind = Finalizer RootFlags = "" RootId 0x00000000
+GCRoot ManifestEtw.EtwEnableCallback Address=0x02ae2864, SeqNo=7,020, Size=32, BlkType=ClrObject Thread=2116M ManifestEtw.EtwEnableCallback  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10f8
+GCRoot System.Threading.ThreadStart Address=0x02afd5b4, SeqNo=14,442, Size=32, BlkType=ClrObject Thread=2116M System.Threading.ThreadStart  RootKind = Stack RootFlags = "" RootId 0x00000000
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02afd02c, SeqNo=14,126, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10bc
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02afcf60, SeqNo=14,096, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10c4
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02afd00c, SeqNo=14,119, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10c0
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02afa588, SeqNo=13,920, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10d4
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02afcf20, SeqNo=14,078, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10cc
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02afcf40, SeqNo=14,085, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10c8
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02af96ec, SeqNo=10,664, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10d8
+GCRoot System.Windows.Forms.NativeMethods.WndProc Address=0x02ae68b8, SeqNo=7,936, Size=32, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods.WndProc  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10ec
+GCRoot Microsoft.Win32.NativeMethods.ConHndlr Address=0x02ae29a0, SeqNo=7,057, Size=32, BlkType=ClrObject Thread=2116M Microsoft.Win32.NativeMethods.ConHndlr  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10f4
+GCRoot System.Security.PermissionSet Address=0x02ae18e8, SeqNo=4,468, Size=36, BlkType=ClrObject Thread=2116M System.Security.PermissionSet  RootKind = Other RootFlags = "" RootId 0x008a11d4
+GCRoot System.Drawing.SolidBrush Address=0x02ae40a8, SeqNo=7,405, Size=36, BlkType=ClrObject Thread=2116M System.Drawing.SolidBrush  RootKind = Stack RootFlags = "" RootId 0x009664c0
+GCRoot System.Drawing.SolidBrush Address=0x02afa400, SeqNo=13,898, Size=36, BlkType=ClrObject Thread=2116M System.Drawing.SolidBrush  RootKind = Stack RootFlags = "" RootId 0x6a278c74
+GCRoot System.Windows.Forms.NativeMethods+ValueType[] Address=0x02afd818, SeqNo=14,611, Size=40, BlkType=ClrObject Thread=2116M System.Windows.Forms.NativeMethods+ValueType[]  RootKind = Stack RootFlags = "" RootId 0x696c6648
+GCRoot System.Diagnostics.TraceSwitch Address=0x02ae50b8, SeqNo=7,686, Size=44, BlkType=ClrObject Thread=2116M System.Diagnostics.TraceSwitch  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12e8
+GCRoot System.Diagnostics.TraceSwitch Address=0x02ae3ff8, SeqNo=7,328, Size=44, BlkType=ClrObject Thread=2116M System.Diagnostics.TraceSwitch  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12f0
+GCRoot System.Drawing.SolidBrush[] Address=0x02ae40cc, SeqNo=7,409, Size=48, BlkType=ClrObject Thread=2116M System.Drawing.SolidBrush[]  RootKind = Stack RootFlags = "" RootId 0x009664c0
+GCRoot System.Object[] Address=0x02affab8, SeqNo=15,951, Size=48, BlkType=ClrObject Thread=7476 System.Object[]  RootKind = Other RootFlags = "" RootId 0x008a1198
+GCRoot System.Object[] Address=0x02ae3bc8, SeqNo=7,247, Size=48, BlkType=ClrObject Thread=2116M System.Object[]  RootKind = Other RootFlags = "" RootId 0x008a11d0
+GCRoot System.Threading.Thread Address=0x02ae2958, SeqNo=7,053, Size=52, BlkType=ClrObject Thread=2116M System.Threading.Thread  RootKind = Other RootFlags = "" RootId 0x008a11f8
+GCRoot System.Threading.Thread Address=0x02afd54c, SeqNo=14,436, Size=52, BlkType=ClrObject Thread=2116M System.Threading.Thread  RootKind = Stack RootFlags = "" RootId 0x716e2434
+GCRoot System.Windows.Forms.Control.ControlNativeWindow Address=0x02af9f2c, SeqNo=13,832, Size=56, BlkType=ClrObject Thread=2116M System.Windows.Forms.Control.ControlNativeWindow  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12c0
+GCRoot System.Windows.Forms.Control.ControlNativeWindow Address=0x02af989c, SeqNo=10,718, Size=56, BlkType=ClrObject Thread=2116M System.Windows.Forms.Control.ControlNativeWindow  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12c8
+GCRoot System.Windows.Forms.Control.ControlNativeWindow Address=0x02afa15c, SeqNo=13,860, Size=56, BlkType=ClrObject Thread=2116M System.Windows.Forms.Control.ControlNativeWindow  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12c4
+GCRoot System.Windows.Forms.Control.ControlNativeWindow Address=0x02ae468c, SeqNo=7,520, Size=56, BlkType=ClrObject Thread=2116M System.Windows.Forms.Control.ControlNativeWindow  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12cc
+GCRoot System.Windows.Forms.Control.ControlNativeWindow Address=0x02ae57b8, SeqNo=7,763, Size=56, BlkType=ClrObject Thread=2116M System.Windows.Forms.Control.ControlNativeWindow  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12dc
+GCRoot System.Runtime.Remoting.Contexts.Context Address=0x02affb04, SeqNo=15,958, Size=60, BlkType=ClrObject Thread=7476 System.Runtime.Remoting.Contexts.Context  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10fc
+GCRoot System.Windows.Forms.Internal.DeviceContext Address=0x02afdb00, SeqNo=14,749, Size=72, BlkType=ClrObject Thread=2116M System.Windows.Forms.Internal.DeviceContext  RootKind = Other RootFlags = "WeakRef" RootId 0x008a1294
+GCRoot System.Threading.ThreadAbortException Address=0x02ae11c8, SeqNo=4,035, Size=84, BlkType=ClrObject Thread=2116M System.Threading.ThreadAbortException  RootKind = Other RootFlags = "" RootId 0x008a11dc
+GCRoot System.Threading.ThreadAbortException Address=0x02ae1174, SeqNo=4,033, Size=84, BlkType=ClrObject Thread=2116M System.Threading.ThreadAbortException  RootKind = Other RootFlags = "" RootId 0x008a11e0
+GCRoot System.RuntimeType.RuntimeTypeCache Address=0x02ae8798, SeqNo=9,097, Size=84, BlkType=ClrObject Thread=2116M System.RuntimeType.RuntimeTypeCache  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10e4
+GCRoot System.RuntimeType.RuntimeTypeCache Address=0x02af8ef4, SeqNo=10,541, Size=84, BlkType=ClrObject Thread=2116M System.RuntimeType.RuntimeTypeCache  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10dc
+GCRoot System.RuntimeType.RuntimeTypeCache Address=0x02afdee0, SeqNo=15,631, Size=84, BlkType=ClrObject Thread=7476 System.RuntimeType.RuntimeTypeCache  RootKind = Other RootFlags = "WeakRef" RootId 0x008a10b8
+GCRoot System.OutOfMemoryException Address=0x02ae1078, SeqNo=4,024, Size=84, BlkType=ClrObject Thread=2116M System.OutOfMemoryException  RootKind = Other RootFlags = "" RootId 0x008a11ec
+GCRoot System.StackOverflowException Address=0x02ae10cc, SeqNo=4,027, Size=84, BlkType=ClrObject Thread=2116M System.StackOverflowException  RootKind = Other RootFlags = "" RootId 0x008a11e8
+GCRoot System.ExecutionEngineException Address=0x02ae1120, SeqNo=4,030, Size=84, BlkType=ClrObject Thread=2116M System.ExecutionEngineException  RootKind = Other RootFlags = "" RootId 0x008a11e4
+GCRoot System.Exception Address=0x02ae1024, SeqNo=4,021, Size=84, BlkType=ClrObject Thread=2116M System.Exception  RootKind = Other RootFlags = "" RootId 0x008a11f0
+GCRoot System.Diagnostics.Tracing.FrameworkEventSource Address=0x02ae2714, SeqNo=7,010, Size=100, BlkType=ClrObject Thread=2116M System.Diagnostics.Tracing.FrameworkEventSource  RootKind = Other RootFlags = "WeakRef" RootId 0x008a12f4
+GCRoot System.AppDomain Address=0x02ae12d8, SeqNo=4,373, Size=112, BlkType=ClrObject Thread=2116M System.AppDomain  RootKind = Other RootFlags = "" RootId 0x008a11fc
+GCRoot System.Windows.Forms.Application.ThreadContext Address=0x02ae53d0, SeqNo=7,726, Size=132, BlkType=ClrObject Thread=2116M System.Windows.Forms.Application.ThreadContext  RootKind = Stack RootFlags = "" RootId 0x696c6648
+GCRoot System.Object[] Address=0x02ae45a0, SeqNo=7,515, Size=220, BlkType=ClrObject Thread=2116M System.Object[]  RootKind = Other RootFlags = "" RootId 0x008a11cc
+GCRoot Life.Form1 Address=0x02ae1f08, SeqNo=6,898, Size=368, BlkType=ClrObject Thread=2116M Life.Form1  RootKind = Stack RootFlags = "" RootId 0x009664c0
+GCRoot System.Object[] Address=0x03ae2178, SeqNo=4,051, Size=528, BlkType=ClrObject Thread=2116M System.Object[]  RootKind = Other RootFlags = "Pinning" RootId 0x008a13f4
+GCRoot System.Object[] Address=0x03ae2398, SeqNo=4,376, Size=4,096, BlkType=ClrObject Thread=2116M System.Object[]  RootKind = Other RootFlags = "Pinning" RootId 0x008a13f0
+GCRoot System.Object[] Address=0x03ae1020, SeqNo=4,017, Size=4,424, BlkType=ClrObject Thread=2116M System.Object[]  RootKind = Other RootFlags = "Pinning" RootId 0x008a13fc
+GCRoot System.Object[] Address=0x03ae33a8, SeqNo=4,470, Size=8,176, BlkType=ClrObject Thread=2116M System.Object[]  RootKind = Other RootFlags = "Pinning" RootId 0x008a13ec
+GCRoot System.Object[] Address=0x03ae53a8, SeqNo=6,565, Size=16,336, BlkType=ClrObject Thread=2116M System.Object[]  RootKind = Other RootFlags = "Pinning" RootId 0x008a13e8
+GCRoot I4,I4[] Address=0x03b104b8, SeqNo=7,423, Size=160,028, BlkType=ClrObject Thread=2116M I4,I4[]  RootKind = Stack RootFlags = "" RootId 0x009664c0
+GCRoot I4,I4[] Address=0x03ae9388, SeqNo=7,421, Size=160,028, BlkType=ClrObject Thread=2116M I4,I4[]  RootKind = Stack RootFlags = "" RootId 0x009664c0
+GCRoot I4,I4[] Address=0x03da88e8, SeqNo=39,637, Size=160,028, BlkType=ClrObject Thread=7476 I4,I4[]  RootKind = Stack RootFlags = "" RootId 0x009664e4
+
+Getting GCRoots For System.Windows.Forms.TextBox = Address=0x02af9e74, SeqNo=13,830, Size=168, BlkType=ClrObject Thread=2116M System.Windows.Forms.TextBox
+GotRoots: System.Windows.Forms.TextBox
+  1 Life.Form1 Address=0x02ae1f08, SeqNo=6,898, Size=368, BlkType=ClrObject Thread=2116M Life.Form1
+  2 System.Windows.Forms.TextBox Address=0x02af9e74, SeqNo=13,830, Size=168, BlkType=ClrObject Thread=2116M System.Windows.Forms.TextBox
+ 
+ 
+
+Getting GCRoots For Life.Form1 = Address=0x02ae1f08, SeqNo=6,898, Size=368, BlkType=ClrObject Thread=2116M Life.Form1
+GotRoots: Life.Form1
+  1 Life.Form1 Address=0x02ae1f08, SeqNo=6,898, Size=368, BlkType=ClrObject Thread=2116M Life.Form1
+GotRoots: Life.Form1
+  1 System.Windows.Forms.Application.ThreadContext Address=0x02ae53d0, SeqNo=7,726, Size=132, BlkType=ClrObject Thread=2116M System.Windows.Forms.Application.ThreadContext
+  2 Life.Form1 Address=0x02ae1f08, SeqNo=6,898, Size=368, BlkType=ClrObject Thread=2116M Life.Form1
+GotRoots: Life.Form1
+  1 System.Windows.Forms.ApplicationContext Address=0x02afa520, SeqNo=13,915, Size=20, BlkType=ClrObject Thread=2116M System.Windows.Forms.ApplicationContext
+  2 Life.Form1 Address=0x02ae1f08, SeqNo=6,898, Size=368, BlkType=ClrObject Thread=2116M Life.Form1
+GotRoots: Life.Form1
+  1 System.Threading.ThreadHelper Address=0x02afd580, SeqNo=14,438, Size=20, BlkType=ClrObject Thread=2116M System.Threading.ThreadHelper
+  2 System.Threading.ThreadStart Address=0x02afd52c, SeqNo=14,435, Size=32, BlkType=ClrObject Thread=2116M System.Threading.ThreadStart
+  3 Life.Form1 Address=0x02ae1f08, SeqNo=6,898, Size=368, BlkType=ClrObject Thread=2116M Life.Form1
+ 
+ 
+==>Test end LifeGCRoot 4/26/2017 3:35:53 PM #Secs = 0.80
+==># of asserts = 110
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\LifeGCRoot.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-04-26 15_19_57\LifeGCRoot.txt"

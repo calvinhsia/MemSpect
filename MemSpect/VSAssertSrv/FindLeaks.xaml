@@ -1,0 +1,21 @@
+﻿<Window x:Class="FindLeaksWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Find Leaks" Height="250" Width="490">
+    
+    <Window.Resources>
+        <ToolTip x:Key="LeakRangeTip" Content="Comma-separated pairs of sequence numbers that define a range of allocations to search." />
+        <ToolTip x:Key="ThresholdTip" Content="Defines the minimum percent of callstack frame matches needed to group allocations." />
+        <ToolTip x:Key="ExactMatchTip" Content="Only allocations with identical callstacks occuring in every range will be considered a leak." />
+    </Window.Resources>
+    
+    <Grid>
+        <TextBox Margin="10,45,0,44" Name="MultiFilterTextBox" AcceptsReturn="True" HorizontalAlignment="Left" Width="195" ToolTip="{StaticResource LeakRangeTip}"/>
+        <Button Content="OK" Margin="0,0,12,44" Name="Okay" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" />
+        <Label Content="Leak Ranges" Height="27" HorizontalAlignment="Left" Margin="10,12,0,0" Name="Label1" VerticalAlignment="Top" Width="195" ToolTip="{StaticResource LeakRangeTip}"/>
+        <CheckBox Content="Require exact callstack match" Height="16" HorizontalAlignment="Left" Margin="211,45,0,0" Name="traditionalLeakCheckBox" VerticalAlignment="Top" Width="179" ToolTip="{StaticResource ExactMatchTip}"/>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="407,69,0,0" Name="minThresholdTextBox" VerticalAlignment="Top" Width="38" ToolTip="{StaticResource ThresholdTip}" />
+        <Label Content="Min callstack match threshold %:" Height="28" HorizontalAlignment="Left" Margin="211,67,0,0" Name="Label2" VerticalAlignment="Top" Width="190" ToolTip="{StaticResource ThresholdTip}"/>
+        <Label Margin="10,0,12,10" Name="statusBar" Height="28" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

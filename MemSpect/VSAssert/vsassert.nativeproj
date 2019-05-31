@@ -1,0 +1,99 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--*****************************************************-->
+  <!--This MSBuild project file was automatically generated-->
+  <!--from the original SOURCES/DIRS file by the KBC tool. -->
+  <!--*****************************************************-->
+  <!--Import the settings-->
+  <Import Project="$(_NTDRIVE)$(_NTROOT)\tools\Microsoft.DevDiv.Native.Settings.targets" />
+  <!--Leaf project Properties-->
+  <PropertyGroup>
+    <OutputName>vsassert</OutputName>
+    <TargetType>DYNLINK</TargetType>
+    <OutputPath>$(BinariesDirectory)\bin\$(BuildArchitecture)\</OutputPath>
+    <TargetLibDirectory>$(BinariesDirectory)\lib\$(BuildArchitecture)</TargetLibDirectory>
+    <LinkSubsystem>windows</LinkSubsystem>
+    <UseMsvcrt>true</UseMsvcrt>
+    <UseStaticAtl>true</UseStaticAtl>
+    <ClNativeExceptionHandling>Sync</ClNativeExceptionHandling>
+    <DllDef>$(OutputName).def</DllDef>
+    <DllEntryPoint>_DllMainCRTStartup</DllEntryPoint>
+    <CDefines>$(CDefines);WINDOWS;WIN32;WIN_DEPRECATE_BANNED_API;_STATIC_CPPLIB;_DISABLE_DEPRECATE_STATIC_CPPLIB;MEMSPECT</CDefines>
+    <ClCallingConvention>CDecl</ClCallingConvention>
+    <UserIncludes>..\detours</UserIncludes>
+    <PCHRootName>pch</PCHRootName>
+    <EnableCxxPCHHeaders>true</EnableCxxPCHHeaders>
+    <CopyToSuiteBin>$(DebugBuild)</CopyToSuiteBin>
+  </PropertyGroup>
+  <!--Leaf Project Items-->
+  <ItemGroup>
+    <DataFile Include="vsknownleaks.xml" />
+    <DataFile Include="devenv_leaks.xml" />
+    <DataFile Include="devenv_gdileaks.xml" />
+    <DataFile Include="vsaenv_leaks.xml" />
+    <DataFile Include="devenv_vsassert.ini" />
+    <DataFile Include="vsaenv_vsassert.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <RCResourceFile Include="vsassert.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CppPreprocess Include="..\CodeMarkers\CodeMarkerValues.txt">
+      <ForceInclude>..\CodeMarkers\CodeMarkerValuesLUT.h</ForceInclude>
+      <Includes>.;..</Includes>
+      <OutputFile>$(IntermediateOutputPath)\CodeMarkerValues.h</OutputFile>
+    </CppPreprocess>
+    <CppPreprocess Include="$(IntermediateOutputPath)\CodeMarkerValues.h">
+      <AdditionalOptions>/DCodemarkers_IncludeAllMarkers</AdditionalOptions>
+      <OutputFile>CodeMarkersLUT.gh</OutputFile>
+    </CppPreprocess>
+  </ItemGroup>
+  <ItemGroup>
+    <CppCompile Include="assert.cpp" />
+    <CppCompile Include="comdlg.cpp" />
+    <CppCompile Include="dump.cpp" />
+    <CppCompile Include="knownleaks.cpp" />
+    <CppCompile Include="leakdiag.cpp" />
+    <CppCompile Include="main.cpp" />
+    <CppCompile Include="mem.cpp" />
+    <CppCompile Include="modaddr.cpp" />
+    <CppCompile Include="options.cpp" />
+    <CppCompile Include="stackwalk.cpp" />
+    <CppCompile Include="tracker.cpp" />
+    <CppCompile Include="TrackMem.cpp" />
+    <CppCompile Include="StackMan.cpp" />
+    <CppCompile Include="interop.cpp" />
+    <CppCompile Include="util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <TargetLib Condition="'$(BuildArchitecture)'=='i386'" Include="$(BinariesDirectory)\lib\$(BuildArchitecture)\detours21.lib" />
+    <TargetLib Include="$(BinariesDirectory)\lib\$(BuildArchitecture)\dbghelper.lib" />
+    <TargetLib Include="$(SdkLibPath)\Dbghelp.lib" />
+    <TargetLib Include="$(SdkLibPath)\kernel32.lib" />
+    <TargetLib Include="$(SdkLibPath)\user32.lib" />
+    <TargetLib Include="$(SdkLibPath)\gdi32.lib" />
+    <TargetLib Include="$(SdkLibPath)\comdlg32.lib" />
+    <TargetLib Include="$(SdkLibPath)\comctl32.lib" />
+    <TargetLib Include="$(SdkLibPath)\shell32.lib" />
+    <TargetLib Include="$(SdkLibPath)\ole32.lib" />
+    <TargetLib Include="$(SdkLibPath)\oleaut32.lib" />
+    <TargetLib Include="$(SdkLibPath)\uuid.lib" />
+    <TargetLib Include="$(SdkLibPath)\advapi32.lib" />
+
+    <!--Since VSAssert is built in CHK, we'd like to make it go faster for STL, so link with libcpmt.lib, rather than libcpmt$(BuildSuffix).lib  -->
+    <TargetLib Include="$(CrtLibPath)\libcpmt.lib" />
+    <TargetLib Condition="'$(ManagedCxx)' == 'true'" Include="$(SdkLibPath)\mscoree.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishGenerated Include="{vsassert.h=$(VSCommonIncPath)\vsassert.h}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishCompiled Include="{$(OutputLibPath)$(OutputName).lib=$(VSCommonLibPath)\$(OutputName).lib}" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- To generate the VSIP layout we need the chk version of the dll also for retail, so we need -->
+    <!-- to publish it. -->
+    <PublishLinked Condition="$(DebugBuild)==true" Include="{$(OutputPath)\$(OutputName).dll=$(EnvSdkLibPath)\$(OutputName).dll}" />
+  </ItemGroup>
+  <!--Import the targets-->
+  <Import Project="$(_NTDRIVE)$(_NTROOT)\tools\Microsoft.DevDiv.Native.targets" />
+</Project>

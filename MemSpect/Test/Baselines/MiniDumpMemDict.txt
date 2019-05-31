@@ -1,0 +1,68 @@
+==>Test start 11/7/2016 12:20:09 PM MiniDumpMemDict
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>Minidump read c:\memspect\snaps\npad\minidump.dmp
+Init value Start 100  Size 10
+Init value Start 1000  Size 20
+readmemdict  98  9   0 
+readmemdict  98 10   0 
+readmemdict  98 11   0 
+readmemdict  98 12   0 
+readmemdict  99  9   0 
+readmemdict  99 10   0 
+readmemdict  99 11   0 
+readmemdict  99 12   0 
+readmemdict 100  9   9 
+readmemdict 100 10  10 
+readmemdict 100 11  11 
+readmemdict 100 12  12 
+readmemdict 101  9   9 
+readmemdict 101 10  10 
+readmemdict 101 11  11 
+readmemdict 101 12  12 
+readmemdict 102  9   9 
+readmemdict 102 10  10 
+readmemdict 102 11  11 
+readmemdict 102 12  12 
+readmemdict 103  9   9 
+readmemdict 103 10  10 
+readmemdict 103 11  11 
+readmemdict 103 12  12 
+readmemdict 104  9   9 
+readmemdict 104 10  10 
+readmemdict 104 11  11 
+readmemdict 104 12  12 
+readmemdict 105  9   9 
+readmemdict 105 10  10 
+readmemdict 105 11  11 
+readmemdict 105 12  12 
+readmemdict 106  9   9 
+readmemdict 106 10  10 
+readmemdict 106 11  11 
+readmemdict 106 12  12 
+readmemdict 107  9   9 
+readmemdict 107 10  10 
+readmemdict 107 11  11 
+readmemdict 107 12  12 
+readmemdict 108  9   9 
+readmemdict 108 10  10 
+readmemdict 108 11  11 
+readmemdict 108 12  12 
+readmemdict 109  9   9 
+readmemdict 109 10  10 
+readmemdict 109 11  11 
+readmemdict 109 12  12 
+readmemdict 110  9   0 
+readmemdict 110 10   0 
+readmemdict 110 11   0 
+readmemdict 110 12   0 
+readmemdict 111  9   0 
+readmemdict 111 10   0 
+readmemdict 111 11   0 
+readmemdict 111 12   0 
+readmemdict 112  9   0 
+readmemdict 112 10   0 
+readmemdict 112 11   0 
+readmemdict 112 12   0 
+==>Test end MiniDumpMemDict 11/7/2016 12:20:09 PM #Secs = 0.20
+==># of asserts = 64
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\MiniDumpMemDict.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2016-11-07 12_20_08\MiniDumpMemDict.txt"

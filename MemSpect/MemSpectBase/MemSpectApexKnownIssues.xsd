@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="KnownIssues" type="KnownIssues" />
+  <xs:complexType name="KnownIssues">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Issues" type="ArrayOfKnownIssue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfKnownIssue">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="KnownIssue" nillable="true" type="KnownIssue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="KnownIssue">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="IssueDescription" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Scenario" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EstimatedSize" type="xs:string" />
+      <!--Predicate can be empty: defaults to False -->
+      <xs:element minOccurs="1" maxOccurs="1" name="PredicateString" type="xs:string" />
+      <!--Sample can have other info like obj ref tree for managed objs-->
+      <xs:element minOccurs="1" maxOccurs="1" name="SampleCallStack" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="IssueName" type="xs:string" use="required" />
+    <xs:attribute name="BugId" type="xs:string" use="required" />
+    <xs:attribute name="FailTestWhenFound" type="xs:boolean" use="required" />
+    <xs:attribute name="Created" type="xs:date" use="required" />
+  </xs:complexType>
+</xs:schema>

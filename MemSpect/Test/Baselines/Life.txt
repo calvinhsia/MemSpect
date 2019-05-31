@@ -1,0 +1,1250 @@
+==>Test start 3/1/2017 11:29:58 AM Life
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[11:30:02.210 A] MemSpect API connecting Wednesday, March 1, 2017 11:30:02 AM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 8340 
+==>[11:30:02.210 A] Creating NamedPipeClientStream 'MemSpectPipe10232'
+==>[11:30:02.210 A] Creating NamedPipeServerStreamToChild +'MemSpectPipe10232two'
+==>[11:30:02.210 A] Connecting to FromChild Event 'MemSpectFromChild10232'
+==>[11:30:02.210 A] Connecting to FromTarget Event 'MemSpectFromTarget10232'
+==>[11:30:02.210 A] Connecting to ToTarget pipe 'MemSpectPipe10232'
+==>[11:30:02.210 A] Target CmdLine(Addr=00ae2b20)=C:\MemSpect\test\cslife.exe
+==>[11:30:02.210 A] TotVM=000000007ffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[11:30:02.225 A] PID=10232 'cslife.exe' FileVer='1.0.0.0' ProdVer='1.0.0.0'
+==>[11:30:02.225 A] MemSpect DLL Version = 161109D  
+==>[11:30:02.225 A] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-01 11_02_12\Out\MemSpect.ini
+==>[11:30:02.225 A] Connecting to ToChild pipe 'MemSpectPipe10232two'
+==>[11:30:02.225 A] CleanUpRCWs = 1
+==>[11:30:02.225 A]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 161109D
+==>Freezing target. SeqNo = 16125
+==>[11:30:05.319 A] Freeze Target SeqNo= 16,579
+==>Ini file = C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-01 11_02_12\Out\MemSpect.ini
+Stacks for System.Windows.Forms.Button
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+cslife.exe!Life.Form1..ctor
+cslife.exe!Life.Form1.Main
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+cslife.exe!Life.Form1.InitializeComponent
+cslife.exe!Life.Form1..ctor
+cslife.exe!Life.Form1.Main
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+System.String
+System.String
+System.String
+System.String
+System.String
+System.String
+System.String
+System.String
+System.String
+System.String
+System.String �
+System.String '
+System.String -
+System.String -
+System.String -
+System.String  :
+System.String  [
+System.String "
+System.String #32770
+System.String $
+System.String %
+System.String %
+System.String &Reset
+System.String *
+System.String *
+System.String ,
+System.String ,
+System.String ,
+System.String ,
+System.String .
+System.String .
+System.String .
+System.String .app.
+System.String .appDomain
+System.String .config
+System.String .config
+System.String .NET SystemEvents
+System.String .NET-BroadcastEventWindow.{0}.{1}.{2}
+System.String .NET-BroadcastEventWindow.4.0.0.0.2bf8098.0
+System.String .NETCore
+System.String .NETFramework
+System.String .NETFramework,Version=v4.0,Profile=Client
+System.String .NETPortable
+System.String /
+System.String /
+System.String />
+System.String /RemoteActivationService.rem
+System.String :/
+System.String ://
+System.String :\
+System.String ;
+System.String ?>
+System.String ?>
+System.String [DISPID=0]
+System.String \
+System.String \?:*"<>|
+System.String \\.\
+System.String \\.\DISPLAY1
+System.String \\?\
+System.String \\?\globalroot
+System.String _ThreadCallbackMessage
+System.String {000C0601-0000-0000-C000-000000000046}
+System.String {0F21F359-AB84-41E8-9A78-36D110E6D2F9}
+System.String ¤
+System.String +
+System.String <!--
+System.String <!DOCTYPE
+System.String </
+System.String <?xml
+System.String <?xml
+System.String <[CDATA[
+System.String =
+System.String >
+System.String >
+System.String '>'
+System.String ‰
+System.String ‰
+System.String 0
+System.String 0
+System.String 0
+System.String 00000000-0000-0000-C000-000000000046
+System.String 000C060B-0000-0000-C000-000000000046
+System.String 0409:00000409
+System.String 1
+System.String 1
+System.String 1.0
+System.String 2
+System.String 2
+System.String 3
+System.String 3
+System.String 4
+System.String 4
+System.String 4.0.0.0
+System.String 5
+System.String 5
+System.String 6
+System.String 6
+System.String 7
+System.String 7
+System.String 8
+System.String 8
+System.String 9
+System.String 9
+System.String A
+System.String A.D.
+System.String Accelerator
+System.String Accelerator
+System.String access
+System.String ad
+System.String AD
+System.String add
+System.String Alignment
+System.String allowDefinition
+System.String allowExeDefinition
+System.String allowLocation
+System.String alpha
+System.String AM
+System.String amp
+System.String Anchor
+System.String anonymousIdentification
+System.String apos
+System.String APP_CONFIG_BLOB
+System.String APP_CONFIG_FILE
+System.String APP_NAME
+System.String APPBASE
+System.String Appearance
+System.String appSettings
+System.String appSettings
+System.String Apr
+System.String April
+System.String args
+System.String assemblyBinding
+System.String assert
+System.String assertuienabled
+System.String Aug
+System.String August
+System.String authentication
+System.String authenticationModules
+System.String authenticationService
+System.String authorization
+System.String AutoEllipsis
+System.String autoflush
+System.String AutoScroll
+System.String AutoSize
+System.String behaviors
+System.String bindings
+System.String BINPATH_PROBE_ONLY
+System.String blue
+System.String BorderStyle
+System.String Bounds
+System.String browserCaps
+System.String build
+System.String BUTTON
+System.String button1
+System.String byteCount
+System.String byteIndex
+System.String bytes
+System.String C:\MemSpect\test\
+System.String C:\MemSpect\test\cslife.exe
+System.String C:\MemSpect\test\cslife.exe.config
+System.String C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config
+System.String cache
+System.String CACHE_BASE
+System.String caching
+System.String capacity
+System.String CDATA
+System.String CDATA[
+System.String CellBorderStyle
+System.String charCount
+System.String charIndex
+System.String chars
+System.String CheckAlign
+System.String ChildIndex
+System.String clear
+System.String client
+System.String clientTarget
+System.String CODE_DOWNLOAD_DISABLED
+System.String ColumnHeadersHeight
+System.String ColumnHeadersVisible
+System.String Columns
+System.String ColumnSpan
+System.String ColumnStyles
+System.String comContracts
+System.String comctl32.dll
+System.String Comment
+System.String commonBehaviors
+System.String compilation
+System.String ComptibleHDC
+System.String config
+System.String Config
+System.String config\machine.config
+System.String Config_base_collection_entry_already_exists
+System.String Config_base_unrecognized_element
+System.String Config_client_config_too_many_configsections_elements
+System.String Config_error_loading_XML_file
+System.String Config_invalid_boolean_attribute
+System.String Config_location_location_not_allowed
+System.String Config_namespace_invalid
+System.String Config_section_cannot_be_used_in_location
+System.String Config_section_locked
+System.String Config_sections_must_be_unique
+System.String Config_source_syntax_error
+System.String Config_tag_name_already_defined
+System.String Config_tag_name_already_defined_at_this_level
+System.String Config_unrecognized_configuration_section
+System.String configProtectedData
+System.String configProtectionProvider
+System.String configSections
+System.String configSource
+System.String configuration
+System.String Connect
+System.String connectionManagement
+System.String connectionStrings
+System.String connectionStrings
+System.String Controls
+System.String count
+System.String CreateInstance
+System.String cslife.exe
+System.String Cursor
+System.String Cursor
+System.String customErrors
+System.String dataContractSerializer
+System.String DataDirectory
+System.String dateTimeSerialization
+System.String DbgJITDebugLaunchSetting
+System.String DbgManagedDebugger
+System.String dddd, dd MMMM yyyy
+System.String Dec
+System.String December
+System.String Default
+System.String DefaultFont
+System.String defaultProxy
+System.String defaultSettings
+System.String DefWindowProcA
+System.String DefWindowProcW
+System.String deployment
+System.String DEV_PATH
+System.String deviceFilters
+System.String diagnostics
+System.String diagnostics
+System.String DISALLOW_APP
+System.String DISALLOW_APP_BASE_PROBING
+System.String DISALLOW_APP_REDIRECTS
+System.String DISPLAY
+System.String DisplayRectangle
+System.String DisplayStyle
+System.String Dock
+System.String DOCTYPE
+System.String DrawMode
+System.String DropDownButtonWidth
+System.String DYNAMIC_BASE
+System.String ebcdic
+System.String EDIT
+System.String Empty_attribute
+System.String en
+System.String encoding
+System.String english
+System.String EnhancedMetaFile
+System.String EnhancedMetaFile
+System.String en-us
+System.String en-US
+System.String en-US
+System.String en-US
+System.String en-US
+System.String Everywhere
+System.String EXE
+System.String EXE
+System.String EXE
+System.String ExecutionEngine_MissingSecurityDescriptor
+System.String extensions
+System.String false
+System.String false
+System.String Feb
+System.String February
+System.String fil
+System.String file
+System.String file:
+System.String file:
+System.String file://
+System.String file:///
+System.String filemappingsize
+System.String filter
+System.String Find
+System.String Find
+System.String FlatAppearance.BorderSize
+System.String FlatStyle
+System.String FlowBreak
+System.String FlowDirection
+System.String Font
+System.String FORCE_CACHE_INSTALL
+System.String Form1
+System.String format
+System.String Format_GuidDashes
+System.String Format_GuidInvalidChar
+System.String Format_GuidInvLen
+System.String Format_GuidUnrecognized
+System.String Fr
+System.String Fri
+System.String Friday
+System.String ftp
+System.String fullTrustAssemblies
+System.String GDI
+System.String GDI
+System.String GdiPlusInitialization
+System.String globalization
+System.String gopher
+System.String green
+System.String Gregorian Calendar
+System.String GripStyle
+System.String GrowStyle
+System.String gt
+System.String H:mm
+System.String h:mm tt
+System.String HDC
+System.String HDC
+System.String he
+System.String healthMonitoring
+System.String HH:mm
+System.String hh:mm tt
+System.String HH:mm:ss
+System.String Hi
+System.String HKEY_CLASSES_ROOT
+System.String HKEY_CURRENT_CONFIG
+System.String HKEY_CURRENT_USER
+System.String HKEY_DYN_DATA
+System.String HKEY_LOCAL_MACHINE
+System.String HKEY_PERFORMANCE_DATA
+System.String HKEY_USERS
+System.String HOST_CONFIG
+System.String hostingEnvironment
+System.String http
+System.String http:
+System.String http://
+System.String http://schemas.microsoft.com/.NetConfiguration/v2.0
+System.String http://schemas.microsoft.com/clr/
+System.String http://schemas.microsoft.com/clr/assem/
+System.String http://schemas.microsoft.com/clr/ns/
+System.String http://schemas.microsoft.com/clr/nsassem/
+System.String http://www.w3.org/2000/xmlns/
+System.String http://www.w3.org/XML/1998/namespace
+System.String httpCookies
+System.String httpHandlers
+System.String httpHandlers
+System.String httpModules
+System.String httpRuntime
+System.String https
+System.String Icon
+System.String Icon
+System.String identity
+System.String Image
+System.String ImageAlign
+System.String ImageIndex
+System.String ImageKey
+System.String ImageList_WriteEx
+System.String ImageScaling
+System.String ImageScalingSize
+System.String indentsize
+System.String index
+System.String Infinity
+System.String Infinity
+System.String -Infinity
+System.String -Infinity
+System.String initializeData
+System.String input
+System.String International Monetary Fund
+System.String Invariant Country
+System.String Invariant Language
+System.String Invariant Language (Invariant Country)
+System.String iso-10646-ucs-2
+System.String Items
+System.String iv
+System.String IV
+System.String ivc
+System.String IVC
+System.String ivl
+System.String IVL
+System.String iw
+System.String j^
+System.String Jan
+System.String January
+System.String jitDebugging
+System.String jsonSerialization
+System.String Jul
+System.String July
+System.String Jun
+System.String June
+System.String Kernel
+System.String Kernel
+System.String key
+System.String Latn;
+System.String LayoutSettings
+System.String LayoutStyle
+System.String ldap
+System.String LeaseLifeTimeServiceProperty
+System.String length
+System.String level
+System.String LICENSE_FILE
+System.String Life
+System.String LinkArea
+System.String Links
+System.String listeners
+System.String LOADER_OPTIMIZATION
+System.String LOCAL_USER
+System.String LOCAL_USER
+System.String LOCAL_USER
+System.String location
+System.String Location
+System.String lock
+System.String lockAllAttributesExcept
+System.String lockAllElementsExcept
+System.String lockAttributes
+System.String lockElements
+System.String lockItem
+System.String logfilename
+System.String lt
+System.String MACHINE
+System.String machine.config
+System.String MACHINE/EXE
+System.String MACHINE/EXE
+System.String MACHINE/EXE/ROAMING_USER
+System.String MACHINE/EXE/ROAMING_USER
+System.String MACHINE/EXE/ROAMING_USER/LOCAL_USER
+System.String MACHINE/EXE/ROAMING_USER/LOCAL_USER
+System.String MACHINE_CONFIG
+System.String machineKey
+System.String MachineOnly
+System.String machineSettings
+System.String machineSettings
+System.String MachineToApplication
+System.String MachineToLocalUser
+System.String MachineToRoamingUser
+System.String MachineToWebRoot
+System.String Magellan MSWHEEL
+System.String mailSettings
+System.String mailto
+System.String Mar
+System.String March
+System.String Margin
+System.String MaxCharactersFromEntities
+System.String MaxCharactersInDocument
+System.String MaximumSize
+System.String May
+System.String membership
+System.String memoryCache
+System.String Menu
+System.String Menu
+System.String MinimumSize
+System.String MM/dd/yyyy
+System.String MMMM dd
+System.String Mo
+System.String mobileControls
+System.String mode
+System.String Mon
+System.String Monday
+System.String MouseZ
+System.String MS UI Gothic
+System.String mscorlib
+System.String MSWHEEL_ROLLMSG
+System.String Multiline
+System.String name
+System.String name
+System.String Name
+System.String NaN
+System.String NaN
+System.String net.pipe
+System.String net.pipe
+System.String net.tcp
+System.String net.tcp
+System.String NetFx40_LegacySecurityPolicy
+System.String NetFx40_TimeSpanLegacyFormatMode
+System.String NetFx45_LegacyManagedDeflateStream
+System.String news
+System.String nntp
+System.String no
+System.String Nov
+System.String November
+System.String Oct
+System.String October
+System.String Orientation
+System.String outputCache
+System.String outputCacheSettings
+System.String overrideModeDefault
+System.String Padding
+System.String pages
+System.String Parent
+System.String PARTIAL_TRUST_VISIBLE_ASSEMBLIES
+System.String partialTrustVisibleAssemblies
+System.String path1
+System.String path2
+System.String performanceCounters
+System.String PM
+System.String PreferredSize
+System.String PRIVATE_BINPATH
+System.String processModel
+System.String profile
+System.String Profile
+System.String profileService
+System.String prop
+System.String property name
+System.String Protection_provider_syntax_error
+System.String protocolMapping
+System.String protocols
+System.String PUBLIC
+System.String quot
+System.String red
+System.String RELPATH
+System.String Remote
+System.String RemoteActivationService.rem
+System.String remove
+System.String Renderer
+System.String requestCaching
+System.String requirePermission
+System.String restartOnExternalChanges
+System.String revision
+System.String RFLCT.InvalidFieldFail
+System.String RFLCT.InvalidPropFail
+System.String rights
+System.String RightToLeft
+System.String RightToLeftLayout
+System.String ROAMING_USER
+System.String ROAMING_USER
+System.String ROAMING_USER
+System.String roleManager
+System.String roleService
+System.String routing
+System.String RowHeadersVisible
+System.String RowHeadersWidth
+System.String Rows
+System.String RowSpan
+System.String RowStyles
+System.String runtime
+System.String Sa
+System.String Sat
+System.String satelliteassemblies
+System.String Saturday
+System.String schemaImporterExtensions
+System.String scripting
+System.String scriptResourceHandler
+System.String ScrollBars
+System.String section
+System.String sectionGroup
+System.String SecurityDemand
+System.String securityPolicy
+System.String Sep
+System.String September
+System.String serviceHostingEnvironment
+System.String services
+System.String sessionPageState
+System.String sessionState
+System.String settings
+System.String SHADOW_COPY_DIRS
+System.String share
+System.String sharedListeners
+System.String ShowCheckMargin
+System.String ShowDropDownArrow
+System.String Silverlight
+System.String siteMap
+System.String Size
+System.String smtp
+System.String soap:
+System.String Software\Microsoft\.NETFramework
+System.String sources
+System.String Spring
+System.String sqlCacheDependency
+System.String standalone
+System.String standardEndpoints
+System.String startup
+System.String Style
+System.String Su
+System.String Sun
+System.String Sunday
+System.String switches
+System.String System
+System.String System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.codedom
+System.String System.CodeDom.Compiler.CodeDomConfigurationHandler, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Configuration.AppSettingsSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.ConnectionStringsSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.IgnoreSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.Internal.ConfigurationManagerInternal, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.NameValueFileSectionHandler, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Configuration.ProtectedConfigurationSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Configuration.UriSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.data
+System.String System.Data.Common.DbProviderConfigurationHandler, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Data.Common.DbProviderConfigurationHandler, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Data.Common.DbProviderConfigurationHandler, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Data.Common.DbProviderConfigurationHandler, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Data.Common.DbProviderFactoriesConfigurationHandler, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.data.dataset
+System.String system.data.odbc
+System.String system.data.oledb
+System.String system.data.oracleclient
+System.String system.data.sqlclient
+System.String system.diagnostics
+System.String system.diagnostics
+System.String system.diagnostics
+System.String System.Diagnostics.DefaultTraceListener
+System.String System.Diagnostics.DefaultTraceListener, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Diagnostics.Eventing.FrameworkEventSource
+System.String System.Diagnostics.SystemDiagnosticsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.net
+System.String system.net
+System.String System.Net.Configuration.AuthenticationModulesSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.ConnectionManagementSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.DefaultProxySection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.MailSettingsSectionGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.NetSectionGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.RequestCachingSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.SettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.SmtpSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Net.Configuration.WebRequestModulesSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.net/
+System.String system.net/authenticationModules
+System.String system.net/connectionManagement
+System.String system.net/defaultProxy
+System.String system.net/mailSettings
+System.String system.net/mailSettings/smtp
+System.String system.net/requestCaching
+System.String system.net/settings
+System.String system.net/webRequestModules
+System.String system.runtime.caching
+System.String System.Runtime.Caching.Configuration.CachingSectionGroup, System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Runtime.Caching.Configuration.MemoryCacheSection, System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String system.runtime.caching/memoryCache
+System.String system.runtime.remoting
+System.String system.runtime.serialization
+System.String System.Runtime.Serialization.Configuration.DataContractSerializerSection, System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Runtime.Serialization.Configuration.SerializationSectionGroup, System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.runtime.serialization/dataContractSerializer
+System.String System.Runtime.Versioning.BinaryCompatibility
+System.String system.serviceModel
+System.String system.serviceModel.activation
+System.String System.ServiceModel.Activation.Configuration.DiagnosticSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Activation.Configuration.NetPipeSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Activation.Configuration.NetTcpSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.serviceModel.activation/diagnostics
+System.String system.serviceModel.activation/net.pipe
+System.String system.serviceModel.activation/net.tcp
+System.String System.ServiceModel.Activities.Tracking.Configuration.TrackingSection, System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.ServiceModel.Configuration.BehaviorsSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.BindingsSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.ClientSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.ComContractsSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.CommonBehaviorsSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.DiagnosticSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.ExtensionsSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.MachineSettingsSection, SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.ProtocolMappingSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.ServiceHostingEnvironmentSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.ServiceModelSectionGroup, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.ServicesSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Configuration.StandardEndpointsSection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.ServiceModel.Routing.Configuration.RoutingSection, System.ServiceModel.Routing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String system.serviceModel/behaviors
+System.String system.serviceModel/bindings
+System.String system.serviceModel/client
+System.String system.serviceModel/comContracts
+System.String system.serviceModel/commonBehaviors
+System.String system.serviceModel/diagnostics
+System.String system.serviceModel/extensions
+System.String system.serviceModel/machineSettings
+System.String system.serviceModel/protocolMapping
+System.String system.serviceModel/routing
+System.String system.serviceModel/serviceHostingEnvironment
+System.String system.serviceModel/services
+System.String system.serviceModel/standardEndpoints
+System.String system.serviceModel/tracking
+System.String system.transactions
+System.String System.Transactions.Configuration.DefaultSettingsSection, System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Custom=null
+System.String System.Transactions.Configuration.MachineSettingsSection, System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Custom=null
+System.String System.Transactions.Configuration.TransactionsSectionGroup, System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Custom=null
+System.String system.transactions/defaultSettings
+System.String system.transactions/machineSettings
+System.String system.web
+System.String System.Web.Configuration.AnonymousIdentificationSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.AuthenticationSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.AuthorizationSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.CacheSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.ClientTargetSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.CompilationSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.CustomErrorsSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.DeploymentSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.FullTrustAssembliesSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.GlobalizationSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.HealthMonitoringSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.HostingEnvironmentSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.HttpCapabilitiesSectionHandler, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.HttpCookiesSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.HttpHandlersSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.HttpModulesSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.HttpRuntimeSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.IdentitySection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.MachineKeySection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.MembershipSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.OutputCacheSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.OutputCacheSettingsSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.PagesSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.PartialTrustVisibleAssembliesSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.ProcessModelSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.ProfileSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.ProtocolsSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.RoleManagerSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.ScriptingRoleServiceSection, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.SecurityPolicySection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.SessionPageStateSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.SessionStateSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.SiteMapSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.SqlCacheDependencySection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.SystemWebCachingSectionGroup, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Web.Configuration.SystemWebSectionGroup, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.TraceSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.TrustSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.UrlMappingsSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.WebControlsSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.WebPartsSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Configuration.XhtmlConformanceSection, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String system.web.extensions
+System.String system.web.extensions/scripting
+System.String system.web.extensions/scripting/scriptResourceHandler
+System.String system.web.extensions/scripting/webServices
+System.String system.web.extensions/scripting/webServices/authenticationService
+System.String system.web.extensions/scripting/webServices/jsonSerialization
+System.String system.web.extensions/scripting/webServices/profileService
+System.String system.web.extensions/scripting/webServices/roleService
+System.String System.Web.Mobile.DeviceFiltersSection, System.Web.Mobile, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.Services.Configuration.WebServicesSection, System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String System.Web.UI.MobileControls.MobileControlsSection, System.Web.Mobile, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.String system.web/anonymousIdentification
+System.String system.web/authentication
+System.String system.web/authorization
+System.String system.web/browserCaps
+System.String system.web/caching
+System.String system.web/caching/cache
+System.String system.web/caching/outputCache
+System.String system.web/caching/outputCacheSettings
+System.String system.web/caching/sqlCacheDependency
+System.String system.web/clientTarget
+System.String system.web/compilation
+System.String system.web/customErrors
+System.String system.web/deployment
+System.String system.web/deviceFilters
+System.String system.web/fullTrustAssemblies
+System.String system.web/globalization
+System.String system.web/healthMonitoring
+System.String system.web/hostingEnvironment
+System.String system.web/httpCookies
+System.String system.web/httpHandlers
+System.String system.web/httpModules
+System.String system.web/httpRuntime
+System.String system.web/identity
+System.String system.web/machineKey
+System.String system.web/membership
+System.String system.web/mobileControls
+System.String system.web/pages
+System.String system.web/partialTrustVisibleAssemblies
+System.String system.web/processModel
+System.String system.web/profile
+System.String system.web/protocols
+System.String system.web/roleManager
+System.String system.web/securityPolicy
+System.String system.web/sessionPageState
+System.String system.web/sessionState
+System.String system.web/siteMap
+System.String system.web/trace
+System.String system.web/trust
+System.String system.web/urlMappings
+System.String system.web/webControls
+System.String system.web/webParts
+System.String system.web/webServices
+System.String system.web/xhtmlConformance
+System.String system.webServer
+System.String system.windows.forms
+System.String system.windows.forms
+System.String System.Windows.Forms.WindowsFormsSection, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.xaml.hosting
+System.String System.Xaml.Hosting.Configuration.XamlHostingSection, System.Xaml.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String System.Xaml.Hosting.Configuration.XamlHostingSectionGroup, System.Xaml.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.String system.xaml.hosting/httpHandlers
+System.String system.xml.serialization
+System.String System.Xml.Serialization.Configuration.DateTimeSerializationSection, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Xml.Serialization.Configuration.SerializationSectionGroup, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String System.Xml.Serialization.Configuration.XmlSerializerSection, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.String system.xml.serialization/dateTimeSerialization
+System.String system.xml.serialization/schemaImporterExtensions
+System.String system.xml.serialization/xmlSerializer
+System.String System\CurrentControlSet\Control\Nls\RegionMapping
+System.String TableIndex
+System.String Tahoma
+System.String TargetsAtLeast_Desktop_V4_5_2
+System.String telnet
+System.String Text
+System.String TextAlign
+System.String TextImageRelation
+System.String Th
+System.String The quick brown fox jumped over the lazy dog.
+System.String Thu
+System.String Thursday
+System.String tl
+System.String ToString
+System.String trace
+System.String trace
+System.String Trace when security demands occur.
+System.String traceOutputOptions
+System.String tracking
+System.String Tracks GDI+ initialization and teardown
+System.String true
+System.String true
+System.String trust
+System.String Tu
+System.String Tue
+System.String Tuesday
+System.String type
+System.String type
+System.String ucs-2
+System.String ucs-4
+System.String uri
+System.String urlMappings
+System.String UseCompatibleTextRendering
+System.String useGlobalLock
+System.String user.config
+System.String user32.dll
+System.String UseVisualStyleBackColor
+System.String utf-16
+System.String UTF-16
+System.String utf-16BE
+System.String utf-8
+System.String utf-8
+System.String UTF-8
+System.String uuid
+System.String version
+System.String version
+System.String Version
+System.String Visible
+System.String vsmacros
+System.String We
+System.String webControls
+System.String webParts
+System.String webRequestModules
+System.String webServices
+System.String webServices
+System.String Wed
+System.String Wednesday
+System.String wfc.ico
+System.String Window
+System.String Window
+System.String Window.
+System.String windows
+System.String WindowsForms10
+System.String WindowsForms10.BUTTON.app.0.2bf8098_r14_ad1
+System.String WindowsForms10.EDIT.app.0.2bf8098_r14_ad1
+System.String WindowsForms10.Window.8.app.0.2bf8098_r14_ad1
+System.String WindowsForms12
+System.String WindowsPhone
+System.String WindowsPhone71
+System.String WindowsPhone8
+System.String WinFormsMouseEnter
+System.String WinFormsUnSubclass
+System.String WM_GETCONTROLNAME
+System.String WM_GETCONTROLTYPE
+System.String WordWrap
+System.String WrapContents
+System.String ws
+System.String wss
+System.String XDR
+System.String xhtmlConformance
+System.String xml
+System.String Xml_BadAttributeChar
+System.String Xml_BadDTDLocation
+System.String Xml_BadNameChar
+System.String Xml_BadStartNameChar
+System.String Xml_CDATAEndInText
+System.String Xml_EncodingSwitchAfterResetState
+System.String Xml_EntityRefNesting
+System.String Xml_InternalError
+System.String Xml_InvalidCharacter
+System.String Xml_InvalidCommentChars
+System.String Xml_InvalidRootData
+System.String Xml_InvalidTextDecl
+System.String Xml_InvalidVersionNumber
+System.String Xml_InvalidXmlDecl
+System.String Xml_LimitExceeded
+System.String Xml_MissingByteOrderMark
+System.String Xml_MissingRoot
+System.String Xml_MultipleRoots
+System.String Xml_UnclosedQuote
+System.String Xml_UnexpectedEndTag
+System.String Xml_UnexpectedEOF
+System.String Xml_UnexpectedEOF1
+System.String Xml_UnknownEncoding
+System.String XmlCharType.bin
+System.String xmlns
+System.String xmlns
+System.String xmlSerializer
+System.String yes
+System.String yyyy MMMM
+System.String yyyy-MM-dd
+System.String zh-CHS
+System.String zh-CHT
+System.String zh-TW
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=10)
+System.String[](Count=10)
+System.String[](Count=13)
+System.String[](Count=13)
+System.String[](Count=18)
+System.String[](Count=2)
+System.String[](Count=4)
+System.String[](Count=5)
+System.String[](Count=7)
+System.String[](Count=7)
+System.String[](Count=7)
+System.String[](Count=7)
+Array name and size
+Char[](Count=1)
+Char[](Count=1)
+Char[](Count=1)
+Char[](Count=16)
+Char[](Count=32)
+Char[](Count=32)
+Char[](Count=36)
+Char[](Count=36)
+Char[](Count=4)
+Char[](Count=41)
+Char[](Count=61)
+Char[](Count=8)
+Char[](Count=8)
+I4,I4[](Count=40000)
+I4,I4[](Count=40000)
+I4,I4[](Count=40000)
+I4[](Count=0)
+I4[](Count=1)
+I4[](Count=1)
+I4[](Count=1)
+I4[](Count=1)
+I4[](Count=1)
+I4[](Count=10)
+I4[](Count=10)
+I4[](Count=10)
+I4[](Count=11)
+I4[](Count=11)
+I4[](Count=13)
+I4[](Count=13)
+I4[](Count=17)
+I4[](Count=175)
+I4[](Count=18)
+I4[](Count=29)
+I4[](Count=29)
+I4[](Count=3)
+I4[](Count=3)
+I4[](Count=56)
+I4[](Count=6)
+I4[](Count=70)
+I4[](Count=72)
+Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=0)
+Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4)
+Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4)
+Microsoft.Win32.SystemEvents+Microsoft.Win32.SystemEvents.SystemEventInvokeInfo[](Count=4)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=0)
+System.Collections.ArrayList(Count=1)
+System.Collections.ArrayList(Count=1)
+System.Collections.ArrayList(Count=1)
+System.Collections.ArrayList(Count=1)
+System.Collections.ArrayList(Count=1)
+System.Collections.ArrayList(Count=1)
+System.Collections.ArrayList(Count=1)
+System.Collections.ArrayList(Count=2)
+System.Collections.ArrayList(Count=2)
+System.Collections.ArrayList(Count=2)
+System.Collections.ArrayList(Count=3)
+System.Collections.ArrayList(Count=3)
+System.Collections.ArrayList(Count=4)
+System.Collections.ArrayList(Count=5)
+System.Collections.ArrayList(Count=6)
+System.Collections.Generic.Dictionary`2<System.Int16,System.IntPtr>(Count=0)
+System.Collections.Generic.Dictionary`2<System.IntPtr,System.Int16>(Count=0)
+System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>(Count=3)
+System.Collections.Generic.Dictionary`2<System.Object,System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>>+ValueType[](Count=3)
+System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>(Count=11)
+System.Collections.Generic.Dictionary`2<System.RuntimeType,System.RuntimeType>+ValueType[](Count=11)
+System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>(Count=1)
+System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureData>+ValueType[](Count=3)
+System.Collections.Generic.Dictionary`2<System.String,System.Int32>(Count=8)
+System.Collections.Generic.Dictionary`2<System.String,System.Int32>+ValueType[](Count=11)
+System.Collections.Generic.Dictionary`2<System.String,System.Object[]>(Count=0)
+System.Collections.Generic.Dictionary`2<System.String,System.UriParser>(Count=0)
+System.Collections.Generic.Dictionary`2<System.String,System.UriParser>(Count=16)
+System.Collections.Generic.Dictionary`2<System.String,System.UriParser>+ValueType[](Count=29)
+System.Collections.Generic.Dictionary`2<System.String,System.UriParser>+ValueType[](Count=29)
+System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>(Count=10)
+System.Collections.Generic.Dictionary`2<System.Type,System.Security.Policy.EvidenceTypeDescriptor>+ValueType[](Count=17)
+System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2)
+System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2)
+System.Collections.Generic.List`1<Microsoft.Win32.SystemEvents.SystemEventInvokeInfo>(Count=2)
+System.Collections.Generic.List`1<System.WeakReference>(Count=1)
+System.Collections.Generic.List`1<System.WeakReference>(Count=2)
+System.Collections.Hashtable+ValueType[](Count=197)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=3)
+System.Collections.Hashtable+ValueType[](Count=37)
+System.Collections.Hashtable+ValueType[](Count=7)
+System.Collections.Hashtable+ValueType[](Count=7)
+System.Collections.Hashtable+ValueType[](Count=7)
+System.Diagnostics.Tracing.EtwSession[](Count=4)
+System.Drawing.SolidBrush[](Count=8)
+System.Globalization.CalendarData[](Count=23)
+System.Internal.HandleCollector+System.Internal.HandleCollector.HandleType[](Count=10)
+System.Internal.HandleCollector+System.Internal.HandleCollector.HandleType[](Count=20)
+System.Object[](Count=0)
+System.Object[](Count=0)
+System.Object[](Count=1)
+System.Object[](Count=1)
+==>System.Object[](Count=10)
+==>System.Object[](Count=1020)
+System.Object[](Count=1102)
+System.Object[](Count=128)
+System.Object[](Count=2)
+System.Object[](Count=2040)
+System.Object[](Count=32)
+System.Object[](Count=32)
+System.Object[](Count=32)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4)
+System.Object[](Count=4080)
+System.Object[](Count=51)
+System.Object[](Count=7)
+System.Object[](Count=8)
+System.Object[](Count=8)
+System.Object[](Count=8)
+System.Object[](Count=8)
+System.Object[](Count=8)
+System.Reflection.ParameterInfo[](Count=0)
+System.Reflection.ParameterInfo[](Count=0)
+System.Reflection.ParameterInfo[](Count=0)
+System.Reflection.ParameterInfo[](Count=1)
+System.Reflection.ParameterInfo[](Count=1)
+System.Reflection.ParameterInfo[](Count=1)
+System.Reflection.ParameterInfo[](Count=2)
+System.Reflection.ParameterInfo[](Count=3)
+System.Reflection.RuntimeConstructorInfo[](Count=1)
+System.Reflection.RuntimeConstructorInfo[](Count=14)
+System.Reflection.RuntimeConstructorInfo[](Count=2)
+System.Runtime.Remoting.Contexts.IContextProperty[](Count=1)
+System.Runtime.Remoting.Contexts.IContextProperty[](Count=8)
+System.RuntimeType[](Count=0)
+System.RuntimeType[](Count=0)
+System.RuntimeType[](Count=0)
+System.RuntimeType[](Count=1)
+System.RuntimeType[](Count=1)
+System.RuntimeType[](Count=1)
+System.RuntimeType[](Count=2)
+System.RuntimeType[](Count=3)
+System.RuntimeType+System.RuntimeType.ActivatorCacheEntry[](Count=16)
+System.Security.PermissionToken[](Count=17)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=1)
+System.String[](Count=10)
+System.String[](Count=10)
+System.String[](Count=13)
+System.String[](Count=13)
+System.String[](Count=18)
+System.String[](Count=2)
+System.String[](Count=4)
+System.String[](Count=5)
+System.String[](Count=7)
+System.String[](Count=7)
+System.String[](Count=7)
+System.String[](Count=7)
+System.Type[](Count=0)
+System.Type[](Count=10)
+System.WeakReference[](Count=0)
+System.WeakReference[](Count=2)
+System.WeakReference[](Count=4)
+System.Windows.Forms.NativeMethods+ValueType[](Count=1)
+System.Windows.Forms.NativeWindow+ValueType[](Count=37)
+System.Windows.Forms.PropertyStore+ValueType[](Count=1)
+System.Windows.Forms.PropertyStore+ValueType[](Count=1)
+System.Windows.Forms.PropertyStore+ValueType[](Count=1)
+System.Windows.Forms.PropertyStore+ValueType[](Count=2)
+System.Windows.Forms.PropertyStore+ValueType[](Count=2)
+System.Windows.Forms.PropertyStore+ValueType[](Count=3)
+System.Windows.Forms.PropertyStore+ValueType[](Count=5)
+System.Windows.Forms.Screen[](Count=1)
+U1[](Count=10134)
+MappedFiles Filter=
+Got # MappedFiles items = 3
+==>
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\MemSpect\test\cslife.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+==>
+==>Test end Life 3/1/2017 11:30:10 AM #Secs = 12.00
+==># of asserts = 1230
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\Life.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-01 11_02_12\Life.txt"

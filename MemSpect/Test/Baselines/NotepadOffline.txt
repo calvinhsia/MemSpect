@@ -1,0 +1,424 @@
+==>Test start 11/20/2013 9:28:39 AM NotepadOffline
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>DoSpotCheckHeaps
+==>
+==>BMem HeapWalkMap
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\w7rtm\minkernel\etw\ntdll\evntapi.c(215) : ntdll.dll!EtwEventRegister + 48 bytes
+d:\w7rtm.public.x86fre\internal\shell\inc\shellcoreevents.h(4616) : dwmapi.dll!McGenEventRegister + 34 bytes
+d:\w7rtm\windows\dwm\dwm\api\dllmain.cpp(40) : dwmapi.dll!DllMain + 58 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtdll.c(573) : dwmapi.dll!__DllMainCRTStartup + 225 bytes
+d:\w7rtm\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 60 bytes
+d:\w7rtm\minkernel\ntdll\i386\ldrthunk.asm(89) : ntdll.dll!zzz_AsmCodeRange_End + 0 bytes
+d:\w7rtm\minkernel\ntdll\ldrsnap.c(1507) : ntdll.dll!LdrpRunInitializeRoutines + 623 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(547) : ntdll.dll!LdrpLoadDll + 1233 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(182) : ntdll.dll!LdrLoadDll + 170 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1079) : KERNELBASE.dll!LoadLibraryExW + 497 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1124) : KERNELBASE.dll!LoadLibraryExA + 38 bytes
+d:\winmain\minkernel\dloadhandler\kernelbasedloadhandler.c(60) : uxtheme.dll!__delayLoadHelper2 + 89 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(2006) : uxtheme.dll!CThemeWnd::_AttachInstance + 78 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(1954) : uxtheme.dll!CThemeWnd::Attach + 172 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1016) : uxtheme.dll!_ThemeDefWindowProc + 242 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1076) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(690) : USER32.dll!DefWindowProcW + 104 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 130 bytes
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(2084) : USER32.dll!__fnINOUTNCCALCSIZE + 59 bytes
+d:\w7rtm\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+d:\w7rtm\windows\core\ntuser\client\ntstubs.c(1943) : USER32.dll!_CreateWindowEx + 528 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(64) : USER32.dll!CreateWindowExW + 51 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\npinit.c(811) : notepad.exe!NPInit + 285 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1544) : notepad.exe!WinMain + 80 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtexe.c(683) : notepad.exe!__mainCRTStartup + 320 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\w7rtm\minkernel\etw\ntdll\evntapi.c(215) : ntdll.dll!EtwEventRegister + 48 bytes
+d:\w7rtm.public.x86fre\internal\shell\inc\shellcoreevents.h(4616) : dwmapi.dll!McGenEventRegister + 34 bytes
+d:\w7rtm\windows\dwm\dwm\api\dllmain.cpp(50) : dwmapi.dll!DllMain + 100 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtdll.c(573) : dwmapi.dll!__DllMainCRTStartup + 225 bytes
+d:\w7rtm\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 60 bytes
+d:\w7rtm\minkernel\ntdll\i386\ldrthunk.asm(89) : ntdll.dll!zzz_AsmCodeRange_End + 0 bytes
+d:\w7rtm\minkernel\ntdll\ldrsnap.c(1507) : ntdll.dll!LdrpRunInitializeRoutines + 623 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(547) : ntdll.dll!LdrpLoadDll + 1233 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(182) : ntdll.dll!LdrLoadDll + 170 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1079) : KERNELBASE.dll!LoadLibraryExW + 497 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1124) : KERNELBASE.dll!LoadLibraryExA + 38 bytes
+d:\winmain\minkernel\dloadhandler\kernelbasedloadhandler.c(60) : uxtheme.dll!__delayLoadHelper2 + 89 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(2006) : uxtheme.dll!CThemeWnd::_AttachInstance + 78 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(1954) : uxtheme.dll!CThemeWnd::Attach + 172 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1016) : uxtheme.dll!_ThemeDefWindowProc + 242 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1076) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(690) : USER32.dll!DefWindowProcW + 104 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 130 bytes
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(2084) : USER32.dll!__fnINOUTNCCALCSIZE + 59 bytes
+d:\w7rtm\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+d:\w7rtm\windows\core\ntuser\client\ntstubs.c(1943) : USER32.dll!_CreateWindowEx + 528 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(64) : USER32.dll!CreateWindowExW + 51 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\npinit.c(811) : notepad.exe!NPInit + 285 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1544) : notepad.exe!WinMain + 80 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtexe.c(683) : notepad.exe!__mainCRTStartup + 320 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\w7rtm\minkernel\etw\ntdll\evntsup.c(170) : ntdll.dll!EtwpGetNewRegEntry + 72 bytes
+d:\w7rtm\minkernel\etw\ntdll\evntapi.c(237) : ntdll.dll!EtwEventRegister + 83 bytes
+d:\w7rtm.public.x86fre\internal\shell\inc\shellcoreevents.h(4616) : dwmapi.dll!McGenEventRegister + 34 bytes
+d:\w7rtm\windows\dwm\dwm\api\dllmain.cpp(40) : dwmapi.dll!DllMain + 58 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtdll.c(573) : dwmapi.dll!__DllMainCRTStartup + 225 bytes
+d:\w7rtm\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 60 bytes
+d:\w7rtm\minkernel\ntdll\i386\ldrthunk.asm(89) : ntdll.dll!zzz_AsmCodeRange_End + 0 bytes
+d:\w7rtm\minkernel\ntdll\ldrsnap.c(1507) : ntdll.dll!LdrpRunInitializeRoutines + 623 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(547) : ntdll.dll!LdrpLoadDll + 1233 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(182) : ntdll.dll!LdrLoadDll + 170 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1079) : KERNELBASE.dll!LoadLibraryExW + 497 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1124) : KERNELBASE.dll!LoadLibraryExA + 38 bytes
+d:\winmain\minkernel\dloadhandler\kernelbasedloadhandler.c(60) : uxtheme.dll!__delayLoadHelper2 + 89 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(2006) : uxtheme.dll!CThemeWnd::_AttachInstance + 78 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(1954) : uxtheme.dll!CThemeWnd::Attach + 172 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1016) : uxtheme.dll!_ThemeDefWindowProc + 242 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1076) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(690) : USER32.dll!DefWindowProcW + 104 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 130 bytes
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(2084) : USER32.dll!__fnINOUTNCCALCSIZE + 59 bytes
+d:\w7rtm\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+d:\w7rtm\windows\core\ntuser\client\ntstubs.c(1943) : USER32.dll!_CreateWindowEx + 528 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(64) : USER32.dll!CreateWindowExW + 51 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\npinit.c(811) : notepad.exe!NPInit + 285 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1544) : notepad.exe!WinMain + 80 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtexe.c(683) : notepad.exe!__mainCRTStartup + 320 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\w7rtm\minkernel\etw\ntdll\evntsup.c(170) : ntdll.dll!EtwpGetNewRegEntry + 72 bytes
+d:\w7rtm\minkernel\etw\ntdll\evntapi.c(237) : ntdll.dll!EtwEventRegister + 83 bytes
+d:\w7rtm.public.x86fre\internal\shell\inc\shellcoreevents.h(4616) : dwmapi.dll!McGenEventRegister + 34 bytes
+d:\w7rtm\windows\dwm\dwm\api\dllmain.cpp(50) : dwmapi.dll!DllMain + 100 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtdll.c(573) : dwmapi.dll!__DllMainCRTStartup + 225 bytes
+d:\w7rtm\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 60 bytes
+d:\w7rtm\minkernel\ntdll\i386\ldrthunk.asm(89) : ntdll.dll!zzz_AsmCodeRange_End + 0 bytes
+d:\w7rtm\minkernel\ntdll\ldrsnap.c(1507) : ntdll.dll!LdrpRunInitializeRoutines + 623 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(547) : ntdll.dll!LdrpLoadDll + 1233 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(182) : ntdll.dll!LdrLoadDll + 170 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1079) : KERNELBASE.dll!LoadLibraryExW + 497 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1124) : KERNELBASE.dll!LoadLibraryExA + 38 bytes
+d:\winmain\minkernel\dloadhandler\kernelbasedloadhandler.c(60) : uxtheme.dll!__delayLoadHelper2 + 89 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(2006) : uxtheme.dll!CThemeWnd::_AttachInstance + 78 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(1954) : uxtheme.dll!CThemeWnd::Attach + 172 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1016) : uxtheme.dll!_ThemeDefWindowProc + 242 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1076) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(690) : USER32.dll!DefWindowProcW + 104 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 130 bytes
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(2084) : USER32.dll!__fnINOUTNCCALCSIZE + 59 bytes
+d:\w7rtm\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+d:\w7rtm\windows\core\ntuser\client\ntstubs.c(1943) : USER32.dll!_CreateWindowEx + 528 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(64) : USER32.dll!CreateWindowExW + 51 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\npinit.c(811) : notepad.exe!NPInit + 285 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1544) : notepad.exe!WinMain + 80 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtexe.c(683) : notepad.exe!__mainCRTStartup + 320 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\w7rtm\minkernel\ntdll\resource.c(278) : ntdll.dll!RtlpAllocateDebugInfo + 40 bytes
+d:\w7rtm\minkernel\ntdll\resource.c(1786) : ntdll.dll!RtlInitializeCriticalSection + 18 bytes
+d:\w7rtm\minkernel\etw\ntdll\evntsup.c(173) : ntdll.dll!EtwpGetNewRegEntry + 87 bytes
+d:\w7rtm\minkernel\etw\ntdll\evntapi.c(237) : ntdll.dll!EtwEventRegister + 83 bytes
+d:\w7rtm.public.x86fre\internal\shell\inc\shellcoreevents.h(4616) : dwmapi.dll!McGenEventRegister + 34 bytes
+d:\w7rtm\windows\dwm\dwm\api\dllmain.cpp(40) : dwmapi.dll!DllMain + 58 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtdll.c(573) : dwmapi.dll!__DllMainCRTStartup + 225 bytes
+d:\w7rtm\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 60 bytes
+d:\w7rtm\minkernel\ntdll\i386\ldrthunk.asm(89) : ntdll.dll!zzz_AsmCodeRange_End + 0 bytes
+d:\w7rtm\minkernel\ntdll\ldrsnap.c(1507) : ntdll.dll!LdrpRunInitializeRoutines + 623 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(547) : ntdll.dll!LdrpLoadDll + 1233 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(182) : ntdll.dll!LdrLoadDll + 170 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1079) : KERNELBASE.dll!LoadLibraryExW + 497 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1124) : KERNELBASE.dll!LoadLibraryExA + 38 bytes
+d:\winmain\minkernel\dloadhandler\kernelbasedloadhandler.c(60) : uxtheme.dll!__delayLoadHelper2 + 89 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(2006) : uxtheme.dll!CThemeWnd::_AttachInstance + 78 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(1954) : uxtheme.dll!CThemeWnd::Attach + 172 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1016) : uxtheme.dll!_ThemeDefWindowProc + 242 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1076) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(690) : USER32.dll!DefWindowProcW + 104 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 130 bytes
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(2084) : USER32.dll!__fnINOUTNCCALCSIZE + 59 bytes
+d:\w7rtm\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+d:\w7rtm\windows\core\ntuser\client\ntstubs.c(1943) : USER32.dll!_CreateWindowEx + 528 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(64) : USER32.dll!CreateWindowExW + 51 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\npinit.c(811) : notepad.exe!NPInit + 285 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1544) : notepad.exe!WinMain + 80 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtexe.c(683) : notepad.exe!__mainCRTStartup + 320 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\w7rtm\minkernel\ntdll\resource.c(278) : ntdll.dll!RtlpAllocateDebugInfo + 40 bytes
+d:\w7rtm\minkernel\ntdll\resource.c(1786) : ntdll.dll!RtlInitializeCriticalSection + 18 bytes
+d:\w7rtm\minkernel\etw\ntdll\evntsup.c(173) : ntdll.dll!EtwpGetNewRegEntry + 87 bytes
+d:\w7rtm\minkernel\etw\ntdll\evntapi.c(237) : ntdll.dll!EtwEventRegister + 83 bytes
+d:\w7rtm.public.x86fre\internal\shell\inc\shellcoreevents.h(4616) : dwmapi.dll!McGenEventRegister + 34 bytes
+d:\w7rtm\windows\dwm\dwm\api\dllmain.cpp(50) : dwmapi.dll!DllMain + 100 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtdll.c(573) : dwmapi.dll!__DllMainCRTStartup + 225 bytes
+d:\w7rtm\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 60 bytes
+d:\w7rtm\minkernel\ntdll\i386\ldrthunk.asm(89) : ntdll.dll!zzz_AsmCodeRange_End + 0 bytes
+d:\w7rtm\minkernel\ntdll\ldrsnap.c(1507) : ntdll.dll!LdrpRunInitializeRoutines + 623 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(547) : ntdll.dll!LdrpLoadDll + 1233 bytes
+d:\w7rtm\minkernel\ntdll\ldrapi.c(182) : ntdll.dll!LdrLoadDll + 170 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1079) : KERNELBASE.dll!LoadLibraryExW + 497 bytes
+d:\win7sp1_gdr\minkernel\kernelbase\module.c(1124) : KERNELBASE.dll!LoadLibraryExA + 38 bytes
+d:\winmain\minkernel\dloadhandler\kernelbasedloadhandler.c(60) : uxtheme.dll!__delayLoadHelper2 + 89 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(2006) : uxtheme.dll!CThemeWnd::_AttachInstance + 78 bytes
+d:\w7rtm\shell\themes\uxtheme\nctheme.cpp(1954) : uxtheme.dll!CThemeWnd::Attach + 172 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1016) : uxtheme.dll!_ThemeDefWindowProc + 242 bytes
+d:\w7rtm\shell\themes\uxtheme\sethook.cpp(1076) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(690) : USER32.dll!DefWindowProcW + 104 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 130 bytes
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(2084) : USER32.dll!__fnINOUTNCCALCSIZE + 59 bytes
+d:\w7rtm\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+d:\w7rtm\windows\core\ntuser\client\ntstubs.c(1943) : USER32.dll!_CreateWindowEx + 528 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(64) : USER32.dll!CreateWindowExW + 51 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\npinit.c(811) : notepad.exe!NPInit + 285 bytes
+d:\w7rtm\shell\osshell\accesory\notepad\notepad.c(1544) : notepad.exe!WinMain + 80 bytes
+d:\winmain\minkernel\crts\crtw32\dllstuff\crtexe.c(683) : notepad.exe!__mainCRTStartup + 320 bytes
+d:\win7sp1_gdr\base\win32\client\thread.c(65) : kernel32.dll!BaseThreadInitThunk + 14 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+==>
+==>BMem __MemSpect Indirect
+==>BMem __MemSpect VirtualAllocs
+==>BMem __MemSpect HeapCreates
+==>BMem __MemSpect TrackGCStacks
+==>BMem __MemSpect ClrLoads
+==>BMem __MemSpect ClrJit
+==>BMem __MemSpect ClrGCHnd
+==>BMem __MemSpect ClrExcpt
+==>BMem __MemSpect ClrClasses
+==>BMem __MemSpect ClrObjects
+==>BMem __MemSpect CodeMarker
+==>BMem __MemSpect ThreadInfo
+==>BMem __MemSpect LoadResource
+==>BMem __Process Heap
+==>
+==>Duplicates in all heaps
+{ Address = 0044aa30, SeqNo = 10, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 1, DupeData = 1 of 71, DupeTot = 568, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044aa30, SeqNo=10, Size=8, BlkType=None Thread=2272 }
+{ Address = 00450258, SeqNo = 88, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 2, DupeData = 2 of 71, DupeTot = 568, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00450258, SeqNo=88, Size=8, BlkType=None Thread=2272 }
+{ Address = 00452548, SeqNo = 870, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 3, DupeData = 3 of 71, DupeTot = 568, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00452548, SeqNo=870, Size=8, BlkType=None Thread=2272 }
+{ Address = 004525b8, SeqNo = 1219, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 4, DupeData = 4 of 71, DupeTot = 568, Heap = __Process Heap, _HeapAllocationContainer = Address=0x004525b8, SeqNo=1,219, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f50, SeqNo = 931, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 5, DupeData = 5 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f50, SeqNo=931, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f90, SeqNo = 939, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 6, DupeData = 6 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f90, SeqNo=939, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743bd0, SeqNo = 496, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 7, DupeData = 7 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743bd0, SeqNo=496, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744fd0, SeqNo = 947, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 8, DupeData = 8 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744fd0, SeqNo=947, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c10, SeqNo = 504, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 9, DupeData = 9 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c10, SeqNo=504, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e10, SeqNo = 666, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 10, DupeData = 10 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e10, SeqNo=666, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e10, SeqNo = 850, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 11, DupeData = 11 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e10, SeqNo=850, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c50, SeqNo = 512, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 12, DupeData = 12 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c50, SeqNo=512, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e50, SeqNo = 674, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 13, DupeData = 13 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e50, SeqNo=674, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744c50, SeqNo = 688, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 14, DupeData = 14 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744c50, SeqNo=688, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e50, SeqNo = 858, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 15, DupeData = 15 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e50, SeqNo=858, Size=8, BlkType=None Thread=2272 }
+{ Address = 02745e50, SeqNo = 995, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 16, DupeData = 16 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02745e50, SeqNo=995, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e90, SeqNo = 682, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 17, DupeData = 17 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e90, SeqNo=682, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744c90, SeqNo = 696, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 18, DupeData = 18 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744c90, SeqNo=696, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744cd0, SeqNo = 704, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 19, DupeData = 19 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744cd0, SeqNo=704, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743d10, SeqNo = 630, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 20, DupeData = 20 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743d10, SeqNo=630, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f70, SeqNo = 935, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 21, DupeData = 21 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f70, SeqNo=935, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743bb0, SeqNo = 492, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 22, DupeData = 22 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743bb0, SeqNo=492, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744fb0, SeqNo = 943, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 23, DupeData = 23 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744fb0, SeqNo=943, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c30, SeqNo = 508, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 24, DupeData = 24 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c30, SeqNo=508, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e30, SeqNo = 670, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 25, DupeData = 25 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e30, SeqNo=670, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e30, SeqNo = 854, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 26, DupeData = 26 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e30, SeqNo=854, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c70, SeqNo = 516, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 27, DupeData = 27 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c70, SeqNo=516, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e70, SeqNo = 678, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 28, DupeData = 28 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e70, SeqNo=678, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e70, SeqNo = 862, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 29, DupeData = 29 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e70, SeqNo=862, Size=8, BlkType=None Thread=2272 }
+{ Address = 02745e70, SeqNo = 999, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 30, DupeData = 30 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02745e70, SeqNo=999, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743cb0, SeqNo = 628, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 31, DupeData = 31 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743cb0, SeqNo=628, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744cb0, SeqNo = 700, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 32, DupeData = 32 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744cb0, SeqNo=700, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743d30, SeqNo = 622, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 33, DupeData = 33 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743d30, SeqNo=622, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744d30, SeqNo = 842, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 34, DupeData = 34 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744d30, SeqNo=842, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f30, SeqNo = 927, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 35, DupeData = 35 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f30, SeqNo=927, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743bf0, SeqNo = 500, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 36, DupeData = 36 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743bf0, SeqNo=500, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743df0, SeqNo = 662, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 37, DupeData = 37 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743df0, SeqNo=662, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744df0, SeqNo = 846, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 38, DupeData = 38 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744df0, SeqNo=846, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f80, SeqNo = 937, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 39, DupeData = 39 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f80, SeqNo=937, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743bc0, SeqNo = 494, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 40, DupeData = 40 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743bc0, SeqNo=494, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744fc0, SeqNo = 945, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 41, DupeData = 41 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744fc0, SeqNo=945, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744fa0, SeqNo = 941, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 42, DupeData = 42 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744fa0, SeqNo=941, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743be0, SeqNo = 498, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 43, DupeData = 43 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743be0, SeqNo=498, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744fe0, SeqNo = 949, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 44, DupeData = 44 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744fe0, SeqNo=949, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743d20, SeqNo = 626, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 45, DupeData = 45 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743d20, SeqNo=626, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743d40, SeqNo = 620, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 46, DupeData = 46 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743d40, SeqNo=620, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f40, SeqNo = 929, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 47, DupeData = 47 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f40, SeqNo=929, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f60, SeqNo = 933, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 48, DupeData = 48 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f60, SeqNo=933, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c40, SeqNo = 510, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 49, DupeData = 49 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c40, SeqNo=510, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e40, SeqNo = 672, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 50, DupeData = 50 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e40, SeqNo=672, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744c40, SeqNo = 686, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 51, DupeData = 51 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744c40, SeqNo=686, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e40, SeqNo = 856, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 52, DupeData = 52 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e40, SeqNo=856, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c00, SeqNo = 502, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 53, DupeData = 53 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c00, SeqNo=502, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e00, SeqNo = 664, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 54, DupeData = 54 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e00, SeqNo=664, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e00, SeqNo = 848, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 55, DupeData = 55 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e00, SeqNo=848, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c20, SeqNo = 506, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 56, DupeData = 56 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c20, SeqNo=506, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e20, SeqNo = 668, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 57, DupeData = 57 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e20, SeqNo=668, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e20, SeqNo = 852, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 58, DupeData = 58 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e20, SeqNo=852, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743c60, SeqNo = 514, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 59, DupeData = 59 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743c60, SeqNo=514, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e60, SeqNo = 676, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 60, DupeData = 60 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e60, SeqNo=676, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744c60, SeqNo = 690, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 61, DupeData = 61 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744c60, SeqNo=690, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e60, SeqNo = 860, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 62, DupeData = 62 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e60, SeqNo=860, Size=8, BlkType=None Thread=2272 }
+{ Address = 02745e60, SeqNo = 997, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 63, DupeData = 63 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02745e60, SeqNo=997, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743ca0, SeqNo = 632, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 64, DupeData = 64 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743ca0, SeqNo=632, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743ea0, SeqNo = 684, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 65, DupeData = 65 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743ea0, SeqNo=684, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744ca0, SeqNo = 698, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 66, DupeData = 66 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744ca0, SeqNo=698, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744ce0, SeqNo = 706, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 67, DupeData = 67 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744ce0, SeqNo=706, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743cc0, SeqNo = 624, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 68, DupeData = 68 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743cc0, SeqNo=624, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744cc0, SeqNo = 702, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 69, DupeData = 69 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744cc0, SeqNo=702, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744c80, SeqNo = 694, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 70, DupeData = 70 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744c80, SeqNo=694, Size=8, BlkType=None Thread=2272 }
+{ Address = 02745e80, SeqNo = 1001, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 71, DupeData = 71 of 71, DupeTot = 568, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02745e80, SeqNo=1,001, Size=8, BlkType=None Thread=2272 }
+{ Address = 027431f8, SeqNo = 287, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 1, DupeData = 1 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027431f8, SeqNo=287, Size=8, BlkType=None Thread=2272 }
+{ Address = 027431e8, SeqNo = 285, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 2, DupeData = 2 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027431e8, SeqNo=285, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743208, SeqNo = 289, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 3, DupeData = 3 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743208, SeqNo=289, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743218, SeqNo = 291, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 4, DupeData = 4 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743218, SeqNo=291, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743228, SeqNo = 293, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 5, DupeData = 5 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743228, SeqNo=293, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743038, SeqNo = 231, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 6, DupeData = 6 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743038, SeqNo=231, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743238, SeqNo = 295, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 7, DupeData = 7 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743238, SeqNo=295, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743048, SeqNo = 233, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 8, DupeData = 8 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743048, SeqNo=233, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743058, SeqNo = 235, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 9, DupeData = 9 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743058, SeqNo=235, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743068, SeqNo = 237, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 10, DupeData = 10 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743068, SeqNo=237, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743078, SeqNo = 239, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 11, DupeData = 11 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743078, SeqNo=239, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743088, SeqNo = 241, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 12, DupeData = 12 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743088, SeqNo=241, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743098, SeqNo = 243, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 13, DupeData = 13 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743098, SeqNo=243, Size=8, BlkType=None Thread=2272 }
+{ Address = 027430a8, SeqNo = 245, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 14, DupeData = 14 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027430a8, SeqNo=245, Size=8, BlkType=None Thread=2272 }
+{ Address = 027430b8, SeqNo = 247, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 15, DupeData = 15 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027430b8, SeqNo=247, Size=8, BlkType=None Thread=2272 }
+{ Address = 027430c8, SeqNo = 249, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 16, DupeData = 16 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027430c8, SeqNo=249, Size=8, BlkType=None Thread=2272 }
+{ Address = 027430d8, SeqNo = 251, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 17, DupeData = 17 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027430d8, SeqNo=251, Size=8, BlkType=None Thread=2272 }
+{ Address = 027430e8, SeqNo = 253, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 18, DupeData = 18 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027430e8, SeqNo=253, Size=8, BlkType=None Thread=2272 }
+{ Address = 027430f8, SeqNo = 255, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 19, DupeData = 19 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027430f8, SeqNo=255, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743108, SeqNo = 257, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 20, DupeData = 20 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743108, SeqNo=257, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743118, SeqNo = 259, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 21, DupeData = 21 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743118, SeqNo=259, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743128, SeqNo = 261, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 22, DupeData = 22 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743128, SeqNo=261, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743138, SeqNo = 263, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 23, DupeData = 23 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743138, SeqNo=263, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743148, SeqNo = 265, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 24, DupeData = 24 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743148, SeqNo=265, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743158, SeqNo = 267, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 25, DupeData = 25 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743158, SeqNo=267, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743168, SeqNo = 269, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 26, DupeData = 26 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743168, SeqNo=269, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743178, SeqNo = 271, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 27, DupeData = 27 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743178, SeqNo=271, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743188, SeqNo = 273, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 28, DupeData = 28 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743188, SeqNo=273, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743198, SeqNo = 275, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 29, DupeData = 29 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743198, SeqNo=275, Size=8, BlkType=None Thread=2272 }
+{ Address = 027431a8, SeqNo = 277, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 30, DupeData = 30 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027431a8, SeqNo=277, Size=8, BlkType=None Thread=2272 }
+{ Address = 027431b8, SeqNo = 279, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 31, DupeData = 31 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027431b8, SeqNo=279, Size=8, BlkType=None Thread=2272 }
+{ Address = 027431c8, SeqNo = 281, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 32, DupeData = 32 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027431c8, SeqNo=281, Size=8, BlkType=None Thread=2272 }
+{ Address = 027431d8, SeqNo = 283, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 33, DupeData = 33 of 33, DupeTot = 264, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027431d8, SeqNo=283, Size=8, BlkType=None Thread=2272 }
+{ Address = 0052e548, SeqNo = 25, Size = 128, Thread = 2272, Type = None, Data = , DupeID = 3, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 256, Heap = ~msvcrt.dll!malloc + 141 bytes, _HeapAllocationContainer = Address=0x0052e548, SeqNo=25, Size=128, BlkType=None Thread=2272 }
+{ Address = 0052e660, SeqNo = 84, Size = 128, Thread = 2272, Type = None, Data = , DupeID = 3, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 256, Heap = ~msvcrt.dll!malloc + 141 bytes, _HeapAllocationContainer = Address=0x0052e660, SeqNo=84, Size=128, BlkType=None Thread=2272 }
+{ Address = 00455ab8, SeqNo = 1257, Size = 68, Thread = 2272, Type = None, Data = , DupeID = 4, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 136, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00455ab8, SeqNo=1,257, Size=68, BlkType=None Thread=2272 }
+{ Address = 00455b08, SeqNo = 1259, Size = 68, Thread = 2272, Type = None, Data = , DupeID = 4, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 136, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00455b08, SeqNo=1,259, Size=68, BlkType=None Thread=2272 }
+{ Address = 027209e8, SeqNo = 165, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 1, DupeData = 1 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027209e8, SeqNo=165, Size=8, BlkType=None Thread=2272 }
+{ Address = 02720b58, SeqNo = 173, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 2, DupeData = 2 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02720b58, SeqNo=173, Size=8, BlkType=None Thread=2272 }
+{ Address = 02742fd0, SeqNo = 219, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 3, DupeData = 3 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02742fd0, SeqNo=219, Size=8, BlkType=None Thread=2272 }
+{ Address = 02742170, SeqNo = 177, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 4, DupeData = 4 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02742170, SeqNo=177, Size=8, BlkType=None Thread=2272 }
+{ Address = 02742fb0, SeqNo = 215, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 5, DupeData = 5 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02742fb0, SeqNo=215, Size=8, BlkType=None Thread=2272 }
+{ Address = 02742fc0, SeqNo = 217, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 6, DupeData = 6 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02742fc0, SeqNo=217, Size=8, BlkType=None Thread=2272 }
+{ Address = 02742f00, SeqNo = 193, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 7, DupeData = 7 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02742f00, SeqNo=193, Size=8, BlkType=None Thread=2272 }
+{ Address = 02742fa0, SeqNo = 213, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 8, DupeData = 8 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02742fa0, SeqNo=213, Size=8, BlkType=None Thread=2272 }
+{ Address = 027421e0, SeqNo = 191, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 9, DupeData = 9 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x027421e0, SeqNo=191, Size=8, BlkType=None Thread=2272 }
+{ Address = 02742fe8, SeqNo = 221, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 10, DupeData = 10 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02742fe8, SeqNo=221, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743028, SeqNo = 229, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 11, DupeData = 11 of 11, DupeTot = 88, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743028, SeqNo=229, Size=8, BlkType=None Thread=2272 }
+{ Address = 00451948, SeqNo = 1181, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 6, DupeIndex = 1, DupeData = 1 of 3, DupeTot = 72, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451948, SeqNo=1,181, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451928, SeqNo = 1180, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 6, DupeIndex = 2, DupeData = 2 of 3, DupeTot = 72, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451928, SeqNo=1,180, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451968, SeqNo = 1182, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 6, DupeIndex = 3, DupeData = 3 of 3, DupeTot = 72, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451968, SeqNo=1,182, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b28, SeqNo = 1384, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 7, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b28, SeqNo=1,384, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b68, SeqNo = 1390, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 7, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b68, SeqNo=1,390, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b48, SeqNo = 1387, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 8, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b48, SeqNo=1,387, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b88, SeqNo = 1391, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 8, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b88, SeqNo=1,391, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451a48, SeqNo = 1319, Size = 20, Thread = 2272, Type = None, Data = , DupeID = 9, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 40, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451a48, SeqNo=1,319, Size=20, BlkType=None Thread=2272 }
+{ Address = 00451aa8, SeqNo = 1355, Size = 20, Thread = 2272, Type = None, Data = , DupeID = 9, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 40, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451aa8, SeqNo=1,355, Size=20, BlkType=None Thread=2272 }
+{ Address = 006d1650, SeqNo = 6, Size = 16, Thread = 2272, Type = None, Data = spoolss, DupeID = 10, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 32, Heap = ~msvcrt.dll!malloc + 141 bytes, _HeapAllocationContainer = Address=0x006d1650, SeqNo=6, Size=16, BlkType=None Thread=2272 spoolss }
+{ Address = 006d6fb8, SeqNo = 3, Size = 16, Thread = 2272, Type = None, Data = spoolss, DupeID = 10, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 32, Heap = ~msvcrt.dll!malloc + 141 bytes, _HeapAllocationContainer = Address=0x006d6fb8, SeqNo=3, Size=16, BlkType=None Thread=2272 spoolss }
+{ Address = 006d6fd0, SeqNo = 4, Size = 16, Thread = 2272, Type = None, Data = ncalrpc, DupeID = 11, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 32, Heap = ~msvcrt.dll!malloc + 141 bytes, _HeapAllocationContainer = Address=0x006d6fd0, SeqNo=4, Size=16, BlkType=None Thread=2272 ncalrpc }
+{ Address = 006d6fa0, SeqNo = 2, Size = 16, Thread = 2272, Type = None, Data = ncalrpc, DupeID = 11, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 32, Heap = ~msvcrt.dll!malloc + 141 bytes, _HeapAllocationContainer = Address=0x006d6fa0, SeqNo=2, Size=16, BlkType=None Thread=2272 ncalrpc }
+{ Address = 02744d50, SeqNo = 821, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 12, DupeIndex = 1, DupeData = 1 of 4, DupeTot = 32, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744d50, SeqNo=821, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744dd0, SeqNo = 837, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 12, DupeIndex = 2, DupeData = 2 of 4, DupeTot = 32, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744dd0, SeqNo=837, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744d80, SeqNo = 827, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 12, DupeIndex = 3, DupeData = 3 of 4, DupeTot = 32, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744d80, SeqNo=827, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744d20, SeqNo = 817, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 12, DupeIndex = 4, DupeData = 4 of 4, DupeTot = 32, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744d20, SeqNo=817, Size=8, BlkType=None Thread=2272 }
+{ Address = 0044f898, SeqNo = 1333, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 13, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f898, SeqNo=1,333, Size=12, BlkType=None Thread=2272 E }
+{ Address = 0044f880, SeqNo = 1328, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 13, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f880, SeqNo=1,328, Size=12, BlkType=None Thread=2272 E }
+{ Address = 0044f8b0, SeqNo = 1340, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 14, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f8b0, SeqNo=1,340, Size=12, BlkType=None Thread=2272 E }
+{ Address = 0044f8c8, SeqNo = 1346, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 14, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f8c8, SeqNo=1,346, Size=12, BlkType=None Thread=2272 E }
+{ Address = 02720910, SeqNo = 111, Size = 12, Thread = 2272, Type = None, Data = , DupeID = 15, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 24, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02720910, SeqNo=111, Size=12, BlkType=None Thread=2272 }
+{ Address = 02720928, SeqNo = 113, Size = 12, Thread = 2272, Type = None, Data = , DupeID = 15, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 24, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02720928, SeqNo=113, Size=12, BlkType=None Thread=2272 }
+{ Address = 02744de0, SeqNo = 903, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 16, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 16, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744de0, SeqNo=903, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744f20, SeqNo = 925, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 16, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 16, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744f20, SeqNo=925, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743ad0, SeqNo = 466, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 17, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 16, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743ad0, SeqNo=466, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743ba0, SeqNo = 490, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 17, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 16, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743ba0, SeqNo=490, Size=8, BlkType=None Thread=2272 }
+{ Address = 02743e80, SeqNo = 991, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 18, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 16, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743e80, SeqNo=991, Size=8, BlkType=None Thread=2272 }
+{ Address = 02744e80, SeqNo = 983, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 18, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 16, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744e80, SeqNo=983, Size=8, BlkType=None Thread=2272 }
+{ Address = 004573f0, SeqNo = 1299, Size = 4, Thread = 2272, Type = None, Data = , DupeID = 19, DupeIndex = 1, DupeData = 1 of 3, DupeTot = 12, Heap = __Process Heap, _HeapAllocationContainer = Address=0x004573f0, SeqNo=1,299, Size=4, BlkType=None Thread=2272 }
+{ Address = 004556c8, SeqNo = 1298, Size = 4, Thread = 2272, Type = None, Data = , DupeID = 19, DupeIndex = 2, DupeData = 2 of 3, DupeTot = 12, Heap = __Process Heap, _HeapAllocationContainer = Address=0x004556c8, SeqNo=1,298, Size=4, BlkType=None Thread=2272 }
+{ Address = 02743d50, SeqNo = 586, Size = 4, Thread = 2272, Type = None, Data = , DupeID = 19, DupeIndex = 3, DupeData = 3 of 3, DupeTot = 12, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02743d50, SeqNo=586, Size=4, BlkType=None Thread=2272 }
+{ Address = 02744d10, SeqNo = 714, Size = 4, Thread = 2272, Type = None, Data = , DupeID = 20, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 8, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744d10, SeqNo=714, Size=4, BlkType=None Thread=2272 }
+{ Address = 02744cf0, SeqNo = 712, Size = 4, Thread = 2272, Type = None, Data = , DupeID = 20, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 8, Heap = _uxtheme.dll!ThemeHeapStaticInitialize + 30 bytes, _HeapAllocationContainer = Address=0x02744cf0, SeqNo=712, Size=4, BlkType=None Thread=2272 }
+==>Duplicates in __Process Heap
+{ Address = 00455ab8, SeqNo = 1257, Size = 68, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 136, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00455ab8, SeqNo=1,257, Size=68, BlkType=None Thread=2272 }
+{ Address = 00455b08, SeqNo = 1259, Size = 68, Thread = 2272, Type = None, Data = , DupeID = 1, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 136, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00455b08, SeqNo=1,259, Size=68, BlkType=None Thread=2272 }
+{ Address = 00451948, SeqNo = 1181, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 1, DupeData = 1 of 3, DupeTot = 72, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451948, SeqNo=1,181, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451928, SeqNo = 1180, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 2, DupeData = 2 of 3, DupeTot = 72, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451928, SeqNo=1,180, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451968, SeqNo = 1182, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 2, DupeIndex = 3, DupeData = 3 of 3, DupeTot = 72, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451968, SeqNo=1,182, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b28, SeqNo = 1384, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 3, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b28, SeqNo=1,384, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b68, SeqNo = 1390, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 3, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b68, SeqNo=1,390, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b48, SeqNo = 1387, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 4, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b48, SeqNo=1,387, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451b88, SeqNo = 1391, Size = 24, Thread = 2272, Type = None, Data = , DupeID = 4, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 48, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451b88, SeqNo=1,391, Size=24, BlkType=None Thread=2272 }
+{ Address = 00451a48, SeqNo = 1319, Size = 20, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 40, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451a48, SeqNo=1,319, Size=20, BlkType=None Thread=2272 }
+{ Address = 00451aa8, SeqNo = 1355, Size = 20, Thread = 2272, Type = None, Data = , DupeID = 5, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 40, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00451aa8, SeqNo=1,355, Size=20, BlkType=None Thread=2272 }
+{ Address = 0044aa30, SeqNo = 10, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 6, DupeIndex = 1, DupeData = 1 of 4, DupeTot = 32, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044aa30, SeqNo=10, Size=8, BlkType=None Thread=2272 }
+{ Address = 00450258, SeqNo = 88, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 6, DupeIndex = 2, DupeData = 2 of 4, DupeTot = 32, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00450258, SeqNo=88, Size=8, BlkType=None Thread=2272 }
+{ Address = 00452548, SeqNo = 870, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 6, DupeIndex = 3, DupeData = 3 of 4, DupeTot = 32, Heap = __Process Heap, _HeapAllocationContainer = Address=0x00452548, SeqNo=870, Size=8, BlkType=None Thread=2272 }
+{ Address = 004525b8, SeqNo = 1219, Size = 8, Thread = 2272, Type = None, Data = , DupeID = 6, DupeIndex = 4, DupeData = 4 of 4, DupeTot = 32, Heap = __Process Heap, _HeapAllocationContainer = Address=0x004525b8, SeqNo=1,219, Size=8, BlkType=None Thread=2272 }
+{ Address = 0044f898, SeqNo = 1333, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 7, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f898, SeqNo=1,333, Size=12, BlkType=None Thread=2272 E }
+{ Address = 0044f880, SeqNo = 1328, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 7, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f880, SeqNo=1,328, Size=12, BlkType=None Thread=2272 E }
+{ Address = 0044f8b0, SeqNo = 1340, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 8, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f8b0, SeqNo=1,340, Size=12, BlkType=None Thread=2272 E }
+{ Address = 0044f8c8, SeqNo = 1346, Size = 12, Thread = 2272, Type = None, Data = E, DupeID = 8, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 24, Heap = __Process Heap, _HeapAllocationContainer = Address=0x0044f8c8, SeqNo=1,346, Size=12, BlkType=None Thread=2272 E }
+{ Address = 004573f0, SeqNo = 1299, Size = 4, Thread = 2272, Type = None, Data = , DupeID = 9, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 8, Heap = __Process Heap, _HeapAllocationContainer = Address=0x004573f0, SeqNo=1,299, Size=4, BlkType=None Thread=2272 }
+{ Address = 004556c8, SeqNo = 1298, Size = 4, Thread = 2272, Type = None, Data = , DupeID = 9, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 8, Heap = __Process Heap, _HeapAllocationContainer = Address=0x004556c8, SeqNo=1,298, Size=4, BlkType=None Thread=2272 }
+==>Test end NotepadOffline 11/20/2013 9:28:40 AM #Secs = 0.88
+==># of asserts = 397
+==>Compare cmd = c:\bin\bc2.exe c:\memspect\Test\Baselines\NotepadOffline.txt "c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-11-20 09_28_37\NotepadOffline.txt"

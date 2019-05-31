@@ -1,0 +1,13 @@
+HeapReport.mhd
+MemSpect02810000
+__Process Heap004e0000
+_USP10.dll!UspInitMemory _ 66 bytes004a0000
+_uxtheme.dll!ThemeHeapStaticInitialize _ 30 bytes02720000
+_WINSPOOL.DRV!bSplLibInit _ 15 bytes02790000
+~MSVCR100.dll!_calloc_impl _ 73 bytes02370000
+~msvcrt.dll!malloc _ 141 bytes00290000
+~ntdll.dll!RtlpAllocateListLookup _ 53 bytes02790000
+~ntdll.dll!RtlpAllocateListLookup _ 53 bytes02720000
+~ntdll.dll!RtlpAllocateListLookup _ 53 bytes004a0000
+IMalloc Heap00000000
+StackFrameDictionary.mhd

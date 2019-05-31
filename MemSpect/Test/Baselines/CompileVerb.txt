@@ -1,0 +1,18 @@
+==>Test start 10/21/2015 11:29:20 AM CompileVerb
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Iter 0
+Executing in dynamically generated code: In Main0
+Exec result : Execution Exception: System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.DivideByZeroException: Attempted to divide by zero.
+   at DoesntMatter.SomeClass.DoMain(String[] args)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at MemSpect.Common.CompileAndExecuteFile(String filename) in C:\MemSpect\MemSpectBase\Common.vb:line 8290
+Iter 1
+Executing in dynamically generated code: In Main1
+Exec result : did main1
+==>Test end CompileVerb 10/21/2015 11:29:22 AM #Secs = 1.57
+==># of asserts = 15
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\CompileVerb.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-10-21 11_29_19\CompileVerb.txt"

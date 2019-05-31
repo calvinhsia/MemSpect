@@ -1,0 +1,11 @@
+==>Test start 1/26/2012 12:14:13 PM ArenaLotsFree
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>MemSpect vers = 120104
+Got TargetFrozen Event
+# items = 2
+   1 lotsfree   Header     10101010     400000   12577780          1         32 53 
+   1 lotsfree   Alloc      00000002     400000   12577780          1         32 32 LF399999
+==>{ Address = 09f407d0, SeqNo = 101940, Size = 53, Thread = 8152, ArenaId = 1, ArenaName = lotsfree, ArenaBlockType = Header, UserData = 10101010, CntEverAlloc = 400000, SizeEverAlloc = 12577780, CntCurLive = 1, SizeCurLive = 32, StringContent = , _HeapAllocationContainer = Address=0x09f407d0, SeqNo=101,940, Size=53, BlkType=None Thread=8152 }
+==>{ Address = 14086780, SeqNo = 505221, Size = 32, Thread = 8152, ArenaId = 1, ArenaName = lotsfree, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 400000, SizeEverAlloc = 12577780, CntCurLive = 1, SizeCurLive = 32, StringContent = LF399999, _HeapAllocationContainer = Address=0x0ecaebf4, SeqNo=505,221, Size=32, BlkType=None Thread=8152 }
+==>Test end ArenaLotsFree 1/26/2012 12:14:35 PM #Secs = 21.39
+==># of asserts = 8

@@ -1,0 +1,631 @@
+==>Test start 4/26/2017 12:13:09 PM NotePadAddrDump
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>Starting Notepad
+==>MemSpect vers = 161109
+==>Freezing target. SeqNo = 1076
+Pivot addr = KERNELBASE.dll!LoadLibraryExW #Stacks = 1
+Pivot KERNELBASE.dll!LoadLibraryExW
+Call Stack:
+d:\memspect\ MemSpect
+d:\blue\minkernel\ntos\rtl\heap.c(967) : ntdll.dll!RtlCreateHeap + 667 bytes
+d:\blue\minkernel\kernelbase\lmem.c(544) : KERNELBASE.dll!HeapCreate + 69 bytes
+d:\9147\shell\themes\themeldr\memory.cpp(78) : uxtheme.dll!ThemeHeapStaticInitialize + 20 bytes
+d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(630) : uxtheme.dll!__DllMainCRTStartup + 263 bytes
+d:\blue\minkernel\ntdll\i386\ldrthunk.asm(90) : ntdll.dll!LdrxCallInitRoutine + 22 bytes
+d:\blue\minkernel\ntdll\ldr.c(214) : ntdll.dll!LdrpCallInitRoutine + 67 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(1243) : ntdll.dll!LdrpInitializeNode + 285 bytes
+d:\blue\minkernel\ntdll\ldrddag.c(1754) : ntdll.dll!LdrpInitializeGraph + 89 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(2294) : ntdll.dll!LdrpPrepareModuleForExecution + 289 bytes
+d:\blue\minkernel\ntdll\ldrapi.c(611) : ntdll.dll!LdrpLoadDll + 918 bytes
+d:\blue\minkernel\ntdll\ldrapi.c(190) : ntdll.dll!LdrLoadDll + 107 bytes
+d:\blue\minkernel\kernelbase\module.c(1130) : KERNELBASE.dll!LoadLibraryExW + 274 bytes
+d:\blue\windows\core\ntuser\inc\ntcb.h(5907) : USER32.dll!__ClientLoadLibrary + 109 bytes
+d:\blue\minkernel\ntos\rtl\i386\userdisp.asm(516) : ntdll.dll!KiUserCallbackDispatcher + 54 bytes
+d:\blue\windows\core\ntuser\client\ntstubs.c(1795) : USER32.dll!CreateWindowInternal + 380 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(66) : USER32.dll!CreateWindowExW + 55 bytes
+d:\blue\com\combase\objact\mainthrd.cxx(162) : combase.dll!InitMainThreadWnd + 59 bytes
+d:\blue\com\combase\class\compobj.cxx(3624) : combase.dll!_CoInitializeEx + 282 bytes
+d:\blue\com\combase\class\compobj.cxx(3721) : combase.dll!CoInitializeEx + 49 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1535) : notepad.exe!WinMain + 54 bytes
+d:\blue\minkernel\crts\crtw32\dllstuff\crtexe.c(685) : notepad.exe!__mainCRTStartup + 322 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+StackAgg panel
+26 1,037,715 d:\blue\minkernel\kernelbase\module.c(1130) : KERNELBASE.dll!LoadLibraryExW + 274 bytes
+ 26 1,037,715 d:\blue\minkernel\ntdll\ldrapi.c(190) : ntdll.dll!LdrLoadDll + 107 bytes
+  21 1,037,205 d:\blue\minkernel\ntdll\ldrapi.c(611) : ntdll.dll!LdrpLoadDll + 918 bytes
+   1 970,752 d:\blue\minkernel\ntdll\ldrddag.c(1520) : ntdll.dll!LdrpNotifyLoadOfGraph + 61 bytes
+    1 970,752 d:\blue\minkernel\ntdll\ldrsnap.c(2845) : ntdll.dll!LdrpSendPostSnapNotifications + 181 bytes
+     1 970,752 d:\blue\minkernel\ntdll\ldrapi.c(3919) : ntdll.dll!LdrpSendDllNotifications + 90 bytes
+==>      d:\memspect\ MemSpect
+   20 66,453 d:\blue\minkernel\ntdll\ldrsnap.c(2294) : ntdll.dll!LdrpPrepareModuleForExecution + 289 bytes
+    20 66,453 d:\blue\minkernel\ntdll\ldrddag.c(1754) : ntdll.dll!LdrpInitializeGraph + 89 bytes
+     20 66,453 d:\blue\minkernel\ntdll\ldrsnap.c(1243) : ntdll.dll!LdrpInitializeNode + 285 bytes
+      20 66,453 d:\blue\minkernel\ntdll\ldr.c(214) : ntdll.dll!LdrpCallInitRoutine + 67 bytes
+       20 66,453 d:\blue\minkernel\ntdll\i386\ldrthunk.asm(90) : ntdll.dll!LdrxCallInitRoutine + 22 bytes
+        19 66,325 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(630) : uxtheme.dll!__DllMainCRTStartup + 263 bytes
+         2 65,568 d:\9147\shell\themes\themeldr\memory.cpp(78) : uxtheme.dll!ThemeHeapStaticInitialize + 20 bytes
+          2 65,568 d:\blue\minkernel\kernelbase\lmem.c(544) : KERNELBASE.dll!HeapCreate + 69 bytes
+           1 65,536 d:\blue\minkernel\ntos\rtl\heap.c(967) : ntdll.dll!RtlCreateHeap + 667 bytes
+==>            d:\memspect\ MemSpect
+           1 32 d:\blue\minkernel\ntos\rtl\heap.c(1172) : ntdll.dll!RtlCreateHeap + 1139 bytes
+            1 32 d:\blue\minkernel\ntdll\resource.c(299) : ntdll.dll!RtlpAllocateDebugInfo + 40 bytes
+==>             d:\memspect\ MemSpect
+         8 449 d:\9147\shell\themes\uxtheme\dllmain.cpp(71) : uxtheme.dll!ProcessStartUp + 32 bytes
+          3 245 d:\9147\shell\themes\uxtheme\globals.cpp(88) : uxtheme.dll!GlobalsStartup + 358 bytes
+           3 245 d:\blue\minkernel\appcompat\switchback\manifest\lib\switchbranchcontextmanifest.c(963) : ntdll.dll!SbSelectProcedure + 484 bytes
+            2 221 d:\blue\minkernel\ntdll\aitruntime.c(617) : ntdll.dll!AitpDoFirstTelemetryHitSetup + 101 bytes
+             1 200 d:\blue\minkernel\ntdll\aitruntime.c(733) : ntdll.dll!AitpDoFirstTelemetryHitSetupWorker + 148 bytes
+              1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+               1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+                1 200 d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+==>                 d:\memspect\ MemSpect
+             1 21 d:\blue\minkernel\ntdll\aitruntime.c(701) : ntdll.dll!AitpDoFirstTelemetryHitSetupWorker + 99 bytes
+==>              d:\memspect\ MemSpect
+            1 24 d:\blue\minkernel\ntdll\aitruntime.c(541) : ntdll.dll!AitpDoFirstTelemetryHitSetup + 29 bytes
+==>             d:\memspect\ MemSpect
+          1 76 d:\9147\shell\themes\uxtheme\globals.cpp(55) : uxtheme.dll!GlobalsStartup + 105 bytes
+==>           d:\memspect\ MemSpect
+          1 48 d:\9147\shell\themes\uxtheme\globals.cpp(51) : uxtheme.dll!GlobalsStartup + 62 bytes
+==>           d:\memspect\ MemSpect
+          1 36 d:\9147\shell\themes\uxtheme\globals.cpp(66) : uxtheme.dll!GlobalsStartup + 224 bytes
+==>           d:\memspect\ MemSpect
+          1 36 d:\9147\shell\themes\uxtheme\globals.cpp(70) : uxtheme.dll!GlobalsStartup + 267 bytes
+==>           d:\memspect\ MemSpect
+          1 8 d:\9147\shell\themes\uxtheme\globals.cpp(74) : uxtheme.dll!GlobalsStartup + 306 bytes
+==>           d:\memspect\ MemSpect
+         1 200 d:\9147.public.fre\internal\shell\inc\shellcoreevents.h(6421) : uxtheme.dll!McGenEventRegister + 39 bytes
+          1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+           1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+            1 200 d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+==>             d:\memspect\ MemSpect
+         3 48 d:\9147\shell\themes\uxtheme\dllmain.cpp(80) : uxtheme.dll!ProcessStartUp + 63 bytes
+          3 48 d:\9147\shell\themes\manipulation\pal\clientcore\clientcorepal.cpp(31) : uxtheme.dll!CreateDirectManipulationPVL + 36 bytes
+           1 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(2185) : uxtheme.dll!Microsoft::WRL::Details::Make<ClientCorePal> + 37 bytes
+            1 24 d:\9147\minkernel\crts\crtw32\heap\newopnt.cpp(32) : uxtheme.dll!operator new + 24 bytes
+             1 24 d:\9147\shell\themes\inc\memory.h(55) : uxtheme.dll!operator new + 22 bytes
+==>              d:\memspect\ MemSpect
+           2 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(2191) : uxtheme.dll!Microsoft::WRL::Details::Make<ClientCorePal> + 52 bytes
+            2 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(1978) : uxtheme.dll!Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<2>,CorePal,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil>::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<2>,CorePal,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil + 24 bytes
+             2 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(1379) : uxtheme.dll!Microsoft::WRL::FtmBase::FtmBase + 57 bytes
+              1 12 d:\blue\com\combase\dcomrem\ipmrshl.cxx(183) : combase.dll!CoCreateFreeThreadedMarshaler + 429 bytes
+==>               d:\memspect\ MemSpect
+              1 12 d:\blue\com\combase\dcomrem\ipmrshl.cxx(183) : combase.dll!CoCreateFreeThreadedMarshaler + 493 bytes
+==>               d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\bufferedpaint.cpp(1772) : uxtheme.dll!CGlobalBufferPool::StaticInitialize + 31 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\cachelist.cpp(29) : uxtheme.dll!CCacheList::StaticInitialize + 31 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\thememenu.cpp(1371) : uxtheme.dll!CThemeMenu::StaticInitialize + 20 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\thememenu.cpp(1377) : uxtheme.dll!CThemeMenu::StaticInitialize + 56 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\thememenumetrics.cpp(16) : uxtheme.dll!CThemeMenuMetrics::StaticInitialize + 20 bytes
+==>          d:\memspect\ MemSpect
+        1 128 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(618) : uxtheme.dll!__DllMainCRTStartup + 196 bytes
+         1 128 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(372) : uxtheme.dll!_CRT_INIT + 384 bytes
+          1 128 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(241) : uxtheme.dll!pre_c_init + 11 bytes
+           1 128 d:\9147\minkernel\crts\crtw32\heap\malloc.c(285) : msvcrt.dll!malloc + 144 bytes
+==>            d:\memspect\ MemSpect
+  3 272 d:\blue\minkernel\ntdll\ldrapi.c(457) : ntdll.dll!LdrpLoadDll + 626 bytes
+   2 208 d:\blue\minkernel\ntdll\ldrfind.c(1135) : ntdll.dll!LdrpFindOrMapDll + 2022 bytes
+    1 160 d:\blue\minkernel\ntdll\ldrutil.c(108) : ntdll.dll!LdrpAllocateDataTableEntry + 42 bytes
+==>     d:\memspect\ MemSpect
+    1 48 d:\blue\minkernel\ntdll\ldrutil.c(116) : ntdll.dll!LdrpAllocateDataTableEntry + 79 bytes
+==>     d:\memspect\ MemSpect
+   1 64 d:\blue\minkernel\ntdll\ldrfind.c(785) : ntdll.dll!LdrpFindOrMapDll + 534 bytes
+    1 64 d:\blue\minkernel\ntdll\ldrfind.c(3294) : ntdll.dll!LdrpResolveDllName + 354 bytes
+==>     d:\memspect\ MemSpect
+  2 238 d:\blue\minkernel\ntdll\ldrapi.c(308) : ntdll.dll!LdrpLoadDll + 245 bytes
+   2 238 d:\blue\minkernel\ntdll\ldrfind.c(347) : ntdll.dll!LdrpApplyFileNameRedirection + 150 bytes
+    2 238 d:\blue\minkernel\ntdll\sxsisol.cpp(388) : ntdll.dll!RtlDosApplyFileIsolationRedirection_Ustr + 651 bytes
+     2 238 d:\blue\minkernel\ntdll\sxsisol.cpp(1064) : ntdll.dll!sxsisol_SearchActCtxForDllName + 416 bytes
+      2 238 d:\blue\minkernel\ntdll\sxsstoragemap.c(1255) : ntdll.dll!RtlGetAssemblyStorageRoot + 181 bytes
+       1 238 d:\blue\minkernel\ntdll\sxsstoragemap.c(772) : ntdll.dll!RtlpResolveAssemblyStorageMapEntry + 623 bytes
+        1 238 d:\blue\minkernel\ntdll\sxsstoragemap.c(313) : ntdll.dll!RtlpInsertAssemblyStorageMapEntry + 127 bytes
+==>         d:\memspect\ MemSpect
+       1 0 d:\blue\minkernel\ntdll\sxsstoragemap.c(660) : ntdll.dll!RtlpResolveAssemblyStorageMapEntry + 559 bytes
+        1 0 d:\blue\minkernel\ntdll\sxsstoragemap.c(1004) : ntdll.dll!RtlpProbeAssemblyStorageRootForAssembly + 551 bytes
+==>         d:\memspect\ MemSpect
+StackAgg panel sort by name
+26 1,037,715 d:\blue\minkernel\kernelbase\module.c(1130) : KERNELBASE.dll!LoadLibraryExW + 274 bytes
+ 26 1,037,715 d:\blue\minkernel\ntdll\ldrapi.c(190) : ntdll.dll!LdrLoadDll + 107 bytes
+  21 1,037,205 d:\blue\minkernel\ntdll\ldrapi.c(611) : ntdll.dll!LdrpLoadDll + 918 bytes
+   1 970,752 d:\blue\minkernel\ntdll\ldrddag.c(1520) : ntdll.dll!LdrpNotifyLoadOfGraph + 61 bytes
+    1 970,752 d:\blue\minkernel\ntdll\ldrsnap.c(2845) : ntdll.dll!LdrpSendPostSnapNotifications + 181 bytes
+     1 970,752 d:\blue\minkernel\ntdll\ldrapi.c(3919) : ntdll.dll!LdrpSendDllNotifications + 90 bytes
+==>      d:\memspect\ MemSpect
+   20 66,453 d:\blue\minkernel\ntdll\ldrsnap.c(2294) : ntdll.dll!LdrpPrepareModuleForExecution + 289 bytes
+    20 66,453 d:\blue\minkernel\ntdll\ldrddag.c(1754) : ntdll.dll!LdrpInitializeGraph + 89 bytes
+     20 66,453 d:\blue\minkernel\ntdll\ldrsnap.c(1243) : ntdll.dll!LdrpInitializeNode + 285 bytes
+      20 66,453 d:\blue\minkernel\ntdll\ldr.c(214) : ntdll.dll!LdrpCallInitRoutine + 67 bytes
+       20 66,453 d:\blue\minkernel\ntdll\i386\ldrthunk.asm(90) : ntdll.dll!LdrxCallInitRoutine + 22 bytes
+        19 66,325 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(630) : uxtheme.dll!__DllMainCRTStartup + 263 bytes
+         2 65,568 d:\9147\shell\themes\themeldr\memory.cpp(78) : uxtheme.dll!ThemeHeapStaticInitialize + 20 bytes
+          2 65,568 d:\blue\minkernel\kernelbase\lmem.c(544) : KERNELBASE.dll!HeapCreate + 69 bytes
+           1 65,536 d:\blue\minkernel\ntos\rtl\heap.c(967) : ntdll.dll!RtlCreateHeap + 667 bytes
+==>            d:\memspect\ MemSpect
+           1 32 d:\blue\minkernel\ntos\rtl\heap.c(1172) : ntdll.dll!RtlCreateHeap + 1139 bytes
+            1 32 d:\blue\minkernel\ntdll\resource.c(299) : ntdll.dll!RtlpAllocateDebugInfo + 40 bytes
+==>             d:\memspect\ MemSpect
+         8 449 d:\9147\shell\themes\uxtheme\dllmain.cpp(71) : uxtheme.dll!ProcessStartUp + 32 bytes
+          3 245 d:\9147\shell\themes\uxtheme\globals.cpp(88) : uxtheme.dll!GlobalsStartup + 358 bytes
+           3 245 d:\blue\minkernel\appcompat\switchback\manifest\lib\switchbranchcontextmanifest.c(963) : ntdll.dll!SbSelectProcedure + 484 bytes
+            2 221 d:\blue\minkernel\ntdll\aitruntime.c(617) : ntdll.dll!AitpDoFirstTelemetryHitSetup + 101 bytes
+             1 200 d:\blue\minkernel\ntdll\aitruntime.c(733) : ntdll.dll!AitpDoFirstTelemetryHitSetupWorker + 148 bytes
+              1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+               1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+                1 200 d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+==>                 d:\memspect\ MemSpect
+             1 21 d:\blue\minkernel\ntdll\aitruntime.c(701) : ntdll.dll!AitpDoFirstTelemetryHitSetupWorker + 99 bytes
+==>              d:\memspect\ MemSpect
+            1 24 d:\blue\minkernel\ntdll\aitruntime.c(541) : ntdll.dll!AitpDoFirstTelemetryHitSetup + 29 bytes
+==>             d:\memspect\ MemSpect
+          1 76 d:\9147\shell\themes\uxtheme\globals.cpp(55) : uxtheme.dll!GlobalsStartup + 105 bytes
+==>           d:\memspect\ MemSpect
+          1 48 d:\9147\shell\themes\uxtheme\globals.cpp(51) : uxtheme.dll!GlobalsStartup + 62 bytes
+==>           d:\memspect\ MemSpect
+          1 36 d:\9147\shell\themes\uxtheme\globals.cpp(66) : uxtheme.dll!GlobalsStartup + 224 bytes
+==>           d:\memspect\ MemSpect
+          1 36 d:\9147\shell\themes\uxtheme\globals.cpp(70) : uxtheme.dll!GlobalsStartup + 267 bytes
+==>           d:\memspect\ MemSpect
+          1 8 d:\9147\shell\themes\uxtheme\globals.cpp(74) : uxtheme.dll!GlobalsStartup + 306 bytes
+==>           d:\memspect\ MemSpect
+         1 200 d:\9147.public.fre\internal\shell\inc\shellcoreevents.h(6421) : uxtheme.dll!McGenEventRegister + 39 bytes
+          1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+           1 200 d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+            1 200 d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+==>             d:\memspect\ MemSpect
+         3 48 d:\9147\shell\themes\uxtheme\dllmain.cpp(80) : uxtheme.dll!ProcessStartUp + 63 bytes
+          3 48 d:\9147\shell\themes\manipulation\pal\clientcore\clientcorepal.cpp(31) : uxtheme.dll!CreateDirectManipulationPVL + 36 bytes
+           1 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(2185) : uxtheme.dll!Microsoft::WRL::Details::Make<ClientCorePal> + 37 bytes
+            1 24 d:\9147\minkernel\crts\crtw32\heap\newopnt.cpp(32) : uxtheme.dll!operator new + 24 bytes
+             1 24 d:\9147\shell\themes\inc\memory.h(55) : uxtheme.dll!operator new + 22 bytes
+==>              d:\memspect\ MemSpect
+           2 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(2191) : uxtheme.dll!Microsoft::WRL::Details::Make<ClientCorePal> + 52 bytes
+            2 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(1978) : uxtheme.dll!Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<2>,CorePal,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil>::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<2>,CorePal,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil + 24 bytes
+             2 24 d:\9147.public.fre\sdk\inc\wrl\implements.h(1379) : uxtheme.dll!Microsoft::WRL::FtmBase::FtmBase + 57 bytes
+              1 12 d:\blue\com\combase\dcomrem\ipmrshl.cxx(183) : combase.dll!CoCreateFreeThreadedMarshaler + 429 bytes
+==>               d:\memspect\ MemSpect
+              1 12 d:\blue\com\combase\dcomrem\ipmrshl.cxx(183) : combase.dll!CoCreateFreeThreadedMarshaler + 493 bytes
+==>               d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\bufferedpaint.cpp(1772) : uxtheme.dll!CGlobalBufferPool::StaticInitialize + 31 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\cachelist.cpp(29) : uxtheme.dll!CCacheList::StaticInitialize + 31 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\thememenu.cpp(1371) : uxtheme.dll!CThemeMenu::StaticInitialize + 20 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\thememenu.cpp(1377) : uxtheme.dll!CThemeMenu::StaticInitialize + 56 bytes
+==>          d:\memspect\ MemSpect
+         1 12 d:\9147\shell\themes\uxtheme\thememenumetrics.cpp(16) : uxtheme.dll!CThemeMenuMetrics::StaticInitialize + 20 bytes
+==>          d:\memspect\ MemSpect
+        1 128 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(618) : uxtheme.dll!__DllMainCRTStartup + 196 bytes
+         1 128 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(372) : uxtheme.dll!_CRT_INIT + 384 bytes
+          1 128 d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(241) : uxtheme.dll!pre_c_init + 11 bytes
+           1 128 d:\9147\minkernel\crts\crtw32\heap\malloc.c(285) : msvcrt.dll!malloc + 144 bytes
+==>            d:\memspect\ MemSpect
+  3 272 d:\blue\minkernel\ntdll\ldrapi.c(457) : ntdll.dll!LdrpLoadDll + 626 bytes
+   2 208 d:\blue\minkernel\ntdll\ldrfind.c(1135) : ntdll.dll!LdrpFindOrMapDll + 2022 bytes
+    1 160 d:\blue\minkernel\ntdll\ldrutil.c(108) : ntdll.dll!LdrpAllocateDataTableEntry + 42 bytes
+==>     d:\memspect\ MemSpect
+    1 48 d:\blue\minkernel\ntdll\ldrutil.c(116) : ntdll.dll!LdrpAllocateDataTableEntry + 79 bytes
+==>     d:\memspect\ MemSpect
+   1 64 d:\blue\minkernel\ntdll\ldrfind.c(785) : ntdll.dll!LdrpFindOrMapDll + 534 bytes
+    1 64 d:\blue\minkernel\ntdll\ldrfind.c(3294) : ntdll.dll!LdrpResolveDllName + 354 bytes
+==>     d:\memspect\ MemSpect
+  2 238 d:\blue\minkernel\ntdll\ldrapi.c(308) : ntdll.dll!LdrpLoadDll + 245 bytes
+   2 238 d:\blue\minkernel\ntdll\ldrfind.c(347) : ntdll.dll!LdrpApplyFileNameRedirection + 150 bytes
+    2 238 d:\blue\minkernel\ntdll\sxsisol.cpp(388) : ntdll.dll!RtlDosApplyFileIsolationRedirection_Ustr + 651 bytes
+     2 238 d:\blue\minkernel\ntdll\sxsisol.cpp(1064) : ntdll.dll!sxsisol_SearchActCtxForDllName + 416 bytes
+      2 238 d:\blue\minkernel\ntdll\sxsstoragemap.c(1255) : ntdll.dll!RtlGetAssemblyStorageRoot + 181 bytes
+       1 238 d:\blue\minkernel\ntdll\sxsstoragemap.c(772) : ntdll.dll!RtlpResolveAssemblyStorageMapEntry + 623 bytes
+        1 238 d:\blue\minkernel\ntdll\sxsstoragemap.c(313) : ntdll.dll!RtlpInsertAssemblyStorageMapEntry + 127 bytes
+==>         d:\memspect\ MemSpect
+       1 0 d:\blue\minkernel\ntdll\sxsstoragemap.c(660) : ntdll.dll!RtlpResolveAssemblyStorageMapEntry + 559 bytes
+        1 0 d:\blue\minkernel\ntdll\sxsstoragemap.c(1004) : ntdll.dll!RtlpProbeAssemblyStorageRootForAssembly + 551 bytes
+==>         d:\memspect\ MemSpect
+Pivot Size=970752 IndirectInfo IType=FileLoad File = C:\Windows\system32\uxtheme.dll 73e50000 __MemSpect
+Pivot Size=65536 VirtualAlloc ReqAddress = 0x00000000  MemType = MEM_COMMIT, MEM_RESERVE __MemSpect
+Pivot Size=238 None  __Process Heap
+Pivot Size=200 None  __Process Heap
+Pivot Size=200 None  __Process Heap
+Pivot Size=160 None  __Process Heap
+Pivot Size=128 None  ~msvcrt.dll!malloc+144bytes
+Pivot Size=76 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=64 None  __Process Heap
+Pivot Size=48 None  __Process Heap
+Pivot Size=48 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=36 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=36 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=32 None  __Process Heap
+Pivot Size=24 None  __Process Heap
+Pivot Size=24 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=21 None  __Process Heap
+Pivot Size=12 None  __Process Heap
+Pivot Size=12 None  __Process Heap
+Pivot Size=12 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=12 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=12 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=12 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=12 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=8 None  ~ntdll.dll!RtlCreateHeap+1569bytes
+Pivot Size=0 IndirectInfo IType=OpenFile File = C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0 __MemSpect
+==>Duplicates in all heaps
+Dupe #=1 ndx=1 Sz=8 Hp=__Process Heap
+Dupe #=1 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=5 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=6 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=7 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=8 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=9 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=10 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=11 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=12 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=13 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=14 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=15 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=16 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=17 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=18 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=19 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=20 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=21 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=22 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=23 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=24 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=25 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=26 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=27 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=28 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=29 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=30 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=31 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=32 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=33 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=34 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=35 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=36 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=37 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=38 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=39 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=40 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=41 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=42 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=43 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=44 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=45 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=46 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=47 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=48 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=49 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=50 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=51 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=52 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=53 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=54 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=55 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=56 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=57 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=58 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=59 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=60 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=61 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=62 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=63 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=64 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=65 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=66 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=67 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=1 ndx=68 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=5 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=6 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=7 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=8 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=9 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=10 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=11 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=12 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=13 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=14 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=15 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=16 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=17 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=18 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=19 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=20 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=21 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=22 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=23 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=24 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=25 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=26 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=27 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=28 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=29 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=30 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=31 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=2 ndx=32 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=3 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=3 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=4 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=5 Sz=32 Hp=__Process Heap
+Dupe #=4 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=5 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=6 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=7 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=8 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=9 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=10 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=4 ndx=11 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=5 ndx=1 Sz=36 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=5 ndx=2 Sz=36 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=6 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=6 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=7 ndx=1 Sz=20 Hp=__Process Heap
+Dupe #=7 ndx=2 Sz=20 Hp=__Process Heap
+Dupe #=8 ndx=1 Sz=16 Hp=~msvcrt.dll!malloc+144bytes
+Dupe #=8 ndx=2 Sz=16 Hp=~msvcrt.dll!malloc+144bytes
+Dupe #=9 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=9 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=9 ndx=3 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=9 ndx=4 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=10 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=10 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=11 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=11 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=12 ndx=1 Sz=12 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=12 ndx=2 Sz=12 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=13 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=13 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=14 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=14 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=15 ndx=1 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=15 ndx=2 Sz=8 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=16 ndx=1 Sz=4 Hp=__Process Heap
+Dupe #=16 ndx=2 Sz=4 Hp=__Process Heap
+Dupe #=16 ndx=3 Sz=4 Hp=~msvcrt.dll!malloc+144bytes
+Dupe #=16 ndx=4 Sz=4 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=17 ndx=1 Sz=4 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+Dupe #=17 ndx=2 Sz=4 Hp=~ntdll.dll!RtlCreateHeap+1569bytes
+==>Duplicates in __Process Heap
+Dupe #=1 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=3 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=4 Sz=32 Hp=__Process Heap
+Dupe #=1 ndx=5 Sz=32 Hp=__Process Heap
+Dupe #=2 ndx=1 Sz=32 Hp=__Process Heap
+Dupe #=2 ndx=2 Sz=32 Hp=__Process Heap
+Dupe #=3 ndx=1 Sz=20 Hp=__Process Heap
+Dupe #=3 ndx=2 Sz=20 Hp=__Process Heap
+Dupe #=4 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=4 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=5 ndx=1 Sz=12 Hp=__Process Heap
+Dupe #=5 ndx=2 Sz=12 Hp=__Process Heap
+Dupe #=6 ndx=1 Sz=4 Hp=__Process Heap
+Dupe #=6 ndx=2 Sz=4 Hp=__Process Heap
+Notepad string stack
+Call Stack:
+d:\memspect\ MemSpect
+d:\blue\minkernel\kernelbase\lmem.c(103) : KERNELBASE.dll!LocalAlloc + 130 bytes
+d:\blue\shell\osshell\accesory\notepad\npinit.c(454) : notepad.exe!InitStrings + 36 bytes
+d:\blue\shell\osshell\accesory\notepad\npinit.c(788) : notepad.exe!NPInit + 125 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1543) : notepad.exe!WinMain + 82 bytes
+d:\blue\minkernel\crts\crtw32\dllstuff\crtexe.c(685) : notepad.exe!__mainCRTStartup + 322 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Notepad string dump
+00000000  00610043 006e006e 0074006f 006f0020 00650070 0020006e 00680074 00200065   43 00 61 00 6e 00 6e 00 6f 00 74 00 20 00 6f 00 70 00 65 00 6e 00 20 00 74 00 68 00 65 00 20 00   C a n n o t   o p e n   t h e   
+00000010  00250025 00660020 006c0069 002e0065 000a000a 0061004d 0065006b 00730020   25 00 25 00 20 00 66 00 69 00 6c 00 65 00 2e 00 0a 00 0a 00 4d 00 61 00 6b 00 65 00 20 00 73 00   % %   f i l e .     M a k e   s 
+00000020  00720075 00200065 00200061 00690064 006b0073 00690020 00200073 006e0069   75 00 72 00 65 00 20 00 61 00 20 00 64 00 69 00 73 00 6b 00 20 00 69 00 73 00 20 00 69 00 6e 00   u r e   a   d i s k   i s   i n 
+00000030  00740020 00650068 00640020 00690072 00650076 00790020 0075006f 00730020   20 00 74 00 68 00 65 00 20 00 64 00 72 00 69 00 76 00 65 00 20 00 79 00 6f 00 75 00 20 00 73 00     t h e   d r i v e   y o u   s 
+00000040  00650070 00690063 00690066 00640065 0000002e 00610043 006e006e 0074006f   70 00 65 00 63 00 69 00 66 00 69 00 65 00 64 00 2e 00 00 00 43 00 61 00 6e 00 6e 00 6f 00 74 00   p e c i f i e d .   C a n n o t 
+00000050  00660020 006e0069 00200064 00680074 00200065 00250025 00660020 006c0069   20 00 66 00 69 00 6e 00 64 00 20 00 74 00 68 00 65 00 20 00 25 00 25 00 20 00 66 00 69 00 6c 00     f i n d   t h e   % %   f i l 
+00000060  002e0065 000a000a 006f0044 00790020 0075006f 00770020 006e0061 00200074   65 00 2e 00 0a 00 0a 00 44 00 6f 00 20 00 79 00 6f 00 75 00 20 00 77 00 61 00 6e 00 74 00 20 00   e .     D o   y o u   w a n t   
+00000070  006f0074 00630020 00650072 00740061 00200065 00200061 0065006e 00200077   74 00 6f 00 20 00 63 00 72 00 65 00 61 00 74 00 65 00 20 00 61 00 20 00 6e 00 65 00 77 00 20 00   t o   c r e a t e   a   n e w   
+00000080  00690066 0065006c 0000003f 00680054 00200065 00650074 00740078 00690020   66 00 69 00 6c 00 65 00 3f 00 00 00 54 00 68 00 65 00 20 00 74 00 65 00 78 00 74 00 20 00 69 00   f i l e ?   T h e   t e x t   i 
+00000090  0020006e 00680074 00200065 00250025 00660020 006c0069 00200065 00610068   6e 00 20 00 74 00 68 00 65 00 20 00 25 00 25 00 20 00 66 00 69 00 6c 00 65 00 20 00 68 00 61 00   n   t h e   % %   f i l e   h a 
+000000a0  00200073 00680063 006e0061 00650067 002e0064 000a000a 006f0044 00790020   73 00 20 00 63 00 68 00 61 00 6e 00 67 00 65 00 64 00 2e 00 0a 00 0a 00 44 00 6f 00 20 00 79 00   s   c h a n g e d .     D o   y 
+000000b0  0075006f 00770020 006e0061 00200074 006f0074 00730020 00760061 00200065   6f 00 75 00 20 00 77 00 61 00 6e 00 74 00 20 00 74 00 6f 00 20 00 73 00 61 00 76 00 65 00 20 00   o u   w a n t   t o   s a v e   
+000000c0  00680074 00200065 00680063 006e0061 00650067 003f0073 00550000 0074006e   74 00 68 00 65 00 20 00 63 00 68 00 61 00 6e 00 67 00 65 00 73 00 3f 00 00 00 55 00 6e 00 74 00   t h e   c h a n g e s ?   U n t 
+000000d0  00740069 0065006c 00000064 006f004e 00200074 006e0065 0075006f 00680067   69 00 74 00 6c 00 65 00 64 00 00 00 4e 00 6f 00 74 00 20 00 65 00 6e 00 6f 00 75 00 67 00 68 00   i t l e d   N o t   e n o u g h 
+000000e0  006d0020 006d0065 0072006f 00200079 00760061 00690061 0061006c 006c0062   20 00 6d 00 65 00 6d 00 6f 00 72 00 79 00 20 00 61 00 76 00 61 00 69 00 6c 00 61 00 62 00 6c 00     m e m o r y   a v a i l a b l 
+000000f0  00200065 006f0074 00630020 006d006f 006c0070 00740065 00200065 00680074   65 00 20 00 74 00 6f 00 20 00 63 00 6f 00 6d 00 70 00 6c 00 65 00 74 00 65 00 20 00 74 00 68 00   e   t o   c o m p l e t e   t h 
+00000100  00730069 006f0020 00650070 00610072 00690074 006e006f 0020002e 00750051   69 00 73 00 20 00 6f 00 70 00 65 00 72 00 61 00 74 00 69 00 6f 00 6e 00 2e 00 20 00 51 00 75 00   i s   o p e r a t i o n .   Q u 
+00000110  00740069 006f0020 0065006e 006f0020 00200072 006f006d 00650072 00610020   69 00 74 00 20 00 6f 00 6e 00 65 00 20 00 6f 00 72 00 20 00 6d 00 6f 00 72 00 65 00 20 00 61 00   i t   o n e   o r   m o r e   a 
+00000120  00700070 0069006c 00610063 00690074 006e006f 00200073 006f0074 00690020   70 00 70 00 6c 00 69 00 63 00 61 00 74 00 69 00 6f 00 6e 00 73 00 20 00 74 00 6f 00 20 00 69 00   p p l i c a t i o n s   t o   i 
+00000130  0063006e 00650072 00730061 00200065 00760061 00690061 0061006c 006c0062   6e 00 63 00 72 00 65 00 61 00 73 00 65 00 20 00 61 00 76 00 61 00 69 00 6c 00 61 00 62 00 6c 00   n c r e a s e   a v a i l a b l 
+00000140  00200065 0065006d 006f006d 00790072 0020002c 006e0061 00200064 00680074   65 00 20 00 6d 00 65 00 6d 00 6f 00 72 00 79 00 2c 00 20 00 61 00 6e 00 64 00 20 00 74 00 68 00   e   m e m o r y ,   a n d   t h 
+00000150  006e0065 00740020 00790072 00610020 00610067 006e0069 0000002e 00610043   65 00 6e 00 20 00 74 00 72 00 79 00 20 00 61 00 67 00 61 00 69 00 6e 00 2e 00 00 00 43 00 61 00   e n   t r y   a g a i n .   C a 
+00000160  006e006e 0074006f 00660020 006e0069 00200064 00250022 00220025 00250000   6e 00 6e 00 6f 00 74 00 20 00 66 00 69 00 6e 00 64 00 20 00 22 00 25 00 25 00 22 00 00 00 25 00   n n o t   f i n d   " % % "   % 
+00000170  00200031 0020002d 006f004e 00650074 00610070 00000064 00680054 00200065   31 00 20 00 2d 00 20 00 4e 00 6f 00 74 00 65 00 70 00 61 00 64 00 00 00 54 00 68 00 65 00 20 00   1   -   N o t e p a d   T h e   
+00000180  00250025 00660020 006c0069 00200065 00730069 00740020 006f006f 006c0020   25 00 25 00 20 00 66 00 69 00 6c 00 65 00 20 00 69 00 73 00 20 00 74 00 6f 00 6f 00 20 00 6c 00   % %   f i l e   i s   t o o   l 
+00000190  00720061 00650067 00660020 0072006f 004e0020 0074006f 00700065 00640061   61 00 72 00 67 00 65 00 20 00 66 00 6f 00 72 00 20 00 4e 00 6f 00 74 00 65 00 70 00 61 00 64 00   a r g e   f o r   N o t e p a d 
+000001a0  000a002e 0055000a 00650073 00610020 006f006e 00680074 00720065 00650020   2e 00 0a 00 0a 00 55 00 73 00 65 00 20 00 61 00 6e 00 6f 00 74 00 68 00 65 00 72 00 20 00 65 00   .     U s e   a n o t h e r   e 
+000001b0  00690064 006f0074 00200072 006f0074 00650020 00690064 00200074 00680074   64 00 69 00 74 00 6f 00 72 00 20 00 74 00 6f 00 20 00 65 00 64 00 69 00 74 00 20 00 74 00 68 00   d i t o r   t o   e d i t   t h 
+000001c0  00200065 00690066 0065006c 0000002e 006f004e 00650074 00610070 00000064   65 00 20 00 66 00 69 00 6c 00 65 00 2e 00 00 00 4e 00 6f 00 74 00 65 00 70 00 61 00 64 00 00 00   e   f i l e .   N o t e p a d   
+000001d0  00610046 006c0069 00640065 00740020 0020006f 006e0069 00740069 00610069   46 00 61 00 69 00 6c 00 65 00 64 00 20 00 74 00 6f 00 20 00 69 00 6e 00 69 00 74 00 69 00 61 00   F a i l e d   t o   i n i t i a 
+000001e0  0069006c 0065007a 00660020 006c0069 00200065 00690064 006c0061 0067006f   6c 00 69 00 7a 00 65 00 20 00 66 00 69 00 6c 00 65 00 20 00 64 00 69 00 61 00 6c 00 6f 00 67 00   l i z e   f i l e   d i a l o g 
+000001f0  002e0073 00430020 00610068 0067006e 00200065 00680074 00200065 00690066   73 00 2e 00 20 00 43 00 68 00 61 00 6e 00 67 00 65 00 20 00 74 00 68 00 65 00 20 00 66 00 69 00   s .   C h a n g e   t h e   f i 
+00000200  0065006c 006e0020 006d0061 00200065 006e0061 00200064 00720074 00200079   6c 00 65 00 20 00 6e 00 61 00 6d 00 65 00 20 00 61 00 6e 00 64 00 20 00 74 00 72 00 79 00 20 00   l e   n a m e   a n d   t r y   
+00000210  00670061 00690061 002e006e 00460000 00690061 0065006c 00200064 006f0074   61 00 67 00 61 00 69 00 6e 00 2e 00 00 00 46 00 61 00 69 00 6c 00 65 00 64 00 20 00 74 00 6f 00   a g a i n .   F a i l e d   t o 
+00000220  00690020 0069006e 00690074 006c0061 007a0069 00200065 00720070 006e0069   20 00 69 00 6e 00 69 00 74 00 69 00 61 00 6c 00 69 00 7a 00 65 00 20 00 70 00 72 00 69 00 6e 00     i n i t i a l i z e   p r i n 
+00000230  00200074 00690064 006c0061 0067006f 002e0073 004d0020 006b0061 00200065   74 00 20 00 64 00 69 00 61 00 6c 00 6f 00 67 00 73 00 2e 00 20 00 4d 00 61 00 6b 00 65 00 20 00   t   d i a l o g s .   M a k e   
+00000240  00750073 00650072 00740020 00610068 00200074 006f0079 00720075 00700020   73 00 75 00 72 00 65 00 20 00 74 00 68 00 61 00 74 00 20 00 79 00 6f 00 75 00 72 00 20 00 70 00   s u r e   t h a t   y o u r   p 
+00000250  00690072 0074006e 00720065 00690020 00200073 006f0063 006e006e 00630065   72 00 69 00 6e 00 74 00 65 00 72 00 20 00 69 00 73 00 20 00 63 00 6f 00 6e 00 6e 00 65 00 63 00   r i n t e r   i s   c o n n e c 
+00000260  00650074 00200064 00720070 0070006f 00720065 0079006c 00610020 0064006e   74 00 65 00 64 00 20 00 70 00 72 00 6f 00 70 00 65 00 72 00 6c 00 79 00 20 00 61 00 6e 00 64 00   t e d   p r o p e r l y   a n d 
+00000270  00750020 00650073 00430020 006e006f 00720074 006c006f 00500020 006e0061   20 00 75 00 73 00 65 00 20 00 43 00 6f 00 6e 00 74 00 72 00 6f 00 6c 00 20 00 50 00 61 00 6e 00     u s e   C o n t r o l   P a n 
+00000280  006c0065 00740020 0020006f 00650076 00690072 00790066 00740020 00610068   65 00 6c 00 20 00 74 00 6f 00 20 00 76 00 65 00 72 00 69 00 66 00 79 00 20 00 74 00 68 00 61 00   e l   t o   v e r i f y   t h a 
+00000290  00200074 00680074 00200065 00720070 006e0069 00650074 00200072 00730069   74 00 20 00 74 00 68 00 65 00 20 00 70 00 72 00 69 00 6e 00 74 00 65 00 72 00 20 00 69 00 73 00   t   t h e   p r i n t e r   i s 
+000002a0  00630020 006e006f 00690066 00750067 00650072 00200064 00720070 0070006f   20 00 63 00 6f 00 6e 00 66 00 69 00 67 00 75 00 72 00 65 00 64 00 20 00 70 00 72 00 6f 00 70 00     c o n f i g u r e d   p r o p 
+000002b0  00720065 0079006c 0000002e 00610043 006e006e 0074006f 00700020 00690072   65 00 72 00 6c 00 79 00 2e 00 00 00 43 00 61 00 6e 00 6e 00 6f 00 74 00 20 00 70 00 72 00 69 00   e r l y .   C a n n o t   p r i 
+000002c0  0074006e 00740020 00650068 00250020 00200025 00690066 0065006c 0020002e   6e 00 74 00 20 00 74 00 68 00 65 00 20 00 25 00 25 00 20 00 66 00 69 00 6c 00 65 00 2e 00 20 00   n t   t h e   % %   f i l e .   
+000002d0  00650042 00730020 00720075 00200065 00680074 00740061 00790020 0075006f   42 00 65 00 20 00 73 00 75 00 72 00 65 00 20 00 74 00 68 00 61 00 74 00 20 00 79 00 6f 00 75 00   B e   s u r e   t h a t   y o u 
+000002e0  00200072 00720070 006e0069 00650074 00200072 00730069 00630020 006e006f   72 00 20 00 70 00 72 00 69 00 6e 00 74 00 65 00 72 00 20 00 69 00 73 00 20 00 63 00 6f 00 6e 00   r   p r i n t e r   i s   c o n 
+000002f0  0065006e 00740063 00640065 00700020 006f0072 00650070 006c0072 00200079   6e 00 65 00 63 00 74 00 65 00 64 00 20 00 70 00 72 00 6f 00 70 00 65 00 72 00 6c 00 79 00 20 00   n e c t e d   p r o p e r l y   
+00000300  006e0061 00200064 00730075 00200065 006f0043 0074006e 006f0072 0020006c   61 00 6e 00 64 00 20 00 75 00 73 00 65 00 20 00 43 00 6f 00 6e 00 74 00 72 00 6f 00 6c 00 20 00   a n d   u s e   C o n t r o l   
+00000310  00610050 0065006e 0020006c 006f0074 00760020 00720065 00660069 00200079   50 00 61 00 6e 00 65 00 6c 00 20 00 74 00 6f 00 20 00 76 00 65 00 72 00 69 00 66 00 79 00 20 00   P a n e l   t o   v e r i f y   
+00000320  00680074 00740061 00740020 00650068 00700020 00690072 0074006e 00720065   74 00 68 00 61 00 74 00 20 00 74 00 68 00 65 00 20 00 70 00 72 00 69 00 6e 00 74 00 65 00 72 00   t h a t   t h e   p r i n t e r 
+00000330  00690020 00200073 006f0063 0066006e 00670069 00720075 00640065 00700020   20 00 69 00 73 00 20 00 63 00 6f 00 6e 00 66 00 69 00 67 00 75 00 72 00 65 00 64 00 20 00 70 00     i s   c o n f i g u r e d   p 
+00000340  006f0072 00650070 006c0072 002e0079 004e0000 0074006f 00610020 00760020   72 00 6f 00 70 00 65 00 72 00 6c 00 79 00 2e 00 00 00 4e 00 6f 00 74 00 20 00 61 00 20 00 76 00   r o p e r l y .   N o t   a   v 
+00000350  006c0061 00640069 00660020 006c0069 00200065 0061006e 0065006d 0000002e   61 00 6c 00 69 00 64 00 20 00 66 00 69 00 6c 00 65 00 20 00 6e 00 61 00 6d 00 65 00 2e 00 00 00   a l i d   f i l e   n a m e .   
+00000360  00610043 006e006e 0074006f 00630020 00650072 00740061 00200065 00680074   43 00 61 00 6e 00 6e 00 6f 00 74 00 20 00 63 00 72 00 65 00 61 00 74 00 65 00 20 00 74 00 68 00   C a n n o t   c r e a t e   t h 
+00000370  00200065 00250025 00660020 006c0069 002e0065 000a000a 0061004d 0065006b   65 00 20 00 25 00 25 00 20 00 66 00 69 00 6c 00 65 00 2e 00 0a 00 0a 00 4d 00 61 00 6b 00 65 00   e   % %   f i l e .     M a k e 
+00000380  00730020 00720075 00200065 00680074 00740061 00740020 00650068 00700020   20 00 73 00 75 00 72 00 65 00 20 00 74 00 68 00 61 00 74 00 20 00 74 00 68 00 65 00 20 00 70 00     s u r e   t h a t   t h e   p 
+00000390  00740061 00200068 006e0061 00200064 00690066 0065006c 006e0020 006d0061   61 00 74 00 68 00 20 00 61 00 6e 00 64 00 20 00 66 00 69 00 6c 00 65 00 20 00 6e 00 61 00 6d 00   a t h   a n d   f i l e   n a m 
+000003a0  00200065 00720061 00200065 006f0063 00720072 00630065 002e0074 00430000   65 00 20 00 61 00 72 00 65 00 20 00 63 00 6f 00 72 00 72 00 65 00 63 00 74 00 2e 00 00 00 43 00   e   a r e   c o r r e c t .   C 
+000003b0  006e0061 006f006e 00200074 00610063 00720072 00200079 0075006f 00200074   61 00 6e 00 6e 00 6f 00 74 00 20 00 63 00 61 00 72 00 72 00 79 00 20 00 6f 00 75 00 74 00 20 00   a n n o t   c a r r y   o u t   
+000003c0  00680074 00200065 006f0057 00640072 00570020 00610072 00200070 006f0063   74 00 68 00 65 00 20 00 57 00 6f 00 72 00 64 00 20 00 57 00 72 00 61 00 70 00 20 00 63 00 6f 00   t h e   W o r d   W r a p   c o 
+000003d0  006d006d 006e0061 00200064 00650062 00610063 00730075 00200065 00680074   6d 00 6d 00 61 00 6e 00 64 00 20 00 62 00 65 00 63 00 61 00 75 00 73 00 65 00 20 00 74 00 68 00   m m a n d   b e c a u s e   t h 
+000003e0  00720065 00200065 00730069 00740020 006f006f 006d0020 00630075 00200068   65 00 72 00 65 00 20 00 69 00 73 00 20 00 74 00 6f 00 6f 00 20 00 6d 00 75 00 63 00 68 00 20 00   e r e   i s   t o o   m u c h   
+000003f0  00650074 00740078 00690020 0020006e 00680074 00200065 00690066 0065006c   74 00 65 00 78 00 74 00 20 00 69 00 6e 00 20 00 74 00 68 00 65 00 20 00 66 00 69 00 6c 00 65 00   t e x t   i n   t h e   f i l e 
+00000400  0000002e 00250025 006e0000 0074006f 00700065 00640061 0068002e 0070006c   2e 00 00 00 25 00 25 00 00 00 6e 00 6f 00 74 00 65 00 70 00 61 00 64 00 2e 00 68 00 6c 00 70 00   .   % %   n o t e p a d . h l p 
+00000410  00540000 00780065 00200074 006f0044 00750063 0065006d 0074006e 00200073   00 00 54 00 65 00 78 00 74 00 20 00 44 00 6f 00 63 00 75 00 6d 00 65 00 6e 00 74 00 73 00 20 00     T e x t   D o c u m e n t s   
+00000420  002a0028 0074002e 00740078 00000029 006c0041 0020006c 00690046 0065006c   28 00 2a 00 2e 00 74 00 78 00 74 00 29 00 00 00 41 00 6c 00 6c 00 20 00 46 00 69 00 6c 00 65 00   ( * . t x t )   A l l   F i l e 
+00000430  00200073 004f0000 00650070 0000006e 00610053 00650076 00410020 00000073   73 00 20 00 00 00 4f 00 70 00 65 00 6e 00 00 00 53 00 61 00 76 00 65 00 20 00 41 00 73 00 00 00   s     O p e n   S a v e   A s   
+00000440  006f0059 00200075 00610063 006e006e 0074006f 00730020 00750068 00200074   59 00 6f 00 75 00 20 00 63 00 61 00 6e 00 6e 00 6f 00 74 00 20 00 73 00 68 00 75 00 74 00 20 00   Y o u   c a n n o t   s h u t   
+00000450  006f0064 006e0077 006f0020 00200072 006f006c 00200067 0066006f 00200066   64 00 6f 00 77 00 6e 00 20 00 6f 00 72 00 20 00 6c 00 6f 00 67 00 20 00 6f 00 66 00 66 00 20 00   d o w n   o r   l o g   o f f   
+00000460  00690057 0064006e 0077006f 00200073 00650062 00610063 00730075 000a0065   57 00 69 00 6e 00 64 00 6f 00 77 00 73 00 20 00 62 00 65 00 63 00 61 00 75 00 73 00 65 00 0a 00   W i n d o w s   b e c a u s e   
+00000470  00680074 00200065 00610053 00650076 00410020 00200073 00690064 006c0061   74 00 68 00 65 00 20 00 53 00 61 00 76 00 65 00 20 00 41 00 73 00 20 00 64 00 69 00 61 00 6c 00   t h e   S a v e   A s   d i a l 
+00000480  0067006f 00620020 0078006f 00690020 0020006e 006f004e 00650074 00610070   6f 00 67 00 20 00 62 00 6f 00 78 00 20 00 69 00 6e 00 20 00 4e 00 6f 00 74 00 65 00 70 00 61 00   o g   b o x   i n   N o t e p a 
+00000490  00200064 00730069 006f0020 00650070 002e006e 00530020 00690077 00630074   64 00 20 00 69 00 73 00 20 00 6f 00 70 00 65 00 6e 00 2e 00 20 00 53 00 77 00 69 00 74 00 63 00   d   i s   o p e n .   S w i t c 
+000004a0  00200068 006f0074 004e000a 0074006f 00700065 00640061 0020002c 006c0063   68 00 20 00 74 00 6f 00 0a 00 4e 00 6f 00 74 00 65 00 70 00 61 00 64 00 2c 00 20 00 63 00 6c 00   h   t o   N o t e p a d ,   c l 
+000004b0  0073006f 00200065 00680074 00730069 00640020 00610069 006f006c 00200067   6f 00 73 00 65 00 20 00 74 00 68 00 69 00 73 00 20 00 64 00 69 00 61 00 6c 00 6f 00 67 00 20 00   o s e   t h i s   d i a l o g   
+000004c0  006f0062 002c0078 00610020 0064006e 00740020 00650068 0020006e 00720074   62 00 6f 00 78 00 2c 00 20 00 61 00 6e 00 64 00 20 00 74 00 68 00 65 00 6e 00 20 00 74 00 72 00   b o x ,   a n d   t h e n   t r 
+000004d0  00200079 00680073 00740075 00690074 0067006e 0064000a 0077006f 0020006e   79 00 20 00 73 00 68 00 75 00 74 00 74 00 69 00 6e 00 67 00 0a 00 64 00 6f 00 77 00 6e 00 20 00   y   s h u t t i n g   d o w n   
+000004e0  0072006f 006c0020 0067006f 00690067 0067006e 006f0020 00660066 00570020   6f 00 72 00 20 00 6c 00 6f 00 67 00 67 00 69 00 6e 00 67 00 20 00 6f 00 66 00 66 00 20 00 57 00   o r   l o g g i n g   o f f   W 
+000004f0  006e0069 006f0064 00730077 00610020 00610067 006e0069 0000002e 00610043   69 00 6e 00 64 00 6f 00 77 00 73 00 20 00 61 00 67 00 61 00 69 00 6e 00 2e 00 00 00 43 00 61 00   i n d o w s   a g a i n .   C a 
+00000500  006e006e 0074006f 00610020 00630063 00730065 00200073 006f0079 00720075   6e 00 6e 00 6f 00 74 00 20 00 61 00 63 00 63 00 65 00 73 00 73 00 20 00 79 00 6f 00 75 00 72 00   n n o t   a c c e s s   y o u r 
+00000510  00700020 00690072 0074006e 00720065 000a002e 00650042 00730020 00720075   20 00 70 00 72 00 69 00 6e 00 74 00 65 00 72 00 2e 00 0a 00 42 00 65 00 20 00 73 00 75 00 72 00     p r i n t e r .   B e   s u r 
+00000520  00200065 00680074 00740061 00790020 0075006f 00200072 00720070 006e0069   65 00 20 00 74 00 68 00 61 00 74 00 20 00 79 00 6f 00 75 00 72 00 20 00 70 00 72 00 69 00 6e 00   e   t h a t   y o u r   p r i n 
+00000530  00650074 00200072 00730069 00630020 006e006f 0065006e 00740063 00640065   74 00 65 00 72 00 20 00 69 00 73 00 20 00 63 00 6f 00 6e 00 6e 00 65 00 63 00 74 00 65 00 64 00   t e r   i s   c o n n e c t e d 
+00000540  00700020 006f0072 00650070 006c0072 00200079 006e0061 00200064 00730075   20 00 70 00 72 00 6f 00 70 00 65 00 72 00 6c 00 79 00 20 00 61 00 6e 00 64 00 20 00 75 00 73 00     p r o p e r l y   a n d   u s 
+00000550  00200065 006f0043 0074006e 006f0072 0020006c 00610050 0065006e 0020006c   65 00 20 00 43 00 6f 00 6e 00 74 00 72 00 6f 00 6c 00 20 00 50 00 61 00 6e 00 65 00 6c 00 20 00   e   C o n t r o l   P a n e l   
+00000560  006f0074 00760020 00720065 00660069 00200079 00680074 00740061 00740020   74 00 6f 00 20 00 76 00 65 00 72 00 69 00 66 00 79 00 20 00 74 00 68 00 61 00 74 00 20 00 74 00   t o   v e r i f y   t h a t   t 
+00000570  00650068 00700020 00690072 0074006e 00720065 00690020 00200073 006f0063   68 00 65 00 20 00 70 00 72 00 69 00 6e 00 74 00 65 00 72 00 20 00 69 00 73 00 20 00 63 00 6f 00   h e   p r i n t e r   i s   c o 
+00000580  0066006e 00670069 00720075 00640065 00700020 006f0072 00650070 006c0072   6e 00 66 00 69 00 67 00 75 00 72 00 65 00 64 00 20 00 70 00 72 00 6f 00 70 00 65 00 72 00 6c 00   n f i g u r e d   p r o p e r l 
+00000590  002e0079 00250000 000a0025 006f0059 00200075 006f0064 006e0020 0074006f   79 00 2e 00 00 00 25 00 25 00 0a 00 59 00 6f 00 75 00 20 00 64 00 6f 00 20 00 6e 00 6f 00 74 00   y .   % %   Y o u   d o   n o t 
+000005a0  00680020 00760061 00200065 00650070 006d0072 00730069 00690073 006e006f   20 00 68 00 61 00 76 00 65 00 20 00 70 00 65 00 72 00 6d 00 69 00 73 00 73 00 69 00 6f 00 6e 00     h a v e   p e r m i s s i o n 
+000005b0  00740020 0020006f 0070006f 006e0065 00740020 00690068 00200073 00690066   20 00 74 00 6f 00 20 00 6f 00 70 00 65 00 6e 00 20 00 74 00 68 00 69 00 73 00 20 00 66 00 69 00     t o   o p e n   t h i s   f i 
+000005c0  0065006c 0020002e 00530020 00650065 00740020 00650068 006f0020 006e0077   6c 00 65 00 2e 00 20 00 20 00 53 00 65 00 65 00 20 00 74 00 68 00 65 00 20 00 6f 00 77 00 6e 00   l e .     S e e   t h e   o w n 
+000005d0  00720065 006f0020 00200066 00680074 00200065 00690066 0065006c 006f0020   65 00 72 00 20 00 6f 00 66 00 20 00 74 00 68 00 65 00 20 00 66 00 69 00 6c 00 65 00 20 00 6f 00   e r   o f   t h e   f i l e   o 
+000005e0  00200072 006e0061 00610020 006d0064 006e0069 00730069 00720074 00740061   72 00 20 00 61 00 6e 00 20 00 61 00 64 00 6d 00 69 00 6e 00 69 00 73 00 74 00 72 00 61 00 74 00   r   a n   a d m i n i s t r a t 
+000005f0  0072006f 00740020 0020006f 0062006f 00610074 006e0069 00700020 00720065   6f 00 72 00 20 00 74 00 6f 00 20 00 6f 00 62 00 74 00 61 00 69 00 6e 00 20 00 70 00 65 00 72 00   o r   t o   o b t a i n   p e r 
+00000600  0069006d 00730073 006f0069 002e006e 00250000 000a0025 00540020 00690068   6d 00 69 00 73 00 73 00 69 00 6f 00 6e 00 2e 00 00 00 25 00 25 00 0a 00 20 00 54 00 68 00 69 00   m i s s i o n .   % %     T h i 
+00000610  00200073 00690066 0065006c 00630020 006e006f 00610074 006e0069 00200073   73 00 20 00 66 00 69 00 6c 00 65 00 20 00 63 00 6f 00 6e 00 74 00 61 00 69 00 6e 00 73 00 20 00   s   f i l e   c o n t a i n s   
+00000620  00680063 00720061 00630061 00650074 00730072 00690020 0020006e 006e0055   63 00 68 00 61 00 72 00 61 00 63 00 74 00 65 00 72 00 73 00 20 00 69 00 6e 00 20 00 55 00 6e 00   c h a r a c t e r s   i n   U n 
+00000630  00630069 0064006f 00200065 006f0066 006d0072 00740061 00770020 00690068   69 00 63 00 6f 00 64 00 65 00 20 00 66 00 6f 00 72 00 6d 00 61 00 74 00 20 00 77 00 68 00 69 00   i c o d e   f o r m a t   w h i 
+00000640  00680063 00770020 006c0069 0020006c 00650062 006c0020 0073006f 00200074   63 00 68 00 20 00 77 00 69 00 6c 00 6c 00 20 00 62 00 65 00 20 00 6c 00 6f 00 73 00 74 00 20 00   c h   w i l l   b e   l o s t   
+00000650  00660069 00790020 0075006f 00730020 00760061 00200065 00680074 00730069   69 00 66 00 20 00 79 00 6f 00 75 00 20 00 73 00 61 00 76 00 65 00 20 00 74 00 68 00 69 00 73 00   i f   y o u   s a v e   t h i s 
+00000660  00660020 006c0069 00200065 00730061 00610020 0020006e 004e0041 00490053   20 00 66 00 69 00 6c 00 65 00 20 00 61 00 73 00 20 00 61 00 6e 00 20 00 41 00 4e 00 53 00 49 00     f i l e   a s   a n   A N S I 
+00000670  00650020 0063006e 0064006f 00640065 00740020 00780065 00200074 00690066   20 00 65 00 6e 00 63 00 6f 00 64 00 65 00 64 00 20 00 74 00 65 00 78 00 74 00 20 00 66 00 69 00     e n c o d e d   t e x t   f i 
+00000680  0065006c 0020002e 006f0054 006b0020 00650065 00200070 00680074 00200065   6c 00 65 00 2e 00 20 00 54 00 6f 00 20 00 6b 00 65 00 65 00 70 00 20 00 74 00 68 00 65 00 20 00   l e .   T o   k e e p   t h e   
+00000690  006e0055 00630069 0064006f 00200065 006e0069 006f0066 006d0072 00740061   55 00 6e 00 69 00 63 00 6f 00 64 00 65 00 20 00 69 00 6e 00 66 00 6f 00 72 00 6d 00 61 00 74 00   U n i c o d e   i n f o r m a t 
+000006a0  006f0069 002c006e 00630020 0069006c 006b0063 00430020 006e0061 00650063   69 00 6f 00 6e 00 2c 00 20 00 63 00 6c 00 69 00 63 00 6b 00 20 00 43 00 61 00 6e 00 63 00 65 00   i o n ,   c l i c k   C a n c e 
+000006b0  0020006c 00650062 006f006c 00200077 006e0061 00200064 00680074 006e0065   6c 00 20 00 62 00 65 00 6c 00 6f 00 77 00 20 00 61 00 6e 00 64 00 20 00 74 00 68 00 65 00 6e 00   l   b e l o w   a n d   t h e n 
+000006c0  00730020 006c0065 00630065 00200074 006e006f 00200065 0066006f 00740020   20 00 73 00 65 00 6c 00 65 00 63 00 74 00 20 00 6f 00 6e 00 65 00 20 00 6f 00 66 00 20 00 74 00     s e l e c t   o n e   o f   t 
+000006d0  00650068 00550020 0069006e 006f0063 00650064 006f0020 00740070 006f0069   68 00 65 00 20 00 55 00 6e 00 69 00 63 00 6f 00 64 00 65 00 20 00 6f 00 70 00 74 00 69 00 6f 00   h e   U n i c o d e   o p t i o 
+000006e0  0073006e 00660020 006f0072 0020006d 00680074 00200065 006e0045 006f0063   6e 00 73 00 20 00 66 00 72 00 6f 00 6d 00 20 00 74 00 68 00 65 00 20 00 45 00 6e 00 63 00 6f 00   n s   f r o m   t h e   E n c o 
+000006f0  00690064 0067006e 00640020 006f0072 00200070 006f0064 006e0077 006c0020   64 00 69 00 6e 00 67 00 20 00 64 00 72 00 6f 00 70 00 20 00 64 00 6f 00 77 00 6e 00 20 00 6c 00   d i n g   d r o p   d o w n   l 
+00000700  00730069 002e0074 00430020 006e006f 00690074 0075006e 003f0065 00430000   69 00 73 00 74 00 2e 00 20 00 43 00 6f 00 6e 00 74 00 69 00 6e 00 75 00 65 00 3f 00 00 00 43 00   i s t .   C o n t i n u e ?   C 
+00000710  006d006f 006f006d 0020006e 00690044 006c0061 0067006f 00650020 00720072   6f 00 6d 00 6d 00 6f 00 6e 00 20 00 44 00 69 00 61 00 6c 00 6f 00 67 00 20 00 65 00 72 00 72 00   o m m o n   D i a l o g   e r r 
+00000720  0072006f 00280020 00780030 00300025 00780034 00000029 00610050 00650067   6f 00 72 00 20 00 28 00 30 00 78 00 25 00 30 00 34 00 78 00 29 00 00 00 50 00 61 00 67 00 65 00   o r   ( 0 x % 0 4 x )   P a g e 
+00000730  00740020 006f006f 00730020 0061006d 006c006c 00740020 0020006f 00720070   20 00 74 00 6f 00 6f 00 20 00 73 00 6d 00 61 00 6c 00 6c 00 20 00 74 00 6f 00 20 00 70 00 72 00     t o o   s m a l l   t o   p r 
+00000740  006e0069 00200074 006e006f 00200065 0069006c 0065006e 000a002e 00720054   69 00 6e 00 74 00 20 00 6f 00 6e 00 65 00 20 00 6c 00 69 00 6e 00 65 00 2e 00 0a 00 54 00 72 00   i n t   o n e   l i n e .   T r 
+00000750  00200079 00720070 006e0069 00690074 0067006e 00750020 00690073 0067006e   79 00 20 00 70 00 72 00 69 00 6e 00 74 00 69 00 6e 00 67 00 20 00 75 00 73 00 69 00 6e 00 67 00   y   p r i n t i n g   u s i n g 
+00000760  00730020 0061006d 006c006c 00720065 00660020 006e006f 002e0074 004e0000   20 00 73 00 6d 00 61 00 6c 00 6c 00 65 00 72 00 20 00 66 00 6f 00 6e 00 74 00 2e 00 00 00 4e 00     s m a l l e r   f o n t .   N 
+00000770  0074006f 00700065 00640061 002d0020 00470020 0074006f 0020006f 0069004c   6f 00 74 00 65 00 70 00 61 00 64 00 20 00 2d 00 20 00 47 00 6f 00 74 00 6f 00 20 00 4c 00 69 00   o t e p a d   -   G o t o   L i 
+00000780  0065006e 00540000 00650068 006c0020 006e0069 00200065 0075006e 0062006d   6e 00 65 00 00 00 54 00 68 00 65 00 20 00 6c 00 69 00 6e 00 65 00 20 00 6e 00 75 00 6d 00 62 00   n e   T h e   l i n e   n u m b 
+00000790  00720065 00690020 00200073 00650062 006f0079 0064006e 00740020 00650068   65 00 72 00 20 00 69 00 73 00 20 00 62 00 65 00 79 00 6f 00 6e 00 64 00 20 00 74 00 68 00 65 00   e r   i s   b e y o n d   t h e 
+000007a0  00740020 0074006f 006c0061 006e0020 006d0075 00650062 00200072 0066006f   20 00 74 00 6f 00 74 00 61 00 6c 00 20 00 6e 00 75 00 6d 00 62 00 65 00 72 00 20 00 6f 00 66 00     t o t a l   n u m b e r   o f 
+000007b0  006c0020 006e0069 00730065 00410000 0053004e 00000049 006e0055 00630069   20 00 6c 00 69 00 6e 00 65 00 73 00 00 00 41 00 4e 00 53 00 49 00 00 00 55 00 6e 00 69 00 63 00     l i n e s   A N S I   U n i c 
+000007c0  0064006f 00000065 006e0055 00630069 0064006f 00200065 00690062 00200067   6f 00 64 00 65 00 00 00 55 00 6e 00 69 00 63 00 6f 00 64 00 65 00 20 00 62 00 69 00 67 00 20 00   o d e   U n i c o d e   b i g   
+000007d0  006e0065 00690064 006e0061 00550000 00460054 0038002d 00500000 00670061   65 00 6e 00 64 00 69 00 61 00 6e 00 00 00 55 00 54 00 46 00 2d 00 38 00 00 00 50 00 61 00 67 00   e n d i a n   U T F - 8   P a g 
+000007e0  00200065 00640025 00260000 00000066 00610050 00650067 00260020 00000070   65 00 20 00 25 00 64 00 00 00 26 00 66 00 00 00 50 00 61 00 67 00 65 00 20 00 26 00 70 00 00 00   e   % d   & f   P a g e   & p   
+000007f0  00200020 004c0020 0020006e 00640025 0020002c 006f0043 0020006c 00640025   20 00 20 00 20 00 4c 00 6e 00 20 00 25 00 64 00 2c 00 20 00 43 00 6f 00 6c 00 20 00 25 00 64 00         L n   % d ,   C o l   % d 
+00000800  00200020 00200000 006f0043 0070006d 00650072 00730073 00640065 0000002c   20 00 20 00 00 00 20 00 43 00 6f 00 6d 00 70 00 72 00 65 00 73 00 73 00 65 00 64 00 2c 00 00 00           C o m p r e s s e d ,   
+00000810  00450020 0063006e 00790072 00740070 00640065 0000002c 00480020 00640069   20 00 45 00 6e 00 63 00 72 00 79 00 70 00 74 00 65 00 64 00 2c 00 00 00 20 00 48 00 69 00 64 00     E n c r y p t e d ,     H i d 
+00000820  00650064 002c006e 00200000 0066004f 006c0066 006e0069 002c0065 00200000   64 00 65 00 6e 00 2c 00 00 00 20 00 4f 00 66 00 66 00 6c 00 69 00 6e 00 65 00 2c 00 00 00 20 00   d e n ,     O f f l i n e ,     
+00000830  00650052 00640061 006e004f 0079006c 0000002c 00530020 00730079 00650074   52 00 65 00 61 00 64 00 4f 00 6e 00 6c 00 79 00 2c 00 00 00 20 00 53 00 79 00 73 00 74 00 65 00   R e a d O n l y ,     S y s t e 
+00000840  002c006d 00200000 00690046 0065006c 00660000 00700046 00740050 00640054   6d 00 2c 00 00 00 20 00 46 00 69 00 6c 00 65 00 00 00 66 00 46 00 70 00 50 00 74 00 54 00 64 00   m ,     F i l e   f F p P t T d 
+00000850  00630044 00720043 006c0052 0000004c 00450026 0063006e 0064006f 006e0069   44 00 63 00 43 00 72 00 52 00 6c 00 4c 00 00 00 26 00 45 00 6e 00 63 00 6f 00 64 00 69 00 6e 00   D c C r R l L   & E n c o d i n 
+00000860  003a0067 004e0000 0074006f 00700065 00640061 00770020 00730061 00720020   67 00 3a 00 00 00 4e 00 6f 00 74 00 65 00 70 00 61 00 64 00 20 00 77 00 61 00 73 00 20 00 72 00   g :   N o t e p a d   w a s   r 
+00000870  006e0075 0069006e 0067006e 00690020 0020006e 00200061 00720074 006e0061   75 00 6e 00 6e 00 69 00 6e 00 67 00 20 00 69 00 6e 00 20 00 61 00 20 00 74 00 72 00 61 00 6e 00   u n n i n g   i n   a   t r a n 
+00000880  00610073 00740063 006f0069 0020006e 00680077 00630069 00200068 00610068   73 00 61 00 63 00 74 00 69 00 6f 00 6e 00 20 00 77 00 68 00 69 00 63 00 68 00 20 00 68 00 61 00   s a c t i o n   w h i c h   h a 
+00000890  00200073 006f0063 0070006d 0065006c 00650074 002e0064 000a000a 006f0057   73 00 20 00 63 00 6f 00 6d 00 70 00 6c 00 65 00 74 00 65 00 64 00 2e 00 0a 00 0a 00 57 00 6f 00   s   c o m p l e t e d .     W o 
+000008a0  006c0075 00200064 006f0079 00200075 0069006c 0065006b 00740020 0020006f   75 00 6c 00 64 00 20 00 79 00 6f 00 75 00 20 00 6c 00 69 00 6b 00 65 00 20 00 74 00 6f 00 20 00   u l d   y o u   l i k e   t o   
+000008b0  00610073 00650076 00740020 00650068 00250020 00200025 00690066 0065006c   73 00 61 00 76 00 65 00 20 00 74 00 68 00 65 00 20 00 25 00 25 00 20 00 66 00 69 00 6c 00 65 00   s a v e   t h e   % %   f i l e 
+000008c0  006e0020 006e006f 0074002d 00610072 0073006e 00630061 00690074 006e006f   20 00 6e 00 6f 00 6e 00 2d 00 74 00 72 00 61 00 6e 00 73 00 61 00 63 00 74 00 69 00 6f 00 6e 00     n o n - t r a n s a c t i o n 
+000008d0  006c0061 0079006c 0000003f                                                61 00 6c 00 6c 00 79 00 3f 00 00 00                                                               a l l y ?   
+AssertSeqNo added 100 items, got back 100
+AssertSeqNo removed 1, got back 99
+AssertSeqNo removed same one, got back 99
+AssertSeqNo Cleared them all, got back 0
+AssertStackFrame added 100 items, got back 100
+AssertStackFrame removed 1, got back 99
+AssertStackFrame removed same one, got back 99
+AssertStackFrame Cleared them all, got back 0
+==>WastedMemory test MatchCnt = 17 # items = 25
+TestModuleFold
+ModFold USER32.dll!__ClientLoadLibrary + 109 bytes
+ModFold USER32.dll!__ClientLoadLibrary + 182 bytes
+ModFold USER32.dll!__fnDWORD + 73 bytes
+ModFold USER32.dll!__fnINLPCREATESTRUCT + 108 bytes
+ModFold USER32.dll!__fnINLPUAHINITMENU + 67 bytes
+ModFold USER32.dll!__fnINOUTLPUAHMEASUREMENUITEM + 67 bytes
+ModFold USER32.dll!__fnINOUTNCCALCSIZE + 79 bytes
+ModFold USER32.dll!CreateWindowExW + 55 bytes
+ModFold USER32.dll!DefWindowProcW + 280 bytes
+ModFold USER32.dll!DefWindowProcW + 371 bytes
+ModFold USER32.dll!DispatchClientMessage + 220 bytes
+ModFold USER32.dll!DispatchMessageW + 16 bytes
+ModFold USER32.dll!DrawTextExW + 30 bytes
+ModFold USER32.dll!LoadAcceleratorsW + 53 bytes
+==>ModFold USER32.dll!LoadStringW + 47 bytes
+ModFold USER32.dll!RealDefWindowProcW + 83 bytes
+ModFold USER32.dll!RealSystemParametersInfoW + 349 bytes
+ModFold USER32.dll!SendMessageW + 313 bytes
+ModFold USER32.dll!SetScrollInfo + 80 bytes
+ModFold USER32.dll!SystemParametersInfoW + 126 bytes
+ModFold ADVAPI32.dll
+ModFold bcryptPrimitives.dll
+ModFold combase.dll
+ModFold COMCTL32.dll
+ModFold COMDLG32.dll
+ModFold CRYPTBASE.dll
+ModFold dwmapi.dll
+ModFold GDI32.dll
+ModFold IMM32.DLL
+ModFold KERNEL32.DLL
+ModFold KERNELBASE.dll
+==>ModFold MemSpectDll.dll
+ModFold MSCTF.dll
+==>ModFold MSVCR120.dll
+==>ModFold msvcrt.dll
+ModFold notepad.exe
+ModFold ntdll.dll
+ModFold ntmarta.dll
+==>ModFold OLEAUT32.dll
+ModFold RPCRT4.dll
+ModFold SHCORE.DLL
+ModFold SHELL32.dll
+ModFold USER32.dll
+ModFold uxtheme.dll
+ModFold WINSPOOL.DRV
+WorkingSet 
+==>Test end NotePadAddrDump 4/26/2017 12:13:18 PM #Secs = 8.55
+==># of asserts = 570
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\NotepadAddrDump.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-04-26 11_58_52\NotepadAddrDump.txt"

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{36FCD190-732E-4BF1-92E1-D56C8BB7E137}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>MemSpect.Test</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <ReferencePath>$(DevEnvDir)PublicAssemblies\</ReferencePath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MemSpect.Test.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MemSpect.Test.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\MemSpectBase\MemSpectKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TraceEvent">
+      <HintPath>..\MemSpectBase\TraceEvent.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArenaTests.vb" />
+    <Compile Include="ImageTests.vb" />
+    <Compile Include="ImmersiveTests.vb" />
+    <Compile Include="KnownIssuesTests.vb" />
+    <Compile Include="LeakTests.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="OptTests.vb" />
+    <Compile Include="Tests.vb" />
+    <Compile Include="TestSnapCompare.vb" />
+    <Compile Include="TstUtil.vb" />
+    <Compile Include="ZipTests.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FastSerialization\FastSerialization.csproj">
+      <Project>{CF7AB714-6FD6-4330-B96B-AF14345299A0}</Project>
+      <Name>FastSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MemSpectBase\MemSpectBase.vbproj">
+      <Project>{E70640B8-F084-4C89-A5F7-9B9551C6FF42}</Project>
+      <Name>MemSpectBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VSAssertSrv\VSAssertSrv.vbproj">
+      <Project>{4A99C9AB-AD18-4926-95F7-8B7DF488853F}</Project>
+      <Name>VSAssertSrv</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\IBCMerge.exe">
+      <Link>IBCMerge.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\VSAssertSrv\CodeMarkerGuidLookup.txt">
+      <Link>CodeMarkerGuidLookup.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Baselines\ArenaConcurDict.txt" />
+    <Content Include="Baselines\ArenaCustomMarker.txt" />
+    <Content Include="Baselines\ArenaInject.txt" />
+    <Content Include="Baselines\ArenaLongMember.txt" />
+    <Content Include="Baselines\ArenaLotsFree.txt" />
+    <Content Include="Baselines\ArenaOffline.txt" />
+    <Content Include="Baselines\ArenaTest.txt" />
+    <Content Include="Baselines\ArenaTrackingMode.txt" />
+    <Content Include="Baselines\AttachExistProcess.txt" />
+    <Content Include="Baselines\CompileVerb.txt" />
+    <Content Include="Baselines\LeakMultiple.txt" />
+    <Content Include="Baselines\Life.txt" />
+    <Content Include="Baselines\LifeClasses.txt" />
+    <Content Include="Baselines\LifeCmdLineSnap.txt" />
+    <Content Include="Baselines\LifeDynStackSym.txt" />
+    <Content Include="Baselines\LifeFilter.txt" />
+    <Content Include="Baselines\LifeGCRoot.txt" />
+    <Content Include="Baselines\LifeImages.txt" />
+    <Content Include="Baselines\LifeImagesOffLine.txt" />
+    <Content Include="Baselines\LifeObjRefs.txt" />
+    <Content Include="Baselines\LifeObjSubSum.txt" />
+    <Content Include="Baselines\LifeOffline.txt" />
+    <Content Include="Baselines\LifeOffMSWin.txt" />
+    <Content Include="Baselines\LifePerfViewExport.txt" />
+    <Content Include="Baselines\LifeSelf.txt" />
+    <Content Include="Baselines\LifeSnap.txt" />
+    <Content Include="Baselines\LifeStackStore.txt" />
+    <Content Include="Baselines\LifeVMFiles.txt" />
+    <Content Include="Baselines\LifeWriteMem.txt" />
+    <Content Include="Baselines\MiniDumpCreateMD.txt" />
+    <Content Include="Baselines\MiniDumpMemDict.txt" />
+    <Content Include="Baselines\MiniDumpSolo.txt" />
+    <Content Include="Baselines\MiniDumpStreams.txt" />
+    <Content Include="Baselines\MinidumpSystemInfo.txt" />
+    <Content Include="Baselines\MiniDumpVirt.txt" />
+    <Content Include="Baselines\MiniDumpVM.txt" />
+    <Content Include="Baselines\Notepad.txt" />
+    <Content Include="Baselines\NotepadAddrDump.txt" />
+    <Content Include="Baselines\NotePadCmdLineArgs.txt" />
+    <Content Include="Baselines\NotePadConnect.txt" />
+    <Content Include="Baselines\NotePadEatMem.txt" />
+    <Content Include="Baselines\NotepadHeapRef.txt" />
+    <Content Include="Baselines\NotepadMultiThreadConnect.txt" />
+    <Content Include="Baselines\NotepadOffline.txt" />
+    <Content Include="Baselines\NotepadOfflineInteract.txt" />
+    <Content Include="Baselines\NotepadUI.txt" />
+    <Content Include="Baselines\NPadGDI.txt" />
+    <Content Include="Baselines\NPadOffWhenDist.txt" />
+    <Content Include="Baselines\SymbolLoading.txt" />
+    <Content Include="Baselines\TestMemLayout.txt" />
+    <Content Include="Baselines\TestOptFolder.txt" />
+    <Content Include="Baselines\VS.txt" />
+    <Content Include="Baselines\VSCodeMarker.txt" />
+    <Content Include="Baselines\VSCodeMarkerOffline.txt" />
+    <Content Include="Baselines\VSConcurrentDict.txt" />
+    <Content Include="Baselines\VSGenerics.txt" />
+    <Content Include="Baselines\VSGhost.txt" />
+    <Content Include="Baselines\VSMarkerEvents.txt" />
+    <Content Include="Baselines\VSStartStop.txt" />
+    <Content Include="Baselines\VSTrackClrObj.txt" />
+    <Content Include="csLife.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

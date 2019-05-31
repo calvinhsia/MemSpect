@@ -1,0 +1,586 @@
+==>Test start 1/6/2017 4:07:05 PM VSGenerics
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Loaded vs snap
+# AssemblyListCatalog = 55
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>(Count=1) GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.buckets   I4[](Count=3)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.entries   System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>+ValueType[](Count=3)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.comparer   System.OrdinalComparer(System.Collections.Generic.IEqualityComparer`1<arg # 0 a>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.keys   KeyCollection<arg # 0 13, Void> 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.values   ValueCollection<arg # 0 13, Void> 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.m_siInfo   System.Runtime.Serialization.SerializationInfo 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.count   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.version   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.freeList   I4 0x00000000
+  44 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._isDisposed   CMOD_REQD 0x00
+   6 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._isLoadedFromCache   Boolean 0x01
+   7 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._forceUpdateCache   Boolean 0x00
+   8 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._innerCatalog   System.ComponentModel.Composition.Hosting.AggregateCatalog 0x00000000
+  12 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._assemblyCatalogs   System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>(Count=48)(System.Collections.Generic.Dictionary`2<String, System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>) 0x00000000
+  16 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._assemblyPaths   System.Linq.Enumerable<System.String>.<ConcatIterator>d__71`1<System.String>(System.Collections.Generic.IEnumerable`1<String>) 0x00000000
+  20 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._reader   Microsoft.VisualStudio.ExtensibilityHosting.CacheReader 0x00000000
+  24 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._cacheAssemblyCatalogTokens   System.Collections.Generic.Dictionary`2<System.String,System.Int32>(Count=48)(System.Collections.Generic.IDictionary`2<String, I4>) 0x00000000
+  28 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._catalogAssembliesData   System.Collections.Generic.List`1<System.Tuple`2<System.String,System.Int64>>(Count=48)(System.Collections.Generic.IList`1<System.Tuple`2<String, I8>>) 0x00000000
+  32 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._notCatalogAssembliesData   System.Collections.Generic.List`1<System.Tuple`2<System.String,System.Int64>>(Count=0)(System.Collections.Generic.IList`1<System.Tuple`2<String, I8>>) 0x00000000
+  36 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._syncObject   System.Object(Object System.Object) 0x00000000
+  40 Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>(Count=48) GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.buckets   I4[](Count=89)(Array) 0x00000000
+   8 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.entries   System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>+ValueType[](Count=89)(Array) 0x00000000
+  12 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.comparer   System.OrdinalComparer(System.Collections.Generic.IEqualityComparer`1<arg # 0 a>) 0x00000000
+  16 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.keys   System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.KeyCollection<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>(KeyCollection<arg # 0 13, Void>) 0x00000000
+  20 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.values   System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.ValueCollection<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>(ValueCollection<arg # 0 13, Void>) 0x00000000
+  24 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>._syncRoot   Object 0x00000000
+  28 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.m_siInfo   System.Runtime.Serialization.SerializationInfo 0x00000000
+  32 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.count   I4 0x00000000
+  36 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.version   I4 0x00000000
+  40 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.freeList   I4 0x00000000
+  44 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.freeCount   I4 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.KeyCollection<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog> GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.KeyCollection<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.dictionary   System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>(Count=48)(System.Collections.Generic.Dictionary`2<arg # 0 13, Void>) 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Components\Microsoft.VisualStudio.TeamArchitect.Components.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Historical Debugger\10.0\HistoricalDebuggerMargin.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Historical Search\10.0\Microsoft.VisualStudio.HistoricalSearchMargin.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Modeling\10.0\Microsoft.VisualStudio.Modeling.Components.10.0.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Performance Tools\Microsoft.VisualStudio.PerformanceTools.EditorIntegration.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\Extensions\BDC\Microsoft.VisualStudio.SharePoint.ProjectExtensions.Bdc.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\Extensions\Explorer\Microsoft.VisualStudio.SharePoint.Explorer.Extensions.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\Extensions\Project\Microsoft.VisualStudio.SharePoint.ProjectExtensions.VSPackage.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\DataDesign\Microsoft.VisualStudio.DataDesign.DataSourceProviders.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\DataDesign\Microsoft.VisualStudio.DataDesign.DataObjectGenerators.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\DataDesign\Microsoft.VisualStudio.DataDesign.WpfComponents.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\DataDesign\Microsoft.Data.Entity.Design.DataSourceWizardExtension.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\CodeAnalysis\Microsoft.VisualStudio.CodeAnalysis.VCPlugin.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\CS\NavigateTo\10.0\Microsoft.VisualStudio.CSharp.Services.Language.Features.QuickSearch.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\CS\SmartTags\10.0\Microsoft.VisualStudio.CSharp.SmartTags.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Editor.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.RuntimeAssembly(System.Reflection.Assembly) 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Editor.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.CoreUtility.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Language.Intellisense.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Language.StandardClassification.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.RuntimeAssembly(System.Reflection.Assembly) 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Platform.VSEditor.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Text.Data.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Text.Logic.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Text.UI.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Editor\Microsoft.VisualStudio.Text.UI.Wpf.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\ExceptionAssistant\SmartTags\10.0\Microsoft.VSDesigner.ExceptionAssistant.SmartTag.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Language\CallHierarchy\10.0\Microsoft.VisualStudio.Language.CallHierarchy.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Language\GenerateType\10.0\Microsoft.VisualStudio.Language.GenerateType.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.Project.Contracts.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.Project.Contracts.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.Project.Framework.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.Project.Framework.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.Project.Utilities.v10.0.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.Project.VS.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Project\Microsoft.VisualStudio.HpcDebugger.Impl.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\TemplateProviders\Microsoft.VisualStudio.TemplateProviders.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\VB\LanguageService\10.0\Microsoft.VisualBasic.Editor.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>+ValueType[](Count=89) GCGen=2 GCMoved=X GCSurvived=X
+     System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>+ValueType[] (no members)
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\VB\LanguageService\10.0\Microsoft.VisualStudio.VisualBasic.LanguageService.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\VB\NavigateTo\10.0\Microsoft.VisualStudio.VisualBasic.QuickSearch.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\VC\Editor\10.0\Microsoft.VisualC.Editor.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\VC\NavigateTo\10.0\Microsoft.VisualC.QuickSearch.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Web\CSS\Microsoft.VisualStudio.Web.CSS.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Web\Exports\Microsoft.VisualStudio.Web.Exports.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Microsoft\Web\HTML\Microsoft.VisualStudio.Web.HTML.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Platform\Debugger\VsDebugPresentationPackage.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Platform\NavigateTo\10.0\Microsoft.VisualStudio.Language.NavigateTo.Implementation.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.ComponentModel.Composition.Primitives.ComposablePartCatalog._isDisposed   Boolean 0x00000000
+   5 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCached   Boolean 0x01
+   6 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isCatalogBroken   Boolean 0x00
+   8 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._innerCatalog   Microsoft.VisualStudio.ExtensibilityHosting.CacheCatalog(System.ComponentModel.Composition.Primitives.ComposablePartCatalog) 0x00000000
+  12 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._cacheCatalogMetadata   System.Collections.Generic.Dictionary`2<System.String,System.Object>(Count=1)(System.Collections.Generic.IDictionary`2<String, Object>) 0x00000000
+  16 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._assemblyFromCache   System.Reflection.Assembly 0x00000000
+  20 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._host   Microsoft.VisualStudio.CommonIDE.ExtensibilityHosting.VsShellComponentModelHost(Microsoft.VisualStudio.ExtensibilityHosting.VsComponentModelHostBase) 0x00000000
+  24 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._codeBase   System.String C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\CommonExtensions\Platform\NavigateTo\FileProvider\10.0\Microsoft.VisualStudio.Language.QuickSearch.FileNameProvider.dll 0x00000000
+  28 System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog._isDisposed   CMOD_REQD 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.ValueCollection<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog> GCGen=2 GCMoved=X GCSurvived=X
+     System.Object (no members)
+   4 System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.ValueCollection<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>.dictionary   System.Collections.Generic.Dictionary`2<System.String,System.ComponentModel.Composition.Hosting.CachedAssemblyCatalog>(Count=48)(System.Collections.Generic.Dictionary`2<arg # 0 13, Void>) 0x00000000
+ ClassId = 0x00000000 System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>+ValueType[](Count=3) GCGen=2 GCMoved=X GCSurvived=X
+     System.Collections.Generic.Dictionary`2<System.String,Microsoft.VisualStudio.ExtensibilityHosting.AssemblyListCatalog>+ValueType[] (no members)
+==>Test end VSGenerics 1/6/2017 4:07:40 PM #Secs = 35.35
+==># of asserts = 583
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\VSGenerics.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-01-06 16_05_54\VSGenerics.txt"

@@ -1,0 +1,122 @@
+==>Test start 8/19/2015 5:35:06 PM LifeStackStore
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[05:35:07.351 P] MemSpect API connecting Wednesday, August 19, 2015 5:35:07 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 5024 
+==>[05:35:07.351 P] Target CmdLine(Addr=00ba2c60)=C:\MemSpect\test\cslife.exe
+==>[05:35:07.351 P] TotVM=000000007ffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[05:35:07.351 P] PID=10000 'cslife.exe' FileVer='1.0.0.0' ProdVer='1.0.0.0'
+==>[05:35:07.351 P] Using mapped files for stack storage (StackStorageMode=1)
+==>[05:35:07.351 P] MemSpect DLL Version = 150604  
+==>[05:35:07.351 P] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\MemSpect.ini
+==>[05:35:07.351 P] CleanUpRCWs = 1
+==>[05:35:07.351 P]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 150604
+==>Freezing target. SeqNo = 16079
+==>[05:35:08.430 P] Freeze Target SeqNo= 16,520
+==>[05:35:08.430 P] NFileM 1 Compact0 Offset 1,200,196 CurAlloc937,816 MemSize268,435,456 nMapVws 788 FreeSize262,380
+==>Ini file = C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\MemSpect.ini
+Taking offline snap 1
+==>[05:35:09.148 P] Start creating MegaSnapshot C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1 this could take ->10 mins
+==>[05:35:09.148 P]  MaxSeqNo= 16,520
+==>[05:35:09.148 P]  -Writing minidump C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1\minidump.dmp Tid=4164
+==>[05:35:10.789 P]  --done writing Minidump C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1\minidump.dmp Tid=4164
+==>[05:35:11.195 P]  -Processing heaps.... Tid=4164
+==>[05:35:11.258 P]  -Writing __MemSpect027c0000.mhd
+==>[05:35:11.648 P]  -Writing __Process Heap00ba0000.mhd
+==>[05:35:11.742 P]  -Writing _clr.dll!DebuggerHeapInit+39bytes026e0000.mhd
+==>[05:35:11.758 P]  -Writing _clr.dll!DebuggerHeapInit+39bytes028d0000.mhd
+==>[05:35:11.773 P]  -Writing _comctl32.dll!_heap_init+27bytes050f0000.mhd
+==>[05:35:11.789 P]  -Writing _mscoreei.dll!GetProcessExecutableHeap+24bytes04f50000.mhd
+==>[05:35:11.805 P]  -Writing ~MSCOREE.DLL!_calloc_impl+194bytes00670000.mhd
+==>[05:35:11.836 P]  -Writing ~msvcrt.dll!malloc+144bytes008f0000.mhd
+==>[05:35:11.851 P]  -Writing ~ntdll.dll!RtlCreateHeap+1569bytes04ca0000.mhd
+==>[05:35:11.867 P]  -Writing ~ntdll.dll!RtlCreateHeap+1569bytes04e30000.mhd
+==>[05:35:11.898 P]  -Collecting CLR Class Info 
+==>[05:35:12.539 P]  -Writing ClrClassInfo.mhd
+==>[05:35:12.555 P]  -Writing Filter.mhd
+==>[05:35:12.586 P]  -Writing WorkingSetInfo.mhd
+==>[05:35:12.914 P] Getting CLR Obj Dump
+==>[05:35:13.008 P] Done gettng CLR Obj Dump
+==>[05:35:13.023 P]  -Writing CLRObjRefs.mhd
+==>[05:35:13.180 P]  -Resolving 4801 Symbols
+==>[05:35:14.070 P]  -2500 syms to resolve (759ba571=d:\9147\windows\core\ntuser\client\clinit.c(1883) : USER32.dll!DispatchLocalAlloc + 17 bytes)
+==>[05:35:14.570 P]  -0 syms to resolve (f437a33d=mscorlib.dll!System.Reflection.PropertyInfo.GetValue)
+==>[05:35:14.586 P]  -Writing StackFrameDictionary.mhd
+==>[05:35:14.602 P]  -Calculating Heap Report
+==>[05:35:14.633 P]  -Writing HeapReport.mhd
+==>[05:35:14.695 P] Clearing CLR Obj Dump
+==>[05:35:17.539 P] Done creating MegaSnapshot in 00:00:08.40 C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1
+==>Done offline snap. folder =C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1
+==>[05:35:17.555 P] UnFreeze Target Seqno= 16,525
+==>Loading offline snap C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1
+==>[05:35:18.133 P] MemSpect API connecting Wednesday, August 19, 2015 5:35:18 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 5024 
+==>[05:35:18.148 P] Opening zip package C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1
+==>[05:35:18.148 P] Loading __MemSpect027c0000.mhd
+==>[05:35:18.180 P] Loading __Process Heap00ba0000.mhd
+==>[05:35:18.195 P] Loading _clr.dll!DebuggerHeapInit+39bytes026e0000.mhd
+==>[05:35:18.195 P] Loading _clr.dll!DebuggerHeapInit+39bytes028d0000.mhd
+==>[05:35:18.195 P] Loading _comctl32.dll!_heap_init+27bytes050f0000.mhd
+==>[05:35:18.195 P] Loading _mscoreei.dll!GetProcessExecutableHeap+24bytes04f50000.mhd
+==>[05:35:18.195 P] Loading ~MSCOREE.DLL!_calloc_impl+194bytes00670000.mhd
+==>[05:35:18.195 P] Loading ~msvcrt.dll!malloc+144bytes008f0000.mhd
+==>[05:35:18.195 P] Loading ~ntdll.dll!RtlCreateHeap+1569bytes04ca0000.mhd
+==>[05:35:18.195 P] Loading ~ntdll.dll!RtlCreateHeap+1569bytes04e30000.mhd
+==>[05:35:18.195 P] Loading ClrClassInfo.mhd
+==>[05:35:18.211 P] Loading Filter.mhd
+==>[05:35:18.211 P] Loading WorkingSetInfo.mhd
+==>[05:35:18.273 P] Loading CLRObjRefs.mhd
+==>[05:35:18.289 P] Loading StackFrameDictionary.mhd
+==>[05:35:18.321 P] Loading C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\Out\SnapStackStore1\HeapReport.mhd
+==>[05:35:18.321 P] # stacks loaded = 6,259
+==>[05:35:18.321 P] Snap Loaded (ClrObjref Load pending) in  00:00:00.18
+==>[05:35:18.321 P] Starting CLRObjRefData load in background
+==>[05:35:18.321 P] waiting for ClrObjRefData Loaded
+==>[05:35:18.367 P] Closing Zip Package
+==>[05:35:18.367 P] --Done Background loading CLRObjRefData
+==>[05:35:18.367 P] --done waiting for ClrObjRefData
+Offline snap loaded
+Life.Form1
+Form1 stack:
+d:\memspect\ MemSpect
+cslife.exe!Life.Form1.Main
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+==>
+Now individual stack frames
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\vm\eetoprofinterfaceimpl.cpp(5579) : clr.dll!EEToProfInterfaceImpl::ObjectAllocated + 87 bytes
+f:\dd\ndp\clr\src\vm\proftoeeinterfaceimpl.cpp(642) : clr.dll!ProfilerObjectAllocatedCallback + 141 bytes
+f:\dd\ndp\clr\src\vm\gcscan.cpp(1853) : clr.dll!AllocateObject + 265 bytes
+f:\dd\ndp\clr\src\vm\jithelpers.cpp(2844) : clr.dll!JIT_New + 107 bytes
+cslife.exe!Life.Form1.Main
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(95) : clr.dll!CallDescrWorkerWithHandler + 107 bytes
+f:\dd\ndp\clr\src\vm\callhelpers.cpp(600) : clr.dll!MethodDescCallSite::CallTargetWorker + 338 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2526) : clr.dll!RunMain + 426 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(2639) : clr.dll!Assembly::ExecuteMainMethod + 292 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3770) : clr.dll!SystemDomain::ExecuteMainMethod + 1596 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(3031) : clr.dll!ExecuteEXE + 76 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2862) : clr.dll!_CorExeMainInternal + 220 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2794) : clr.dll!_CorExeMain + 77 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(6444) : mscoreei.dll!_CorExeMain + 266 bytes
+d:\wbrtm\com\netfx\windowsbuilt\shell_shim\v2api.cpp(1222) : MSCOREE.DLL!_CorExeMain_Exported + 140 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.dll!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>[05:35:18.367 P] Clearing CLR Obj Dump
+==>Test end LifeStackStore 8/19/2015 5:35:18 PM #Secs = 12.38
+==># of asserts = 49
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\LifeStackStore.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2015-08-19 17_34_18\LifeStackStore.txt"

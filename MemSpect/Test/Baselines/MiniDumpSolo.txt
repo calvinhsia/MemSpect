@@ -1,0 +1,33 @@
+==>Test start 5/10/2011 5:18:50 PM MiniDumpSolo
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Could not init comm Minidumpfile=D:\MemSpect\Dumps\MemoryDumpfromOomCrash.dmp 
+MemSpect.exe is the UI part of the MemSpect tool http://calvinh6/MemSpect
+If 1st param is "/"
+    "m" means the 2nd param is the path to a Minidump (like a Watson dump)
+            Example: MemSpect /m mydump.dmp
+            if 2nd param is omitted, will OpenFileDialog
+    "o" means the 2nd param is the path to a MegaSnapshot offline dump. 
+            Example: MemSpect /o MemSpectDump0
+        if 2nd param is omitted, will BrowseforFolder
+
+    "p" means browse for process to which to attach (it must have been started with the memspect env vars)
+
+    "c" means create an offline snapshot using a process id and output folder
+            Example: MemSpect /c 1234 c:\OfflineSnapshot
+        Parameters can be specified in any order or skipped.  Any skipped parameters will display UI to obtain them.
+
+
+Else
+    1st param is the integer PID of the process that was started under Memspect
+End If 
+
+
+
+Minidump read d:\memspect\dumps\memorydumpfromoomcrash.dmp
+MemSpect  exception: 
+MapViewOfFile failed 00000000  00010000
+   at MemSpect.MiniDumpReader.MapStream(MINIDUMP_LOCATION_DESCRIPTOR loc) in D:\MemSpect\VSAssertSrv\MiniDump.vb:line 128
+   at MemSpect.MiniDumpReader.ReadStreamType(MINIDUMP_STREAM_TYPE dumptype) in D:\MemSpect\VSAssertSrv\MiniDump.vb:line 89
+   at Test.MiniDump.MiniDumpSolo() in D:\MemSpect\Test\Tests.vb:line 2353
+==>Test end 5/10/2011 5:18:50 PM MiniDumpSolo
+==># of asserts = 5

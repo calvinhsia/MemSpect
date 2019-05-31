@@ -1,0 +1,273 @@
+==>Test start 3/13/2017 10:19:59 AM NotePadConnect
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>Starting Notepad
+==>MemSpect vers = 161109
+Disconnecting Notepad 
+Reconnecting to Notepad via PID
+==>Freezing target. SeqNo = 1077
+==>
+VMMappedFile=C:\Windows\Fonts\StaticCache.dat AllocationProt=PAGE_READONLY State=MEM_COMMIT Type=MEM_MAPPED
+VMMappedFile=C:\Windows\Globalization\Sorting\SortDefault.nls AllocationProt=PAGE_READONLY State=MEM_COMMIT Type=MEM_MAPPED
+VMMappedFile=C:\Windows\SYSTEM32\ADVAPI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ADVAPI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ADVAPI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ADVAPI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ADVAPI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ADVAPI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ADVAPI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\bcryptPrimitives.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\bcryptPrimitives.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\bcryptPrimitives.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\bcryptPrimitives.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\combase.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\combase.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\combase.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\combase.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\combase.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\COMDLG32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\COMDLG32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\COMDLG32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\COMDLG32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\COMDLG32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\CRYPTBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\CRYPTBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\CRYPTBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\CRYPTBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\dbghelp.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\dbghelp.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\dbghelp.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\dbghelp.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\dbghelp.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\dbghelp.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\dbghelp.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\dwmapi.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\dwmapi.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\dwmapi.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\dwmapi.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\GDI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\GDI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\GDI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\GDI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\GDI32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\IMM32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\IMM32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\IMM32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\IMM32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\kernel.appcore.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\kernel.appcore.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\kernel.appcore.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\kernel.appcore.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNEL32.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_RESERVE Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNELBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNELBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNELBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNELBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\KERNELBASE.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\System32\locale.nls AllocationProt=PAGE_READONLY State=MEM_COMMIT Type=MEM_MAPPED
+VMMappedFile=C:\Windows\SYSTEM32\MSCTF.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSCTF.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSCTF.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSCTF.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSCTF.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSCTF.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSCTF.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\MSVCR120.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\msvcrt.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\msvcrt.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\msvcrt.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\msvcrt.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\msvcrt.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\msvcrt.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\msvcrt.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ntdll.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ntdll.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ntdll.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ntdll.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ole32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ole32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ole32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ole32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\ole32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\OLEAUT32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\OLEAUT32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\OLEAUT32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\OLEAUT32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\RPCRT4.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\RPCRT4.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\RPCRT4.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\RPCRT4.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\sechost.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\sechost.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\sechost.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\sechost.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\sechost.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHCORE.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHCORE.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHCORE.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHCORE.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHCORE.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHCORE.DLL AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHELL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHELL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHELL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHELL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHELL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHELL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHELL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHLWAPI.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHLWAPI.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHLWAPI.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SHLWAPI.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SspiCli.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SspiCli.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SspiCli.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\SspiCli.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\USER32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\USER32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\USER32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\USER32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\USER32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\uxtheme.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\uxtheme.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\uxtheme.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\uxtheme.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\system32\uxtheme.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\WINSPOOL.DRV AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\WINSPOOL.DRV AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\WINSPOOL.DRV AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\SYSTEM32\WINSPOOL.DRV AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\syswow64\notepad.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\syswow64\notepad.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\syswow64\notepad.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\syswow64\notepad.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\syswow64\notepad.exe AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0\COMCTL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0\COMCTL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0\COMCTL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0\COMCTL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+VMMappedFile=C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0\COMCTL32.dll AllocationProt=PAGE_EXECUTE_WRITECOPY State=MEM_COMMIT Type=MEM_IMAGE
+==>
+Taking offline snap
+==>Done offline snap. folder =C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-13 10_19_50\Out\SnapNotepadConnect
+==>Loading offline snap C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-13 10_19_50\Out\SnapNotepadConnect
+==>DoSpotCheckHeaps
+==>
+==>BMem HeapWalkMap
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+d:\9147.public.fre\internal\shell\inc\shellcoreevents.h(6421) : dwmapi.dll!McGenEventRegister + 31 bytes
+d:\9147\windows\dwm\dwmapi\dllmain.cpp(40) : dwmapi.dll!DllMain + 58 bytes
+d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(630) : dwmapi.dll!__DllMainCRTStartup + 263 bytes
+d:\9147\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 47 bytes
+d:\blue\minkernel\ntdll\i386\ldrthunk.asm(90) : ntdll.dll!LdrxCallInitRoutine + 22 bytes
+d:\blue\minkernel\ntdll\ldr.c(214) : ntdll.dll!LdrpCallInitRoutine + 67 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(1243) : ntdll.dll!LdrpInitializeNode + 285 bytes
+d:\blue\minkernel\ntdll\ldrddag.c(1754) : ntdll.dll!LdrpInitializeGraph + 89 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(2294) : ntdll.dll!LdrpPrepareModuleForExecution + 289 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(518) : ntdll.dll!LdrpGetDelayloadExportDll + 209 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(833) : ntdll.dll!LdrpHandleProtectedDelayload + 48 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(1094) : ntdll.dll!LdrResolveDelayLoadedAPI + 147 bytes
+d:\9147\minkernel\dload\helper\current\dloadhelper.c(71) : uxtheme.dll!__delayLoadHelper2 + 34 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2071) : uxtheme.dll!CThemeWnd::_AttachInstance + 115 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2005) : uxtheme.dll!CThemeWnd::Attach + 506 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1054) : uxtheme.dll!_ThemeDefWindowProc + 1941 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1114) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(692) : USER32.dll!DefWindowProcW + 371 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 135 bytes
+d:\blue\windows\core\ntuser\client\i386\callproc.asm(116) : USER32.dll!_InternalCallWinProc + 43 bytes
+d:\blue\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 398 bytes
+d:\blue\windows\core\ntuser\client\client.c(3314) : USER32.dll!DispatchClientMessage + 220 bytes
+d:\blue\windows\core\ntuser\inc\ntcb.h(2183) : USER32.dll!__fnINOUTNCCALCSIZE + 79 bytes
+d:\blue\minkernel\ntos\rtl\i386\userdisp.asm(516) : ntdll.dll!KiUserCallbackDispatcher + 54 bytes
+d:\blue\windows\core\ntuser\client\ntstubs.c(1795) : USER32.dll!CreateWindowInternal + 380 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(66) : USER32.dll!CreateWindowExW + 55 bytes
+d:\blue\shell\osshell\accesory\notepad\npinit.c(828) : notepad.exe!NPInit + 305 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1543) : notepad.exe!WinMain + 82 bytes
+d:\blue\minkernel\crts\crtw32\dllstuff\crtexe.c(685) : notepad.exe!__mainCRTStartup + 322 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Process Heap
+Call Stack:
+d:\memspect\ MemSpect
+d:\blue\minkernel\etw\ntdll\evntsup.c(467) : ntdll.dll!EtwpAllocateRegistration + 92 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(753) : ntdll.dll!EtwNotificationRegister + 53 bytes
+d:\blue\minkernel\etw\ntdll\evntapi.c(687) : ntdll.dll!EtwEventRegister + 32 bytes
+d:\9147.public.fre\internal\shell\inc\shellcoreevents.h(6421) : dwmapi.dll!McGenEventRegister + 31 bytes
+d:\9147\windows\dwm\dwmapi\dllmain.cpp(49) : dwmapi.dll!DllMain + 100 bytes
+d:\9147\minkernel\crts\crtw32\dllstuff\crtdll.c(630) : dwmapi.dll!__DllMainCRTStartup + 263 bytes
+d:\9147\windows\dwm\shared\util\dllutil\dllmain.cxx(52) : dwmapi.dll!_DllMainStartup + 47 bytes
+d:\blue\minkernel\ntdll\i386\ldrthunk.asm(90) : ntdll.dll!LdrxCallInitRoutine + 22 bytes
+d:\blue\minkernel\ntdll\ldr.c(214) : ntdll.dll!LdrpCallInitRoutine + 67 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(1243) : ntdll.dll!LdrpInitializeNode + 285 bytes
+d:\blue\minkernel\ntdll\ldrddag.c(1754) : ntdll.dll!LdrpInitializeGraph + 89 bytes
+d:\blue\minkernel\ntdll\ldrsnap.c(2294) : ntdll.dll!LdrpPrepareModuleForExecution + 289 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(518) : ntdll.dll!LdrpGetDelayloadExportDll + 209 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(833) : ntdll.dll!LdrpHandleProtectedDelayload + 48 bytes
+d:\blue\minkernel\ntdll\ldrdload.c(1094) : ntdll.dll!LdrResolveDelayLoadedAPI + 147 bytes
+d:\9147\minkernel\dload\helper\current\dloadhelper.c(71) : uxtheme.dll!__delayLoadHelper2 + 34 bytes
+uxtheme.dll!_tailMerge_dwmapi_dll + 13 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2071) : uxtheme.dll!CThemeWnd::_AttachInstance + 115 bytes
+d:\9147\shell\themes\uxtheme\nctheme.cpp(2005) : uxtheme.dll!CThemeWnd::Attach + 506 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1054) : uxtheme.dll!_ThemeDefWindowProc + 1941 bytes
+d:\9147\shell\themes\uxtheme\sethook.cpp(1114) : uxtheme.dll!ThemeDefWindowProcW + 24 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(692) : USER32.dll!DefWindowProcW + 371 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1500) : notepad.exe!NPWndProc + 135 bytes
+d:\blue\windows\core\ntuser\client\i386\callproc.asm(116) : USER32.dll!_InternalCallWinProc + 43 bytes
+d:\blue\windows\core\ntuser\client\clmsg.c(168) : USER32.dll!UserCallWinProcCheckWow + 398 bytes
+d:\blue\windows\core\ntuser\client\client.c(3314) : USER32.dll!DispatchClientMessage + 220 bytes
+d:\blue\windows\core\ntuser\inc\ntcb.h(2183) : USER32.dll!__fnINOUTNCCALCSIZE + 79 bytes
+d:\blue\minkernel\ntos\rtl\i386\userdisp.asm(516) : ntdll.dll!KiUserCallbackDispatcher + 54 bytes
+d:\blue\windows\core\ntuser\client\ntstubs.c(1795) : USER32.dll!CreateWindowInternal + 380 bytes
+d:\blue\windows\core\ntuser\client\cltxt.h(66) : USER32.dll!CreateWindowExW + 55 bytes
+d:\blue\shell\osshell\accesory\notepad\npinit.c(828) : notepad.exe!NPInit + 305 bytes
+d:\blue\shell\osshell\accesory\notepad\notepad.c(1543) : notepad.exe!WinMain + 82 bytes
+d:\blue\minkernel\crts\crtw32\dllstuff\crtexe.c(685) : notepad.exe!__mainCRTStartup + 322 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+==>
+==>BMem __MemSpect Indirect
+==>BMem __MemSpect VirtualAllocs
+==>BMem __MemSpect HeapCreates
+==>BMem __MemSpect GdiObjs
+==>BMem __MemSpect TrackGCStacks
+==>BMem __MemSpect ClrLoads
+==>BMem __MemSpect ClrJit
+==>BMem __MemSpect ClrGCHnd
+==>BMem __MemSpect ClrExcpt
+==>BMem __MemSpect ClrClasses
+==>BMem __MemSpect ClrObjects
+==>BMem __MemSpect CodeMarker
+==>BMem __MemSpect ThreadInfo
+==>BMem __MemSpect LoadResource
+==>BMem __Process Heap
+==>
+==>WastedMemory test MatchCnt = 17 # items = 25
+==>Test end NotePadConnect 3/13/2017 10:20:20 AM #Secs = 21.15
+==># of asserts = 245
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\NotePadConnect.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2017-03-13 10_19_50\NotePadConnect.txt"

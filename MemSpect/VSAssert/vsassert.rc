@@ -1,0 +1,97 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DEBASSERT DIALOG 0, 0, 328, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "MemSpect Assertion"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_ASSERT_TEXT,15,10,241,84,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "&Ignore",IDIGNORE,270,5,50,15
+    PUSHBUTTON      "&Abort",IDABORT,270,25,50,14
+    PUSHBUTTON      "Debugge&r",IDRETRY,270,63,50,14
+    PUSHBUTTON      "Cop&y",IDYES,270,82,50,15
+    PUSHBUTTON      "Mini&dump",IDNO,270,102,50,15
+    LTEXT           "",IDC_ASSERT_HELP_TEXT,10,127,310,15
+    PUSHBUTTON      "Skip &throw",IDC_THROW,269,44,50,14,WS_DISABLED
+    CONTROL         "Disa&ble all assertions",IDC_DISABLEALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,98,95,9
+    CONTROL         "Di&sable this assertion",IDC_DISABLETHIS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,111,95,10
+    CONTROL         "Throw when &possible",IDC_THROWALL,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,111,98,114,9
+    CONTROL         "Thro&w instead",IDC_THROWTHIS,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,111,111,114,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHECKMARK           BITMAP                  "check.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""vsassert.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "vsassert.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

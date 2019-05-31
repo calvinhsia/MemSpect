@@ -1,0 +1,191 @@
+==>Test start 10/2/2013 4:36:03 PM NotepadMultiThreadConnect
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>Starting Notepad
+==>MemSpect vers = 130826
+==>Freezing target. SeqNo = 1048
+ Started notepad, closing communication
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+==>Gotaline MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline [Memspect Entry] MemSpect UI starting '"c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpectMTATest.exe" 20668'
+==>Gotaline Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline [Memspect Entry] Target CmdLine(Addr=00931b70)=C:\Windows\syswow64\notepad.exe
+==>Gotaline TotVM=000000007ffe0000 Admin = True
+==>Gotaline [Memspect Entry] TotVM=000000007ffe0000 Admin = True
+==>Gotaline PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline [Memspect Entry] PID=20668 'notepad.exe' Ver=6.2.9200.16384 (win8_rtm.120725-1247)
+==>Gotaline MemSpect DLL Version = 130826  
+==>Gotaline [Memspect Entry] MemSpect DLL Version = 130826  
+==>Gotaline CleanUpRCWs = 1
+==>Gotaline [Memspect Entry] CleanUpRCWs = 1
+==>Gotaline SeqNo: 1048
+Process exit code= 0
+==>Test end NotepadMultiThreadConnect 10/2/2013 4:36:20 PM #Secs = 16.94
+==># of asserts = 6

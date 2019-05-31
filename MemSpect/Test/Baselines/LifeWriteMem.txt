@@ -1,0 +1,20 @@
+==>Test start 10/2/2013 4:34:15 PM LifeWriteMem
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>MemSpect UI starting '"C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 10920 '
+==>Target CmdLine(Addr=00621b68)=c:\memspect\test\cslife.exe
+==>TotVM=000000007ffe0000 Admin = True
+==>PID=24016 'cslife.exe' Ver=1.0.0.0
+==>MemSpect DLL Version = 130826  
+==>CleanUpRCWs = 1
+==>MemSpect vers = 130826
+==>Freezing target. SeqNo = 12800
+==>Freeze Target SeqNo= 13235
+==>Ini file = c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-10-02 16_30_26\Out\MemSpect.ini
+Looking for button1
+==>System.String Address=0x03044ac0, SeqNo=7,682, Size=28, BlkType=ClrObject Thread=60588M
+Original
+==>03044abc : 80000000 705dacc0 00000007 00750062 00740074 006e006f 00000031            00 00 00 80 c0 ac 5d 70 07 00 00 00 62 00 75 00 74 00 74 00 6f 00 6e 00 31 00 00 00                     ]p    b u t t o n 1
+After Write
+==>03044abc : 80000000 705dacc0 00000007 0065004d 0053006d 00650070 00740063            00 00 00 80 c0 ac 5d 70 07 00 00 00 4d 00 65 00 6d 00 53 00 70 00 65 00 63 00 74 00                     ]p    M e m S p e c t
+==>Test end LifeWriteMem 10/2/2013 4:34:18 PM #Secs = 3.81
+==># of asserts = 11

@@ -1,0 +1,204 @@
+==>Test start 4/15/2016 1:21:20 PM VSTrackClrObj
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>[01:21:25.955 P] MemSpect API connecting Friday, April 15, 2016 1:21:25 PM CmdLine= "C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe" /parentProcessId 5716 
+==>[01:21:25.955 P] Target CmdLine(Addr=00b42e8e)="C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
+==>[01:21:25.955 P] TotVM=00000000fffe0000 Admin=True ComputerName='CALVINH21005' UserName='calvinh'
+==>[01:21:25.955 P] PID=7008 'devenv.exe' FileVer='12.0.21005.1 built by: REL' ProdVer='12.0.21005.1'
+==>[01:21:25.955 P] MemSpect DLL Version = 160415  
+==>[01:21:25.955 P] MemSpect config file C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2016-04-15 13_19_50\Out\MemSpect.ini
+==>[01:21:25.955 P] CleanUpRCWs = 1
+==>[01:21:25.955 P]  CodeMarkerAction perfIdle(502)=CodeMarkerAction_ShowInStatusMessage
+==>MemSpect vers = 160415
+==>[01:21:39.939 P] PerfIdle 950,113
+==>[01:21:39.939 P] CodeMarker:502 perfIdle SeqNo=950,113
+==>Freezing target. SeqNo = 963472
+==>[01:21:40.377 P] Freeze Target SeqNo= 964,752
+MappedFiles Filter=Microsoft.VisualStudio.Shell.Interop.10.0.dll
+Got # MappedFiles items = 1
+Mapped file 4096 C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Shell.Interop.10.0\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\vm\util.cpp(2740) : clr.dll!CLRMapViewOfFileEx + 38 bytes
+f:\dd\ndp\clr\src\vm\peimagelayout.cpp(516) : clr.dll!MappedImageLayout::MappedImageLayout + 551 bytes
+f:\dd\ndp\clr\src\vm\peimagelayout.cpp(110) : clr.dll!PEImageLayout::Map + 44 bytes
+f:\dd\ndp\clr\src\vm\peimage.cpp(1573) : clr.dll!PEImage::GetLayoutInternal + 262 bytes
+f:\dd\ndp\clr\src\vm\peimage.cpp(1509) : clr.dll!PEImage::GetLayout + 240 bytes
+f:\dd\ndp\clr\src\vm\peimage.cpp(885) : clr.dll!RuntimeOpenImageInternal + 157 bytes
+f:\dd\ndp\clr\src\md\runtime\mdinternaldisp.cpp(374) : clr.dll!GetAssemblyMDInternalImportEx + 242 bytes
+f:\dd\ndp\clr\src\fusion\mparse\asmimprt.cpp(596) : clr.dll!CAssemblyManifestImport::EnsureInitialized + 136 bytes
+f:\dd\ndp\clr\src\fusion\binder\asm.cpp(388) : clr.dll!CAssembly::Initialize + 32 bytes
+f:\dd\ndp\clr\src\fusion\binder\actasm.cpp(756) : clr.dll!CLoadContext::SetNativeImage + 259 bytes
+f:\dd\ndp\clr\src\fusion\interface\bindresult.cpp(392) : clr.dll!BindResult::SetNativeImage + 122 bytes
+f:\dd\ndp\clr\src\nativebinder\binder.cpp(332) : clr.dll!NATIVE_BINDER_SPACE::BindToNativeDependency + 1189 bytes
+f:\dd\ndp\clr\src\nativebinder\binder.cpp(85) : clr.dll!BindToNativeAssembly + 187 bytes
+f:\dd\ndp\clr\src\fusion\binder\bindhelpers.cpp(168) : clr.dll!BindToNativeImage + 956 bytes
+f:\dd\ndp\clr\src\fusion\download\adlmgr.cpp(1947) : clr.dll!CAsmDownloadMgr::PreDownloadCheck + 3955 bytes
+f:\dd\ndp\clr\src\fusion\download\adl.cpp(1412) : clr.dll!CAssemblyDownload::PreDownload + 166 bytes
+f:\dd\ndp\clr\src\fusion\binder\naming.cpp(1778) : clr.dll!CAssemblyName::BindToObject + 2314 bytes
+f:\dd\ndp\clr\src\vm\fusionbind.cpp(715) : clr.dll!FusionBind::RemoteLoad + 508 bytes
+f:\dd\ndp\clr\src\vm\fusionbind.cpp(468) : clr.dll!AssemblySpec::LoadAssembly + 381 bytes
+f:\dd\ndp\clr\src\vm\assemblyspec.cpp(991) : clr.dll!AssemblySpec::FindAssemblyFile + 260 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(8975) : clr.dll!AppDomain::BindAssemblySpec + 4092 bytes
+f:\dd\ndp\clr\src\vm\pefile.cpp(2430) : clr.dll!PEFile::LoadAssembly + 180 bytes
+f:\dd\ndp\clr\src\vm\ceeload.cpp(6025) : clr.dll!Module::LoadAssembly + 370 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(1667) : clr.dll!Assembly::FindModuleByTypeRef + 531 bytes
+f:\dd\ndp\clr\src\vm\clsload.cpp(2962) : clr.dll!ClassLoader::LoadTypeDefOrRefThrowing + 259 bytes
+f:\dd\ndp\clr\src\vm\siginfo.cpp(1467) : clr.dll!SigPointer::GetTypeHandleThrowing + 1621 bytes
+f:\dd\ndp\clr\src\vm\mlinfo.cpp(2060) : clr.dll!MarshalInfo::MarshalInfo + 1839 bytes
+f:\dd\ndp\clr\src\vm\comtoclrcall.cpp(1559) : clr.dll!ComCallMethodDesc::InitNativeInfo + 884 bytes
+f:\dd\ndp\clr\src\vm\comtoclrcall.cpp(1369) : clr.dll!ComCallMethodDesc::InitMethod + 171 bytes
+f:\dd\ndp\clr\src\vm\comcallablewrapper.cpp(4700) : clr.dll!ComMethodTable::LayOutClassMethodTable + 1138 bytes
+f:\dd\ndp\clr\src\vm\comcallablewrapper.cpp(3160) : clr.dll!ComCallWrapper::GetIClassXIP + 60 bytes
+f:\dd\ndp\clr\src\vm\interopconverter.cpp(474) : clr.dll!GetComIPFromObjectRef + 1709 bytes
+f:\dd\ndp\clr\src\vm\olevariant.cpp(1665) : clr.dll!OleVariant::MarshalInterfaceVariantComToOle + 85 bytes
+f:\dd\ndp\clr\src\vm\olevariant.cpp(3582) : clr.dll!OleVariant::MarshalOleVariantForComVariant + 102 bytes
+f:\dd\ndp\clr\src\vm\olevariant.cpp(2837) : clr.dll!OleVariant::MarshalOleVariantForObject + 344 bytes
+f:\dd\ndp\clr\src\vm\stubhelpers.cpp(734) : clr.dll!StubHelpers::ObjectMarshaler__ConvertToNative + 152 bytes
+mscorlib.ni.dll!0x00000000 SymErr = 0x1e7
+f:\dd\ndp\clr\src\vm\i386\asmhelpers.asm(1938) : clr.dll!COMToCLRDispatchHelper + 40 bytes
+!0x00000000 SymErr = 0x7e
+f:\dd\vscommon\util\vscocreate.cpp(773) : msenv.dll!VsCoCreateAggregatedManagedObject + 540 bytes
+f:\dd\vscommon\util\vscocreate.cpp(137) : msenv.dll!VsLoaderCoCreateInstanceUnknown + 128 bytes
+f:\dd\env\msenv\core\vslocalregistry.cpp(112) : msenv.dll!CVsLocalRegistry4::CreateInstance + 77 bytes
+f:\dd\env\msenv\core\vslocalregistry.cpp(93) : msenv.dll!VsLocalCreateInstance + 76 bytes
+f:\dd\env\msenv\core\wpfhostprivateshim.cpp(24) : msenv.dll!`anonymous namespace'::GetWpfHostPrivate + 93 bytes
+f:\dd\env\msenv\core\wpfhostprivateshim.cpp(159) : msenv.dll!Gel::MainThreadConfiguration::InstallSynchronizationContext + 31 bytes
+f:\dd\env\msenv\core\init.cpp(1834) : msenv.dll!InitGlobal + 545 bytes
+f:\dd\env\msenv\core\init.cpp(1306) : msenv.dll!InitFMain + 219 bytes
+f:\dd\env\msenv\core\main.cpp(809) : msenv.dll!VStudioMainLogged + 169 bytes
+f:\dd\env\msenv\core\main.cpp(1118) : msenv.dll!VStudioMain + 124 bytes
+==>
+HeapCreate _clr.dll!DebuggerHeap::Init+39bytes
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\debug\ee\debugger.cpp(16786) : clr.dll!DebuggerHeap::Init + 39 bytes
+f:\dd\ndp\clr\src\debug\ee\debugger.cpp(2428) : clr.dll!Debugger::LazyInit + 37 bytes
+f:\dd\ndp\clr\src\debug\ee\debugger.cpp(2098) : clr.dll!Debugger::Startup + 104 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(4097) : clr.dll!InitializeDebugger + 104 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(1121) : clr.dll!EEStartupHelper + 1608 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(1395) : clr.dll!EEStartup + 30 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(402) : clr.dll!EnsureEEStarted + 234 bytes
+f:\dd\ndp\clr\src\vm\corhost.cpp(906) : clr.dll!CorRuntimeHostBase::Start + 80 bytes
+f:\dd\ndp\clr\src\vm\corhost.cpp(848) : clr.dll!CorHost2::Start + 123 bytes
+f:\dd\appid\lib\clrhosting.cpp(773) : devenv.exe!CLockClr::ClrStarted + 362 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1935) : mscoreei.dll!RuntimeDesc::PublishLoad + 423 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1794) : mscoreei.dll!RuntimeDesc::EnsureLoaded + 469 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1172) : mscoreei.dll!RuntimeDesc::GetProcAddressInternal + 14 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1230) : mscoreei.dll!RuntimeDesc::GetProcAddressWithCache + 26 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(2460) : mscoreei.dll!CLRRuntimeInfoImpl::CreateClassInternal + 36 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(2701) : mscoreei.dll!CLRRuntimeInfoImpl::GetInterfaceInternal + 707 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(2738) : mscoreei.dll!CLRRuntimeInfoImpl::GetInterface + 269 bytes
+f:\dd\internalapis\clr\inc\legacyactivationshim.h(454) : msenv.dll!LegacyActivationShim::CorBindToRuntimeEx + 207 bytes
+f:\dd\vscommon\util\vscocreate.cpp(585) : msenv.dll!VsCorBindToRuntime + 69 bytes
+f:\dd\vscommon\util\vscocreate.cpp(676) : msenv.dll!VsCoCreateAggregatedManagedObject + 80 bytes
+f:\dd\vscommon\util\vscocreate.cpp(137) : msenv.dll!VsLoaderCoCreateInstanceUnknown + 128 bytes
+f:\dd\env\msenv\core\vslocalregistry.cpp(112) : msenv.dll!CVsLocalRegistry4::CreateInstance + 77 bytes
+f:\dd\env\msenv\core\vslocalregistry.cpp(93) : msenv.dll!VsLocalCreateInstance + 76 bytes
+f:\dd\env\msenv\core\wpfhostprivateshim.cpp(24) : msenv.dll!`anonymous namespace'::GetWpfHostPrivate + 93 bytes
+f:\dd\env\msenv\core\wpfhostprivateshim.cpp(159) : msenv.dll!Gel::MainThreadConfiguration::InstallSynchronizationContext + 31 bytes
+f:\dd\env\msenv\core\init.cpp(1834) : msenv.dll!InitGlobal + 545 bytes
+f:\dd\env\msenv\core\init.cpp(1306) : msenv.dll!InitFMain + 219 bytes
+f:\dd\env\msenv\core\main.cpp(809) : msenv.dll!VStudioMainLogged + 169 bytes
+f:\dd\env\msenv\core\main.cpp(1118) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1072) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(703) : devenv.exe!CDevEnvAppId::Run + 2492 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(66) : devenv.exe!WinMain + 189 bytes
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c(618) : devenv.exe!__tmainCRTStartup + 293 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+HeapCreate _clr.dll!DebuggerHeap::Init+39bytes
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\ndp\clr\src\debug\ee\debugger.cpp(16786) : clr.dll!DebuggerHeap::Init + 39 bytes
+f:\dd\ndp\clr\src\debug\ee\debugger.cpp(2431) : clr.dll!Debugger::LazyInit + 58 bytes
+f:\dd\ndp\clr\src\debug\ee\debugger.cpp(2098) : clr.dll!Debugger::Startup + 104 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(4097) : clr.dll!InitializeDebugger + 104 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(1121) : clr.dll!EEStartupHelper + 1608 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(1395) : clr.dll!EEStartup + 30 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(402) : clr.dll!EnsureEEStarted + 234 bytes
+f:\dd\ndp\clr\src\vm\corhost.cpp(906) : clr.dll!CorRuntimeHostBase::Start + 80 bytes
+f:\dd\ndp\clr\src\vm\corhost.cpp(848) : clr.dll!CorHost2::Start + 123 bytes
+f:\dd\appid\lib\clrhosting.cpp(773) : devenv.exe!CLockClr::ClrStarted + 362 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1935) : mscoreei.dll!RuntimeDesc::PublishLoad + 423 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1794) : mscoreei.dll!RuntimeDesc::EnsureLoaded + 469 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1172) : mscoreei.dll!RuntimeDesc::GetProcAddressInternal + 14 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(1230) : mscoreei.dll!RuntimeDesc::GetProcAddressWithCache + 26 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(2460) : mscoreei.dll!CLRRuntimeInfoImpl::CreateClassInternal + 36 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(2701) : mscoreei.dll!CLRRuntimeInfoImpl::GetInterfaceInternal + 707 bytes
+f:\dd\ndp\clr\src\dlls\shim\shimapi.cpp(2738) : mscoreei.dll!CLRRuntimeInfoImpl::GetInterface + 269 bytes
+f:\dd\internalapis\clr\inc\legacyactivationshim.h(454) : msenv.dll!LegacyActivationShim::CorBindToRuntimeEx + 207 bytes
+f:\dd\vscommon\util\vscocreate.cpp(585) : msenv.dll!VsCorBindToRuntime + 69 bytes
+f:\dd\vscommon\util\vscocreate.cpp(676) : msenv.dll!VsCoCreateAggregatedManagedObject + 80 bytes
+f:\dd\vscommon\util\vscocreate.cpp(137) : msenv.dll!VsLoaderCoCreateInstanceUnknown + 128 bytes
+f:\dd\env\msenv\core\vslocalregistry.cpp(112) : msenv.dll!CVsLocalRegistry4::CreateInstance + 77 bytes
+f:\dd\env\msenv\core\vslocalregistry.cpp(93) : msenv.dll!VsLocalCreateInstance + 76 bytes
+f:\dd\env\msenv\core\wpfhostprivateshim.cpp(24) : msenv.dll!`anonymous namespace'::GetWpfHostPrivate + 93 bytes
+f:\dd\env\msenv\core\wpfhostprivateshim.cpp(159) : msenv.dll!Gel::MainThreadConfiguration::InstallSynchronizationContext + 31 bytes
+f:\dd\env\msenv\core\init.cpp(1834) : msenv.dll!InitGlobal + 545 bytes
+f:\dd\env\msenv\core\init.cpp(1306) : msenv.dll!InitFMain + 219 bytes
+f:\dd\env\msenv\core\main.cpp(809) : msenv.dll!VStudioMainLogged + 169 bytes
+f:\dd\env\msenv\core\main.cpp(1118) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1072) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(703) : devenv.exe!CDevEnvAppId::Run + 2492 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(66) : devenv.exe!WinMain + 189 bytes
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c(618) : devenv.exe!__tmainCRTStartup + 293 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+==>
+Code marker Id = 502 perfIdle
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\env\msenv\core\msocm.cpp(1221) : msenv.dll!CMsoComponent::FDoNonPeriodicIdle + 1067 bytes
+f:\dd\env\msenv\core\msocm.cpp(977) : msenv.dll!CMsoComponent::FDoIdle + 24 bytes
+f:\dd\env\msenv\mso\core\ciidle.cpp(499) : msenv.dll!SCM::FDoIdleLoop + 290 bytes
+f:\dd\env\msenv\mso\core\ciidle.cpp(368) : msenv.dll!SCM::FDoIdle + 213 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(3396) : msenv.dll!SCM_MsoStdCompMgr::FDoIdle + 17 bytes
+f:\dd\env\msenv\core\main.cpp(1472) : msenv.dll!MainMessageLoop::DoIdle + 26 bytes
+f:\dd\env\msenv\core\msocm.cpp(484) : msenv.dll!CMsoCMHandler::EnvironmentMsgLoop + 302 bytes
+f:\dd\env\msenv\core\msocm.cpp(358) : msenv.dll!CMsoCMHandler::FPushMessageLoop + 306 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2243) : msenv.dll!SCM::FPushMessageLoop + 174 bytes
+f:\dd\env\msenv\mso\core\cistdmgr.cpp(2999) : msenv.dll!SCM_MsoCompMgr::FPushMessageLoop + 42 bytes
+f:\dd\env\msenv\core\msocm.cpp(715) : msenv.dll!CMsoComponent::PushMsgLoop + 46 bytes
+f:\dd\env\msenv\core\main.cpp(1037) : msenv.dll!VStudioMainLogged + 1317 bytes
+f:\dd\env\msenv\core\main.cpp(1118) : msenv.dll!VStudioMain + 124 bytes
+f:\dd\appid\lib\utils.cpp(1072) : devenv.exe!util_CallVsMain + 222 bytes
+f:\dd\appid\devenv\stub\devenv.cpp(703) : devenv.exe!CDevEnvAppId::Run + 2492 bytes
+f:\dd\appid\devenv\stub\winmain.cpp(66) : devenv.exe!WinMain + 189 bytes
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c(618) : devenv.exe!__tmainCRTStartup + 293 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Code marker Id = 7072 perfVSSplashScreenShowing
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\vscommon\codemarkers\perfhost\codemarkers.cpp(60) : devenv.exe!CodeMarker + 35 bytes
+f:\dd\appid\lib\splash.cpp(310) : devenv.exe!CSplash::CreateSplashWindow + 24 bytes
+f:\dd\appid\lib\splash.cpp(807) : devenv.exe!CSplash::ThreadProc + 67 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+Code marker Id = 7073 perfVSSplashScreenDestroyed
+Call Stack:
+d:\memspect\ MemSpect
+f:\dd\vscommon\codemarkers\perfhost\codemarkers.cpp(60) : devenv.exe!CodeMarker + 35 bytes
+devenv.exe!SplashWindow::`scalar deleting destructor' + 77 bytes
+f:\dd\appid\lib\splashwindow.cpp(21) : devenv.exe!SplashWindow::DeleteInstance + 16 bytes
+d:\9147\base\win32\client\thread.c(78) : KERNEL32.DLL!BaseThreadInitThunk + 36 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(1029) : ntdll.dll!__RtlUserThreadStart + 47 bytes
+d:\blue\minkernel\ntdll\rtlstrt.c(944) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+==>
+==>DoShowThreads: # threads = 21
+DoShowThreads: # threads > 15 Yes
+==>Proc heap no merged code markers = 30489
+==>Proc heap with merged code markers = 30966
+==>Symbol dictionary # items = 1229
+Symbol dictionary # items must be greater than 1100  true
+==>Test end VSTrackClrObj 4/15/2016 1:22:16 PM #Secs = 56.59
+==># of asserts = 180
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\VSTrackClrObj.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2016-04-15 13_19_50\VSTrackClrObj.txt"

@@ -1,0 +1,267 @@
+==>Test start 11/20/2013 9:28:37 AM ArenaOffline
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Testing Arena (NoRelease) Allocator offline
+# items = 35
+Arena Header:
+Address=0x121b07d0, SeqNo=141,108, Size=51, BlkType=None Thread=11036  Heap = _Arenas
+ ArenaHeader ArenaID = 1 Name=Arena1 User = 269488144 CntEverAlloc = 9 SizeEverAlloc = 794 CntCurLive = 3  SizeCurLive = 242 LastAlloc = 303761488  HeapHandle= 121b0000
+Call Stack:
+d:\memspect\vsassert\arenahandler.cpp(129) : MemSpectDll.dll!ArenaCreated + 322 bytes
+!0x002A1148 SymErr = 0x7e
+ArenaClient.exe!ArenaClient.MainWindow.Arena..ctor
+ArenaClient.exe!ArenaClient.MainWindow.Window_Loaded
+PresentationCore.dll!System.Windows.RoutedEventHandlerInfo.InvokeHandler
+PresentationCore.dll!System.Windows.EventRoute.InvokeHandlersImpl
+PresentationCore.dll!System.Windows.UIElement.RaiseEventImpl
+PresentationCore.dll!System.Windows.UIElement.RaiseEvent
+PresentationFramework.dll!System.Windows.BroadcastEventHelper.BroadcastEvent
+PresentationFramework.dll!System.Windows.BroadcastEventHelper.BroadcastLoadedEvent
+PresentationCore.dll!MS.Internal.LoadedOrUnloadedOperation.DoWork
+PresentationCore.dll!System.Windows.Media.MediaContext.FireLoadedPendingCallbacks
+PresentationCore.dll!System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks
+PresentationCore.dll!System.Windows.Media.MediaContext.RenderMessageHandlerCore
+PresentationCore.dll!System.Windows.Media.MediaContext.RenderMessageHandler
+PresentationCore.dll!System.Windows.Media.MediaContext.Resize
+PresentationCore.dll!System.Windows.Interop.HwndTarget.OnResize
+PresentationCore.dll!System.Windows.Interop.HwndTarget.HandleMessage
+PresentationCore.dll!System.Windows.Interop.HwndSource.HwndTargetFilterMessage
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.InvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(754) : USER32.dll!__fnDWORD + 43 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+PresentationFramework.dll!System.Windows.Window.ShowHelper
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeImpl
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext
+mscorlib.dll!System.Threading.ExecutionContext.runTryCode
+f:\dd\ndp\clr\src\vm\class.cpp(15349) : clr.dll!CallDescrWorkerWithHandler + 142 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2521) : clr.dll!MethodDesc::CallDescr + 404 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2144) : clr.dll!MethodDesc::CallTargetWorker + 33 bytes
+f:\dd\ndp\clr\src\vm\method.hpp(2314) : clr.dll!MethodDescCallSite::Call_RetArgSlot + 28 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(2970) : clr.dll!ExecuteCodeWithGuaranteedCleanupHelper + 187 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(3037) : clr.dll!ReflectionInvocation::ExecuteCodeWithGuaranteedCleanup + 312 bytes
+mscorlib.dll!System.Threading.ExecutionContext.RunInternal
+mscorlib.dll!System.Threading.ExecutionContext.Run
+mscorlib.dll!System.Threading.ExecutionContext.Run
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.Invoke
+WindowsBase.dll!System.Windows.Threading.Dispatcher.ProcessQueue
+WindowsBase.dll!System.Windows.Threading.Dispatcher.WndProcHook
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.InvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(2591) : USER32.dll!DispatchMessageWorker + 956 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(999) : USER32.dll!DispatchMessageW + 15 bytes
+WindowsBase.ni.dll!GlobalVar882 + -20924 bytes
+WindowsBase.dll!System.Windows.Threading.Dispatcher.PushFrameImpl
+WindowsBase.dll!System.Windows.Threading.Dispatcher.PushFrame
+PresentationFramework.dll!System.Windows.Application.RunDispatcher
+PresentationFramework.dll!System.Windows.Application.RunInternal
+PresentationFramework.dll!System.Windows.Application.Run
+PresentationFramework.dll!System.Windows.Application.Run
+ArenaClient.exe!ArenaClient.Application.Main
+f:\dd\ndp\clr\src\vm\class.cpp(15349) : clr.dll!CallDescrWorkerWithHandler + 142 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2521) : clr.dll!MethodDesc::CallDescr + 404 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2144) : clr.dll!MethodDesc::CallTargetWorker + 33 bytes
+f:\dd\ndp\clr\src\vm\method.hpp(2314) : clr.dll!MethodDescCallSite::Call_RetArgSlot + 28 bytes
+f:\dd\ndp\clr\src\vm\clsload.cpp(7256) : clr.dll!ClassLoader::RunMain + 588 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(1972) : clr.dll!Assembly::ExecuteMainMethod + 193 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3182) : clr.dll!SystemDomain::ExecuteMainMethod + 1260 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2984) : clr.dll!ExecuteEXE + 88 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2831) : clr.dll!_CorExeMainInternal + 415 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2763) : clr.dll!_CorExeMain + 78 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(5803) : mscoreei.dll!_CorExeMain + 56 bytes
+f:\dd\ndp\clr\src\dlls\shell_shim\v2api.cpp(284) : MSCOREE.DLL!ShellShim__CorExeMain + 153 bytes
+f:\dd\ndp\clr\src\dlls\shell_shim\v2api.cpp(1223) : MSCOREE.DLL!_CorExeMain_Exported + 8 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+
+121b07d0 : 00000101 10101010 00000009 0000031a 00000003 000000f2 121b0850 00000000   01 01 00 00 10 10 10 10 09 00 00 00 1a 03 00 00 03 00 00 00 f2 00 00 00 50 08 1b 12 00 00 00 00                      P     
+121b07f0 : 00000001 058aaa50 00000006 6e657241 00003161                              01 00 00 00 50 aa 8a 05 06 00 00 00 41 72 65 6e 61 31 00                                           P       Arena1 
+
+   1 Arena1     Header     10101010          9        794          3        242 51 
+Arena Allocation:
+Address=0x11db0020, SeqNo=141,527, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena1 0 SomeNRLSData  Heap = _Arenas
+ ArenaHeader ArenaID = 1 Name=Arena1 User = 269488144 CntEverAlloc = 9 SizeEverAlloc = 794 CntCurLive = 3  SizeCurLive = 242 LastAlloc = 303761488  HeapHandle= 121b0000
+Call Stack:
+d:\memspect\vsassert\arenahandler.cpp(165) : MemSpectDll.dll!ArenaAllocation + 135 bytes
+!0x002A158A SymErr = 0x7e
+ArenaClient.exe!ArenaClient.MainWindow.Arena.Alloc
+ArenaClient.exe!ArenaClient.MainWindow._Closure$__1._Lambda$__4
+ArenaClient.exe!ArenaClient.MainWindow.Window_Loaded
+PresentationCore.dll!System.Windows.RoutedEventHandlerInfo.InvokeHandler
+PresentationCore.dll!System.Windows.EventRoute.InvokeHandlersImpl
+PresentationCore.dll!System.Windows.UIElement.RaiseEventImpl
+PresentationCore.dll!System.Windows.UIElement.RaiseEvent
+PresentationFramework.dll!System.Windows.BroadcastEventHelper.BroadcastEvent
+PresentationFramework.dll!System.Windows.BroadcastEventHelper.BroadcastLoadedEvent
+PresentationCore.dll!MS.Internal.LoadedOrUnloadedOperation.DoWork
+PresentationCore.dll!System.Windows.Media.MediaContext.FireLoadedPendingCallbacks
+PresentationCore.dll!System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks
+PresentationCore.dll!System.Windows.Media.MediaContext.RenderMessageHandlerCore
+PresentationCore.dll!System.Windows.Media.MediaContext.RenderMessageHandler
+PresentationCore.dll!System.Windows.Media.MediaContext.Resize
+PresentationCore.dll!System.Windows.Interop.HwndTarget.OnResize
+PresentationCore.dll!System.Windows.Interop.HwndTarget.HandleMessage
+PresentationCore.dll!System.Windows.Interop.HwndSource.HwndTargetFilterMessage
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.InvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\client.c(3202) : USER32.dll!DispatchClientMessage + 224 bytes
+d:\w7rtm\windows\core\ntuser\inc\ntcb.h(754) : USER32.dll!__fnDWORD + 43 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\i386\userdisp.asm(441) : ntdll.dll!KiUserCallbackDispatcher + 46 bytes
+PresentationFramework.dll!System.Windows.Window.ShowHelper
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeImpl
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext
+mscorlib.dll!System.Threading.ExecutionContext.runTryCode
+f:\dd\ndp\clr\src\vm\class.cpp(15349) : clr.dll!CallDescrWorkerWithHandler + 142 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2521) : clr.dll!MethodDesc::CallDescr + 404 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2144) : clr.dll!MethodDesc::CallTargetWorker + 33 bytes
+f:\dd\ndp\clr\src\vm\method.hpp(2314) : clr.dll!MethodDescCallSite::Call_RetArgSlot + 28 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(2970) : clr.dll!ExecuteCodeWithGuaranteedCleanupHelper + 187 bytes
+f:\dd\ndp\clr\src\vm\reflectioninvocation.cpp(3037) : clr.dll!ReflectionInvocation::ExecuteCodeWithGuaranteedCleanup + 312 bytes
+mscorlib.dll!System.Threading.ExecutionContext.RunInternal
+mscorlib.dll!System.Threading.ExecutionContext.Run
+mscorlib.dll!System.Threading.ExecutionContext.Run
+WindowsBase.dll!System.Windows.Threading.DispatcherOperation.Invoke
+WindowsBase.dll!System.Windows.Threading.Dispatcher.ProcessQueue
+WindowsBase.dll!System.Windows.Threading.Dispatcher.WndProcHook
+WindowsBase.dll!MS.Win32.HwndWrapper.WndProc
+WindowsBase.dll!MS.Win32.HwndSubclass.DispatcherCallbackOperation
+WindowsBase.dll!System.Windows.Threading.ExceptionWrapper.InternalRealCall
+WindowsBase.dll!MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen
+WindowsBase.dll!System.Windows.Threading.Dispatcher.InvokeImpl
+WindowsBase.dll!MS.Win32.HwndSubclass.SubclassWndProc
+d:\w7rtm\windows\core\ntuser\client\i386\callproc.asm(106) : USER32.dll!InternalCallWinProc + 35 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(163) : USER32.dll!UserCallWinProcCheckWow + 265 bytes
+d:\w7rtm\windows\core\ntuser\client\clmsg.c(2591) : USER32.dll!DispatchMessageWorker + 956 bytes
+d:\w7rtm\windows\core\ntuser\client\cltxt.h(999) : USER32.dll!DispatchMessageW + 15 bytes
+WindowsBase.ni.dll!GlobalVar882 + -20924 bytes
+WindowsBase.dll!System.Windows.Threading.Dispatcher.PushFrameImpl
+WindowsBase.dll!System.Windows.Threading.Dispatcher.PushFrame
+PresentationFramework.dll!System.Windows.Application.RunDispatcher
+PresentationFramework.dll!System.Windows.Application.RunInternal
+PresentationFramework.dll!System.Windows.Application.Run
+PresentationFramework.dll!System.Windows.Application.Run
+ArenaClient.exe!ArenaClient.Application.Main
+f:\dd\ndp\clr\src\vm\class.cpp(15349) : clr.dll!CallDescrWorkerWithHandler + 142 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2521) : clr.dll!MethodDesc::CallDescr + 404 bytes
+f:\dd\ndp\clr\src\vm\method.cpp(2144) : clr.dll!MethodDesc::CallTargetWorker + 33 bytes
+f:\dd\ndp\clr\src\vm\method.hpp(2314) : clr.dll!MethodDescCallSite::Call_RetArgSlot + 28 bytes
+f:\dd\ndp\clr\src\vm\clsload.cpp(7256) : clr.dll!ClassLoader::RunMain + 588 bytes
+f:\dd\ndp\clr\src\vm\assembly.cpp(1972) : clr.dll!Assembly::ExecuteMainMethod + 193 bytes
+f:\dd\ndp\clr\src\vm\appdomain.cpp(3182) : clr.dll!SystemDomain::ExecuteMainMethod + 1260 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2984) : clr.dll!ExecuteEXE + 88 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2831) : clr.dll!_CorExeMainInternal + 415 bytes
+f:\dd\ndp\clr\src\vm\ceemain.cpp(2763) : clr.dll!_CorExeMain + 78 bytes
+f:\dd\ndp\clr\src\dlls\shim\shim.cpp(5803) : mscoreei.dll!_CorExeMain + 56 bytes
+f:\dd\ndp\clr\src\dlls\shell_shim\v2api.cpp(284) : MSCOREE.DLL!ShellShim__CorExeMain + 153 bytes
+f:\dd\ndp\clr\src\dlls\shell_shim\v2api.cpp(1223) : MSCOREE.DLL!_CorExeMain_Exported + 8 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3188) : ntdll.dll!__RtlUserThreadStart + 112 bytes
+d:\win7sp1_gdr\minkernel\ntos\rtl\rtlexec.c(3116) : ntdll.dll!_RtlUserThreadStart + 27 bytes
+
+
+11db0020 : 00720041 006e0065 00460061 006c0069 0044006c 00740061 00210061 00410020   41 00 72 00 65 00 6e 00 61 00 46 00 69 00 6c 00 6c 00 44 00 61 00 74 00 61 00 21 00 20 00 41 00   A r e n a F i l l D a t a !   A 
+11db0040 : 00650072 0061006e 00200031 00200030 006f0053 0065006d 0052004e 0053004c   72 00 65 00 6e 00 61 00 31 00 20 00 30 00 20 00 53 00 6f 00 6d 00 65 00 4e 00 52 00 4c 00 53 00   r e n a 1   0   S o m e N R L S 
+11db0060 : 00610044 00610074 00000000 00000000 afafafaf afafafaf afafafaf            44 00 61 00 74 00 61 00 00 00 00 00 00 00 00 00 af af af af af af af af af af af af               D a t a                     
+
+ArenaAlloc dump
+
+121b0810 : 00000102 00000002 11db0020 121b07d0 0000005c 00000000                     02 01 00 00 02 00 00 00 20 00 db 11 d0 07 1b 12 5c 00 00 00 00 00 00 00                                        \       
+
+   1 Arena1     Alloc      00000002          9        794          3        242 92 ArenaFillData! Arena1 0 SomeNRLSData
+   1 Arena1     Alloc      00000002          9        794          3        242 92 ArenaFillData! Arena1 1 SomeNRLSData
+   1 Arena1     Alloc      00000002          9        794          3        242 58 Added after RelToMark
+   3 Arena3     Header     10101010          8        736          0          0 51 
+   4 Arena4     Header     10101010          8        736          7        644 51 
+   4 Arena4     Alloc      00000002          8        736          7        644 92 ArenaFillData! Arena4 0 SomeNRLSData
+   4 Arena4     Alloc      00000002          8        736          7        644 92 ArenaFillData! Arena4 1 SomeNRLSData
+   4 Arena4     Alloc      00000002          8        736          7        644 92 ArenaFillData! Arena4 3 SomeNRLSData
+   4 Arena4     Alloc      00000002          8        736          7        644 92 ArenaFillData! Arena4 4 SomeNRLSData
+   4 Arena4     Alloc      00000002          8        736          7        644 92 ArenaFillData! Arena4 5 SomeNRLSData
+   4 Arena4     Alloc      00000002          8        736          7        644 92 ArenaFillData! Arena4 6 SomeNRLSData
+   4 Arena4     Alloc      00000002          8        736          7        644 92 ArenaFillData! Arena4 7 SomeNRLSData
+   5 Arena5     Header     10101010         10        824         10        824 51 
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 0 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 1 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 2 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 3 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 4 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 5 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 6 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 92 ArenaFillData! Arena5 7 SomeNRLSData
+   5 Arena5     Alloc      00000002         10        824         10        824 44 Duplicate data
+   5 Arena5     Alloc      00000002         10        824         10        824 44 Duplicate data
+   6 Arena6     Header     10101010          8        736          8        736 51 
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 0 SomeNRLSData
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 1 SomeNRLSData
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 2 SomeNRLSData
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 3 SomeNRLSData
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 4 SomeNRLSData
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 5 SomeNRLSData
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 6 SomeNRLSData
+   6 Arena6     Alloc      00000002          8        736          8        736 92 ArenaFillData! Arena6 7 SomeNRLSData
+   7            Header     10101010          1         88          1         88 45 
+   7            Alloc      00000002          1         88          1         88 88 This is stored in arena with no name
+{ Address = 121b07d0, SeqNo = 141108, Size = 51, Thread = 11036, ArenaId = 1, ArenaName = Arena1, ArenaBlockType = Header, UserData = 10101010, CntEverAlloc = 9, SizeEverAlloc = 794, CntCurLive = 3, SizeCurLive = 242, StringContent = , _HeapAllocationContainer = Address=0x121b07d0, SeqNo=141,108, Size=51, BlkType=None Thread=11036 }
+{ Address = 11db0020, SeqNo = 141527, Size = 92, Thread = 11036, ArenaId = 1, ArenaName = Arena1, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 9, SizeEverAlloc = 794, CntCurLive = 3, SizeCurLive = 242, StringContent = ArenaFillData! Arena1 0 SomeNRLSData, _HeapAllocationContainer = Address=0x11db0020, SeqNo=141,527, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena1 0 SomeNRLSData }
+{ Address = 11db007c, SeqNo = 141648, Size = 92, Thread = 11036, ArenaId = 1, ArenaName = Arena1, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 9, SizeEverAlloc = 794, CntCurLive = 3, SizeCurLive = 242, StringContent = ArenaFillData! Arena1 1 SomeNRLSData, _HeapAllocationContainer = Address=0x11db007c, SeqNo=141,648, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena1 1 SomeNRLSData }
+{ Address = 11db00d8, SeqNo = 145407, Size = 58, Thread = 11036, ArenaId = 1, ArenaName = Arena1, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 9, SizeEverAlloc = 794, CntCurLive = 3, SizeCurLive = 242, StringContent = Added after RelToMark, _HeapAllocationContainer = Address=0x11db00d8, SeqNo=145,407, Size=58, BlkType=None Thread=11036 Added after RelToMark }
+{ Address = 121b0910, SeqNo = 149337, Size = 51, Thread = 11036, ArenaId = 3, ArenaName = Arena3, ArenaBlockType = Header, UserData = 10101010, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 0, SizeCurLive = 0, StringContent = , _HeapAllocationContainer = Address=0x121b0910, SeqNo=149,337, Size=51, BlkType=None Thread=11036 }
+{ Address = 121b09b0, SeqNo = 171119, Size = 51, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Header, UserData = 10101010, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = , _HeapAllocationContainer = Address=0x121b09b0, SeqNo=171,119, Size=51, BlkType=None Thread=11036 }
+{ Address = 11ec0020, SeqNo = 171149, Size = 92, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = ArenaFillData! Arena4 0 SomeNRLSData, _HeapAllocationContainer = Address=0x11ec0020, SeqNo=171,149, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena4 0 SomeNRLSData }
+{ Address = 11ec007c, SeqNo = 171179, Size = 92, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = ArenaFillData! Arena4 1 SomeNRLSData, _HeapAllocationContainer = Address=0x11ec007c, SeqNo=171,179, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena4 1 SomeNRLSData }
+{ Address = 11ec0134, SeqNo = 171215, Size = 92, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = ArenaFillData! Arena4 3 SomeNRLSData, _HeapAllocationContainer = Address=0x11ec0134, SeqNo=171,215, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena4 3 SomeNRLSData }
+{ Address = 11ec0190, SeqNo = 171231, Size = 92, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = ArenaFillData! Arena4 4 SomeNRLSData, _HeapAllocationContainer = Address=0x11ec0190, SeqNo=171,231, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena4 4 SomeNRLSData }
+{ Address = 11ec01ec, SeqNo = 171249, Size = 92, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = ArenaFillData! Arena4 5 SomeNRLSData, _HeapAllocationContainer = Address=0x11ec01ec, SeqNo=171,249, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena4 5 SomeNRLSData }
+{ Address = 11ec0248, SeqNo = 171265, Size = 92, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = ArenaFillData! Arena4 6 SomeNRLSData, _HeapAllocationContainer = Address=0x11ec0248, SeqNo=171,265, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena4 6 SomeNRLSData }
+{ Address = 11ec02a4, SeqNo = 171280, Size = 92, Thread = 11036, ArenaId = 4, ArenaName = Arena4, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 7, SizeCurLive = 644, StringContent = ArenaFillData! Arena4 7 SomeNRLSData, _HeapAllocationContainer = Address=0x11ec02a4, SeqNo=171,280, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena4 7 SomeNRLSData }
+{ Address = 121b09f0, SeqNo = 177102, Size = 51, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Header, UserData = 10101010, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = , _HeapAllocationContainer = Address=0x121b09f0, SeqNo=177,102, Size=51, BlkType=None Thread=11036 }
+{ Address = 11fd0020, SeqNo = 177129, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 0 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd0020, SeqNo=177,129, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 0 SomeNRLSData }
+{ Address = 11fd007c, SeqNo = 177158, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 1 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd007c, SeqNo=177,158, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 1 SomeNRLSData }
+{ Address = 11fd00d8, SeqNo = 177177, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 2 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd00d8, SeqNo=177,177, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 2 SomeNRLSData }
+{ Address = 11fd0134, SeqNo = 177193, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 3 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd0134, SeqNo=177,193, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 3 SomeNRLSData }
+{ Address = 11fd0190, SeqNo = 177209, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 4 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd0190, SeqNo=177,209, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 4 SomeNRLSData }
+{ Address = 11fd01ec, SeqNo = 177239, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 5 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd01ec, SeqNo=177,239, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 5 SomeNRLSData }
+{ Address = 11fd0248, SeqNo = 177253, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 6 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd0248, SeqNo=177,253, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 6 SomeNRLSData }
+{ Address = 11fd02a4, SeqNo = 177268, Size = 92, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = ArenaFillData! Arena5 7 SomeNRLSData, _HeapAllocationContainer = Address=0x11fd02a4, SeqNo=177,268, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena5 7 SomeNRLSData }
+{ Address = 11fd0300, SeqNo = 182309, Size = 44, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = Duplicate data, _HeapAllocationContainer = Address=0x11fd0300, SeqNo=182,309, Size=44, BlkType=None Thread=11036 Duplicate data }
+{ Address = 11fd032c, SeqNo = 182313, Size = 44, Thread = 11036, ArenaId = 5, ArenaName = Arena5, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 10, SizeEverAlloc = 824, CntCurLive = 10, SizeCurLive = 824, StringContent = Duplicate data, _HeapAllocationContainer = Address=0x11fd032c, SeqNo=182,313, Size=44, BlkType=None Thread=11036 Duplicate data }
+{ Address = 121d2c20, SeqNo = 182321, Size = 51, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Header, UserData = 10101010, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = , _HeapAllocationContainer = Address=0x121d2c20, SeqNo=182,321, Size=51, BlkType=None Thread=11036 }
+{ Address = 123f0020, SeqNo = 182345, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 0 SomeNRLSData, _HeapAllocationContainer = Address=0x123f0020, SeqNo=182,345, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 0 SomeNRLSData }
+{ Address = 123f007c, SeqNo = 182365, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 1 SomeNRLSData, _HeapAllocationContainer = Address=0x123f007c, SeqNo=182,365, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 1 SomeNRLSData }
+{ Address = 123f00d8, SeqNo = 182381, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 2 SomeNRLSData, _HeapAllocationContainer = Address=0x123f00d8, SeqNo=182,381, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 2 SomeNRLSData }
+{ Address = 123f0134, SeqNo = 182397, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 3 SomeNRLSData, _HeapAllocationContainer = Address=0x123f0134, SeqNo=182,397, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 3 SomeNRLSData }
+{ Address = 123f0190, SeqNo = 182428, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 4 SomeNRLSData, _HeapAllocationContainer = Address=0x123f0190, SeqNo=182,428, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 4 SomeNRLSData }
+{ Address = 123f01ec, SeqNo = 182445, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 5 SomeNRLSData, _HeapAllocationContainer = Address=0x123f01ec, SeqNo=182,445, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 5 SomeNRLSData }
+{ Address = 123f0248, SeqNo = 182461, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 6 SomeNRLSData, _HeapAllocationContainer = Address=0x123f0248, SeqNo=182,461, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 6 SomeNRLSData }
+{ Address = 123f02a4, SeqNo = 182475, Size = 92, Thread = 11036, ArenaId = 6, ArenaName = Arena6, ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 8, SizeEverAlloc = 736, CntCurLive = 8, SizeCurLive = 736, StringContent = ArenaFillData! Arena6 7 SomeNRLSData, _HeapAllocationContainer = Address=0x123f02a4, SeqNo=182,475, Size=92, BlkType=None Thread=11036 ArenaFillData! Arena6 7 SomeNRLSData }
+{ Address = 121d2c60, SeqNo = 187514, Size = 45, Thread = 11036, ArenaId = 7, ArenaName = , ArenaBlockType = Header, UserData = 10101010, CntEverAlloc = 1, SizeEverAlloc = 88, CntCurLive = 1, SizeCurLive = 88, StringContent = , _HeapAllocationContainer = Address=0x121d2c60, SeqNo=187,514, Size=45, BlkType=None Thread=11036 }
+{ Address = 0f4007d0, SeqNo = 187518, Size = 88, Thread = 11036, ArenaId = 7, ArenaName = , ArenaBlockType = Alloc, UserData = 00000002, CntEverAlloc = 1, SizeEverAlloc = 88, CntCurLive = 1, SizeCurLive = 88, StringContent = This is stored in arena with no name, _HeapAllocationContainer = Address=0x0f4007d0, SeqNo=187,518, Size=88, BlkType=None Thread=11036 This is stored in arena with no name }
+Dupes
+==>Arena Dupes
+{ Address = 11fd0300, SeqNo = 182309, Size = 44, Thread = 11036, Type = None, Data = Duplicate data, DupeID = 1, DupeIndex = 1, DupeData = 1 of 2, DupeTot = 88, Heap = _Arenas, _HeapAllocationContainer = Address=0x11fd0300, SeqNo=182,309, Size=44, BlkType=None Thread=11036 Duplicate data }
+{ Address = 11fd032c, SeqNo = 182313, Size = 44, Thread = 11036, Type = None, Data = Duplicate data, DupeID = 1, DupeIndex = 2, DupeData = 2 of 2, DupeTot = 88, Heap = _Arenas, _HeapAllocationContainer = Address=0x11fd032c, SeqNo=182,313, Size=44, BlkType=None Thread=11036 Duplicate data }
+==>Test end ArenaOffline 11/20/2013 9:28:39 AM #Secs = 1.60
+==># of asserts = 263
+==>Compare cmd = c:\bin\bc2.exe c:\memspect\Test\Baselines\ArenaOffline.txt "c:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2013-11-20 09_28_37\ArenaOffline.txt"

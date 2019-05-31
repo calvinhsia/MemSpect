@@ -1,0 +1,87 @@
+==>Test start 10/2/2013 4:43:20 PM NPadOffWhenDist
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+Initial children
+IsEnabled = True Min= 7  Max= 1,407
+WhenDist initial children
+WTD___1_17__A8__1313196M8MNMPZYF 333 50,249 d:\memspect\vsassert\trackmem.cpp(3226) : MemSpectDll.dll!Mine_RtlAllocHeap + 573 bytes
+ 13_______1______________________ 5 15,676 d:\w7rtm\com\ole32\ole232\inc\array.hxx(52) : ole32.dll!CArray<CCacheNode>::operator new + 22 bytes
+ _________2___________2_J7LC_4SRD 135 14,692 d:\win7sp1_gdr\minkernel\kernelbase\lmem.c(108) : KERNELBASE.dll!LocalAlloc + 95 bytes
+ _______________________1___3F___ 19 3,154 d:\w7rtm\com\ole32\com\class\memapi.cxx(641) : ole32.dll!CRetailMalloc_Alloc + 22 bytes
+ HDC___1_1___24__1_111_2____A2___ 68 2,176 d:\w7rtm\minkernel\ntdll\resource.c(278) : ntdll.dll!RtlpAllocateDebugInfo + 40 bytes
+ 32___________2_____________1____ 8 1,664 d:\w7rtm\minkernel\etw\ntdll\evntsup.c(170) : ntdll.dll!EtwpGetNewRegEntry + 72 bytes
+ _________________1______________ 1 1,560 d:\w7rtm\minkernel\ntdll\sxsctxact.c(133) : ntdll.dll!RtlpAllocateActivationContextStackFrame + 203 bytes
+ _____________________11_________ 2 1,376 d:\w7rtm\windows\core\ntgdi\client\cfont.c(84) : GDI32.dll!pcfAllocCFONT + 92 bytes
+ 1_______________________________ 1 1,088 d:\win7sp1_gdr\minkernel\kernelbase\xcpt.c(363) : kernel32.dll!SetUnhandledExceptionFilter + 91 bytes
+ _____________________1__________ 1 1,024 d:\w7rtm\windows\core\ntgdi\client\nlsconv.c(68) : GDI32.dll!bGetANSISetMap + 107 bytes
+ _1______________________________ 1 932 d:\winmain\minio\security\randlib\aesctrsafe.c(338) : CRYPTBASE.dll!AesCtr_safe_startup + 27 bytes
+ _________________1___________7__ 8 708 d:\win7sp1_gdr\minkernel\kernelbase\lmem.c(128) : KERNELBASE.dll!LocalAlloc + 219 bytes
+ _________________1_1____________ 2 692 d:\w7rtm\shell\inc\crtfree.h(14) : COMCTL32.dll!operator new + 23 bytes
+ ___________________________1____ 1 520 d:\w7rtm\minkernel\ntos\rtl\rtlexec.c(3851) : ntdll.dll!RtlProcessFlsData + 185 bytes
+ _________1______________________ 1 456 d:\w7rtm\windows\core\ntuser\client\rtlinit.c(224) : USER32.dll!InitLookaside + 35 bytes
+ _1__________1_____________1_____ 3 360 d:\w7rtm\minkernel\ntdll\ldrfind.c(592) : ntdll.dll!LdrpFindOrMapDll + 1366 bytes
+ ______________________1__11__17_ 11 360 d:\w7rtm\minkernel\ntos\rtl\heapdll.c(688) : ntdll.dll!RtlpReAllocateHeap + 326 bytes
+ 1_______________________________ 1 320 d:\w7rtm\com\ole32\com\class\tls.cxx(101) : ole32.dll!TLSGrowMap + 71 bytes
+ _6__________5_____________26____ 19 304 d:\w7rtm\minkernel\ntdll\ldrsnap.c(3761) : ntdll.dll!LdrpRecordStaticImport + 55 bytes
+ 1_______________________________ 1 288 d:\w7rtm\com\ole32\com\class\tls.cxx(292) : ole32.dll!COleTls::TLSAllocData + 26 bytes
+ _______________________________1 1 284 d:\win7sp1_gdr\base\win32\winnls\sorting\win7tbls\tables.c(803) : kernel32.dll!CreateSortNode + 25 bytes
+ __________________________6_3___ 9 264 d:\w7rtm\com\ole32\com\util\w32new.cxx(31) : ole32.dll!operator new + 22 bytes
+ 1_______________________________ 1 264 o:\w7rtm.obj.x86fre\com\ole32\common\daytona\objfre\i386\rwlock_ole32.cxx(711) : ole32.dll!LockEntry::ThreadInit + 36 bytes
+ _______________________________1 1 256 d:\w7rtm\windows\core\ntuser\client\clenum.c(53) : USER32.dll!BuildHwndList + 56 bytes
+ _____________________1__________ 1 256 d:\w7rtm\windows\core\ntuser\client\cltxt.h(1284) : USER32.dll!RealSystemParametersInfoW + 587 bytes
+ _________1____________12________ 4 240 d:\w7rtm\windows\core\ntuser\imm\misc.c(697) : IMM32.DLL!ImmLocalAlloc + 48 bytes
+ _____________________1__________ 1 238 d:\w7rtm\minkernel\ntdll\sxsstoragemap.c(313) : ntdll.dll!RtlpInsertAssemblyStorageMapEntry + 129 bytes
+ ________________________1___11__ 3 236 d:\w7rtm\minkernel\ntos\rtl\heapdll.c(1177) : ntdll.dll!RtlpReAllocateHeap + 2147 bytes
+ 11______________________________ 2 176 d:\w7rtm\minkernel\etw\ntdll\regguidsapi.c(457) : ntdll.dll!EtwpCreateRegGuidsContext + 36 bytes
+ _____________________1__________ 1 132 d:\w7rtm\shell\comctl32\v6\status.cpp(181) : COMCTL32.dll!InitStatusWnd + 52 bytes
+ _1__________1___________________ 2 126 d:\w7rtm\minkernel\ntdll\ldrfind.c(1559) : ntdll.dll!LdrpResolveDllName + 245 bytes
+ __1_____________________________ 1 80 d:\w7rtm\windows\core\ntgdi\client\local.c(477) : GDI32.dll!plfCreateLOCALFONT + 42 bytes
+ 1_______________________________ 1 68 d:\win7sp1_gdr\base\win32\client\process.c(2235) : kernel32.dll!GetStartupInfoA + 69 bytes
+ __________________________1_____ 1 64 d:\w7rtm\minkernel\ntdll\ldrfind.c(1231) : ntdll.dll!LdrpFindKnownDll + 219 bytes
+ 3_______________________________ 3 49 d:\w7rtm\minkernel\ntos\rtl\sysvol.c(96) : ntdll.dll!RtlpSysVolAllocate + 27 bytes
+ 21___________2_____________1____ 6 48 d:\w7rtm\minkernel\etw\ntdll\evntapi.c(215) : ntdll.dll!EtwEventRegister + 48 bytes
+ ___________________1__1_________ 2 42 d:\w7rtm\shell\comctl32\v6\mem.c(39) : COMCTL32.dll!CCHeapAllocArraySize + 58 bytes
+ _____________________2__________ 2 40 d:\w7rtm\shell\inc\crtfree.h(14) : SHLWAPI.dll!operator new + 23 bytes
+ _________1______________________ 1 16 d:\w7rtm\windows\core\ntuser\client\clres.c(331) : USER32.dll!AddAccResource + 22 bytes
+ _________1______________________ 1 16 d:\winmain\minkernel\screg\winreg\regkrn\predefh.c(179) : kernel32.dll!AllocatePredefinedHandleUnit + 27 bytes
+ ____________1___________________ 1 4 d:\w7rtm\windows\dwm\shared\util\utillib\memutils.cxx(100) : dwmapi.dll!AvCreateProcessHeap + 22 bytes
+
+Now set focus on txtbox for Min in panel and send '123'
+After typing '123'
+IsEnabled = True Min= 1,237  Max= 1,407
+WhenDist initial children
+3343422552563555354455512_2352_1 109 7,190 d:\memspect\vsassert\trackmem.cpp(3226) : MemSpectDll.dll!Mine_RtlAllocHeap + 573 bytes
+ ______25423135452343445_1_2351_1 72 4,354 d:\win7sp1_gdr\minkernel\kernelbase\lmem.c(108) : KERNELBASE.dll!LocalAlloc + 95 bytes
+ 32431___________________________ 13 1,008 d:\w7rtm\com\ole32\com\class\memapi.cxx(641) : ole32.dll!CRetailMalloc_Alloc + 22 bytes
+ __________25____________________ 7 644 d:\win7sp1_gdr\minkernel\kernelbase\lmem.c(128) : KERNELBASE.dll!LocalAlloc + 219 bytes
+ ________________________1_______ 1 284 d:\win7sp1_gdr\base\win32\winnls\sorting\win7tbls\tables.c(803) : kernel32.dll!CreateSortNode + 25 bytes
+ _____________________________1__ 1 256 d:\w7rtm\windows\core\ntuser\client\clenum.c(53) : USER32.dll!BuildHwndList + 56 bytes
+ ________1_______12_111_1________ 8 240 d:\w7rtm\minkernel\ntos\rtl\heapdll.c(688) : ntdll.dll!RtlpReAllocateHeap + 326 bytes
+ _____1________1_________________ 2 200 d:\w7rtm\minkernel\ntos\rtl\heapdll.c(1177) : ntdll.dll!RtlpReAllocateHeap + 2147 bytes
+ ____3___________________________ 3 140 d:\w7rtm\com\ole32\com\util\w32new.cxx(31) : ole32.dll!operator new + 22 bytes
+ _1___1__________________________ 2 64 d:\w7rtm\minkernel\ntdll\resource.c(278) : ntdll.dll!RtlpAllocateDebugInfo + 40 bytes
+
+now try to select the whendist contents for first item
+After range sel
+IsEnabled = True Min= 1,249  Max= 1,267
+WhenDist initial children
+1__1_11____1_1_11_1_11____1_____ 12 880 d:\memspect\vsassert\trackmem.cpp(3226) : MemSpectDll.dll!Mine_RtlAllocHeap + 573 bytes
+ 1__1_11____1_1_11_______________ 8 708 d:\w7rtm\com\ole32\com\class\memapi.cxx(641) : ole32.dll!CRetailMalloc_Alloc + 22 bytes
+ __________________1_11__________ 3 140 d:\w7rtm\com\ole32\com\util\w32new.cxx(31) : ole32.dll!operator new + 22 bytes
+ __________________________1_____ 1 32 d:\w7rtm\minkernel\ntdll\resource.c(278) : ntdll.dll!RtlpAllocateDebugInfo + 40 bytes
+
+ now test swap back from textbox to textblock
+ now test subsnap
+Subsnap contents = 
+IsEnabled = True Min= 1,251  Max= 1,252
+WhenDist initial children
+1_______________1_______________ 2 120 d:\memspect\vsassert\trackmem.cpp(3226) : MemSpectDll.dll!Mine_RtlAllocHeap + 573 bytes
+ 1_______________1_______________ 2 120 d:\w7rtm\com\ole32\com\class\memapi.cxx(641) : ole32.dll!CRetailMalloc_Alloc + 22 bytes
+
+Disable WhenDist
+IsEnabled = False Min= 0  Max= 0
+WhenDist initial children
+2 120 d:\memspect\vsassert\trackmem.cpp(3226) : MemSpectDll.dll!Mine_RtlAllocHeap + 573 bytes
+ 2 120 d:\w7rtm\com\ole32\com\class\memapi.cxx(641) : ole32.dll!CRetailMalloc_Alloc + 22 bytes
+
+==>Test end NPadOffWhenDist 10/2/2013 4:43:32 PM #Secs = 11.61
+==># of asserts = 91

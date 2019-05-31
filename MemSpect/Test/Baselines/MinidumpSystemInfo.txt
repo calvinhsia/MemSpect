@@ -1,0 +1,6 @@
+==>Test start 5/4/2015 2:20:52 PM MinidumpSystemInfo
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+System Info
+Arch = PROCESSOR_ARCHITECTURE_INTEL Proclevel = 6 ProcRev = 9474 NumProc = 4 ProdType=1 VerMaj = 6 VerMin = 1, BuildNum= 7601, Platid = Win32NT
+==>Test end MinidumpSystemInfo 5/4/2015 2:20:52 PM #Secs = 0.15
+==># of asserts = 4

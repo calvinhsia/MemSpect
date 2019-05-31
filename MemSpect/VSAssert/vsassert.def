@@ -1,0 +1,12 @@
+;--------------------------------------------------------------------------
+; vsassert.def - module definition file
+;--------------------------------------------------------------------------
+
+EXPORTS
+	DllMain		PRIVATE
+	VsExternalAddSwitch
+	VsExternalQuerySwitch
+	VsExternalRemoveSwitch
+	VsAssertOutOfProcAssertDialogA   PRIVATE
+	DllGetClassObject PRIVATE
+	

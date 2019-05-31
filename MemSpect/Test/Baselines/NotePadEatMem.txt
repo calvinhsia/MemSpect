@@ -1,0 +1,15 @@
+==>Test start 10/2/2013 4:35:32 PM NotePadEatMem
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+==>Starting Notepad
+==>MemSpect vers = 130826
+==>Freezing target. SeqNo = 1048
+MemEaterAPI, init # items  = 0
+==>MemEaterAPI, After eating # items  = 31113
+MemoryEater._EatenAllocations.Count > 180 true
+MemEaterAPI, After Free # items  = 0
+MemEaterUI, Init # items  = 0
+==>MemEaterUI, after eating big # items  = 1933
+brow._BrowseList.Items.Count > 14 true
+MemEaterUI, after Clicking free # items  = 0
+==>Test end NotePadEatMem 10/2/2013 4:36:03 PM #Secs = 31.31
+==># of asserts = 12

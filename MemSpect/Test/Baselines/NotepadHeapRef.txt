@@ -1,0 +1,656 @@
+==>Test start 6/29/2016 1:35:49 PM NotepadHeapRef
+==>Note: lines starting with ==> are comments and not used for comparison to determine failure
+00440390
+0044f790
+  Address=0x0044f7a8, SeqNo=1,192, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x0044f778, SeqNo=1,190, Size=16, BlkType=None Thread=2272 DDC
+0044fd90
+00454f90
+  Address=0x004553a8, SeqNo=1,106, Size=92, BlkType=None Thread=2272 #
+00456790
+  Address=0x00456790, SeqNo=1,245, Size=128, BlkType=None Thread=2272
+  Address=0x00456720, SeqNo=1,241, Size=48, BlkType=None Thread=2272 
+00442290
+004423d0
+0044a9d0
+  Address=0x00440390, SeqNo=8, Size=208, BlkType=None Thread=2272 
+00442510
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044f910
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+0044fb10
+0044aa50
+  Address=0x0044aab0, SeqNo=31, Size=1,088, BlkType=None Thread=2272
+0044f850
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+0044fc50
+0044b150
+00450150
+  Address=0x00455eb8, SeqNo=1,230, Size=1,456, BlkType=None Thread=2272 EC:\Windows\Registration\R000000000005.clb
+00457d50
+  Address=0x00457da0, SeqNo=1,329, Size=16, BlkType=None Thread=2272 E
+0044f210
+  Address=0x0044b820, SeqNo=65, Size=14,720, BlkType=None Thread=2272 
+0044f610
+  Address=0x0044f628, SeqNo=82, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x0043ce60, SeqNo=78, Size=16, BlkType=None Thread=2272 CDA
+00450010
+00455410
+  Address=0x004553a8, SeqNo=1,106, Size=92, BlkType=None Thread=2272 #
+  Address=0x00454fc8, SeqNo=1,147, Size=24, BlkType=None Thread=2272 EEEEE
+00455a10
+  Address=0x00451888, SeqNo=1,163, Size=20, BlkType=None Thread=2272 E
+00440468
+00442268
+0044f868
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+00450268
+004423a8
+0044f1a8
+0044f7a8
+  Address=0x0044f790, SeqNo=1,191, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x0044f7c0, SeqNo=1,193, Size=16, BlkType=None Thread=2272 DDC
+004553a8
+  Address=0x00454f30, SeqNo=1,104, Size=84, BlkType=None Thread=2272 
+004424e8
+0044f6e8
+  Address=0x00437c98, SeqNo=567, Size=120, BlkType=None Thread=2272 CCCCCC
+  Address=0x0044f6d0, SeqNo=571, Size=16, BlkType=None Thread=2272 DDC
+0044fae8
+004566e8
+  Address=0x00455eb8, SeqNo=1,230, Size=1,456, BlkType=None Thread=2272 EC:\Windows\Registration\R000000000005.clb
+00457ee8
+  Address=0x00458e98, SeqNo=1,341, Size=16, BlkType=None Thread=2272 E
+  Address=0x00458e80, SeqNo=1,345, Size=16, BlkType=None Thread=2272 EEEE
+00442628
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044f628
+  Address=0x0044f610, SeqNo=81, Size=16, BlkType=None Thread=2272 CDA
+  Address=0x0044f640, SeqNo=83, Size=16, BlkType=None Thread=2272 DCC
+0044fc28
+00455c28
+  Address=0x00451808, SeqNo=1,159, Size=20, BlkType=None Thread=2272 E
+00440540
+00455540
+  Address=0x00455498, SeqNo=1,116, Size=160, BlkType=None Thread=2272 
+  Address=0x00454fc8, SeqNo=1,147, Size=24, BlkType=None Thread=2272 EEEEE
+00442240
+  Address=0x00440540, SeqNo=14, Size=208, BlkType=None Thread=2272 
+0044aa40
+  Address=0x00440540, SeqNo=14, Size=208, BlkType=None Thread=2272 
+0044f640
+  Address=0x0044f628, SeqNo=82, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x00437c18, SeqNo=75, Size=120, BlkType=None Thread=2272 CCCCCC
+00454840
+  Address=0x0043be90, SeqNo=1,063, Size=64, BlkType=None Thread=2272
+00455640
+  Address=0x00454fc8, SeqNo=1,147, Size=24, BlkType=None Thread=2272 EEEEE
+  Address=0x004555c8, SeqNo=1,122, Size=112, BlkType=None Thread=2272 
+00457a40
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+  Address=0x00457e40, SeqNo=1,334, Size=56, BlkType=None Thread=2272 
+  Address=0x00457c98, SeqNo=1,321, Size=52, BlkType=None Thread=2272 
+  Address=0x00457938, SeqNo=1,302, Size=96, BlkType=None Thread=2272 E
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+  Address=0x00455a48, SeqNo=1,317, Size=44, BlkType=None Thread=2272 EEE
+  Address=0x00451a28, SeqNo=1,318, Size=24, BlkType=None Thread=2272 E
+  Address=0x004579a0, SeqNo=1,314, Size=72, BlkType=None Thread=2272
+  Address=0x004515c8, SeqNo=1,353, Size=20, BlkType=None Thread=2272 
+  Address=0x004592c8, SeqNo=1,389, Size=44, BlkType=None Thread=2272 EEE
+  Address=0x00451b08, SeqNo=1,369, Size=20, BlkType=None Thread=2272 
+  Address=0x00457cd8, SeqNo=1,323, Size=52, BlkType=None Thread=2272 
+  Address=0x0043c1f0, SeqNo=1,311, Size=64, BlkType=None Thread=2272
+  Address=0x0043c238, SeqNo=1,312, Size=64, BlkType=None Thread=2272 E
+  Address=0x00458eb0, SeqNo=1,347, Size=52, BlkType=None Thread=2272 
+  Address=0x00459278, SeqNo=1,388, Size=44, BlkType=None Thread=2272 EEE
+00457e40
+  Address=0x00457e40, SeqNo=1,334, Size=56, BlkType=None Thread=2272 
+  Address=0x0044f8b0, SeqNo=1,340, Size=12, BlkType=None Thread=2272 E
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+  Address=0x0044f8c8, SeqNo=1,346, Size=12, BlkType=None Thread=2272 E
+00442380
+004424c0
+0044fac0
+004544c0
+  Address=0x0043be48, SeqNo=1,054, Size=64, BlkType=None Thread=2272
+00442600
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044fc00
+004406f0
+0044fcf0
+004556f0
+  Address=0x004514c0, SeqNo=1,142, Size=8, BlkType=None Thread=2272 EE
+004421f0
+  Address=0x00440390, SeqNo=8, Size=208, BlkType=None Thread=2272 
+0044f7f0
+  Address=0x0044f7d8, SeqNo=1,194, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x00437d18, SeqNo=1,187, Size=120, BlkType=None Thread=2272 CCC
+004501f0
+004573f0
+004579f0
+00457df0
+  Address=0x00457da0, SeqNo=1,329, Size=16, BlkType=None Thread=2272 E
+  Address=0x00458e80, SeqNo=1,345, Size=16, BlkType=None Thread=2272 EEEE
+00442330
+0044b130
+0044f730
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+00454f30
+  Address=0x00455930, SeqNo=1,146, Size=128, BlkType=None Thread=2272 E
+  Address=0x004557e8, SeqNo=1,140, Size=128, BlkType=None Thread=2272 E
+  Address=0x004541a0, SeqNo=1,026, Size=132, BlkType=None Thread=2272 EEEE
+00455930
+  Address=0x00455870, SeqNo=1,143, Size=180, BlkType=None Thread=2272 
+  Address=0x00454fc8, SeqNo=1,147, Size=24, BlkType=None Thread=2272 EEEEE
+00457130
+00442470
+0044b470
+0044f670
+0044fa70
+  Address=0x00440618, SeqNo=86, Size=208, BlkType=None Thread=2272 
+00455870
+00456470
+  Address=0x00455eb8, SeqNo=1,230, Size=1,456, BlkType=None Thread=2272 EC:\Windows\Registration\R000000000005.clb
+004425b0
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044fbb0
+004557b0
+  Address=0x0043bfb0, SeqNo=1,092, Size=64, BlkType=None Thread=2272
+0044aa30
+  Address=0x00440468, SeqNo=11, Size=208, BlkType=None Thread=2272 
+0044fe30
+00454230
+  Address=0x0044f5b8, SeqNo=436, Size=44, BlkType=None Thread=2272 EEE
+00457c30
+  Address=0x004518a8, SeqNo=1,166, Size=20, BlkType=None Thread=2272 E
+0044aab0
+0044f8b0
+  Address=0x00457e98, SeqNo=1,338, Size=72, BlkType=None Thread=2272
+004500b0
+00440618
+00442218
+  Address=0x00440468, SeqNo=11, Size=208, BlkType=None Thread=2272 
+00450218
+00456818
+00442358
+0044f958
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+00455b58
+  Address=0x00455b88, SeqNo=1,262, Size=36, BlkType=None Thread=2272
+00456758
+00442498
+0044b298
+  Address=0x0044aef8, SeqNo=37, Size=288, BlkType=None Thread=2272
+  Address=0x0044b820, SeqNo=65, Size=14,720, BlkType=None Thread=2272 
+0044f898
+  Address=0x00457df0, SeqNo=1,331, Size=72, BlkType=None Thread=2272
+0044fa98
+  Address=0x004406f0, SeqNo=89, Size=208, BlkType=None Thread=2272 
+00454298
+00455498
+  Address=0x00455540, SeqNo=1,118, Size=128, BlkType=None Thread=2272 E
+  Address=0x00454f30, SeqNo=1,104, Size=84, BlkType=None Thread=2272 
+00457c98
+  Address=0x0044f868, SeqNo=1,322, Size=12, BlkType=None Thread=2272 E
+  Address=0x00457c98, SeqNo=1,321, Size=52, BlkType=None Thread=2272 
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+00457e98
+  Address=0x00458e98, SeqNo=1,341, Size=16, BlkType=None Thread=2272 E
+  Address=0x00458e80, SeqNo=1,345, Size=16, BlkType=None Thread=2272 EEEE
+004425d8
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044f7d8
+  Address=0x0044f7f0, SeqNo=1,195, Size=16, BlkType=None Thread=2272 DCA
+  Address=0x0044f7c0, SeqNo=1,193, Size=16, BlkType=None Thread=2272 DDC
+0044fbd8
+0044f658
+0044fe58
+00450258
+  Address=0x004406f0, SeqNo=89, Size=208, BlkType=None Thread=2272 
+004422b8
+0044f6b8
+  Address=0x0044f6a0, SeqNo=569, Size=16, BlkType=None Thread=2272 DDA
+  Address=0x0044f6d0, SeqNo=571, Size=16, BlkType=None Thread=2272 DDC
+00455ab8
+  Address=0x0043c118, SeqNo=1,256, Size=60, BlkType=None Thread=2272
+00455eb8
+  Address=0x00456758, SeqNo=1,242, Size=44, BlkType=None Thread=2272 EE
+004423f8
+0044f9f8
+  Address=0x00440618, SeqNo=86, Size=208, BlkType=None Thread=2272 
+00442538
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044fb38
+00457938
+  Address=0x0044f910, SeqNo=1,407, Size=12, BlkType=None Thread=2272 E
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+00457f38
+  Address=0x004556e0, SeqNo=1,351, Size=8, BlkType=None Thread=2272 EE
+  Address=0x00452648, SeqNo=1,348, Size=8, BlkType=None Thread=2272 E
+0044aef8
+  Address=0x0044b150, SeqNo=41, Size=320, BlkType=None Thread=2272 D
+0044f8f8
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+0044fef8
+  Address=0x00453ae0, SeqNo=1,006, Size=52, BlkType=None Thread=2272 2
+004422e0
+0044f8e0
+  Address=0x00457f38, SeqNo=1,350, Size=72, BlkType=None Thread=2272
+004556e0
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+00442420
+0044b020
+  Address=0x0044aef8, SeqNo=37, Size=288, BlkType=None Thread=2272
+0044b820
+  Address=0x0044aef8, SeqNo=37, Size=288, BlkType=None Thread=2272
+0044f820
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+00457420
+  Address=0x00457408, SeqNo=1,300, Size=8, BlkType=None Thread=2272 E
+00442560
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044f760
+  Address=0x0044f748, SeqNo=1,188, Size=16, BlkType=None Thread=2272 CDA
+  Address=0x0044f778, SeqNo=1,190, Size=16, BlkType=None Thread=2272 DDC
+0044fb60
+00454d60
+  Address=0x0043bf20, SeqNo=1,079, Size=64, BlkType=None Thread=2272
+004408a0
+0044aaa0
+  Address=0x0044aa50, SeqNo=27, Size=68, BlkType=None Thread=2272 DCD
+0044f6a0
+  Address=0x0044f6b8, SeqNo=570, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x0044f688, SeqNo=568, Size=16, BlkType=None Thread=2272 CDA
+0044fca0
+004564a0
+  Address=0x004566e8, SeqNo=1,240, Size=48, BlkType=None Thread=2272 
+0043ce18
+  Address=0x0044aa50, SeqNo=27, Size=68, BlkType=None Thread=2272 DCD
+00442308
+  Address=0x0044aa50, SeqNo=27, Size=68, BlkType=None Thread=2272 DCD
+  Address=0x0044aab0, SeqNo=31, Size=1,088, BlkType=None Thread=2272
+00455b08
+  Address=0x0043c160, SeqNo=1,258, Size=60, BlkType=None Thread=2272
+00442448
+00455a48
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+  Address=0x00455a48, SeqNo=1,317, Size=44, BlkType=None Thread=2272 EEE
+  Address=0x00457bc8, SeqNo=1,310, Size=92, BlkType=None Thread=2272
+00442588
+  Address=0x0044b470, SeqNo=55, Size=932, BlkType=None Thread=2272 DDDDDDDD
+0044fb88
+00455188
+  Address=0x0043bfb0, SeqNo=1,092, Size=64, BlkType=None Thread=2272
+00455b88
+  Address=0x0043c1a8, SeqNo=1,261, Size=64, BlkType=None Thread=2272
+00457f88
+  Address=0x004514d0, SeqNo=1,360, Size=8, BlkType=None Thread=2272 EE
+0043bd28
+  Address=0x00437c18, SeqNo=75, Size=120, BlkType=None Thread=2272 CCCCCC
+00437c18
+  Address=0x00437c98, SeqNo=567, Size=120, BlkType=None Thread=2272 CCCCCC
+0043ce30
+  Address=0x00437c18, SeqNo=75, Size=120, BlkType=None Thread=2272 CCCCCC
+  Address=0x0043ce48, SeqNo=77, Size=16, BlkType=None Thread=2272 CCA
+0043be48
+  Address=0x00454f00, SeqNo=1,098, Size=36, BlkType=None Thread=2272 CCCCCCC
+0043ce48
+  Address=0x0043ce30, SeqNo=76, Size=16, BlkType=None Thread=2272 CCA
+  Address=0x0043ce60, SeqNo=78, Size=16, BlkType=None Thread=2272 CDA
+0043ce60
+  Address=0x0044f610, SeqNo=81, Size=16, BlkType=None Thread=2272 CDA
+  Address=0x0043ce48, SeqNo=77, Size=16, BlkType=None Thread=2272 CCA
+0044fc78
+0044f1b8
+  Address=0x0044f1b8, SeqNo=116, Size=80, BlkType=None Thread=2272
+0044f5b8
+0044fdb8
+004559b8
+  Address=0x004541a0, SeqNo=1,026, Size=132, BlkType=None Thread=2272 EEEE
+00455bb8
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+00457db8
+  Address=0x00451748, SeqNo=1,154, Size=20, BlkType=None Thread=2272 E
+0044f718
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+0044fd18
+00457d18
+  Address=0x00451648, SeqNo=1,113, Size=20, BlkType=None Thread=2272 E
+0044f3e8
+0044ffe8
+00454fe8
+  Address=0x0043bf68, SeqNo=1,086, Size=64, BlkType=None Thread=2272
+004557e8
+  Address=0x004556f0, SeqNo=1,130, Size=180, BlkType=None Thread=2272 
+  Address=0x00454fc8, SeqNo=1,147, Size=24, BlkType=None Thread=2272 EEEEE
+00451420
+0043bd70
+  Address=0x00437c98, SeqNo=567, Size=120, BlkType=None Thread=2272 CCCCCC
+00437c98
+  Address=0x00437c18, SeqNo=75, Size=120, BlkType=None Thread=2272 CCCCCC
+  Address=0x00437d18, SeqNo=1,187, Size=120, BlkType=None Thread=2272 CCC
+0044f688
+  Address=0x0044f6a0, SeqNo=569, Size=16, BlkType=None Thread=2272 DDA
+  Address=0x00437c98, SeqNo=567, Size=120, BlkType=None Thread=2272 CCCCCC
+00450088
+00455a88
+0044f6d0
+  Address=0x0044f6e8, SeqNo=572, Size=16, BlkType=None Thread=2272 DCA
+  Address=0x0044f6b8, SeqNo=570, Size=16, BlkType=None Thread=2272 DDC
+0044fed0
+004514e0
+004524e0
+00453ae0
+0044fd68
+004514f0
+  Address=0x004407c8, SeqNo=579, Size=208, BlkType=None Thread=2272 
+00458ef0
+  Address=0x004515a8, SeqNo=1,036, Size=20, BlkType=None Thread=2272 E
+004407c8
+004501c8
+00454fc8
+  Address=0x00454f30, SeqNo=1,104, Size=84, BlkType=None Thread=2272 
+004555c8
+  Address=0x00455640, SeqNo=1,124, Size=128, BlkType=None Thread=2272 E
+  Address=0x00454f30, SeqNo=1,104, Size=84, BlkType=None Thread=2272 
+00457bc8
+  Address=0x0043c1f0, SeqNo=1,311, Size=64, BlkType=None Thread=2272
+0044fde0
+  Address=0x004407c8, SeqNo=579, Size=208, BlkType=None Thread=2272 
+00451500
+  Address=0x004408a0, SeqNo=582, Size=208, BlkType=None Thread=2272 
+0044f808
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+0044fe08
+  Address=0x004408a0, SeqNo=582, Size=208, BlkType=None Thread=2272 
+00457408
+00451d10
+00452330
+00452930
+0044f880
+  Address=0x00457d50, SeqNo=1,326, Size=72, BlkType=None Thread=2272
+0044fe80
+0044fea8
+00455ca8
+004572a8
+00451548
+00451748
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451948
+00451b48
+  Address=0x00459278, SeqNo=1,388, Size=44, BlkType=None Thread=2272 EEE
+00452548
+  Address=0x00452330, SeqNo=793, Size=424, BlkType=None Thread=2272 2
+00451648
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451848
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451a48
+  Address=0x00451a28, SeqNo=1,318, Size=24, BlkType=None Thread=2272 E
+00452648
+  Address=0x00458eb0, SeqNo=1,347, Size=52, BlkType=None Thread=2272 
+00452a48
+00451528
+00451728
+  Address=0x004555c8, SeqNo=1,122, Size=112, BlkType=None Thread=2272 
+00451928
+00451b28
+  Address=0x00459278, SeqNo=1,388, Size=44, BlkType=None Thread=2272 EEE
+00458f28
+  Address=0x00458f28, SeqNo=1,367, Size=284, BlkType=None Thread=2272
+00452b50
+00452cb8
+00452fb0
+004516a8
+  Address=0x004517a8, SeqNo=1,336, Size=20, BlkType=None Thread=2272 E
+004518a8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451aa8
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+004530a8
+00453138
+00453540
+  Address=0x0044f1b8, SeqNo=116, Size=80, BlkType=None Thread=2272
+0044ff20
+00454320
+  Address=0x0043be00, SeqNo=1,047, Size=64, BlkType=None Thread=2272
+00456720
+  Address=0x00455eb8, SeqNo=1,230, Size=1,456, BlkType=None Thread=2272 EC:\Windows\Registration\R000000000005.clb
+00457320
+0043bdb8
+004525f8
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+004537f8
+  Address=0x0043bdb8, SeqNo=1,002, Size=64, BlkType=None Thread=2272
+00451628
+  Address=0x004541a0, SeqNo=1,026, Size=132, BlkType=None Thread=2272 EEEE
+00451828
+00451a28
+  Address=0x00455a48, SeqNo=1,317, Size=44, BlkType=None Thread=2272 EEE
+00452628
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+00453828
+0044f748
+  Address=0x0044f760, SeqNo=1,189, Size=16, BlkType=None Thread=2272 DDA
+  Address=0x00437d18, SeqNo=1,187, Size=120, BlkType=None Thread=2272 CCC
+0044ff48
+00456948
+00452558
+  Address=0x0044ff48, SeqNo=1,015, Size=32, BlkType=None Thread=2272 E
+00451568
+  Address=0x0044aef8, SeqNo=37, Size=288, BlkType=None Thread=2272
+00451768
+  Address=0x004556f0, SeqNo=1,130, Size=180, BlkType=None Thread=2272 
+  Address=0x004557e8, SeqNo=1,140, Size=128, BlkType=None Thread=2272 E
+00451968
+00451b68
+  Address=0x004592c8, SeqNo=1,389, Size=44, BlkType=None Thread=2272 EEE
+00452568
+  Address=0x0044f700, SeqNo=1,027, Size=16, BlkType=None Thread=2272 E
+00453b20
+  Address=0x0044f5b8, SeqNo=436, Size=44, BlkType=None Thread=2272 EEE
+00453b80
+  Address=0x00457e40, SeqNo=1,334, Size=56, BlkType=None Thread=2272 
+  Address=0x00457938, SeqNo=1,302, Size=96, BlkType=None Thread=2272 E
+  Address=0x0044f5b8, SeqNo=436, Size=44, BlkType=None Thread=2272 EEE
+  Address=0x004541a0, SeqNo=1,026, Size=132, BlkType=None Thread=2272 EEEE
+  Address=0x0044ff70, SeqNo=1,029, Size=32, BlkType=None Thread=2272
+  Address=0x00451588, SeqNo=1,033, Size=24, BlkType=None Thread=2272 
+  Address=0x004519c8, SeqNo=1,292, Size=20, BlkType=None Thread=2272 E
+004501a0
+  Address=0x00455eb8, SeqNo=1,230, Size=1,456, BlkType=None Thread=2272 EC:\Windows\Registration\R000000000005.clb
+004541a0
+  Address=0x004553a8, SeqNo=1,106, Size=92, BlkType=None Thread=2272 #
+  Address=0x004556f0, SeqNo=1,130, Size=180, BlkType=None Thread=2272 
+  Address=0x00454f30, SeqNo=1,104, Size=84, BlkType=None Thread=2272 
+  Address=0x00455870, SeqNo=1,143, Size=180, BlkType=None Thread=2272 
+  Address=0x00455498, SeqNo=1,116, Size=160, BlkType=None Thread=2272 
+  Address=0x004555c8, SeqNo=1,122, Size=112, BlkType=None Thread=2272 
+  Address=0x0044ff98, SeqNo=1,042, Size=28, BlkType=None Thread=2272 E
+004579a0
+00457da0
+  Address=0x00457cd8, SeqNo=1,323, Size=52, BlkType=None Thread=2272 
+0044f700
+00450100
+00454f00
+  Address=0x00451628, SeqNo=1,043, Size=24, BlkType=None Thread=2272 E
+0044ff70
+  Address=0x0044f718, SeqNo=1,030, Size=12, BlkType=None Thread=2272 D
+  Address=0x00453b20, SeqNo=1,020, Size=84, BlkType=None Thread=2272 
+  Address=0x0044ff70, SeqNo=1,029, Size=32, BlkType=None Thread=2272
+00456970
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+00450060
+00454260
+  Address=0x00454230, SeqNo=1,031, Size=36, BlkType=None Thread=2272
+  Address=0x004541a0, SeqNo=1,026, Size=132, BlkType=None Thread=2272 EEEE
+00455c60
+  Address=0x00456970, SeqNo=1,290, Size=32, BlkType=None Thread=2272 E
+00451588
+  Address=0x0044f730, SeqNo=1,034, Size=12, BlkType=None Thread=2272 E
+  Address=0x00454230, SeqNo=1,031, Size=36, BlkType=None Thread=2272
+00451788
+  Address=0x00455930, SeqNo=1,146, Size=128, BlkType=None Thread=2272 E
+  Address=0x00455870, SeqNo=1,143, Size=180, BlkType=None Thread=2272 
+00451988
+00451b88
+  Address=0x004592c8, SeqNo=1,389, Size=44, BlkType=None Thread=2272 EEE
+00452588
+  Address=0x00455188, SeqNo=1,097, Size=408, BlkType=None Thread=2272
+004515a8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+004517a8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+004519a8
+  Address=0x004518c8, SeqNo=1,277, Size=20, BlkType=None Thread=2272 E
+004525a8
+004515c8
+  Address=0x0044f8f8, SeqNo=1,354, Size=12, BlkType=None Thread=2272 E
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+004517c8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+004519c8
+  Address=0x0044f850, SeqNo=1,293, Size=12, BlkType=None Thread=2272 E
+  Address=0x00453b20, SeqNo=1,020, Size=84, BlkType=None Thread=2272 
+004525c8
+  Address=0x0044f808, SeqNo=1,274, Size=16, BlkType=None Thread=2272 E
+004515e8
+004517e8
+  Address=0x004517c8, SeqNo=1,157, Size=20, BlkType=None Thread=2272 E
+004519e8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+004525e8
+  Address=0x0044f838, SeqNo=1,283, Size=16, BlkType=None Thread=2272 E
+00451608
+  Address=0x004515e8, SeqNo=1,038, Size=20, BlkType=None Thread=2272 E
+00451808
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451a08
+  Address=0x004519e8, SeqNo=1,307, Size=20, BlkType=None Thread=2272 E
+00452608
+  Address=0x0043c1f0, SeqNo=1,311, Size=64, BlkType=None Thread=2272
+0044ff98
+  Address=0x004541a0, SeqNo=1,026, Size=132, BlkType=None Thread=2272 EEEE
+00456998
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+0043be00
+  Address=0x00454f00, SeqNo=1,098, Size=36, BlkType=None Thread=2272 CCCCCCC
+0043be90
+  Address=0x00454f00, SeqNo=1,098, Size=36, BlkType=None Thread=2272 CCCCCCC
+0043bed8
+  Address=0x00454f00, SeqNo=1,098, Size=36, BlkType=None Thread=2272 CCCCCCC
+0044f7c0
+  Address=0x0044f7a8, SeqNo=1,192, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x0044f7d8, SeqNo=1,194, Size=16, BlkType=None Thread=2272 DDC
+0044ffc0
+00454bc0
+  Address=0x0043bed8, SeqNo=1,072, Size=64, BlkType=None Thread=2272
+004573c0
+0043bf20
+  Address=0x00454f00, SeqNo=1,098, Size=36, BlkType=None Thread=2272 CCCCCCC
+0043bf68
+  Address=0x00454f00, SeqNo=1,098, Size=36, BlkType=None Thread=2272 CCCCCCC
+0043bfb0
+  Address=0x00454f00, SeqNo=1,098, Size=36, BlkType=None Thread=2272 CCCCCCC
+00451668
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451868
+  Address=0x00451848, SeqNo=1,161, Size=20, BlkType=None Thread=2272 E
+00451a68
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451688
+  Address=0x00451668, SeqNo=1,100, Size=20, BlkType=None Thread=2272 E
+00451888
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451a88
+  Address=0x00451a68, SeqNo=1,342, Size=20, BlkType=None Thread=2272 E
+0044f928
+00450128
+  Address=0x00440978, SeqNo=1,220, Size=208, BlkType=None Thread=2272 
+00455328
+  Address=0x00451688, SeqNo=1,101, Size=24, BlkType=None Thread=2272 E
+004516c8
+  Address=0x00455498, SeqNo=1,116, Size=160, BlkType=None Thread=2272 
+004518c8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+00451ac8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+004592c8
+004516e8
+  Address=0x00454298, SeqNo=1,035, Size=124, BlkType=None Thread=2272 E
+004518e8
+  Address=0x00451988, SeqNo=1,210, Size=24, BlkType=None Thread=2272 
+00451ae8
+  Address=0x00451ac8, SeqNo=1,357, Size=20, BlkType=None Thread=2272 E
+00451708
+  Address=0x004516e8, SeqNo=1,119, Size=20, BlkType=None Thread=2272 E
+00451908
+00451b08
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+004514c0
+  Address=0x00454f30, SeqNo=1,104, Size=84, BlkType=None Thread=2272 
+00452578
+  Address=0x004559b8, SeqNo=1,151, Size=76, BlkType=None Thread=2272
+  Address=0x004557e8, SeqNo=1,140, Size=128, BlkType=None Thread=2272 E
+00452598
+  Address=0x004559b8, SeqNo=1,151, Size=76, BlkType=None Thread=2272
+0043bff8
+  Address=0x00437d18, SeqNo=1,187, Size=120, BlkType=None Thread=2272 CCC
+00437d18
+  Address=0x00437c98, SeqNo=567, Size=120, BlkType=None Thread=2272 CCCCCC
+00440978
+0044f778
+  Address=0x0044f790, SeqNo=1,191, Size=16, BlkType=None Thread=2272 DDC
+  Address=0x0044f760, SeqNo=1,189, Size=16, BlkType=None Thread=2272 DDA
+00450178
+  Address=0x00456758, SeqNo=1,242, Size=44, BlkType=None Thread=2272 EE
+0044f838
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+00450038
+004500d8
+00457cd8
+  Address=0x0044f898, SeqNo=1,333, Size=12, BlkType=None Thread=2272 E
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+  Address=0x0044f880, SeqNo=1,328, Size=12, BlkType=None Thread=2272 E
+  Address=0x00457cd8, SeqNo=1,323, Size=52, BlkType=None Thread=2272 
+004525b8
+  Address=0x00440978, SeqNo=1,220, Size=208, BlkType=None Thread=2272 
+0043c040
+0043c088
+0043c0d0
+0043c118
+0043c160
+0043c1a8
+  Address=0x00451908, SeqNo=1,179, Size=24, BlkType=None Thread=2272
+004525d8
+  Address=0x0044f820, SeqNo=1,279, Size=16, BlkType=None Thread=2272 E
+0044f8c8
+  Address=0x00457ee8, SeqNo=1,344, Size=72, BlkType=None Thread=2272
+004556c8
+  Address=0x004557e8, SeqNo=1,140, Size=128, BlkType=None Thread=2272 E
+0043c1f0
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+0043c238
+  Address=0x00457a40, SeqNo=1,309, Size=380, BlkType=None Thread=2272 
+00458e98
+  Address=0x00457e40, SeqNo=1,334, Size=56, BlkType=None Thread=2272 
+00458e80
+  Address=0x00453b80, SeqNo=1,025, Size=1,556, BlkType=None Thread=2272 
+00458eb0
+  Address=0x0044f8e0, SeqNo=1,352, Size=12, BlkType=None Thread=2272 E
+  Address=0x00457420, SeqNo=1,301, Size=1,292, BlkType=None Thread=2272 EEEEEEEEE
+  Address=0x00458eb0, SeqNo=1,347, Size=52, BlkType=None Thread=2272 
+00459ab0
+00452618
+  Address=0x00457f88, SeqNo=1,359, Size=72, BlkType=None Thread=2272
+  Address=0x00453b20, SeqNo=1,020, Size=84, BlkType=None Thread=2272 
+004514d0
+  Address=0x00457938, SeqNo=1,302, Size=96, BlkType=None Thread=2272 E
+00459050
+00459278
+00452638
+  Address=0x00459050, SeqNo=1,377, Size=540, BlkType=None Thread=2272
+==>Test end NotepadHeapRef 6/29/2016 1:35:51 PM #Secs = 1.67
+==># of asserts = 655
+==>Compare cmd = c:\bin\bc2.exe C:\MemSpect\Test\Baselines\NotepadHeapRef.txt "C:\MemSpect\VSAssertSrv\TestResults\Deploy_calvinh 2016-06-29 13_35_48\NotepadHeapRef.txt"
