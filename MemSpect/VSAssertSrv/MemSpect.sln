@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\Misc\Prism\MemSpectSettings.cs = ..\Misc\Prism\MemSpectSettings.cs
 		..\Misc\NorlsAllocator.cpp = ..\Misc\NorlsAllocator.cpp
 		..\Misc\NorlsAllocator.h = ..\Misc\NorlsAllocator.h
-		README.md = README.md
+		..\..\README.md = ..\..\README.md
 		..\srcsrv.dll = ..\srcsrv.dll
 		..\srcsrv.ini = ..\srcsrv.ini
 		..\symsrv.yes = ..\symsrv.yes
@@ -205,6 +205,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B0A00708-9243-4E26-A77B-8007502DB178} = {24CD417F-183C-47AF-BED6-3EC46EE212B8}
 		{9262FC9F-1FA6-4ED6-BC5C-32F91FE30149} = {24CD417F-183C-47AF-BED6-3EC46EE212B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6965BDFF-83D2-4E40-8AE6-F3AC3277B849}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = VSAssertSrv1.vsmdi
