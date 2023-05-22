@@ -51,3 +51,7 @@ Use HashSet rather than wasteful hashtable
 wrap all heaps, including ones created prior to my code loading (ProcessHeap, CRTHeap)
 6/23
 resolve symbols in child process!
+
+
+Pruned to migrate to GitHub:
+git filter-branch --prune-empty --index-filter "git rm -rf --cached --ignore-unmatch MemSpect/Snaps" --prune-empty --tag-name-filter cat -- --all
